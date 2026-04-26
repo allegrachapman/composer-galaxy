@@ -1,0 +1,1188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Composer Galaxy</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+  :root {
+    --bg: #12131a;
+    --panel: #1c1e2a;
+    --border: #2a2d3d;
+    --text: #e8e8f0;
+    --muted: #8a8da0;
+    --accent: #c8a45a;
+    --wiki: #e0c14a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; overflow: hidden; }
+  #app { display: grid; grid-template-columns: 240px 1fr 300px; height: 100vh;
+    transition: grid-template-columns 0.25s ease; }
+  #app.hide-left { grid-template-columns: 0px 1fr 300px; }
+  #app.hide-right { grid-template-columns: 240px 1fr 0px; }
+  #app.hide-left.hide-right { grid-template-columns: 0px 1fr 0px; }
+  #app.hide-left #sidebar, #app.hide-right #detail { padding: 0; overflow: hidden; border: none; }
+  .panel-toggle { position: absolute; top: 12px; z-index: 20; width: 32px; height: 32px;
+    background: var(--panel); border: 1px solid var(--border); color: var(--muted);
+    border-radius: 6px; cursor: pointer; font-size: 14px; display: flex;
+    align-items: center; justify-content: center; padding: 0; }
+  .panel-toggle:hover { color: var(--text); background: #242736; }
+  #toggleLeft { left: 12px; }
+  #toggleRight { right: 12px; }
+  #sidebar, #detail { background: var(--panel); border-right: 1px solid var(--border);
+    padding: 16px; overflow-y: auto; }
+  #detail { border-right: none; border-left: 1px solid var(--border); }
+  #graph-area { position: relative; overflow: hidden; }
+  canvas { display: block; }
+  h1 { font-size: 16px; margin: 0 0 12px 0; letter-spacing: 0.5px; }
+  h2 { font-size: 13px; color: var(--muted); text-transform: uppercase;
+    letter-spacing: 0.8px; margin: 16px 0 8px 0; font-weight: 600; }
+  label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  select, button { width: 100%; padding: 6px 8px; background: var(--bg);
+    color: var(--text); border: 1px solid var(--border); border-radius: 4px;
+    font-size: 13px; margin-bottom: 8px; cursor: pointer; }
+  button:hover { background: #242736; }
+  .legend { font-size: 12px; color: var(--muted); line-height: 1.8; }
+  .legend .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%;
+    vertical-align: middle; margin-right: 6px; }
+  .detail-row { margin: 4px 0; font-size: 13px; }
+  .detail-row .k { color: var(--muted); display: inline-block; width: 90px; }
+  .edge-list { font-size: 12px; color: var(--text); margin: 6px 0 0 0; padding-left: 16px; }
+  .edge-list li { margin: 2px 0; cursor: pointer; }
+  .edge-list li:hover { color: var(--accent); }
+  .llm-quote { display: none; font-size: 11px; color: #9ab; font-style: italic;
+    margin: 2px 0 4px 0; padding-left: 8px; border-left: 2px solid #78b4f0; }
+  .llm-quote.open { display: block; }
+  a { color: var(--accent); }
+  #searchWrap { position: relative; margin-bottom: 8px; }
+  #searchInput { width: 100%; padding: 6px 8px; background: var(--bg);
+    color: var(--text); border: 1px solid var(--border); border-radius: 4px;
+    font-size: 13px; outline: none; }
+  #searchInput:focus { border-color: var(--accent); }
+  #searchResults { display: none; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--panel); border: 1px solid var(--border); border-top: none;
+    border-radius: 0 0 4px 4px; margin: 0; padding: 0; list-style: none;
+    max-height: 240px; overflow-y: auto; z-index: 20; }
+  #searchResults li { padding: 6px 8px; font-size: 13px; cursor: pointer; }
+  #searchResults li:hover, #searchResults li.active { background: var(--bg); color: var(--accent); }
+  input[type="range"] { -webkit-appearance: none; height: 4px; background: var(--border);
+    border-radius: 2px; outline: none; margin: 6px 0 8px 0; }
+  input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px;
+    background: var(--accent); border-radius: 50%; cursor: pointer; }
+  .empty { color: var(--muted); font-style: italic; font-size: 13px; }
+  #expandStatus { position: fixed; top: 12px; left: 50%; transform: translateX(-50%);
+    background: var(--panel); border: 1px solid var(--accent); color: var(--accent);
+    padding: 6px 16px; border-radius: 4px; font-size: 13px; display: none; z-index: 10; }
+  #tooltip { position: absolute; pointer-events: none; background: rgba(28,30,42,0.92);
+    border: 1px solid var(--border); color: var(--text); padding: 4px 10px;
+    border-radius: 4px; font-size: 12px; display: none; z-index: 10; white-space: nowrap; }
+  #zoomControls { position: absolute; bottom: 16px; right: 16px; display: flex;
+    flex-direction: column; gap: 4px; z-index: 10; }
+  #zoomControls button { width: 36px; height: 36px; padding: 0; font-size: 18px;
+    line-height: 36px; text-align: center; border-radius: 6px; }
+</style>
+</head>
+<body>
+<div id="expandStatus">Expanding…</div>
+<div id="app">
+  <aside id="sidebar">
+    <h1>Composer Galaxy</h1>
+    <label>Search</label>
+    <div id="searchWrap">
+      <input type="text" id="searchInput" placeholder="Type a composer name…"
+        autocomplete="off" spellcheck="false">
+      <ul id="searchResults"></ul>
+    </div>
+
+    <h2>Find Path</h2>
+    <div id="pathWrap">
+      <div style="position:relative;margin-bottom:4px">
+        <input type="text" id="pathFrom" placeholder="From…"
+          autocomplete="off" spellcheck="false"
+          style="width:100%;padding:6px 8px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:4px;font-size:13px;outline:none">
+        <ul id="pathFromResults" style="display:none;position:absolute;top:100%;left:0;right:0;background:var(--panel);border:1px solid var(--border);border-top:none;border-radius:0 0 4px 4px;margin:0;padding:0;list-style:none;max-height:160px;overflow-y:auto;z-index:20"></ul>
+      </div>
+      <div style="position:relative;margin-bottom:4px">
+        <input type="text" id="pathTo" placeholder="To…"
+          autocomplete="off" spellcheck="false"
+          style="width:100%;padding:6px 8px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:4px;font-size:13px;outline:none">
+        <ul id="pathToResults" style="display:none;position:absolute;top:100%;left:0;right:0;background:var(--panel);border:1px solid var(--border);border-top:none;border-radius:0 0 4px 4px;margin:0;padding:0;list-style:none;max-height:160px;overflow-y:auto;z-index:20"></ul>
+      </div>
+      <button id="pathFind">Find Path</button>
+      <div id="pathStatus" style="font-size:12px;color:var(--muted);margin-bottom:4px"></div>
+    </div>
+
+    <label>Era filter</label>
+    <select id="eraFilter"><option value="">All eras</option></select>
+
+    <label>Connection depth: <span id="depthValue">1</span></label>
+    <input type="range" id="depthSlider" min="1" max="6" value="1" style="width:100%">
+
+    <h2>Legend</h2>
+    <div class="legend" id="legendEras"></div>
+    <div class="legend" style="margin-top:8px">
+      <div style="color:#666">· small dots = not yet seeded (dbl-click to expand)</div>
+      <div style="color:#c8a45a">― solid = Wikipedia sourced</div>
+      <div style="color:#50c864">― solid = LLM sourced confirmed</div>
+      <div style="color:#78b4f0">┄ dashed = LLM sourced</div>
+    </div>
+
+    <h2>Stats</h2>
+    <div id="stats" class="legend">Loading…</div>
+  </aside>
+
+  <div id="graph-area">
+    <canvas id="canvas"></canvas>
+    <button id="toggleLeft" class="panel-toggle" title="Toggle sidebar">◀</button>
+    <button id="toggleRight" class="panel-toggle" title="Toggle details">▶</button>
+    <div id="tooltip"></div>
+    <div id="zoomControls">
+      <button id="zoomIn">+</button>
+      <button id="zoomOut">−</button>
+      <button id="zoomFit">⊡</button>
+    </div>
+  </div>
+
+  <aside id="detail">
+    <h1>Details</h1>
+    <div id="detailBody" class="empty">Click a composer to see details.</div>
+  </aside>
+</div>
+
+<script>
+const ERA_ORDER = ["Contemporary", "20th-century", "Romantic", "Classical", "Baroque", "Renaissance", "Medieval"];
+const ERA_COLORS = {
+  "Medieval": "#5a6a8a", "Renaissance": "#6a8a5a", "Baroque": "#8a6a3a",
+  "Classical": "#aa8a4a", "Romantic": "#b06060", "20th-century": "#7a5aa0",
+  "Contemporary": "#4a8090", "Modern": "#7a5aa0",
+};
+
+function eraBucket(era) {
+  if (!era) return null;
+  const e = era.toLowerCase();
+  if (e.includes("medieval")) return "Medieval";
+  if (e.includes("renaissance")) return "Renaissance";
+  if (e.includes("baroque")) return "Baroque";
+  if (e.includes("classical") && !e.includes("20")) return "Classical";
+  if (e.includes("romantic")) return "Romantic";
+  if (e.includes("20th") || e.includes("modern")) return "20th-century";
+  if (e.includes("contemp") || e.includes("21st")) return "Contemporary";
+  return null;
+}
+
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+const graphArea = document.getElementById("graph-area");
+const tooltip = document.getElementById("tooltip");
+
+let nodes = [], links = [], nodeById = {};
+let simulation;
+let transform = d3.zoomIdentity;
+let hoveredNode = null, selectedNode = null, hoveredLink = null;
+let connectionDepth = 1;
+let currentData = null;
+
+// Silhouette bust SVG as data URI fallback
+const SILHOUETTE_URI = "data:image/svg+xml," + encodeURIComponent(
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#2a2d3d"/>
+    <ellipse cx="50" cy="38" rx="18" ry="22" fill="#6a6d8d"/>
+    <ellipse cx="50" cy="90" rx="30" ry="24" fill="#6a6d8d"/>
+  </svg>`
+);
+const silhouetteImg = new Image();
+silhouetteImg.src = SILHOUETTE_URI;
+
+// Image cache for thumbnails
+const imageCache = {};
+function _thumbUrl(url) {
+  if (!url) return url;
+  if (url.includes("wikimedia.org") || url.includes("wikipedia.org")) return url;
+  return "/img-proxy?url=" + encodeURIComponent(url);
+}
+function loadImage(url) {
+  if (imageCache[url]) return imageCache[url];
+  const img = new Image();
+  img.crossOrigin = "anonymous";
+  img.src = _thumbUrl(url);
+  img.onload = () => draw();
+  imageCache[url] = img;
+  return img;
+}
+
+function resize() {
+  const r = graphArea.getBoundingClientRect();
+  canvas.width = r.width * devicePixelRatio;
+  canvas.height = r.height * devicePixelRatio;
+  canvas.style.width = r.width + "px";
+  canvas.style.height = r.height + "px";
+  ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+  draw();
+}
+
+function nodeRadius(n) {
+  return n.stub ? 5 : (n.thumbnail ? 14 : 10);
+}
+
+function nodeColor(n) {
+  if (n.stub) return "#3a3d4d";
+  return ERA_COLORS[n.eraBucket] || "#6a6d8d";
+}
+
+function draw() {
+  const w = canvas.width / devicePixelRatio;
+  const h = canvas.height / devicePixelRatio;
+  const _pendingLabels = [];
+  ctx.save();
+  ctx.clearRect(0, 0, w, h);
+  ctx.translate(transform.x, transform.y);
+  ctx.scale(transform.k, transform.k);
+
+  // Draw edges — always visible, dim by default, bright when connected to selection
+  for (const link of links) {
+    const s = link.source, t = link.target;
+    if (s.hidden || t.hidden) continue;
+    const hoveredConn = !selectedNode && hoveredNode && (s === hoveredNode || t === hoveredNode);
+    const active = link.visible || link === hoveredLink || hoveredConn;
+    const isLlm = link.source_tag === "llm";
+    const isLlmConfirmed = link.source_tag === "llm_confirmed";
+
+    const onPath = _pathLinks.has(link);
+    ctx.beginPath();
+    if (isLlm && !onPath) {
+      ctx.setLineDash([4, 4]);
+    } else {
+      ctx.setLineDash([]);
+    }
+    ctx.moveTo(s.x, s.y);
+    ctx.lineTo(t.x, t.y);
+    if (onPath) {
+      ctx.strokeStyle = "rgba(0,220,255,0.95)";
+      ctx.lineWidth = 3;
+    } else if (isLlmConfirmed) {
+      ctx.strokeStyle = active ? "rgba(80,200,100,0.85)" : "rgba(60,150,75,0.4)";
+      ctx.lineWidth = active ? 2 : 0.6;
+    } else if (isLlm) {
+      ctx.strokeStyle = active ? "rgba(120,180,240,0.8)" : "rgba(80,130,180,0.3)";
+      ctx.lineWidth = active ? 2 : 0.6;
+    } else {
+      ctx.strokeStyle = active ? "rgba(224,193,74,0.7)" : "rgba(138,141,160,0.4)";
+      ctx.lineWidth = active ? 2 : 0.6;
+    }
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Arrow on active edges
+    if (active) {
+      const angle = Math.atan2(t.y - s.y, t.x - s.x);
+      const r = nodeRadius(t) + 3;
+      const ax = t.x - Math.cos(angle) * r;
+      const ay = t.y - Math.sin(angle) * r;
+      ctx.beginPath();
+      ctx.moveTo(ax, ay);
+      ctx.lineTo(ax - 8 * Math.cos(angle - 0.3), ay - 8 * Math.sin(angle - 0.3));
+      ctx.lineTo(ax - 8 * Math.cos(angle + 0.3), ay - 8 * Math.sin(angle + 0.3));
+      ctx.closePath();
+      ctx.fillStyle = isLlm ? "rgba(120,180,240,0.8)" : "rgba(224,193,74,0.7)";
+      ctx.fill();
+    }
+  }
+
+  // Precompute nodes connected to hovered node
+  const _hoverConnected = new Set();
+  if (hoveredNode && !selectedNode) {
+    for (const l of links) {
+      const s = typeof l.source === "object" ? l.source : nodeById[l.source];
+      const t = typeof l.target === "object" ? l.target : nodeById[l.target];
+      if (s === hoveredNode) _hoverConnected.add(t);
+      else if (t === hoveredNode) _hoverConnected.add(s);
+    }
+  }
+
+  // Draw nodes
+  for (const node of nodes) {
+    if (node.hidden) continue;
+    const r = nodeRadius(node);
+    const onHoveredLink = hoveredLink && (hoveredLink.source === node || hoveredLink.target === node);
+    const isActive = node === hoveredNode || node === selectedNode || node._connected || onHoveredLink || _hoverConnected.has(node);
+
+    ctx.save();
+    ctx.globalAlpha = node.stub ? 0.4 : (selectedNode && !isActive ? 0.3 : 1);
+
+    // Draw circle
+    ctx.beginPath();
+    ctx.arc(node.x, node.y, r, 0, Math.PI * 2);
+
+    if (node.stub) {
+      ctx.fillStyle = "#3a3d4d";
+      ctx.fill();
+    } else {
+      const thumbLoaded = node.thumbnail && imageCache[node.thumbnail]
+        && imageCache[node.thumbnail].complete && imageCache[node.thumbnail].naturalWidth;
+      const img = thumbLoaded ? imageCache[node.thumbnail] : silhouetteImg;
+      ctx.save();
+      ctx.clip();
+      ctx.drawImage(img, node.x - r, node.y - r, r * 2, r * 2);
+      ctx.restore();
+    }
+
+    // Border
+    ctx.beginPath();
+    ctx.arc(node.x, node.y, r, 0, Math.PI * 2);
+    ctx.strokeStyle = isActive ? "#fff" : nodeColor(node);
+    ctx.lineWidth = isActive ? 2.5 : 1.5;
+    ctx.stroke();
+
+    // Label — collect for dedup pass below
+    if (isActive) {
+      const dates = node.birth ? `${node.birth}\u2013${node.death || ""}` : null;
+      _pendingLabels.push({ name: node.label, dates, x: node.x, y: node.y + r + 14 });
+    }
+
+    ctx.restore();
+  }
+
+  // Draw labels with overlap avoidance (name + dates on separate lines)
+  ctx.textAlign = "center";
+  const lblHeight = 26;
+  const placed = [];
+  for (const lbl of _pendingLabels) {
+    const nameW = ctx.measureText(lbl.name).width;
+    let y = lbl.y;
+    for (let tries = 0; tries < 8; tries++) {
+      const overlap = placed.some(p => Math.abs(p.x - lbl.x) < (nameW / 2 + p.w / 2 + 12) && Math.abs(p.y - y) < lblHeight);
+      if (!overlap) break;
+      y += lblHeight;
+    }
+    ctx.fillStyle = "#e8e8f0";
+    ctx.font = "11px -apple-system, BlinkMacSystemFont, sans-serif";
+    ctx.fillText(lbl.name, lbl.x, y);
+    if (lbl.dates) {
+      ctx.fillStyle = "#8a8da0";
+      ctx.font = "9px -apple-system, BlinkMacSystemFont, sans-serif";
+      ctx.fillText(lbl.dates, lbl.x, y + 12);
+    }
+    placed.push({ x: lbl.x, y, w: nameW });
+  }
+
+  ctx.restore();
+}
+
+// --- Force simulation ---
+function _parseYear(v) {
+  if (!v) return NaN;
+  const m = String(v).match(/\d{3,4}/);
+  return m ? +m[0] : NaN;
+}
+
+function _neighborBirthYears() {
+  const linkIndex = {};
+  links.forEach(l => {
+    const s = typeof l.source === "object" ? l.source.id : l.source;
+    const t = typeof l.target === "object" ? l.target.id : l.target;
+    if (!linkIndex[s]) linkIndex[s] = [];
+    if (!linkIndex[t]) linkIndex[t] = [];
+    linkIndex[s].push(t);
+    linkIndex[t].push(s);
+  });
+  const nodeById = {};
+  nodes.forEach(n => { nodeById[n.id] = n; });
+  const result = {};
+  nodes.forEach(n => {
+    if (!isNaN(_parseYear(n.birth))) return;
+    const neighbors = linkIndex[n.id] || [];
+    const nYears = neighbors.map(id => {
+      const nb = nodeById[id];
+      return nb ? _parseYear(nb.birth) : NaN;
+    }).filter(v => !isNaN(v));
+    if (nYears.length) {
+      result[n.id] = nYears.reduce((a, b) => a + b, 0) / nYears.length;
+    }
+  });
+  return result;
+}
+
+function birthXScale() {
+  const w = canvas.width / devicePixelRatio;
+  const pad = 80;
+  const years = nodes.map(n => _parseYear(n.birth)).filter(v => !isNaN(v)).sort((a, b) => a - b);
+  if (!years.length) return () => w / 2;
+  const neighborYear = _neighborBirthYears();
+  return n => {
+    let y = _parseYear(n.birth);
+    if (isNaN(y)) y = neighborYear[n.id];
+    if (!y || isNaN(y)) return w / 2;
+    let rank = 0;
+    for (let i = 0; i < years.length; i++) {
+      if (years[i] <= y) rank = i; else break;
+    }
+    return pad + (rank / (years.length - 1)) * (w - pad * 2);
+  };
+}
+
+function birthYScale() {
+  const h = canvas.height / devicePixelRatio;
+  const pad = 80;
+  const years = nodes.map(n => _parseYear(n.birth)).filter(v => !isNaN(v)).sort((a, b) => a - b);
+  if (!years.length) return () => h / 2;
+  const neighborYear = _neighborBirthYears();
+  return n => {
+    let y = _parseYear(n.birth);
+    if (isNaN(y)) y = neighborYear[n.id];
+    if (!y || isNaN(y)) return h / 2;
+    let rank = 0;
+    for (let i = 0; i < years.length; i++) {
+      if (years[i] <= y) rank = i; else break;
+    }
+    return pad + (rank / (years.length - 1)) * (h - pad * 2);
+  };
+}
+
+function initSimulation() {
+  const xScale = birthXScale();
+  const yScale = birthYScale();
+  const w = canvas.width / devicePixelRatio;
+  const h = canvas.height / devicePixelRatio;
+
+  simulation = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.id).distance(180).strength(0.04))
+    .force("charge", d3.forceManyBody().strength(d => d.stub ? 0 : -800).distanceMax(1200))
+    .force("x", d3.forceX(d => xScale(d)).strength(0.25))
+    .force("y", d3.forceY(h / 2).strength(0.3))
+    .force("collide", d3.forceCollide().radius(d => nodeRadius(d) + 4))
+    .alphaDecay(0.02)
+    .velocityDecay(0.4)
+    .on("tick", draw);
+}
+
+// --- Zoom & pan ---
+const zoom = d3.zoom()
+  .scaleExtent([0.1, 8])
+  .filter(e => {
+    if (e.type === "mousedown" || e.type === "touchstart") {
+      const rect = canvas.getBoundingClientRect();
+      const mx = (e.clientX || (e.touches && e.touches[0].clientX)) - rect.left;
+      const my = (e.clientY || (e.touches && e.touches[0].clientY)) - rect.top;
+      if (nodeAt(mx, my)) return false;
+    }
+    return !e.button;
+  })
+  .on("zoom", e => { transform = e.transform; draw(); });
+
+d3.select(canvas).call(zoom);
+
+// --- Hit testing ---
+function nodeAt(mx, my) {
+  const [x, y] = transform.invert([mx, my]);
+  for (let i = nodes.length - 1; i >= 0; i--) {
+    const n = nodes[i];
+    if (n.hidden) continue;
+    const dx = n.x - x, dy = n.y - y;
+    if (dx * dx + dy * dy < (nodeRadius(n) + 4) ** 2) return n;
+  }
+  return null;
+}
+
+function linkAt(mx, my) {
+  const [x, y] = transform.invert([mx, my]);
+  const threshold = 6 / transform.k;
+  for (const link of links) {
+    const s = link.source, t = link.target;
+    if (s.hidden || t.hidden) continue;
+    const dx = t.x - s.x, dy = t.y - s.y;
+    const lenSq = dx * dx + dy * dy;
+    if (lenSq === 0) continue;
+    const param = Math.max(0, Math.min(1, ((x - s.x) * dx + (y - s.y) * dy) / lenSq));
+    const px = s.x + param * dx, py = s.y + param * dy;
+    const dist = Math.sqrt((x - px) ** 2 + (y - py) ** 2);
+    if (dist < threshold) return link;
+  }
+  return null;
+}
+
+// --- Mouse interactions ---
+canvas.addEventListener("mousemove", e => {
+  const rect = canvas.getBoundingClientRect();
+  const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+  const node = nodeAt(mx, my);
+  let needDraw = false;
+
+  const effectiveNode = selectedNode ? null : node;
+  if (effectiveNode !== hoveredNode) {
+    hoveredNode = effectiveNode;
+    needDraw = true;
+  }
+
+  // Check link hover when not on a node and nothing selected
+  const link = (!node && !selectedNode) ? linkAt(mx, my) : null;
+  if (link !== hoveredLink) {
+    hoveredLink = link;
+    needDraw = true;
+  }
+
+  canvas.style.cursor = node ? "pointer" : (link && !selectedNode) ? "pointer" : "default";
+
+  if (node && !selectedNode) {
+    tooltip.style.display = "block";
+    tooltip.textContent = node.label + (node.birth ? ` (${node.birth})` : "");
+    tooltip.style.left = (mx + 12) + "px";
+    tooltip.style.top = (my - 8) + "px";
+  } else if (link) {
+    const sLabel = (typeof link.source === "object" ? link.source : nodeById[link.source]).label;
+    const tLabel = (typeof link.target === "object" ? link.target : nodeById[link.target]).label;
+    tooltip.style.display = "block";
+    tooltip.textContent = `${sLabel} → ${tLabel}`;
+    tooltip.style.left = (mx + 12) + "px";
+    tooltip.style.top = (my - 8) + "px";
+  } else {
+    tooltip.style.display = "none";
+  }
+
+  if (needDraw) draw();
+});
+
+canvas.addEventListener("click", e => {
+  const rect = canvas.getBoundingClientRect();
+  const node = nodeAt(e.clientX - rect.left, e.clientY - rect.top);
+  if (!node) selectNode(null);
+});
+
+canvas.addEventListener("dblclick", e => {
+  const rect = canvas.getBoundingClientRect();
+  const node = nodeAt(e.clientX - rect.left, e.clientY - rect.top);
+  if (node && node.stub) {
+    expandComposer(node.id);
+  }
+});
+
+function selectNode(node) {
+  // Clear path highlight
+  _pathLinks.clear();
+  _pathNodes.clear();
+  document.getElementById("pathStatus").textContent = "";
+  // Clear
+  nodes.forEach(n => { n._connected = false; n.fx = null; n.fy = null; });
+  links.forEach(l => l.visible = false);
+
+  selectedNode = node;
+  if (node) {
+    // BFS: find entire connected component
+    const adjacency = new Map();
+    links.forEach(l => {
+      const s = typeof l.source === "object" ? l.source : nodeById[l.source];
+      const t = typeof l.target === "object" ? l.target : nodeById[l.target];
+      if (!adjacency.has(s)) adjacency.set(s, []);
+      if (!adjacency.has(t)) adjacency.set(t, []);
+      adjacency.get(s).push({ node: t, link: l });
+      adjacency.get(t).push({ node: s, link: l });
+    });
+
+    const visited = new Map();
+    const queue = [{n: node, depth: 0}];
+    visited.set(node, 0);
+    while (queue.length) {
+      const {n: cur, depth} = queue.shift();
+      cur._connected = true;
+      if (depth < connectionDepth) {
+        for (const { node: neighbor, link: l } of (adjacency.get(cur) || [])) {
+          l.visible = true;
+          if (!visited.has(neighbor)) {
+            visited.set(neighbor, depth + 1);
+            queue.push({n: neighbor, depth: depth + 1});
+          }
+        }
+      }
+    }
+
+    // Identify direct teachers/students for layout
+    const teachers = [], students = [];
+    links.forEach(l => {
+      const s = typeof l.source === "object" ? l.source : nodeById[l.source];
+      const t = typeof l.target === "object" ? l.target : nodeById[l.target];
+      if (l.kind === "teacher") {
+        if (t === node) teachers.push(s);
+        else if (s === node) students.push(t);
+      }
+    });
+
+    showDetail(node);
+
+    // Pin selected node in place, arrange direct teachers left / students right
+    const spacing = 80;
+    node.fx = node.x;
+    node.fy = node.y;
+
+    teachers.forEach((t, i) => {
+      const yOff = (i - (teachers.length - 1) / 2) * spacing;
+      t.fx = node.x - 160;
+      t.fy = node.y + yOff;
+    });
+    students.forEach((s, i) => {
+      const yOff = (i - (students.length - 1) / 2) * spacing;
+      s.fx = node.x + 160;
+      s.fy = node.y + yOff;
+    });
+
+    simulation.alpha(0.5).restart();
+    setTimeout(() => {
+      simulation.alphaTarget(0);
+    }, 1200);
+
+    // Zoom to fit the full connected component
+    const component = [...visited.keys()];
+    let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+    component.forEach(n => {
+      const px = n.fx != null ? n.fx : n.x;
+      const py = n.fy != null ? n.fy : n.y;
+      x0 = Math.min(x0, px); y0 = Math.min(y0, py);
+      x1 = Math.max(x1, px); y1 = Math.max(y1, py);
+    });
+    const w = canvas.width / devicePixelRatio;
+    const h = canvas.height / devicePixelRatio;
+    const pad = 100;
+    const dx = (x1 - x0) || 1, dy = (y1 - y0) || 1;
+    const targetScale = Math.min((w - pad * 2) / dx, (h - pad * 2) / dy, 2.5);
+    const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+    const tx = w / 2 - cx * targetScale;
+    const ty = h / 2 - cy * targetScale;
+    d3.select(canvas).transition().duration(600)
+      .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(targetScale));
+  } else {
+    clearDetail();
+    simulation.alpha(0.3).restart();
+  }
+  draw();
+}
+
+// --- Drag ---
+let _dragged = false, _dragStartX = 0, _dragStartY = 0;
+d3.select(canvas).call(
+  d3.drag()
+    .container(canvas)
+    .subject(e => {
+      const rect = canvas.getBoundingClientRect();
+      const mx = e.sourceEvent.clientX - rect.left;
+      const my = e.sourceEvent.clientY - rect.top;
+      return nodeAt(mx, my);
+    })
+    .on("start", e => {
+      _dragged = false;
+      _dragStartX = e.sourceEvent.clientX;
+      _dragStartY = e.sourceEvent.clientY;
+      if (!e.active) simulation.alphaTarget(0.3).restart();
+      const [gx, gy] = transform.invert([
+        e.sourceEvent.clientX - canvas.getBoundingClientRect().left,
+        e.sourceEvent.clientY - canvas.getBoundingClientRect().top,
+      ]);
+      e.subject.fx = gx;
+      e.subject.fy = gy;
+    })
+    .on("drag", e => {
+      const dx = e.sourceEvent.clientX - _dragStartX;
+      const dy = e.sourceEvent.clientY - _dragStartY;
+      if (dx * dx + dy * dy > 9) _dragged = true;
+      const rect = canvas.getBoundingClientRect();
+      const [gx, gy] = transform.invert([
+        e.sourceEvent.clientX - rect.left,
+        e.sourceEvent.clientY - rect.top,
+      ]);
+      e.subject.fx = gx;
+      e.subject.fy = gy;
+    })
+    .on("end", e => {
+      if (!e.active) simulation.alphaTarget(0);
+      e.subject.fx = null;
+      e.subject.fy = null;
+      if (!_dragged) selectNode(e.subject);
+    })
+);
+
+// --- Data loading ---
+async function load() {
+  const res = await fetch("/graph");
+  const data = await res.json();
+  currentData = data;
+  buildGraph(data);
+}
+
+function buildGraph(data) {
+  nodes = data.nodes.map(n => ({
+    id: n.data.id,
+    label: n.data.label,
+    birth: n.data.birth,
+    death: n.data.death,
+    nationality: n.data.nationality,
+    era: n.data.era,
+    eraBucket: eraBucket(n.data.era),
+    stub: n.data.stub,
+    wikipedia: n.data.wikipedia,
+    thumbnail: n.data.thumbnail,
+    hidden: false,
+    _connected: false,
+  }));
+
+  nodeById = {};
+  nodes.forEach(n => {
+    nodeById[n.id] = n;
+    if (n.thumbnail) loadImage(n.thumbnail);
+  });
+
+  const _edgeMeta = {};
+  links = data.edges.map(e => {
+    const id = e.data.id;
+    _edgeMeta[id] = { url: e.data.source_url, quote: e.data.quote || "" };
+    return {
+      id: id,
+      source: e.data.source,
+      target: e.data.target,
+      kind: e.data.kind,
+      source_tag: e.data.source_tag,
+      visible: false,
+    };
+  });
+  window._edgeMeta = _edgeMeta;
+
+  selectedNode = null;
+  hoveredNode = null;
+
+  resize();
+  initSimulation();
+  populateEraFilter();
+  updateStats(data);
+  buildLegend();
+}
+
+function buildLegend() {
+  const present = new Set(nodes.map(n => n.eraBucket).filter(Boolean));
+  const eras = ERA_ORDER.filter(e => present.has(e));
+  const el = document.getElementById("legendEras");
+  el.innerHTML = eras.map(e =>
+    `<div><span class="swatch" style="background:${ERA_COLORS[e]}"></span>${e}</div>`
+  ).join("");
+}
+
+function populateEraFilter() {
+  const present = new Set(nodes.map(n => n.eraBucket).filter(Boolean));
+  const buckets = ERA_ORDER.filter(e => present.has(e));
+  const sel = document.getElementById("eraFilter");
+  sel.innerHTML = '<option value="">All eras</option>';
+  buckets.forEach(b => {
+    const o = document.createElement("option");
+    o.value = b; o.textContent = b; sel.appendChild(o);
+  });
+  sel.onchange = e => {
+    const era = e.target.value;
+    nodes.forEach(n => { n.hidden = era && n.eraBucket !== era && !n.stub; });
+    draw();
+  };
+}
+
+function updateStats(data) {
+  const seeded = data.nodes.filter(n => !n.data.stub).length;
+  const stubs = data.nodes.filter(n => n.data.stub).length;
+  document.getElementById("stats").innerHTML =
+    `${seeded} seeded · ${stubs} stubs<br>${data.edges.length} connections`;
+}
+
+function showDetail(node) {
+  const el = document.getElementById("detailBody");
+  el.classList.remove("empty");
+
+  const teachersIn = links.filter(l => {
+    const t = typeof l.target === "object" ? l.target : nodeById[l.target];
+    return t === node && l.kind === "teacher";
+  }).map(l => {
+    const meta = _edgeMeta[l.id] || {};
+    return {
+      node: typeof l.source === "object" ? l.source : nodeById[l.source],
+      tag: l.source_tag,
+      url: meta.url,
+      quote: meta.quote,
+    };
+  }).filter(e => e.node);
+
+  const studentsOut = links.filter(l => {
+    const s = typeof l.source === "object" ? l.source : nodeById[l.source];
+    return s === node && l.kind === "teacher";
+  }).map(l => {
+    const meta = _edgeMeta[l.id] || {};
+    return {
+      node: typeof l.target === "object" ? l.target : nodeById[l.target],
+      tag: l.source_tag,
+      url: meta.url,
+      quote: meta.quote,
+    };
+  }).filter(e => e.node);
+
+  let _quoteCounter = 0;
+  const _escHtml = s => (s || "").replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  const listHtml = (arr) => {
+    if (!arr.length) return '<div class="empty">—</div>';
+    const html = '<ul class="edge-list">' + arr.map(e => {
+      const dates = e.node.birth ? ` <span style="color:var(--muted);font-size:10px">(${e.node.birth}\u2013${e.node.death || ""})</span>` : "";
+      let srcLabel = "";
+      if ((e.tag === "llm" || e.tag === "llm_confirmed") && e.quote) {
+        const qid = `llmq${_quoteCounter++}`;
+        const color = e.tag === "llm_confirmed" ? "#50c864" : "#78b4f0";
+        const badge = e.tag === "llm_confirmed" ? `<span style="color:#50c864;font-size:10px;margin-left:4px" title="Confirmed by cross-reference or Wikidata">\u2713</span>` : "";
+        srcLabel = `${badge} <span class="src-toggle" data-qid="${qid}" style="color:${color};font-size:10px;margin-left:4px;cursor:pointer">src \u25be</span>` +
+                   `<div id="${qid}" class="llm-quote">\u201c${_escHtml(e.quote)}\u201d <a class="src-verify" data-url="${_escHtml(e.url)}" data-quote="${_escHtml(e.quote)}" style="color:${color};font-size:10px;cursor:pointer">verify on Wikipedia \u2197</a></div>`;
+      } else if (e.tag === "llm_confirmed") {
+        srcLabel = ` <span style="color:#50c864;font-size:10px;margin-left:4px" title="Confirmed by cross-reference or Wikidata">\u2713</span>`;
+      } else if (e.tag === "llm") {
+        srcLabel = ` <span class="edge-src-link" data-href="${_escHtml(e.url)}" style="color:#78b4f0;font-size:10px;margin-left:4px;cursor:pointer;text-decoration:underline">src</span>`;
+      } else if (e.tag === "wiki") {
+        srcLabel = ` <span class="edge-src-link" data-href="${_escHtml(e.url)}" style="color:#c8a45a;font-size:10px;margin-left:4px;cursor:pointer;text-decoration:underline" title="Found in Wikipedia article prose">wiki</span>`;
+      } else if (e.tag === "infobox") {
+        srcLabel = ` <span class="edge-src-link" data-href="${_escHtml(e.url)}" style="color:#c8a45a;font-size:10px;margin-left:4px;cursor:pointer;text-decoration:underline" title="From Wikipedia infobox">info</span>`;
+      }
+      return `<li data-node-id="${_escHtml(e.node.id)}">${e.node.label || e.node.id}${dates}${srcLabel}</li>`;
+    }).join("") + '</ul>';
+    return html;
+  };
+
+  const setupDetailListeners = () => {};
+
+  el.innerHTML = `
+    ${node.thumbnail ? `<img src="${node.thumbnail}" alt="${node.label}" style="width:100%;border-radius:8px;margin-bottom:12px;">` : ""}
+    <h1 style="font-size:15px">${node.label}</h1>
+    <div class="detail-row"><span class="k">Life</span>${node.birth || "?"} – ${node.death || ""}</div>
+    <div class="detail-row"><span class="k">Nationality</span>${node.nationality || "—"}</div>
+    <div class="detail-row"><span class="k">Era</span>${node.era || "—"}</div>
+    ${node.wikipedia ? `<div class="detail-row"><a href="${node.wikipedia}" target="_blank">Wikipedia ↗</a></div>` : ""}
+    <h2>Teachers</h2>${listHtml(teachersIn)}
+    <h2>Students</h2>${listHtml(studentsOut)}
+  `;
+  setupDetailListeners();
+}
+
+function clearDetail() {
+  const el = document.getElementById("detailBody");
+  el.classList.add("empty");
+  el.innerHTML = "Click a composer to see details.";
+}
+
+// --- Zoom buttons ---
+// --- Depth slider ---
+const depthSlider = document.getElementById("depthSlider");
+const depthValue = document.getElementById("depthValue");
+depthSlider.addEventListener("input", () => {
+  connectionDepth = parseInt(depthSlider.value);
+  depthValue.textContent = connectionDepth;
+  if (selectedNode) selectNode(selectedNode);
+});
+
+// --- Zoom buttons ---
+document.getElementById("zoomIn").addEventListener("click", () => {
+  d3.select(canvas).transition().duration(300).call(zoom.scaleBy, 1.5);
+});
+document.getElementById("zoomOut").addEventListener("click", () => {
+  d3.select(canvas).transition().duration(300).call(zoom.scaleBy, 1 / 1.5);
+});
+document.getElementById("zoomFit").addEventListener("click", () => {
+  if (!nodes.length) return;
+  const w = canvas.width / devicePixelRatio;
+  const h = canvas.height / devicePixelRatio;
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  nodes.forEach(n => {
+    if (n.hidden) return;
+    x0 = Math.min(x0, n.x); y0 = Math.min(y0, n.y);
+    x1 = Math.max(x1, n.x); y1 = Math.max(y1, n.y);
+  });
+  const pad = 60;
+  const dx = x1 - x0 || 1, dy = y1 - y0 || 1;
+  const scale = Math.min((w - pad * 2) / dx, (h - pad * 2) / dy, 3);
+  const cx = (x0 + x1) / 2, cy2 = (y0 + y1) / 2;
+  const tx = w / 2 - cx * scale, ty = h / 2 - cy2 * scale;
+  d3.select(canvas).transition().duration(500)
+    .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+});
+
+// --- Panel toggles ---
+document.getElementById("toggleLeft").addEventListener("click", () => {
+  document.getElementById("app").classList.toggle("hide-left");
+  document.getElementById("toggleLeft").textContent =
+    document.getElementById("app").classList.contains("hide-left") ? "▶" : "◀";
+  setTimeout(resize, 300);
+});
+document.getElementById("toggleRight").addEventListener("click", () => {
+  document.getElementById("app").classList.toggle("hide-right");
+  document.getElementById("toggleRight").textContent =
+    document.getElementById("app").classList.contains("hide-right") ? "◀" : "▶";
+  setTimeout(resize, 300);
+});
+
+// --- Expand ---
+async function expandComposer(name) {
+  const status = document.getElementById("expandStatus");
+  status.textContent = `Expanding ${name}…`;
+  status.style.display = "block";
+  try {
+    const res = await fetch(`/expand/${encodeURIComponent(name)}`, { method: "POST" });
+    if (!res.ok) throw new Error(await res.text());
+    const data = await res.json();
+    currentData = data;
+    buildGraph(data);
+  } catch (e) {
+    console.error("Expand failed:", e);
+    status.textContent = `Failed to expand ${name}`;
+    setTimeout(() => { status.style.display = "none"; }, 3000);
+    return;
+  }
+  status.style.display = "none";
+}
+
+// --- Search ---
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+let searchActive = -1;
+const stripDiacritics = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+searchInput.addEventListener("input", () => {
+  const q = stripDiacritics(searchInput.value.trim());
+  searchResults.innerHTML = "";
+  searchActive = -1;
+  if (q.length < 2) { searchResults.style.display = "none"; return; }
+  const matches = nodes.filter(n => stripDiacritics(n.label).includes(q))
+    .sort((a, b) => {
+      const al = stripDiacritics(a.label), bl = stripDiacritics(b.label);
+      const aStart = al.startsWith(q) ? 0 : 1;
+      const bStart = bl.startsWith(q) ? 0 : 1;
+      return aStart - bStart || al.localeCompare(bl);
+    })
+    .slice(0, 12);
+  if (!matches.length) { searchResults.style.display = "none"; return; }
+  matches.forEach((n, i) => {
+    const li = document.createElement("li");
+    li.textContent = n.label + (n.birth ? ` (${n.birth})` : "");
+    li.addEventListener("click", () => pickSearch(n));
+    searchResults.appendChild(li);
+  });
+  searchResults.style.display = "block";
+});
+
+searchInput.addEventListener("keydown", e => {
+  const items = searchResults.querySelectorAll("li");
+  if (!items.length) return;
+  if (e.key === "ArrowDown") {
+    e.preventDefault();
+    searchActive = Math.min(searchActive + 1, items.length - 1);
+    items.forEach((li, i) => li.classList.toggle("active", i === searchActive));
+  } else if (e.key === "ArrowUp") {
+    e.preventDefault();
+    searchActive = Math.max(searchActive - 1, 0);
+    items.forEach((li, i) => li.classList.toggle("active", i === searchActive));
+  } else if (e.key === "Enter" && searchActive >= 0) {
+    e.preventDefault();
+    const q = stripDiacritics(searchInput.value.trim());
+    const matches = nodes.filter(n => stripDiacritics(n.label).includes(q))
+      .sort((a, b) => {
+        const al = stripDiacritics(a.label), bl = stripDiacritics(b.label);
+        const aStart = al.startsWith(q) ? 0 : 1;
+        const bStart = bl.startsWith(q) ? 0 : 1;
+        return aStart - bStart || al.localeCompare(bl);
+      })
+      .slice(0, 12);
+    if (matches[searchActive]) pickSearch(matches[searchActive]);
+  } else if (e.key === "Escape") {
+    searchResults.style.display = "none";
+    searchActive = -1;
+  }
+});
+
+function pickSearch(node) {
+  searchResults.style.display = "none";
+  searchInput.value = node.label;
+  searchActive = -1;
+  node.hidden = false;
+  selectNode(node);
+}
+
+document.addEventListener("click", e => {
+  if (!e.target.closest("#searchWrap")) {
+    searchResults.style.display = "none";
+    searchActive = -1;
+  }
+  if (!e.target.closest("#pathWrap")) {
+    document.getElementById("pathFromResults").style.display = "none";
+    document.getElementById("pathToResults").style.display = "none";
+  }
+});
+
+// --- Path finder ---
+let _pathFromNode = null, _pathToNode = null;
+let _pathLinks = new Set(), _pathNodes = new Set();
+
+function _setupPathAutocomplete(inputId, resultsId, onPick) {
+  const input = document.getElementById(inputId);
+  const results = document.getElementById(resultsId);
+  input.addEventListener("input", () => {
+    const q = stripDiacritics(input.value.trim());
+    results.innerHTML = "";
+    if (q.length < 2) { results.style.display = "none"; return; }
+    const matches = nodes.filter(n => !n.stub && stripDiacritics(n.label).includes(q))
+      .sort((a, b) => {
+        const al = stripDiacritics(a.label), bl = stripDiacritics(b.label);
+        return (al.startsWith(q) ? 0 : 1) - (bl.startsWith(q) ? 0 : 1) || al.localeCompare(bl);
+      }).slice(0, 8);
+    if (!matches.length) { results.style.display = "none"; return; }
+    matches.forEach(n => {
+      const li = document.createElement("li");
+      li.textContent = n.label + (n.birth ? ` (${n.birth})` : "");
+      li.style.cssText = "padding:6px 8px;font-size:13px;cursor:pointer";
+      li.addEventListener("mouseenter", () => li.style.background = "var(--bg)");
+      li.addEventListener("mouseleave", () => li.style.background = "");
+      li.addEventListener("click", () => {
+        input.value = n.label;
+        results.style.display = "none";
+        onPick(n);
+      });
+      results.appendChild(li);
+    });
+    results.style.display = "block";
+  });
+  input.addEventListener("focus", () => { if (input.value.length >= 2) input.dispatchEvent(new Event("input")); });
+}
+
+_setupPathAutocomplete("pathFrom", "pathFromResults", n => { _pathFromNode = n; });
+_setupPathAutocomplete("pathTo", "pathToResults", n => { _pathToNode = n; });
+
+function findPath() {
+  const status = document.getElementById("pathStatus");
+  _pathLinks.clear();
+  _pathNodes.clear();
+
+  if (!_pathFromNode || !_pathToNode) {
+    status.textContent = "Select both composers first.";
+    draw();
+    return;
+  }
+  if (_pathFromNode === _pathToNode) {
+    status.textContent = "Same composer selected.";
+    draw();
+    return;
+  }
+
+  // Build adjacency
+  const adj = new Map();
+  links.forEach(l => {
+    const s = typeof l.source === "object" ? l.source : nodeById[l.source];
+    const t = typeof l.target === "object" ? l.target : nodeById[l.target];
+    if (!adj.has(s)) adj.set(s, []);
+    if (!adj.has(t)) adj.set(t, []);
+    adj.get(s).push({ node: t, link: l });
+    adj.get(t).push({ node: s, link: l });
+  });
+
+  // BFS
+  const prev = new Map();
+  const visited = new Set();
+  const queue = [_pathFromNode];
+  visited.add(_pathFromNode);
+  let found = false;
+
+  while (queue.length) {
+    const cur = queue.shift();
+    if (cur === _pathToNode) { found = true; break; }
+    for (const { node: nb, link: l } of (adj.get(cur) || [])) {
+      if (!visited.has(nb)) {
+        visited.add(nb);
+        prev.set(nb, { node: cur, link: l });
+        queue.push(nb);
+      }
+    }
+  }
+
+  if (!found) {
+    status.textContent = `No path between ${_pathFromNode.label} and ${_pathToNode.label}.`;
+    // Clear selection so full graph is visible
+    selectedNode = null;
+    nodes.forEach(n => { n._connected = false; });
+    links.forEach(l => l.visible = false);
+    draw();
+    return;
+  }
+
+  // Trace path
+  const pathChain = [];
+  let cur = _pathToNode;
+  while (prev.has(cur)) {
+    const p = prev.get(cur);
+    _pathLinks.add(p.link);
+    _pathNodes.add(cur);
+    _pathNodes.add(p.node);
+    pathChain.unshift(p.node.label);
+    cur = p.node;
+  }
+  pathChain.push(_pathToNode.label);
+
+  const steps = pathChain.length - 1;
+  status.innerHTML = `<strong>${steps} degree${steps !== 1 ? "s" : ""} of separation</strong><br>` +
+    pathChain.join(" → ");
+
+  // Update visibility: show only path
+  selectedNode = _pathFromNode;
+  nodes.forEach(n => { n._connected = _pathNodes.has(n); });
+  links.forEach(l => { l.visible = _pathLinks.has(l); });
+
+  showDetail(_pathFromNode);
+  draw();
+}
+
+document.getElementById("pathFind").addEventListener("click", findPath);
+
+// Delegated click handler for detail panel
+document.getElementById("detailBody").addEventListener("click", ev => {
+  const srcLink = ev.target.closest(".edge-src-link");
+  if (srcLink) {
+    ev.stopPropagation();
+    const url = srcLink.dataset.href;
+    if (url) {
+      const a = document.createElement("a");
+      a.href = url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+    return;
+  }
+  const toggle = ev.target.closest(".src-toggle");
+  if (toggle) {
+    ev.stopPropagation();
+    const q = document.getElementById(toggle.dataset.qid);
+    if (q) q.classList.toggle("open");
+    return;
+  }
+  const verify = ev.target.closest(".src-verify");
+  if (verify) {
+    ev.stopPropagation();
+    const url = verify.dataset.url;
+    let quote = (verify.dataset.quote || "").trim();
+    if (quote.length > 80) quote = quote.slice(0, 80).replace(/\s+\S*$/, "");
+    const fullUrl = `${url}#:~:text=${encodeURIComponent(quote)}`;
+    const a = document.createElement("a");
+    a.href = fullUrl;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    return;
+  }
+  if (ev.target.closest(".llm-quote")) return;
+  const li = ev.target.closest(".edge-list li");
+  if (li) {
+    const nid = li.dataset.nodeId;
+    if (nid && nodeById[nid]) selectNode(nodeById[nid]);
+  }
+});
+
+window.addEventListener("resize", resize);
+load();
+</script>
+</body>
+</html>

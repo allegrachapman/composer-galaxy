@@ -1,0 +1,52 @@
+---
+name: Jean Roger-Ducasse
+wikipedia: https://en.wikipedia.org/wiki/Jean_Roger-Ducasse
+thumbnail: https://upload.wikimedia.org/wikipedia/commons/1/18/Jean_Roger-Ducasse.jpg
+birth: '1873'
+birth_source: llm
+death: '1954'
+death_source: llm
+nationality: French
+nationality_source: llm
+era: 20th-century
+era_source: llm
+teachers:
+- name: Émile Pessard
+  source: llm
+  quote: studied at the Paris Conservatoire with Émile Pessard and André Gedalge
+- name: André Gedalge
+  source: llm
+  quote: studied at the Paris Conservatoire with Émile Pessard and André Gedalge
+- name: Gabriel Fauré
+  source: llm_confirmed
+  quote: was the star pupil and close friend of Gabriel Fauré
+students:
+- name: Jehan Alain
+  source: wiki
+- name: Claude Arrieu
+  source: wiki
+- name: Jean-Louis Martinet
+  source: llm
+  quote: Among his notable pupils were Jehan Alain, Claude Arrieu, Sirvart Kalpakyan
+    Karamanuk, Jean-Louis Martinet
+- name: Francis George Scott
+  source: llm
+  quote: Among his notable pupils were Jehan Alain, Claude Arrieu, Sirvart Kalpakyan
+    Karamanuk, Jean-Louis Martinet, and Francis George Scott
+influenced_by:
+- name: Hector Berlioz
+  source: llm
+  quote: unbroken tradition from Hector Berlioz through Camille Saint-Saëns
+- name: Camille Saint-Saëns
+  source: llm
+  quote: unbroken tradition from Hector Berlioz through Camille Saint-Saëns
+influenced: []
+---
+
+# Jean Roger-Ducasse
+
+[Wikipedia](https://en.wikipedia.org/wiki/Jean_Roger-Ducasse)
+
+## Notes
+
+_Add your own notes here. This section is preserved across re-seeds._
