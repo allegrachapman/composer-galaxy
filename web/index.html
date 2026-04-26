@@ -124,8 +124,8 @@
     <div class="legend" style="margin-top:8px">
       <div style="color:#666">· small dots = not yet seeded (dbl-click to expand)</div>
       <div style="color:#c8a45a">― solid = Wikipedia sourced</div>
-      <div style="color:#50c864">― solid = LLM sourced confirmed</div>
-      <div style="color:#78b4f0">┄ dashed = LLM sourced</div>
+      <div style="color:#50c864">― solid = text-extracted (confirmed)</div>
+      <div style="color:#78b4f0">┄ dashed = text-extracted (unverified)</div>
     </div>
 
     <h2>Stats</h2>
@@ -221,8 +221,26 @@ function resize() {
   draw();
 }
 
+const TOP_COMPOSERS = new Set([
+  "Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach",
+  "Frédéric Chopin", "Richard Wagner", "Pyotr Ilyich Tchaikovsky",
+  "Claude Debussy", "Leonard Bernstein", "Franz Liszt", "George Frideric Handel",
+  "George Gershwin", "Antonio Vivaldi", "Franz Schubert", "Joseph Haydn",
+  "Igor Stravinsky", "Dmitri Shostakovich", "Sergei Rachmaninoff", "Philip Glass",
+  "Johannes Brahms", "Felix Mendelssohn", "Gustav Mahler", "Antonín Dvořák",
+  "Robert Schumann", "Hildegard of Bingen", "Maurice Ravel", "John Cage",
+  "Arnold Schoenberg", "Erik Satie", "Sergei Prokofiev", "Camille Saint-Saëns",
+  "Richard Strauss", "Edvard Grieg", "Jean Sibelius", "Aaron Copland",
+  "Gioachino Rossini", "Béla Bartók", "Benjamin Britten", "Hector Berlioz",
+  "Karlheinz Stockhausen", "Steve Reich", "Modest Mussorgsky", "Clara Schumann",
+  "Gabriel Fauré", "Olivier Messiaen", "Pierre Boulez", "Anton Bruckner",
+  "Charles Ives", "Vincenzo Bellini", "Krzysztof Penderecki", "Jean-Philippe Rameau",
+]);
+
 function nodeRadius(n) {
-  return n.stub ? 5 : (n.thumbnail ? 14 : 10);
+  if (n.stub) return 5;
+  if (TOP_COMPOSERS.has(n.label)) return n.thumbnail ? 28 : 22;
+  return n.thumbnail ? 14 : 10;
 }
 
 function nodeColor(n) {
@@ -337,7 +355,8 @@ function draw() {
     // Label — collect for dedup pass below
     if (isActive) {
       const dates = node.birth ? `${node.birth}\u2013${node.death || ""}` : null;
-      _pendingLabels.push({ name: node.label, dates, x: node.x, y: node.y + r + 14 });
+      const isTop = TOP_COMPOSERS.has(node.label);
+      _pendingLabels.push({ name: node.label, dates, x: node.x, y: node.y + r + 14, top: isTop });
     }
 
     ctx.restore();
@@ -355,13 +374,16 @@ function draw() {
       if (!overlap) break;
       y += lblHeight;
     }
+    const nameSize = lbl.top ? "14px" : "11px";
+    const dateSize = lbl.top ? "11px" : "9px";
+    const dateOffset = lbl.top ? 15 : 12;
     ctx.fillStyle = "#e8e8f0";
-    ctx.font = "11px -apple-system, BlinkMacSystemFont, sans-serif";
+    ctx.font = `${nameSize} -apple-system, BlinkMacSystemFont, sans-serif`;
     ctx.fillText(lbl.name, lbl.x, y);
     if (lbl.dates) {
       ctx.fillStyle = "#8a8da0";
-      ctx.font = "9px -apple-system, BlinkMacSystemFont, sans-serif";
-      ctx.fillText(lbl.dates, lbl.x, y + 12);
+      ctx.font = `${dateSize} -apple-system, BlinkMacSystemFont, sans-serif`;
+      ctx.fillText(lbl.dates, lbl.x, y + dateOffset);
     }
     placed.push({ x: lbl.x, y, w: nameW });
   }
@@ -700,7 +722,8 @@ d3.select(canvas).call(
 
 // --- Data loading ---
 async function load() {
-  const res = await fetch("/graph");
+  let res = await fetch("graph.json").catch(() => null);
+  if (!res || !res.ok) res = await fetch("/graph");
   const data = await res.json();
   currentData = data;
   buildGraph(data);
@@ -826,12 +849,12 @@ function showDetail(node) {
         const qid = `llmq${_quoteCounter++}`;
         const color = e.tag === "llm_confirmed" ? "#50c864" : "#78b4f0";
         const badge = e.tag === "llm_confirmed" ? `<span style="color:#50c864;font-size:10px;margin-left:4px" title="Confirmed by cross-reference or Wikidata">\u2713</span>` : "";
-        srcLabel = `${badge} <span class="src-toggle" data-qid="${qid}" style="color:${color};font-size:10px;margin-left:4px;cursor:pointer">src \u25be</span>` +
+        srcLabel = `${badge} <span class="src-toggle" data-qid="${qid}" style="color:${color};font-size:10px;margin-left:4px;cursor:pointer">text \u25be</span>` +
                    `<div id="${qid}" class="llm-quote">\u201c${_escHtml(e.quote)}\u201d <a class="src-verify" data-url="${_escHtml(e.url)}" data-quote="${_escHtml(e.quote)}" style="color:${color};font-size:10px;cursor:pointer">verify on Wikipedia \u2197</a></div>`;
       } else if (e.tag === "llm_confirmed") {
         srcLabel = ` <span style="color:#50c864;font-size:10px;margin-left:4px" title="Confirmed by cross-reference or Wikidata">\u2713</span>`;
       } else if (e.tag === "llm") {
-        srcLabel = ` <span class="edge-src-link" data-href="${_escHtml(e.url)}" style="color:#78b4f0;font-size:10px;margin-left:4px;cursor:pointer;text-decoration:underline">src</span>`;
+        srcLabel = ` <span class="edge-src-link" data-href="${_escHtml(e.url)}" style="color:#78b4f0;font-size:10px;margin-left:4px;cursor:pointer;text-decoration:underline">text</span>`;
       } else if (e.tag === "wiki") {
         srcLabel = ` <span class="edge-src-link" data-href="${_escHtml(e.url)}" style="color:#c8a45a;font-size:10px;margin-left:4px;cursor:pointer;text-decoration:underline" title="Found in Wikipedia article prose">wiki</span>`;
       } else if (e.tag === "infobox") {

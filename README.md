@@ -30,7 +30,7 @@ LLM-sourced edges can be promoted to `llm_confirmed` via two independent checks 
 A single-page D3.js app (`web/index.html`) renders the graph on an HTML canvas:
 
 - **Force layout** — rank-based x-positioning by birth year, with charge repulsion and link forces. Stub (unseeded) nodes inherit position from their seeded neighbors and exert zero charge to avoid distorting the layout
-- **Visual encoding** — gold solid lines = Wikipedia sourced, green solid lines = LLM confirmed, blue dashed lines = LLM sourced, cyan lines = active path
+- **Visual encoding** — gold solid lines = Wikipedia sourced, green solid lines = text-extracted (confirmed), blue dashed lines = text-extracted (unverified), cyan lines = active path
 - **Pathfinding** — BFS shortest-path between any two composers, showing degrees of separation
 - **Search** — diacritics-insensitive (type "dvorak" to find "Dvořák")
 - **Detail panel** — click any composer to see their connections, source quotes, and links to Wikipedia with Text Fragment highlighting
@@ -55,13 +55,25 @@ cp .env.example .env
 
 ## Usage
 
-### Run the server
+### Build and view (static)
+
+```bash
+# Generate graph.json and download external thumbnails
+python build.py
+
+# Serve with any static server
+python -m http.server -d web 8742
+```
+
+Then open http://127.0.0.1:8742 in your browser.
+
+### Development server
+
+For active development (seeding, expanding stubs), use the FastAPI server instead:
 
 ```bash
 .venv/bin/python3 -m uvicorn app.main:app --host 127.0.0.1 --port 8742
 ```
-
-Then open http://127.0.0.1:8742 in your browser.
 
 ### Seed new composers
 
@@ -73,9 +85,9 @@ Then open http://127.0.0.1:8742 in your browser.
 .venv/bin/python3 -m app.seed --count 20
 ```
 
-After seeding, restart the server to pick up the new data.
+After seeding, rebuild with `python build.py` (or restart the dev server).
 
-### Validate LLM edges
+### Validate text-extracted edges
 
 ```bash
 # Dry run — see what would be confirmed
@@ -146,5 +158,5 @@ _Add your own notes here. This section is preserved across re-seeds._
 | 0 | `infobox` | From Wikipedia infobox | Gold solid |
 | 1 | `wiki` | From Wikipedia article links | Gold solid |
 | 2 | `manual` | Hand-added | Gold solid |
-| 3 | `llm_confirmed` | LLM claim verified by cross-reference or Wikidata | Green solid |
-| 4 | `llm` | LLM extraction, unverified | Blue dashed |
+| 3 | `llm_confirmed` | Text-extracted, confirmed by cross-reference or Wikidata | Green solid |
+| 4 | `llm` | Text-extracted from Wikipedia prose, unverified | Blue dashed |

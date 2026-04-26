@@ -1,7 +1,7 @@
 ---
-name: Helene Liebmann
+name: Hélène Liebmann
 wikipedia: https://en.wikipedia.org/wiki/Helene_Liebmann
-thumbnail: https://oboeclassics.com/button_Facebook.jpg
+thumbnail: null
 birth: '1795'
 birth_source: llm
 death: '1869'

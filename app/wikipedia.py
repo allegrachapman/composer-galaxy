@@ -197,7 +197,7 @@ _SKIP_DOMAINS = {
     "instagram.com", "ircam.fr", "bibliotheken.nl", "imslp.org",
     "gramophone.co.uk", "classicfm.com", "medici.tv", "bachtrack.com",
     "boosey.com", "bruceduffie.com", "kcstudio.com", "daifujikura.com",
-    "goldbergfestival.pl", "libraries.ucsd.edu",
+    "goldbergfestival.pl", "libraries.ucsd.edu", "oboeclassics.com",
 }
 
 _IMG_RE = re.compile(
