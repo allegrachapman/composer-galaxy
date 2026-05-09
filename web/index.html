@@ -55,6 +55,14 @@
   .edge-list { font-size: 12px; color: var(--text); margin: 6px 0 0 0; padding-left: 16px; }
   .edge-list li { margin: 2px 0; cursor: pointer; }
   .edge-list li:hover { color: var(--accent); }
+  .conf-badge { display: inline-flex; align-items: center; gap: 3px; font-size: 9px; font-weight: 600;
+    letter-spacing: .03em; padding: 1px 5px; border-radius: 3px; margin-left: 4px; vertical-align: middle; }
+  .conf-high { background: #1a3a2a; color: #4ade80; }
+  .conf-mid { background: #2a2a1a; color: #d4a843; }
+  .conf-low { background: #3a1a1a; color: #ef8888; }
+  .conf-bar { display: inline-block; width: 24px; height: 4px; border-radius: 2px; background: #333; position: relative; overflow: hidden; }
+  .conf-bar-fill { position: absolute; left: 0; top: 0; height: 100%; border-radius: 2px; }
+  .edge-prov { font-size: 10px; color: var(--muted); margin-top: 2px; padding-left: 0; }
   .llm-quote { display: none; font-size: 11px; color: #5a7a8a; font-style: italic;
     margin: 2px 0 4px 0; padding-left: 8px; border-left: 2px solid #3a7ac0; }
   .llm-quote.open { display: block; }
@@ -94,13 +102,9 @@
   <aside id="sidebar">
     <h1>Composer Galaxy</h1>
 
-    <h2>View</h2>
-    <div style="display:flex;gap:4px;margin-bottom:8px">
-      <button id="viewTeachers" style="flex:1;font-size:12px;padding:5px 0" class="view-active">Teachers</button>
-      <button id="viewMentors" style="flex:1;font-size:12px;padding:5px 0">Mentors</button>
-    </div>
+    <h2>Filters</h2>
 
-    <label>Era filter</label>
+    <label>Era</label>
     <select id="eraFilter"><option value="">All eras</option></select>
 
     <label style="display:flex;align-items:center;gap:6px;margin:8px 0">
@@ -108,20 +112,20 @@
       Women composers only
     </label>
 
-    <label>Connection depth: <span id="depthValue">1</span></label>
+    <label>Degrees of separation: <span id="depthValue">1</span></label>
     <input type="range" id="depthSlider" min="1" max="6" value="1" style="width:100%">
 
     <label>Min confidence: <span id="confValue">0%</span></label>
     <input type="range" id="confSlider" min="0" max="100" value="0" style="width:100%">
 
-    <label>Search</label>
+    <h2>Search Composer</h2>
     <div id="searchWrap">
       <input type="text" id="searchInput" placeholder="Type a composer name…"
         autocomplete="off" spellcheck="false">
       <ul id="searchResults"></ul>
     </div>
 
-    <h2>Ask</h2>
+    <h2>Ask Me Anything</h2>
     <div id="askWrap">
       <input type="text" id="askInput" placeholder="e.g. Who had the most students?"
         autocomplete="off" spellcheck="false"
@@ -151,10 +155,10 @@
 
     <h2>Legend</h2>
     <div class="legend" id="legendEras"></div>
-    <div class="legend" style="margin-top:8px" id="legendEdges">
-      <div style="color:#999">· small dots = not yet seeded (dbl-click to expand)</div>
-      <div style="color:#9a7430">― solid yellow = Teacher / Student</div>
-      <div style="color:#b478dc">┄ dashed purple = Mentor / Mentee</div>
+    <div class="legend" style="margin-top:8px">
+      <div style="font-size:11px;color:var(--muted);margin-bottom:4px;font-weight:bold">Accuracy confidence level</div>
+      <div style="display:flex;align-items:center;gap:6px;font-size:11px"><span style="display:inline-block;width:28px;height:2px;background:#e0c14a;border-radius:2px"></span> confirmed (85%+)</div>
+      <div style="display:flex;align-items:center;gap:6px;font-size:11px"><span style="display:inline-block;width:28px;height:2px;background:#468cd2;border-radius:2px"></span> single source (80%)</div>
     </div>
 
     <h2>Stats</h2>
@@ -640,9 +644,7 @@ function draw() {
     const hoveredConn = !selectedNode && hoveredNode && (s === hoveredNode || t === hoveredNode);
     const active = link.visible || link === hoveredLink || hoveredConn;
     const isMentor = link.kind === "mentor";
-    const conf = link.confidence;
-    const confAlpha = 0.3 + 0.7 * conf;
-    const confWidth = 0.4 + 1.6 * conf;
+    const confirmed = link.confidence >= 0.85;
 
     const onPath = _pathLinks.has(link);
     const onTree = _familyTreeLinks.has(link);
@@ -661,11 +663,11 @@ function draw() {
       ctx.strokeStyle = "rgba(0,220,255,0.7)";
       ctx.lineWidth = 2;
     } else if (isMentor) {
-      ctx.strokeStyle = active ? `rgba(180,120,220,${(0.6 + 0.4*confAlpha).toFixed(2)})` : `rgba(140,90,180,${(0.15 + 0.25*confAlpha).toFixed(2)})`;
-      ctx.lineWidth = active ? Math.max(1.5, confWidth * 1.2) : confWidth * 0.5;
+      ctx.strokeStyle = active ? "rgba(180,120,220,0.8)" : confirmed ? "rgba(138,141,160,0.4)" : "rgba(138,141,160,0.2)";
+      ctx.lineWidth = active ? 2 : confirmed ? 0.7 : 0.4;
     } else {
-      ctx.strokeStyle = active ? `rgba(224,193,74,${(0.5 + 0.3*confAlpha).toFixed(2)})` : `rgba(138,141,160,${(0.15 + 0.35*confAlpha).toFixed(2)})`;
-      ctx.lineWidth = active ? Math.max(1.5, confWidth * 1.2) : confWidth * 0.5;
+      ctx.strokeStyle = active ? (confirmed ? "rgba(224,193,74,0.7)" : "rgba(70,140,220,0.7)") : confirmed ? "rgba(138,141,160,0.4)" : "rgba(138,141,160,0.2)";
+      ctx.lineWidth = active ? 2 : confirmed ? 0.7 : 0.4;
     }
     ctx.stroke();
     ctx.setLineDash([]);
@@ -1269,9 +1271,8 @@ function updateStats(data) {
   const seeded = data.nodes.filter(n => !n.data.stub).length;
   const stubs = data.nodes.filter(n => n.data.stub).length;
   const teacherEdges = data.edges.filter(e => e.data.kind === "teacher").length;
-  const mentorEdges = data.edges.filter(e => e.data.kind === "mentor").length;
   document.getElementById("stats").innerHTML =
-    `${seeded} seeded · ${stubs} stubs<br>${teacherEdges} teacher · ${mentorEdges} mentor`;
+    `${seeded} composers · ${stubs} stubs<br>${teacherEdges} teacher/student relationships`;
 }
 
 function showDetail(node) {
@@ -1300,19 +1301,27 @@ function showDetail(node) {
 
   let _quoteCounter = 0;
   const _escHtml = s => (s || "").replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  const _confBadge = (conf) => {
+    const pct = Math.round(conf * 100);
+    const cls = conf >= 0.85 ? "conf-high" : "conf-mid";
+    return `<span class="conf-badge ${cls}">${pct}%</span>`;
+  };
+
   const listHtml = (arr) => {
     if (!arr.length) return '<div class="empty">—</div>';
     const html = '<ul class="edge-list">' + arr.map(e => {
       const dates = e.node.birth ? ` <span style="color:var(--muted);font-size:10px">(${e.node.birth}\u2013${e.node.death || ""})</span>` : "";
       const highlightText = e.quote || e.node.label || e.node.id;
-      let srcLabel = "";
-      if (e.url) {
-        const qid = `llmq${_quoteCounter++}`;
-        const quoteBlock = e.quote ? `\u201c${_escHtml(e.quote)}\u201d ` : "";
-        srcLabel = ` <span class="src-toggle" data-qid="${qid}" style="color:var(--wiki);font-size:10px;margin-left:4px;cursor:pointer">wiki \u25be</span>` +
-                   `<div id="${qid}" class="llm-quote">${quoteBlock}<a class="src-verify" data-url="${_escHtml(e.url)}" data-quote="${_escHtml(e.quote || highlightText)}" style="color:var(--wiki);font-size:10px;cursor:pointer">see on Wikipedia \u2197</a></div>`;
-      }
-      return `<li data-node-id="${_escHtml(e.node.id)}">${e.node.label || e.node.id}${dates}${srcLabel}</li>`;
+      const conf = e.linkObj ? e.linkObj.confidence : 0.5;
+      const origin = e.linkObj ? e.linkObj.origin : "unknown";
+      const method = e.linkObj ? e.linkObj.method : "unknown";
+      const badge = _confBadge(conf);
+      const qid = `llmq${_quoteCounter++}`;
+      const quoteBlock = e.quote ? `<div style="margin-top:4px;font-style:italic;color:#5a7a8a;font-size:11px">\u201c${_escHtml(e.quote)}\u201d</div>` : "";
+      const wikiLink = e.url ? `<div style="margin-top:4px"><a class="src-verify" data-url="${_escHtml(e.url)}" data-quote="${_escHtml(e.quote || highlightText)}" style="color:var(--wiki);font-size:10px;cursor:pointer">see on Wikipedia \u2197</a></div>` : "";
+      const detailContent = `<div class="edge-prov">${origin} \u00b7 ${method}</div>${quoteBlock}${wikiLink}`;
+      const details = `<span class="src-toggle" data-qid="${qid}" style="color:var(--muted);font-size:10px;margin-left:4px;cursor:pointer">details \u25be</span><div id="${qid}" class="llm-quote">${badge}${detailContent}</div>`;
+      return `<li data-node-id="${_escHtml(e.node.id)}">${e.node.label || e.node.id}${dates}${details}</li>`;
     }).join("") + '</ul>';
     return html;
   };
@@ -1336,7 +1345,7 @@ function showDetail(node) {
     ${node.wikipedia ? `<div class="detail-row"><a href="${node.wikipedia}" target="_blank">Wikipedia ↗</a></div>` : ""}
     <button id="familyTreeBtn" style="margin:8px 0;background:var(--accent);color:white;border:none;padding:7px 0;font-size:12px;border-radius:4px;cursor:pointer">Show Family Tree</button>
     <button id="familyTreeClearBtn" style="display:none;margin:0 0 8px;background:#555;color:white;border:none;padding:7px 0;font-size:12px;border-radius:4px;cursor:pointer">Clear Family Tree</button>
-    ${viewMode === "teachers" ? `<h2>Teachers</h2>${listHtml(teachersIn)}<h2>Students</h2>${listHtml(studentsOut)}` : `<h2>Mentors</h2>${listHtml(mentorsIn)}`}
+    <h2>Teachers</h2>${listHtml(teachersIn)}<h2>Students</h2>${listHtml(studentsOut)}
   `;
   setupDetailListeners();
 }
@@ -1366,29 +1375,7 @@ confSlider.addEventListener("input", () => {
   draw();
 });
 
-// --- View mode toggle ---
-document.getElementById("viewTeachers").addEventListener("click", () => {
-  viewMode = "teachers";
-  document.getElementById("viewTeachers").classList.add("view-active");
-  document.getElementById("viewMentors").classList.remove("view-active");
-  {
-    simulation.force("link", d3.forceLink(activeLinks()).id(d => d.id).distance(180).strength(0.04));
-    simulation.alpha(0.05).restart();
-  }
-  if (selectedNode) selectNode(selectedNode);
-  draw();
-});
-document.getElementById("viewMentors").addEventListener("click", () => {
-  viewMode = "mentors";
-  document.getElementById("viewMentors").classList.add("view-active");
-  document.getElementById("viewTeachers").classList.remove("view-active");
-  {
-    simulation.force("link", d3.forceLink(activeLinks()).id(d => d.id).distance(180).strength(0.04));
-    simulation.alpha(0.05).restart();
-  }
-  if (selectedNode) selectNode(selectedNode);
-  draw();
-});
+// View mode toggle removed — mentor view shelved, data preserved
 
 // --- Zoom buttons ---
 document.getElementById("zoomIn").addEventListener("click", () => {
@@ -1748,6 +1735,131 @@ const askInput = document.getElementById("askInput");
 const askBtn = document.getElementById("askBtn");
 const askAnswer = document.getElementById("askAnswer");
 
+function answerFromGraph(q) {
+  const ql = q.toLowerCase();
+  const teacherLinks = links.filter(l => l.kind === "teacher");
+  const nonStubNodes = nodes.filter(n => !n.stub);
+
+  // Count helpers
+  const studentCount = {};
+  const teacherCount = {};
+  teacherLinks.forEach(l => {
+    const s = typeof l.source === "object" ? l.source.id : l.source;
+    const t = typeof l.target === "object" ? l.target.id : l.target;
+    studentCount[s] = (studentCount[s] || 0) + 1;
+    teacherCount[t] = (teacherCount[t] || 0) + 1;
+  });
+
+  // "most students"
+  if (/most students/i.test(ql)) {
+    const sorted = Object.entries(studentCount).sort((a,b) => b[1]-a[1]).slice(0,10);
+    return "Composers with the most students:\n" + sorted.map(([id,c],i) =>
+      `${i+1}. ${(nodeById[id]||{}).label||id} — ${c} students`).join("\n");
+  }
+
+  // "most teachers"
+  if (/most teachers/i.test(ql)) {
+    const sorted = Object.entries(teacherCount).sort((a,b) => b[1]-a[1]).slice(0,10);
+    return "Composers with the most teachers:\n" + sorted.map(([id,c],i) =>
+      `${i+1}. ${(nodeById[id]||{}).label||id} — ${c} teachers`).join("\n");
+  }
+
+  // "most connected"
+  if (/most connected|most connections|most relationships/i.test(ql)) {
+    const connCount = {};
+    teacherLinks.forEach(l => {
+      const s = typeof l.source === "object" ? l.source.id : l.source;
+      const t = typeof l.target === "object" ? l.target.id : l.target;
+      connCount[s] = (connCount[s] || 0) + 1;
+      connCount[t] = (connCount[t] || 0) + 1;
+    });
+    const sorted = Object.entries(connCount).sort((a,b) => b[1]-a[1]).slice(0,10);
+    return "Most connected composers:\n" + sorted.map(([id,c],i) =>
+      `${i+1}. ${(nodeById[id]||{}).label||id} — ${c} connections`).join("\n");
+  }
+
+  // "how many composers" / "how many nodes" / "total"
+  if (/how many (composers|nodes|people)/i.test(ql)) {
+    return `There are ${nonStubNodes.length} composers in the graph (plus ${nodes.length - nonStubNodes.length} stub nodes referenced but not yet fully added).`;
+  }
+
+  // "how many edges" / "how many relationships" / "how many connections"
+  if (/how many (edges|relationships|connections|links)/i.test(ql)) {
+    return `There are ${teacherLinks.length} teacher/student relationships in the graph.`;
+  }
+
+  // "who taught X" / "X's teachers"
+  const taughtMatch = ql.match(/who taught (.+?)[\?]?$/i) || ql.match(/(.+?)(?:'s|s') teachers/i);
+  if (taughtMatch) {
+    const name = taughtMatch[1].trim();
+    const node = nodes.find(n => n.label.toLowerCase() === name || n.id.toLowerCase() === name);
+    if (!node) return `Couldn't find a composer named "${taughtMatch[1].trim()}" in the graph.`;
+    const teachers = teacherLinks
+      .filter(l => (typeof l.target === "object" ? l.target : nodeById[l.target]) === node)
+      .map(l => (typeof l.source === "object" ? l.source : nodeById[l.source]).label);
+    if (!teachers.length) return `No teachers found for ${node.label}.`;
+    return `${node.label}'s teachers: ${teachers.join(", ")}`;
+  }
+
+  // "who did X teach" / "X's students"
+  const studMatch = ql.match(/who did (.+?) teach/i) || ql.match(/(.+?)(?:'s|s') students/i);
+  if (studMatch) {
+    const name = studMatch[1].trim();
+    const node = nodes.find(n => n.label.toLowerCase() === name || n.id.toLowerCase() === name);
+    if (!node) return `Couldn't find a composer named "${studMatch[1].trim()}" in the graph.`;
+    const students = teacherLinks
+      .filter(l => (typeof l.source === "object" ? l.source : nodeById[l.source]) === node)
+      .map(l => (typeof l.target === "object" ? l.target : nodeById[l.target]).label);
+    if (!students.length) return `No students found for ${node.label}.`;
+    return `${node.label}'s students: ${students.join(", ")}`;
+  }
+
+  // "women composers" stats
+  if (/how many women|women composers/i.test(ql)) {
+    const women = nonStubNodes.filter(n => n.woman);
+    return `There are ${women.length} women composers in the graph out of ${nonStubNodes.length} total (${Math.round(100*women.length/nonStubNodes.length)}%).`;
+  }
+
+  // era breakdown
+  if (/era breakdown|eras|by era|which eras/i.test(ql)) {
+    const eraCounts = {};
+    nonStubNodes.forEach(n => { if (n.eraBucket) eraCounts[n.eraBucket] = (eraCounts[n.eraBucket]||0) + 1; });
+    const sorted = Object.entries(eraCounts).sort((a,b) => b[1]-a[1]);
+    return "Composers by era:\n" + sorted.map(([e,c]) => `  ${e}: ${c}`).join("\n");
+  }
+
+  // confidence stats
+  if (/confidence|accuracy|how accurate|data quality/i.test(ql)) {
+    const buckets = {"95-100%":0, "85-94%":0, "80-84%":0, "<80%":0};
+    teacherLinks.forEach(l => {
+      const c = l.confidence;
+      if (c >= 0.95) buckets["95-100%"]++;
+      else if (c >= 0.85) buckets["85-94%"]++;
+      else if (c >= 0.80) buckets["80-84%"]++;
+      else buckets["<80%"]++;
+    });
+    return "Edge confidence distribution:\n" + Object.entries(buckets).map(([k,v]) => `  ${k}: ${v} edges`).join("\n");
+  }
+
+  // oldest / earliest
+  if (/oldest|earliest|first born/i.test(ql)) {
+    const withBirth = nonStubNodes.filter(n => n.birth && /^\d+/.test(String(n.birth)));
+    withBirth.sort((a,b) => parseInt(a.birth) - parseInt(b.birth));
+    const top = withBirth.slice(0,10);
+    return "Earliest composers:\n" + top.map((n,i) => `${i+1}. ${n.label} (b. ${n.birth})`).join("\n");
+  }
+
+  // youngest / most recent
+  if (/youngest|newest|most recent|latest born/i.test(ql)) {
+    const withBirth = nonStubNodes.filter(n => n.birth && /^\d+/.test(String(n.birth)));
+    withBirth.sort((a,b) => parseInt(b.birth) - parseInt(a.birth));
+    const top = withBirth.slice(0,10);
+    return "Most recent composers:\n" + top.map((n,i) => `${i+1}. ${n.label} (b. ${n.birth})`).join("\n");
+  }
+
+  return null;
+}
+
 async function askQuestion() {
   const q = askInput.value.trim();
   if (!q) return;
@@ -1755,17 +1867,26 @@ async function askQuestion() {
   askBtn.textContent = "Thinking…";
   askAnswer.style.display = "block";
   askAnswer.textContent = "…";
+
+  const local = answerFromGraph(q);
+  if (local) {
+    askAnswer.textContent = local;
+    askBtn.disabled = false;
+    askBtn.textContent = "Ask";
+    return;
+  }
+
   try {
     const res = await fetch("/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question: q }),
     });
-    if (!res.ok) throw new Error(await res.text());
+    if (!res.ok) throw new Error(res.status === 405 ? null : await res.text());
     const data = await res.json();
     askAnswer.textContent = data.answer;
   } catch (e) {
-    askAnswer.textContent = "Error: " + e.message;
+    askAnswer.textContent = "I can answer questions like:\n• Who had the most students?\n• Who taught [name]?\n• How many women composers?\n• What's the era breakdown?\n• How accurate is the data?\n• Who are the most connected composers?";
   } finally {
     askBtn.disabled = false;
     askBtn.textContent = "Ask";
