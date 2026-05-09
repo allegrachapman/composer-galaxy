@@ -25,6 +25,9 @@ teachers:
 students:
 - name: Helmut Lachenmann
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Don Banks
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q

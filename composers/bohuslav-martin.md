@@ -14,14 +14,23 @@ era_source: llm
 teachers:
 - name: Josef Suk (composer)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Charles Munch (conductor)
   source: wiki
 - name: Josef Suk
   source: llm
   quote: briefly studied under Czech composer and violinist Josef Suk
+  corroborated_by:
+  - llm
+  - wiki
 - name: Albert Roussel
   source: llm
   quote: began a series of informal lessons with him
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Searles Castle (Massachusetts)
   source: wiki
@@ -29,6 +38,9 @@ students:
   source: wiki
 - name: Alan Hovhaness
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Czech Philharmonic Orchestra
   source: wiki
 - name: Vítězslava Kaprálová
@@ -54,6 +66,9 @@ students:
   source: llm
   quote: Martinů's notable students include Burt Bacharach, Alan Hovhaness, Vítězslava
     Kaprálová, Louis Lane, Jan Novák, H. Owen Reed, Howard Shanet and Chou Wen-chung
+  corroborated_by:
+  - llm
+  - wiki
 mentors: []
 ---
 

@@ -14,11 +14,17 @@ era_source: llm
 teachers:
 - name: Nadia Boulanger
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Maurice Ravel
   source: wiki
 students:
 - name: Richard Rodney Bennett
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: David Bedford
   source: wiki
 - name: Adam Pounds
@@ -36,6 +42,9 @@ students:
 - name: Brian Ferneyhough
   source: llm
   quote: John Tavener and Brian Ferneyhough
+  corroborated_by:
+  - llm
+  - wiki
 - name: Christopher Brown
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B

@@ -21,9 +21,15 @@ teachers:
 - name: Roger Sessions
   source: llm
   quote: he also took lessons from Roger Sessions and Aaron Copland at Tanglewood
+  corroborated_by:
+  - llm
+  - wiki
 - name: Aaron Copland
   source: llm
   quote: he also took lessons from Roger Sessions and Aaron Copland at Tanglewood
+  corroborated_by:
+  - llm
+  - wiki
 - name: Wladimir Vogel
   source: llm
   quote: under the tutelage of Swiss composer Wladimir Vogel
@@ -40,9 +46,15 @@ students:
 - name: Magnus Lindberg
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Esa-Pekka Salonen
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 mentors: []
 ---
 

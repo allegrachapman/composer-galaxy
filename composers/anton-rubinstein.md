@@ -29,6 +29,9 @@ students:
 - name: Pyotr Ilyich Tchaikovsky
   source: llm
   quote: most notably as the composition teacher of Tchaikovsky
+  corroborated_by:
+  - llm
+  - wiki
 - name: Josef Hofmann
   source: llm
   quote: taught his only private piano student, Josef Hofmann

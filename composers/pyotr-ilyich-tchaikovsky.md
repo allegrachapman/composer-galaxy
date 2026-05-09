@@ -15,6 +15,9 @@ teachers:
 - name: Anton Rubinstein
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Nikolai Zaremba
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
@@ -28,6 +31,9 @@ students:
 - name: Sergei Taneyev
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+  corroborated_by:
+  - llm
+  - wiki
 - name: Alexander Siloti
   source: llm
   quote: harmony under Pyotr Ilyich Tchaikovsky

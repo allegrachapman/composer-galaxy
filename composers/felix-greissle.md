@@ -18,6 +18,9 @@ teachers:
 - name: Arnold Schoenberg
   source: llm
   quote: Arnold Schoenberg with whom he had studied
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

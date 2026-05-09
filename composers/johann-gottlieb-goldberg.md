@@ -19,6 +19,9 @@ teachers:
 - name: Johann Sebastian Bach
   source: llm
   quote: Goldberg was reported to have studied with both J. S. Bach
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Gottlieb Friedrich Müller
   source: wiki

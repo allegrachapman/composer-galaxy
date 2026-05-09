@@ -15,6 +15,9 @@ teachers:
 - name: Muzio Clementi
   source: llm
   quote: From 1782 to 1784, he studied piano under Muzio Clementi
+  corroborated_by:
+  - llm
+  - wiki
 - name: Hélène de Montgeroult
   source: llm
   quote: She also gave piano lessons to the young Johann Baptist Cramer at this time.

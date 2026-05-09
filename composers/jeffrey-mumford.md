@@ -15,6 +15,9 @@ teachers:
 - name: Elliott Carter
   source: llm
   quote: He was a student of Elliott Carter and Lawrence Moss.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Lawrence Moss
   source: llm
   quote: He was a student of Elliott Carter and Lawrence Moss.

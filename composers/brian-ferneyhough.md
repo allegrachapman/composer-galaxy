@@ -14,11 +14,17 @@ era_source: llm
 teachers:
 - name: Lennox Berkeley
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ton de Leeuw
   source: wiki
 - name: Klaus Huber
   source: llm
   quote: later with Klaus Huber in Basel
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Toshio Hosokawa
   source: wiki
@@ -93,6 +99,9 @@ students:
 - name: Younghi Pagh-Paan
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 - name: Bert Van Herck
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F

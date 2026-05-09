@@ -15,6 +15,9 @@ teachers:
 - name: Karlheinz Stockhausen
   source: llm
   quote: studied composition in Cologne with Karlheinz Stockhausen
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gottfried Michael Koenig
   source: llm
   quote: studied composition in Cologne with Karlheinz Stockhausen and Gottfried Michael

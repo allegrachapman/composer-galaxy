@@ -14,8 +14,14 @@ era_source: llm
 teachers:
 - name: Dominick Argento
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Paul Fetler
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Eric Stokes
   source: llm
   quote: she studied composition with Dominick Argento, Paul Fetler and Eric Stokes

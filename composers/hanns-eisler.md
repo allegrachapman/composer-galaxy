@@ -15,6 +15,9 @@ teachers:
 - name: Arnold Schoenberg
   source: wiki
   quote: he studied from 1919 to 1923 under Arnold Schoenberg.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Karl Weigl
   source: llm
   quote: Hanns Eisler

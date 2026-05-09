@@ -15,6 +15,9 @@ teachers:
 - name: Ludwig Berger
   source: llm
   quote: studied in Berlin with Ludwig Berger
+  corroborated_by:
+  - llm
+  - wiki
 - name: Bernhard Klein
   source: llm
   quote: studied in Berlin with Ludwig Berger, Bernhard Klein
@@ -29,6 +32,9 @@ students:
 - name: Robert Schumann
   source: llm
   quote: Dorn taught counterpoint to Clara Schumann and Robert Schumann
+  corroborated_by:
+  - llm
+  - wiki
 - name: Philipp Scharwenka
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F

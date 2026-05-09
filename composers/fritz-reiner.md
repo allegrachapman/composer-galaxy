@@ -23,6 +23,9 @@ teachers:
 - name: Béla Bartók
   source: llm
   quote: During his last two years there, his piano teacher was the young Béla Bartók
+  corroborated_by:
+  - llm
+  - wiki
 - name: Leó Weiner
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
@@ -31,6 +34,9 @@ students:
   source: wiki
 - name: Lukas Foss
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Nino Rota
   source: llm
   quote: Some of his pupils included Nino Rota

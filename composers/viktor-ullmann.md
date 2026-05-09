@@ -17,6 +17,9 @@ teachers:
 - name: Arnold Schoenberg
   source: llm
   quote: At the beginning of 1918 he was accepted in Schoenberg's composition seminar
+  corroborated_by:
+  - llm
+  - wiki
 - name: Alexander von Zemlinsky
   source: llm
   quote: His mentor was now Alexander von Zemlinsky, under whose direction he served

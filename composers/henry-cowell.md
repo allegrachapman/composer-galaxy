@@ -16,14 +16,23 @@ teachers:
   source: llm
   quote: studying composition with renowned American musicologist and composer Charles
     Seeger
+  corroborated_by:
+  - llm
+  - wiki
 - name: Percy Goetschius
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 students:
 - name: George Gershwin
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Lou Harrison
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: John Cage
   source: llm
   quote: his writings and music serving as a great influence to similar artists at

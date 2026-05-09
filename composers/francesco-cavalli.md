@@ -16,6 +16,9 @@ teachers:
   source: wiki
   quote: He succeeded his teacher Claudio Monteverdi as the dominant and leading opera
     composer
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

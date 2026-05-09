@@ -26,6 +26,9 @@ teachers:
 - name: César Franck
   source: llm
   quote: He studied harmony privately with Franck
+  corroborated_by:
+  - llm
+  - wiki
 - name: Charles-Marie Widor
   source: llm
   quote: Vierne became his assistant in the organ class
@@ -36,6 +39,9 @@ teachers:
 students:
 - name: Nadia Boulanger
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Maurice Duruflé
   source: wiki
 - name: Joseph Bonnet

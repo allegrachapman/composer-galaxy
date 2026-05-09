@@ -15,6 +15,9 @@ teachers:
 - name: Luigi Cherubini
   source: llm
   quote: A student of Luigi Cherubini
+  corroborated_by:
+  - llm
+  - wiki
 - name: Étienne Méhul
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

@@ -15,16 +15,25 @@ teachers:
 - name: Luzzasco Luzzaschi
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - manual
+  - wiki
 students:
 - name: Johann Jakob Froberger
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - manual
+  - wiki
 - name: Johann Caspar Kerll
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 - name: Michelangelo Rossi
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - manual
+  - wiki
 mentors: []
 ---
 

@@ -18,9 +18,15 @@ teachers:
 - name: Vincent Persichetti
   source: llm
   quote: at The Juilliard School with Vincent Persichetti and Bernard Rands
+  corroborated_by:
+  - llm
+  - wiki
 - name: Bernard Rands
   source: llm
   quote: at The Juilliard School with Vincent Persichetti and Bernard Rands
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

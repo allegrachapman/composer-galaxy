@@ -25,6 +25,9 @@ teachers:
   source: llm
   quote: studying with Charles-Marie Widor, Lucien Capet, André Gédalge and Vincent
     d'Indy
+  corroborated_by:
+  - llm
+  - wiki
 - name: André Gédalge
   source: llm
   quote: studying with Charles-Marie Widor, Lucien Capet, André Gédalge and Vincent

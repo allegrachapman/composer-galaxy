@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Giovanni Battista Costanzi
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Abbé Vanucci
   source: llm
   quote: then continued his studies at age nine with Abbé Vanucci, music director

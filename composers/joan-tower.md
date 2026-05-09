@@ -14,8 +14,14 @@ era_source: llm
 teachers:
 - name: Otto Luening
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Jack Beeson
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Vladimir Ussachevsky
   source: llm
   quote: she studied with Otto Luening, Jack Beeson, and Vladimir Ussachevsky

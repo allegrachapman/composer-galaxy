@@ -16,8 +16,14 @@ teachers:
   source: wiki
 - name: Sándor Veress
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ferenc Farkas
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Magda Kardos
   source: llm
   quote: From the age of 14, he took piano lessons from Magda Kardos
@@ -45,6 +51,9 @@ teachers:
 students:
 - name: Zoltán Kocsis
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: András Schiff
   source: llm
   quote: During this time his students included Zoltán Kocsis and András Schiff

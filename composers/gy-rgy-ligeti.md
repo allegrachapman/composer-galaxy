@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Ferenc Farkas
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Zoltán Kodály
   source: wiki
 - name: Pál Kadosa
@@ -30,6 +33,9 @@ students:
 - name: Michael Daugherty
   source: llm
   quote: His students included Hans Abrahamsen, Unsuk Chin and Michael Daugherty
+  corroborated_by:
+  - llm
+  - wiki
 - name: Denys Bouliane
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

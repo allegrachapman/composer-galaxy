@@ -14,11 +14,20 @@ era_source: llm
 teachers:
 - name: Darius Milhaud
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Nadia Boulanger
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Vincent Persichetti
   source: llm
   quote: His composition teachers included Vincent Persichetti and William Bergsma.
+  corroborated_by:
+  - llm
+  - wiki
 - name: William Bergsma
   source: llm
   quote: His composition teachers included Vincent Persichetti and William Bergsma.

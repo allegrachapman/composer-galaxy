@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Michael Haydn
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Giovanni Valesi
   source: wiki
 - name: Franz Anton von Weber

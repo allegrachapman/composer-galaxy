@@ -30,6 +30,9 @@ students:
 - name: Gabriel Fauré
   source: llm
   quote: students that include several eminent French musicians such as Gabriel Fauré
+  corroborated_by:
+  - llm
+  - wiki
 - name: Eugène Gigout
   source: llm
   quote: Gabriel Fauré, Eugène Gigout, Albert Périlhou and André Messager

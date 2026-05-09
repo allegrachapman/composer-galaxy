@@ -19,9 +19,15 @@ teachers:
   source: llm
   quote: instructed by Bernhard Romberg, who also belonged to the Bonn Hofkapelle
     as a cellist
+  corroborated_by:
+  - llm
+  - wiki
 - name: Johann Georg Albrechtsberger
   source: llm
   quote: sending him to Albrechtsberger for harmony and composition
+  corroborated_by:
+  - llm
+  - wiki
 - name: Andrea Luchesi
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

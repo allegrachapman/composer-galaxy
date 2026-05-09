@@ -15,6 +15,9 @@ teachers:
 - name: Chou Wen-chung
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - infobox
+  - wiki
 - name: Mario Davidovsky
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F

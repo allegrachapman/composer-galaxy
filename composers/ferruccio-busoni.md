@@ -18,26 +18,50 @@ teachers:
 - name: Carl Reinecke
   source: llm
   quote: recommended he undertake study in Leipzig with Carl Reinecke
+  corroborated_by:
+  - llm
+  - wiki
 - name: Salomon Jadassohn
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 students:
 - name: Egon Petri
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Kurt Weill
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Maud Allan
   source: wiki
 - name: Ignaz Friedman
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Leo Sirota
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Leo Kestenberg
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Wladimir Vogel
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Philipp Jarnach
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gunnar Johansen
   source: wiki
 - name: child prodigy
@@ -45,6 +69,9 @@ students:
 - name: Jean Sibelius
   source: llm
   quote: the composer Jean Sibelius, with whom he struck up a continuing friendship
+  corroborated_by:
+  - llm
+  - wiki
 - name: Louis Gruenberg
   source: llm
   quote: amongst his more rewarding pupils were Ignaz Friedman, Leo Sirota, Louis
@@ -53,6 +80,9 @@ students:
   source: llm
   quote: amongst his more rewarding pupils were Ignaz Friedman, Leo Sirota, Louis
     Gruenberg, Józef Turczyński
+  corroborated_by:
+  - llm
+  - wiki
 - name: Louis Closson
   source: llm
   quote: amongst his more rewarding pupils were Ignaz Friedman, Leo Sirota, Louis

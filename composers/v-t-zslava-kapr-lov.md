@@ -32,6 +32,9 @@ teachers:
 - name: Nadia Boulanger
   source: llm
   quote: according to some unverified accounts, with Nadia Boulanger (1940) in Paris
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

@@ -22,6 +22,9 @@ teachers:
   source: llm
   quote: studied composition and electronic music with Jack Beeson, Vladimir Ussachevsky,
     and Mario Davidovsky
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

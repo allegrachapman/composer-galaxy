@@ -17,6 +17,9 @@ teachers:
 - name: Eugène Ysaÿe
   source: llm
   quote: his teachers included the celebrated Belgian violinist Eugène Ysaÿe
+  corroborated_by:
+  - llm
+  - wiki
 - name: Émile Jaques-Dalcroze
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
@@ -26,8 +29,14 @@ teachers:
 students:
 - name: George Antheil
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Frederick Jacobi
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Quincy Porter
   source: llm
   quote: his pupils included George Antheil, Frederick Jacobi, Quincy Porter, Bernard
@@ -36,6 +45,9 @@ students:
   source: llm
   quote: his pupils included George Antheil, Frederick Jacobi, Quincy Porter, Bernard
     Rogers, and Roger Sessions
+  corroborated_by:
+  - llm
+  - wiki
 - name: Roger Sessions
   source: llm
   quote: his pupils included George Antheil, Frederick Jacobi, Quincy Porter, Bernard

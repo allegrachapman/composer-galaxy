@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Franco Donatoni
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Niccolò Castiglioni
   source: wiki
 - name: Jorma Panula
@@ -22,6 +25,9 @@ teachers:
 - name: Einojuhani Rautavaara
   source: llm
   quote: Niccolò Castiglioni, and Einojuhani Rautavaara.
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

@@ -40,9 +40,15 @@ students:
 - name: André Gedalge
   source: llm
   quote: André Gedalge and Erik Satie are also counted among his students.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Erik Satie
   source: llm
   quote: Erik Satie are also counted among his students.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Henri Büsser
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J

@@ -18,6 +18,9 @@ teachers:
 - name: Béla Bartók
   source: llm
   quote: with whom he studied piano
+  corroborated_by:
+  - llm
+  - wiki
 - name: László Lajtha
   source: llm
   quote: as an assistant to László Lajtha he did field research
@@ -28,6 +31,9 @@ students:
 - name: György Kurtág
   source: llm
   quote: Among the composers who studied under him are György Kurtág
+  corroborated_by:
+  - llm
+  - wiki
 - name: Heinz Holliger
   source: llm
   quote: Among the composers who studied under him are Heinz Holliger

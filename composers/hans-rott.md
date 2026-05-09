@@ -24,6 +24,9 @@ teachers:
 - name: Franz Krenn
   source: llm
   quote: counterpoint and composition—like Mahler—with Franz Krenn.
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Franz Krenn
   source: wiki

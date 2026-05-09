@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Carl Reinecke
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Antoni Sygietyński
   source: llm
   quote: studied piano with the guidance of Antoni Sygietyński

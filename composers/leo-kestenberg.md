@@ -28,6 +28,9 @@ teachers:
 - name: Ferruccio Busoni
   source: llm
   quote: attended a master class by Busoni in Weimar in 1900
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Menahem Pressler
   source: llm

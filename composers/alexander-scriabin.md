@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Nikolai Zverev
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Anton Arensky
   source: llm
   quote: studied at the Moscow Conservatory under Anton Arensky, Sergei Taneyev, and
@@ -22,6 +25,9 @@ teachers:
   source: llm
   quote: studied at the Moscow Conservatory under Anton Arensky, Sergei Taneyev, and
     Vasily Safonov.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Vasily Safonov
   source: llm
   quote: studied at the Moscow Conservatory under Anton Arensky, Sergei Taneyev, and

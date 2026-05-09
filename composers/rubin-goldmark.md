@@ -29,6 +29,9 @@ students:
 - name: Aaron Copland
   source: llm
   quote: Goldmark taught fifteen-year-old Aaron Copland.
+  corroborated_by:
+  - llm
+  - wiki
 - name: George Gershwin
   source: llm
   quote: teacher of other important composers, including Aaron Copland and George

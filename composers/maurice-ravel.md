@@ -24,6 +24,9 @@ teachers:
 - name: André Gedalge
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+  corroborated_by:
+  - llm
+  - wiki
 - name: Émile Pessard
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
@@ -40,6 +43,9 @@ students:
 - name: Alexis Roland-Manuel
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Manuel Rosenthal
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S

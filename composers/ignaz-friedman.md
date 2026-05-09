@@ -20,6 +20,9 @@ teachers:
 - name: Ferruccio Busoni
   source: llm
   quote: participated in Ferruccio Busoni's master classes
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Joseph Gurt
   source: llm

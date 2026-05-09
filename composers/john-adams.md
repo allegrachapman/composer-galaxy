@@ -20,6 +20,9 @@ teachers:
   source: llm
   quote: studying composition with Leon Kirchner, Roger Sessions, Earl Kim, Harold
     Shapero, and David Del Tredici
+  corroborated_by:
+  - llm
+  - wiki
 - name: David Del Tredici
   source: llm
   quote: studying composition with Leon Kirchner, Roger Sessions, Earl Kim, Harold
@@ -28,10 +31,16 @@ teachers:
   source: llm
   quote: studying composition with Leon Kirchner, Roger Sessions, Earl Kim, Harold
     Shapero, and David Del Tredici
+  corroborated_by:
+  - llm
+  - wiki
 - name: Harold Shapero
   source: llm
   quote: studying composition with Leon Kirchner, Roger Sessions, Earl Kim, Harold
     Shapero, and David Del Tredici
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Kim Jin-hi
   source: llm

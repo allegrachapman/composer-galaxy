@@ -16,6 +16,9 @@ teachers:
   source: llm
   quote: I hired him to become my assistant in the late 50s and he worked with me
     for over three years.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Howard Ferguson (composer)
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
@@ -25,6 +28,9 @@ teachers:
 - name: Goffredo Petrassi
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+  corroborated_by:
+  - llm
+  - wiki
 - name: Percy Waller
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z

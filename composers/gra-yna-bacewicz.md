@@ -25,6 +25,9 @@ teachers:
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
   quote: attended composition classes led by Nadia Boulanger
+  corroborated_by:
+  - llm
+  - wiki
 - name: Józef Jarzębski
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J

@@ -27,6 +27,9 @@ students:
 - name: Wilhelm Friedemann Bach
   source: llm
   quote: he taught the violin to J.S. Bach's son Wilhelm Friedemann
+  corroborated_by:
+  - llm
+  - wiki
 - name: Balthasar Christian Bertram
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J

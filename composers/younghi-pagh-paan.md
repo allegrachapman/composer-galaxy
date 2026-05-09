@@ -14,9 +14,15 @@ era_source: llm
 teachers:
 - name: Klaus Huber
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Brian Ferneyhough
   source: llm
   quote: analysis with Brian Ferneyhough
+  corroborated_by:
+  - llm
+  - wiki
 - name: Peter Förtig
   source: llm
   quote: music theory with Peter Förtig

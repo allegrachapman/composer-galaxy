@@ -22,6 +22,9 @@ students:
 - name: Felix Mendelssohn
   source: llm
   quote: Felix Mendelssohn was perhaps Zelter's favorite pupil
+  corroborated_by:
+  - llm
+  - wiki
 - name: Fanny Mendelssohn
   source: llm
   quote: Amongst Zelter's pupils (at different times) were Felix Mendelssohn, Fanny

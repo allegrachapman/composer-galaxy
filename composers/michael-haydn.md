@@ -15,10 +15,16 @@ teachers:
 - name: Joseph Haydn
   source: llm
   quote: both brothers were turned over to him to be trained.
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Carl Maria von Weber
   source: llm
   quote: In Salzburg Haydn taught young Carl Maria von Weber
+  corroborated_by:
+  - llm
+  - wiki
 - name: Anton Diabelli
   source: llm
   quote: In Salzburg Haydn taught young Carl Maria von Weber and Anton Diabelli.

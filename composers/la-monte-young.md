@@ -14,6 +14,9 @@ era_source: null
 teachers:
 - name: Leonard Stein (musicologist)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Andrew Imbrie
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
@@ -23,6 +26,9 @@ teachers:
 - name: Pran Nath (musician)
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+  corroborated_by:
+  - llm
+  - wiki
 - name: Seymour Shifrin
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S

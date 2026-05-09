@@ -16,12 +16,18 @@ teachers:
   source: wiki
 - name: Ernest Bloch
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Percy Goetschius
   source: llm
   quote: studied with... Percy Goetschius
 - name: Nadia Boulanger
   source: llm
   quote: studied with... Percy Goetschius, and Nadia Boulanger
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Stephen Albert
   source: wiki
@@ -51,6 +57,9 @@ students:
 - name: Ulysses Kay
   source: llm
   quote: His pupils included... Ulysses Kay
+  corroborated_by:
+  - llm
+  - wiki
 - name: Louis Mennini
   source: llm
   quote: His pupils included... Louis Mennini

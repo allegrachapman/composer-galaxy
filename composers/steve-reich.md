@@ -18,14 +18,23 @@ teachers:
   source: wiki
 - name: Luciano Berio
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Darius Milhaud
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: William Bergsma
   source: llm
   quote: enrolled at Juilliard to work with William Bergsma and Vincent Persichetti
 - name: Vincent Persichetti
   source: llm
   quote: enrolled at Juilliard to work with William Bergsma and Vincent Persichetti
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gideon Alorwoyie
   source: llm
   quote: study polyrhythmic music for five weeks with the Ewe master drummer Gideon

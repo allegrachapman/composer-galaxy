@@ -27,8 +27,14 @@ teachers:
 students:
 - name: Philip Glass
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Steve Reich
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Einojuhani Rautavaara
   source: wiki
 - name: Leonardo Balada
@@ -69,6 +75,9 @@ students:
 - name: Hall Overton
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+  corroborated_by:
+  - llm
+  - wiki
 - name: Thomas Pasatieri
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
@@ -78,6 +87,9 @@ students:
 - name: Elena Ruehr
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+  corroborated_by:
+  - llm
+  - wiki
 - name: Michael Jeffrey Shapiro
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q

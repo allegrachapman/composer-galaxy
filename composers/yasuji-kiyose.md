@@ -31,6 +31,9 @@ students:
   source: llm
   quote: took on Hiroyoshi Suzuki and Tōru Takemitsu for a brief period as pupils
     in composition
+  corroborated_by:
+  - llm
+  - wiki
 - name: Toru Takemitsu
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

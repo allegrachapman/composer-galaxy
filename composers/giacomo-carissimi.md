@@ -16,9 +16,15 @@ students:
 - name: Johann Caspar Kerll
   source: llm
   quote: his pupils, like Kerll in Germany and Charpentier in France
+  corroborated_by:
+  - llm
+  - manual
 - name: Marc-Antoine Charpentier
   source: llm
   quote: his pupils, like Kerll in Germany and Charpentier in France
+  corroborated_by:
+  - llm
+  - wiki
 - name: Vincenzo Albrici
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F

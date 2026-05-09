@@ -40,9 +40,15 @@ students:
 - name: Henryk Wieniawski
   source: llm
   quote: František Ondříček, Léon Reynier, Henryk Wieniawski
+  corroborated_by:
+  - llm
+  - wiki
 - name: Charles Martin Loeffler
   source: llm
   quote: and Charles Martin Loeffler
+  corroborated_by:
+  - llm
+  - wiki
 - name: Alfred De Sève
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

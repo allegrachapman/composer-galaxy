@@ -16,11 +16,17 @@ teachers:
   source: wiki
 - name: Klaus Huber
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Brian Ferneyhough
   source: wiki
 - name: Isang Yun
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

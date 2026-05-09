@@ -15,9 +15,15 @@ teachers:
 - name: Béla Bartók
   source: llm
   quote: studied at the Liszt Academy in Budapest under Béla Bartók
+  corroborated_by:
+  - llm
+  - wiki
 - name: Zoltán Kodály
   source: llm
   quote: studied at the Liszt Academy in Budapest under Béla Bartók and Zoltán Kodály
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Hélène Grimaud
   source: wiki

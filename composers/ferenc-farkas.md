@@ -26,10 +26,16 @@ students:
   source: llm
   quote: 'Among his students were: György Kurtág, György Ligeti, László Kalmár, and
     Miklós Kocsár'
+  corroborated_by:
+  - llm
+  - wiki
 - name: György Ligeti
   source: llm
   quote: 'Among his students were: György Kurtág, György Ligeti, László Kalmár, and
     Miklós Kocsár'
+  corroborated_by:
+  - llm
+  - wiki
 - name: László Kalmár
   source: llm
   quote: 'Among his students were: György Kurtág, György Ligeti, László Kalmár, and

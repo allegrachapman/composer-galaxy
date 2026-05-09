@@ -21,12 +21,18 @@ teachers:
 - name: Antonín Dvořák
   source: llm
   quote: attended Antonín Dvořák's masterclasses in composition
+  corroborated_by:
+  - llm
+  - wiki
 - name: Karel Stecker
   source: llm
   quote: Novák continued his studies with the ultra-conservative Karel Stecker
 students:
 - name: Alois Hába
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Iša Krejčí
   source: wiki
 - name: Vítězslava Kaprálová

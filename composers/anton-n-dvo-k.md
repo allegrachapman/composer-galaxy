@@ -42,6 +42,9 @@ students:
 - name: Josef Suk
   source: llm
   quote: married Dvorak's student, the composer Josef Suk
+  corroborated_by:
+  - llm
+  - wiki
 - name: Will Marion Cook
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
@@ -63,6 +66,9 @@ students:
 - name: Vítězslav Novák
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 - name: Harry Rowe Shelley
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F

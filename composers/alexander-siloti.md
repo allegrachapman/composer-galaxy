@@ -19,6 +19,9 @@ teachers:
 - name: Nikolai Zverev
   source: llm
   quote: studied piano at the Moscow Conservatory with Nikolai Zverev
+  corroborated_by:
+  - llm
+  - wiki
 - name: Nikolai Rubinstein
   source: llm
   quote: from 1875 under Nikolai Rubinstein

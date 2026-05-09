@@ -15,12 +15,21 @@ teachers:
 - name: Lukas Foss
   source: llm
   quote: studying with Lukas Foss
+  corroborated_by:
+  - llm
+  - wiki
 - name: Nadia Boulanger
   source: llm
   quote: Trained in composition by Nadia Boulanger in Paris
+  corroborated_by:
+  - llm
+  - wiki
 - name: Luciano Berio
   source: llm
   quote: and Luciano Berio at the Juilliard School
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

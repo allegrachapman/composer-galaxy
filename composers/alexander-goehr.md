@@ -35,6 +35,9 @@ students:
 - name: Thomas Adès
   source: llm
   quote: His students included... such as Thomas Adès
+  corroborated_by:
+  - llm
+  - wiki
 - name: Julian Anderson
   source: llm
   quote: His students included... such as Thomas Adès, Julian Anderson
@@ -45,6 +48,9 @@ students:
   source: llm
   quote: His students included... such as Thomas Adès, Julian Anderson, George Benjamin
     and Robin Holloway.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Chen Yi
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J

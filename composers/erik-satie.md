@@ -28,12 +28,18 @@ teachers:
 - name: Albert Roussel
   source: llm
   quote: Satie studied counterpoint with Albert Roussel
+  corroborated_by:
+  - llm
+  - wiki
 - name: Vincent d'Indy
   source: llm
   quote: and composition with d'Indy
 - name: Ernest Guiraud
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+  corroborated_by:
+  - llm
+  - wiki
 - name: Antoine Taudou
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z

@@ -18,6 +18,9 @@ teachers:
 - name: Niccolò Antonio Zingarelli
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+  corroborated_by:
+  - manual
+  - wiki
 - name: Giovanni Furno
   source: wiki
 students:

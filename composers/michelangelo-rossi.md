@@ -15,6 +15,9 @@ teachers:
 - name: Girolamo Frescobaldi
   source: manual
   quote: Michelangelo Rossi, also a Frescobaldi pupil
+  corroborated_by:
+  - manual
+  - wiki
 students: []
 mentors: []
 ---

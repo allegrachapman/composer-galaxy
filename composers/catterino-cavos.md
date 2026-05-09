@@ -14,9 +14,15 @@ era_source: llm
 teachers:
 - name: Francesco Bianchi (composer)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Francesco Bianchi
   source: llm
   quote: Cavos studied under Francesco Bianchi
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Osip Petrov
   source: llm

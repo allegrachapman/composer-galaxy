@@ -45,6 +45,9 @@ students:
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
   quote: Oskar Back, Ernest Bloch, Jascha Brodsky
+  corroborated_by:
+  - llm
+  - wiki
 - name: Mathieu Crickboom
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z

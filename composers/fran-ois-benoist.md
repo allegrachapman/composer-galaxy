@@ -30,6 +30,9 @@ students:
   source: llm
   quote: His students included... Georges Bizet, Louis Lefébure-Wely, Léo Delibes,
     and Adolphe Adam.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Louis Lefébure-Wely
   source: llm
   quote: His students included... Georges Bizet, Louis Lefébure-Wely, Léo Delibes,

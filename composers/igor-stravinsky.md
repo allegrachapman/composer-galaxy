@@ -15,9 +15,15 @@ teachers:
 - name: Nikolai Rimsky-Korsakov
   source: llm
   quote: studied music under him until the latter's death in 1908
+  corroborated_by:
+  - llm
+  - wiki
 - name: Leokadiya Kashperova
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 - name: Isidor Philipp
   source: llm
   quote: Philipp taught piano to Igor Stravinsky

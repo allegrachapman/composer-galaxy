@@ -16,6 +16,9 @@ teachers:
   source: llm
   quote: studied composition at the Brno Conservatory from 1919 to 1921 under Jan
     Kunc
+  corroborated_by:
+  - llm
+  - wiki
 - name: Vilém Petrželka
   source: llm
   quote: studied composition at the Brno Conservatory from 1919 to 1921 under Jan
@@ -23,6 +26,9 @@ teachers:
 - name: Leoš Janáček
   source: llm
   quote: Janáček was by far Haas's most influential teacher
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

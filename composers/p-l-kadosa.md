@@ -20,6 +20,9 @@ teachers:
   source: llm
   quote: studied at the national Hungarian Royal Academy of Music under Arnold Székely
     and Zoltán Kodály
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: György Ligeti
   source: llm
@@ -49,6 +52,9 @@ students:
   source: llm
   quote: His students included such leading musicians as... András Schiff, Zoltán
     Kocsis, Dezső Ránki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Dezső Ránki
   source: llm
   quote: His students included such leading musicians as... András Schiff, Zoltán

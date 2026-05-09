@@ -14,8 +14,14 @@ era_source: llm
 teachers:
 - name: Engelbert Humperdinck (composer)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Philipp Jarnach
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Heinz Unger
   source: wiki
 - name: Albert Bing
@@ -24,9 +30,15 @@ teachers:
 - name: Engelbert Humperdinck
   source: llm
   quote: studied composition with Engelbert Humperdinck
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ferruccio Busoni
   source: llm
   quote: Busoni, then approaching the end of his life, was a major influence on Weill
+  corroborated_by:
+  - llm
+  - wiki
 - name: Friedrich Koch
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

@@ -15,6 +15,9 @@ teachers:
 - name: Johann Sebastian Bach
   source: llm
   quote: he was taught music by his father
+  corroborated_by:
+  - llm
+  - wiki
 - name: Johann Elias Bach
   source: llm
   quote: also tutored by his distant cousin Johann Elias Bach

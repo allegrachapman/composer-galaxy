@@ -19,6 +19,9 @@ teachers:
 - name: Einojuhani Rautavaara
   source: llm
   quote: studied at the Sibelius Academy under Einojuhani Rautavaara
+  corroborated_by:
+  - llm
+  - wiki
 - name: Paavo Heininen
   source: llm
   quote: studied at the Sibelius Academy under Einojuhani Rautavaara and Paavo Heininen

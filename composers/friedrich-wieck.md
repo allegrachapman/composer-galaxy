@@ -20,6 +20,9 @@ students:
   source: wiki
 - name: Hans von Bülow
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Clara Schumann
   source: llm
   quote: teacher of his daughter, Clara, a child prodigy

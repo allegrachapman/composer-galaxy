@@ -23,6 +23,9 @@ students:
   source: llm
   quote: joined in 1616 at the age of 14; he remained connected with San Marco throughout
     his life, and developed a close association with Monteverdi
+  corroborated_by:
+  - llm
+  - wiki
 - name: Giovanni Rovetta
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

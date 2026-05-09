@@ -14,14 +14,23 @@ era_source: null
 teachers:
 - name: Ernest Guiraud
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: George Enescu
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Angèle Ravizé
   source: wiki
 - name: Maurice Ravel
   source: llm
   quote: Maurice Ravel and George Enescu, who studied under Gedalge
+  corroborated_by:
+  - llm
+  - wiki
 - name: Charles Koechlin
   source: llm
   quote: Other pupils that dedicated works include Charles Koechlin
@@ -67,6 +76,9 @@ students:
 - name: Darius Milhaud
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+  corroborated_by:
+  - llm
+  - wiki
 - name: Max d'Ollone
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
@@ -79,6 +91,9 @@ students:
 - name: Jean Roger-Ducasse
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+  corroborated_by:
+  - llm
+  - wiki
 - name: Florent Schmitt
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J

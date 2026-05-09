@@ -15,6 +15,9 @@ teachers:
 - name: Vítězslav Novák
   source: llm
   quote: became a pupil of neoromantic composer Vítězslav Novák
+  corroborated_by:
+  - llm
+  - wiki
 - name: Franz Schreker
   source: llm
   quote: he almost immediately became a student of Franz Schreker

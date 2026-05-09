@@ -28,6 +28,9 @@ students:
 - name: Richard Rodney Bennett
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: John Carewe
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
@@ -73,6 +76,9 @@ students:
 - name: Bernard Rands
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Robert Rowe
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B

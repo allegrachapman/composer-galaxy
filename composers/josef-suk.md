@@ -18,6 +18,9 @@ teachers:
 - name: Antonín Dvořák
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Pavel Bořkovec
   source: wiki
@@ -28,6 +31,9 @@ students:
 - name: Bohuslav Martinů
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Klement Slavický
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S

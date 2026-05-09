@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Charles Herbert Kitson
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ralph Vaughan Williams
   source: wiki
 - name: Adrian Boult

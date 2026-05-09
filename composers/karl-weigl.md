@@ -14,12 +14,18 @@ era_source: llm
 teachers:
 - name: Robert Fuchs (composer)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Alexander Zemlinsky
   source: llm
   quote: Alexander Zemlinsky took him as a private pupil in 1896
 - name: Robert Fuchs
   source: llm
   quote: he became a composition pupil of Robert Fuchs
+  corroborated_by:
+  - llm
+  - wiki
 - name: Guido Adler
   source: llm
   quote: studying musicology under Guido Adler

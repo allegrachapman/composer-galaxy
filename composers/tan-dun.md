@@ -15,9 +15,17 @@ teachers:
 - name: Chou Wen-Chung
   source: llm
   quote: once again studying with Chou Wen-Chung
+  corroborated_by:
+  - infobox
+  - llm
+  - wiki
 - name: Chou Wen-chung
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - infobox
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

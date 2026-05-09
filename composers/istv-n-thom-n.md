@@ -19,6 +19,9 @@ teachers:
 - name: Franz Liszt
   source: llm
   quote: he became a favorite student of Franz Liszt
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Oscar Peterson
   source: wiki

@@ -18,6 +18,9 @@ teachers:
 - name: Mario Davidovsky
   source: llm
   quote: His composition instructors have included Mario Davidovsky
+  corroborated_by:
+  - llm
+  - wiki
 - name: Robert Morris
   source: llm
   quote: His composition instructors have included Robert Morris
@@ -30,6 +33,9 @@ teachers:
 - name: Krzysztof Penderecki
   source: llm
   quote: His composition instructors have included Krzysztof Penderecki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Tōru Takemitsu
   source: llm
   quote: His composition instructors have included Tōru Takemitsu

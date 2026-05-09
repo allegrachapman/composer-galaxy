@@ -23,6 +23,9 @@ teachers:
 - name: Henry Cowell
   source: llm
   quote: composition with Rubin Goldmark, Henry Cowell, and Joseph Brody
+  corroborated_by:
+  - llm
+  - wiki
 - name: Joseph Brody
   source: llm
   quote: composition with Rubin Goldmark, Henry Cowell, and Joseph Brody

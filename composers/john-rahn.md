@@ -15,6 +15,9 @@ teachers:
 - name: Milton Babbitt
   source: llm
   quote: A former student of Milton Babbitt and Benjamin Boretz
+  corroborated_by:
+  - llm
+  - wiki
 - name: Benjamin Boretz
   source: llm
   quote: A former student of Milton Babbitt and Benjamin Boretz

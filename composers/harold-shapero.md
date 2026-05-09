@@ -14,8 +14,14 @@ era_source: llm
 teachers:
 - name: Walter Piston
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Paul Hindemith
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Nadia Boulanger
   source: wiki
 - name: Nicolas Slonimsky
@@ -24,9 +30,15 @@ teachers:
 - name: Ernst Krenek
   source: llm
   quote: and Ernst Krenek in 1937
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: John Adams (composer)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gustav Ciamaga
   source: wiki
 - name: Scott Wheeler

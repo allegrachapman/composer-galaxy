@@ -16,9 +16,15 @@ teachers:
   source: llm
   quote: After allowing the lessons to run over, he would go to the piano and reveal
     to us those works of the masters
+  corroborated_by:
+  - llm
+  - wiki
 - name: Louis Niedermeyer
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Maurice Ravel
   source: wiki
@@ -26,10 +32,19 @@ students:
   source: wiki
 - name: André Messager
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Jean Roger-Ducasse
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Charles Koechlin
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Florent Schmitt
   source: llm
   quote: He taught many young composers, including Florent Schmitt
@@ -48,9 +63,15 @@ students:
 - name: Nadia Boulanger
   source: llm
   quote: He taught many young composers, including Nadia Boulanger
+  corroborated_by:
+  - llm
+  - wiki
 - name: Lili Boulanger
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 - name: Mihail Andricu
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F

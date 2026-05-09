@@ -29,6 +29,9 @@ students:
   quote: Among his students were Els Aarne, Anatoli Garšnek, Alfred Karindi, Villem
     Kapp, Boris Kõrver, Karl Leichter, Leo Normet, Uno Naissoo, Eduard Oja, Valter
     Ojakäär, Arne Oit, Arvo Pärt
+  corroborated_by:
+  - llm
+  - wiki
 - name: Jaan Rääts
   source: llm
   quote: Among his students were Els Aarne, Anatoli Garšnek, Alfred Karindi, Villem

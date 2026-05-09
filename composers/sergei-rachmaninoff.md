@@ -25,6 +25,9 @@ teachers:
 - name: Sergei Taneyev
   source: llm
   quote: studied counterpoint under Sergei Taneyev
+  corroborated_by:
+  - llm
+  - wiki
 - name: Anton Arensky
   source: llm
   quote: learned free composition from Anton Arensky.

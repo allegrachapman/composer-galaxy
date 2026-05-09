@@ -17,6 +17,9 @@ teachers:
 - name: Camille Saint-Saëns
   source: llm
   quote: Other teachers included Camille Saint-Saëns
+  corroborated_by:
+  - llm
+  - wiki
 - name: Stephen Heller
   source: llm
   quote: Other teachers included Camille Saint-Saëns, Stephen Heller
@@ -31,9 +34,15 @@ students:
 - name: Aaron Copland
   source: llm
   quote: students who became notable... includes... Aaron Copland
+  corroborated_by:
+  - llm
+  - wiki
 - name: Albert Schweitzer
   source: llm
   quote: includes... noted philosopher Albert Schweitzer
+  corroborated_by:
+  - llm
+  - wiki
 - name: Igor Stravinsky
   source: llm
   quote: Philipp taught piano to Igor Stravinsky

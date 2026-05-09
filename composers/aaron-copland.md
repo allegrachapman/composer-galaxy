@@ -14,8 +14,14 @@ era_source: llm
 teachers:
 - name: Rubin Goldmark
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Isidor Philipp
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Paul Vidal
   source: wiki
 - name: Nadia Boulanger
@@ -119,6 +125,9 @@ students:
 - name: Einojuhani Rautavaara
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gardner Read
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F

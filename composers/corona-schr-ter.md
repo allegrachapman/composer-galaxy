@@ -17,6 +17,9 @@ teachers:
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
   quote: During her time at Hiller's school, Schröter became good friends with Johann
     Wolfgang von Goethe
+  corroborated_by:
+  - manual
+  - wiki
 - name: Johann Friedrich Schröter
   source: llm
   quote: Her father, Johann Friedrich Schröter, an oboist, was her first teacher

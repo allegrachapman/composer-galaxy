@@ -15,9 +15,15 @@ teachers:
 - name: Pyotr Ilyich Tchaikovsky
   source: llm
   quote: the composition class of Pyotr Ilyich Tchaikovsky
+  corroborated_by:
+  - llm
+  - wiki
 - name: Nikolai Rubinstein
   source: llm
   quote: he studied piano with the Conservatory's founder, Nikolai Rubinstein
+  corroborated_by:
+  - llm
+  - wiki
 - name: Edward Langer
   source: llm
   quote: His first piano teacher at the Conservatory was Edward Langer
@@ -27,13 +33,22 @@ teachers:
 students:
 - name: Alexander Scriabin
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Sergei Rachmaninoff
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Leonid Sabaneyev
   source: wiki
 - name: Reinhold Glière
   source: llm
   quote: His pupils included Reinhold Glière
+  corroborated_by:
+  - llm
+  - wiki
 - name: Nikolai Medtner
   source: llm
   quote: His pupils included Nikolai Medtner

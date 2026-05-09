@@ -16,6 +16,9 @@ teachers:
   source: wiki
 - name: Hans Rott
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: harmony
   source: wiki
@@ -27,6 +30,9 @@ students:
   source: wiki
 - name: Gustav Mahler
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Hans Rott
   source: wiki
 - name: Richard Robert
@@ -38,6 +44,9 @@ students:
   quote: Among his well-known pupils are Leoš Janáček, Mathilde Kralik, Gustav Mahler,
     who studied with him between 1875 and 1878, Richard Robert, Hans Rott, and Alexander
     von Zemlinsky
+  corroborated_by:
+  - llm
+  - wiki
 - name: Friedrich Spigl
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

@@ -25,6 +25,9 @@ teachers:
 students:
 - name: Sergei Taneyev
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Emil von Sauer
   source: wiki
 - name: Ina Lange

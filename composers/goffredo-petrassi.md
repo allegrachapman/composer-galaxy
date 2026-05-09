@@ -19,12 +19,18 @@ students:
 - name: Franco Donatoni
   source: llm
   quote: Petrassi had many famous students, including Franco Donatoni
+  corroborated_by:
+  - llm
+  - wiki
 - name: Aldo Clementi
   source: llm
   quote: students, including Franco Donatoni, Aldo Clementi
 - name: Cornelius Cardew
   source: llm
   quote: including Franco Donatoni, Aldo Clementi, Cornelius Cardew
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ennio Morricone
   source: llm
   quote: Aldo Clementi, Cornelius Cardew, Ennio Morricone
@@ -52,6 +58,9 @@ students:
 - name: Peter Maxwell Davies
   source: llm
   quote: Eric Salzman, Kenneth Leighton, Peter Maxwell Davies
+  corroborated_by:
+  - llm
+  - wiki
 - name: Michael Dellaira
   source: llm
   quote: Kenneth Leighton, Peter Maxwell Davies, Michael Dellaira

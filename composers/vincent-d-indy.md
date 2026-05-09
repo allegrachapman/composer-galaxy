@@ -16,17 +16,26 @@ teachers:
   source: wiki
 - name: Albert Lavignac
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Louis Diémer
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 - name: Antoine François Marmontel
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Albéric Magnard
   source: wiki
 - name: Albert Roussel
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Pierre Capdevielle (musician)
   source: wiki
 - name: Léon Destroismaisons
@@ -40,6 +49,9 @@ students:
   source: llm
   quote: His students included Albéric Magnard, Albert Roussel, Arthur Honegger, Darius
     Milhaud
+  corroborated_by:
+  - llm
+  - wiki
 - name: Erik Satie
   source: llm
   quote: His students included Albéric Magnard, Albert Roussel, Arthur Honegger, Darius

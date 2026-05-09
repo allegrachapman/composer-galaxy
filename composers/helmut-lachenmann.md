@@ -17,6 +17,9 @@ teachers:
 - name: Luigi Nono
   source: llm
   quote: became Nono's first private student in Venice from 1958 to 1960
+  corroborated_by:
+  - llm
+  - wiki
 - name: Johann Nepomuk David
   source: llm
   quote: composition and theory with Johann Nepomuk David at the Musikhochschule Stuttgart

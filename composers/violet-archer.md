@@ -16,15 +16,24 @@ teachers:
   source: wiki
 - name: Douglas Clarke (conductor)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Paul Hindemith
   source: wiki
 - name: Douglas Clarke
   source: llm
   quote: she studied composition with Claude Champagne and Douglas Clarke
+  corroborated_by:
+  - llm
+  - wiki
 - name: Béla Bartók
   source: llm
   quote: study composition, including Hungarian folk music and variation technique,
     with Béla Bartók
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Larry Austin
   source: wiki

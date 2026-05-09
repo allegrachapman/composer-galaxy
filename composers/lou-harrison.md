@@ -15,9 +15,15 @@ teachers:
 - name: Henry Cowell
   source: llm
   quote: his former teacher and contemporary, Henry Cowell
+  corroborated_by:
+  - llm
+  - wiki
 - name: Arnold Schoenberg
   source: llm
   quote: he took theory lessons from Arnold Schoenberg
+  corroborated_by:
+  - llm
+  - wiki
 - name: Virgil Thomson
   source: llm
   quote: at the behest of fellow composer and tutor Virgil Thomson

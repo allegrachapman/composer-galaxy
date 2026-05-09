@@ -32,6 +32,9 @@ students:
 - name: Johann Christian Bach
   source: manual
   quote: Among the former were J.C. Bach, Bertoni, Grétry, Jommelli, Mozart and Naumann
+  corroborated_by:
+  - manual
+  - wiki
 - name: Ferdinando Bertoni
   source: manual
   quote: Among the former were J.C. Bach, Bertoni, Grétry, Jommelli, Mozart and Naumann
@@ -44,6 +47,9 @@ students:
 - name: Wolfgang Amadeus Mozart
   source: manual
   quote: Among the former were J.C. Bach, Bertoni, Grétry, Jommelli, Mozart and Naumann
+  corroborated_by:
+  - manual
+  - wiki
 - name: Johann Gottlieb Naumann
   source: manual
   quote: Among the former were J.C. Bach, Bertoni, Grétry, Jommelli, Mozart and Naumann

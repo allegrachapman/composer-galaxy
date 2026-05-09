@@ -23,17 +23,29 @@ students:
 - name: Georges Bizet
   source: llm
   quote: Among his students were Charles Gounod, Georges Bizet
+  corroborated_by:
+  - llm
+  - wiki
 - name: César Franck
   source: llm
   quote: Among his students were Charles Gounod, Georges Bizet, César Franck
+  corroborated_by:
+  - llm
+  - wiki
 - name: Charles-Valentin Alkan
   source: llm
   quote: Among his students were Charles Gounod, Georges Bizet, César Franck, Charles-Valentin
     Alkan
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ambroise Thomas
   source: llm
   quote: Among his students were Charles Gounod, Georges Bizet, César Franck, Charles-Valentin
     Alkan, Eugenie Santa Coloma Sourget, Ambroise Thomas
+  corroborated_by:
+  - llm
+  - wiki
 - name: Louis Lacombe
   source: llm
   quote: Among his students were Charles Gounod, Georges Bizet, César Franck, Charles-Valentin

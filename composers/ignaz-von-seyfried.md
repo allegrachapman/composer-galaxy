@@ -18,6 +18,9 @@ teachers:
 - name: Johann Georg Albrechtsberger
   source: manual
   quote: composition with Albrechtsberger
+  corroborated_by:
+  - manual
+  - wiki
 - name: Peter von Winter
   source: manual
   quote: composition with Albrechtsberger and Winter

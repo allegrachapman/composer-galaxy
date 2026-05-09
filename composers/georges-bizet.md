@@ -15,6 +15,9 @@ teachers:
 - name: François Benoist
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Charles Gounod
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
@@ -27,6 +30,9 @@ teachers:
 - name: Pierre-Joseph-Guillaume Zimmerman
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+  corroborated_by:
+  - llm
+  - wiki
 - name: Charles-Valentin Alkan
   source: wiki
 students: []

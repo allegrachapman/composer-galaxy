@@ -28,6 +28,9 @@ students:
 - name: John Adams
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Milton Babbitt
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -154,6 +157,9 @@ students:
 - name: Conlon Nancarrow
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Dika Newlin
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -172,6 +178,9 @@ students:
 - name: Einojuhani Rautavaara
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Leonard Rosenman
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -208,6 +217,9 @@ students:
 - name: Hugo Weisgall
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Peter Westergaard
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -220,6 +232,9 @@ students:
 - name: Ellen Taaffe Zwilich
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 mentors: []
 ---
 

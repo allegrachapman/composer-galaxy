@@ -31,12 +31,18 @@ students:
 - name: Saverio Mercadante
   source: manual
   quote: His most famous pupils were Morlacchi, Mercadante, Michael Costa and Bellini
+  corroborated_by:
+  - manual
+  - wiki
 - name: Michael Costa
   source: manual
   quote: His most famous pupils were Morlacchi, Mercadante, Michael Costa and Bellini
 - name: Vincenzo Bellini
   source: manual
   quote: His most famous pupils were Morlacchi, Mercadante, Michael Costa and Bellini
+  corroborated_by:
+  - manual
+  - wiki
 - name: Louis Niedermeyer
   source: llm
   quote: in Naples with Niccolò Antonio Zingarelli

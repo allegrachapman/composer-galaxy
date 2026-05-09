@@ -15,15 +15,24 @@ teachers:
 - name: Pierre Boulez
   source: llm
   quote: composition with Pierre Boulez and Bruno Maderna at the Darmstädter Ferienkurse
+  corroborated_by:
+  - llm
+  - wiki
 - name: Bruno Maderna
   source: llm
   quote: composition with Pierre Boulez and Bruno Maderna at the Darmstädter Ferienkurse
+  corroborated_by:
+  - llm
+  - wiki
 - name: Luigi Dallapiccola
   source: llm
   quote: and with Luigi Dallapiccola and Luciano Berio in Milan
 - name: Luciano Berio
   source: llm
   quote: and with Luigi Dallapiccola and Luciano Berio in Milan
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Sidney Corbett
   source: wiki
@@ -43,6 +52,9 @@ students:
 - name: Du Yun
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: David Felder
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -79,6 +91,9 @@ students:
 - name: Elena Ruehr
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Robert Scott Thompson
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S

@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Nadia Boulanger
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Edward Burlingame Hill
   source: llm
   quote: After studying at Harvard University with Edward Burlingame Hill
@@ -44,6 +47,9 @@ students:
 - name: Jeffrey Mumford
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 - name: Oliver Nelson
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
@@ -65,6 +71,9 @@ students:
 - name: Ellen Taaffe Zwilich
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 mentors: []
 ---
 

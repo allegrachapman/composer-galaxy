@@ -17,6 +17,9 @@ students:
   source: manual
   quote: Leopold fulfilled a universal function as teacher, educator and private secretary
     to his son
+  corroborated_by:
+  - manual
+  - wiki
 - name: Maria Anna Mozart
   source: manual
   quote: directed that time not claimed in service to the prince to the education

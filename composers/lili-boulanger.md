@@ -17,6 +17,9 @@ teachers:
 - name: Gabriel Fauré
   source: llm
   quote: Gabriel Fauré, a family friend, observed that she had absolute pitch
+  corroborated_by:
+  - llm
+  - wiki
 - name: Louis Vierne
   source: llm
   quote: studying organ with Louis Vierne
@@ -38,6 +41,9 @@ teachers:
 - name: Paul Vidal
   source: llm
   quote: composition with Paul Vidal
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

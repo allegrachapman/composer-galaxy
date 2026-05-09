@@ -27,6 +27,9 @@ teachers:
 - name: Nikolai Rimsky-Korsakov
   source: llm
   quote: Nikolai Rimsky-Korsakov for orchestration
+  corroborated_by:
+  - llm
+  - wiki
 - name: Anna Yesipova
   source: llm
   quote: studying piano under Anna Yesipova

@@ -16,6 +16,9 @@ teachers:
   source: wiki
 - name: Clara Schumann
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Iwan Knorr
   source: llm
   quote: educated at the Hoch Conservatory in Frankfurt under Iwan Knorr

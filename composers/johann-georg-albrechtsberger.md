@@ -23,17 +23,29 @@ teachers:
 students:
 - name: Ignaz von Seyfried
   source: wiki
+  corroborated_by:
+  - manual
+  - wiki
 - name: Anton Reicha
   source: wiki
 - name: Ludwig van Beethoven
   source: llm
   quote: whom he instructed in counterpoint and fugue
+  corroborated_by:
+  - llm
+  - wiki
 - name: Johann Nepomuk Hummel
   source: llm
   quote: Among these were Johann Nepomuk Hummel, Ignaz Moscheles, Josef Weigl
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ignaz Moscheles
   source: llm
   quote: Among these were Johann Nepomuk Hummel, Ignaz Moscheles, Josef Weigl
+  corroborated_by:
+  - llm
+  - wiki
 - name: Josef Weigl
   source: llm
   quote: Among these were Johann Nepomuk Hummel, Ignaz Moscheles, Josef Weigl
@@ -61,6 +73,9 @@ students:
 - name: Ferdinand Ries
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Johannes Matthias Sperger
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B

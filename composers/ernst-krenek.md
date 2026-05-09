@@ -14,9 +14,15 @@ era_source: llm
 teachers:
 - name: Franz Schreker
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Milton Barnes (composer)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Lorne Betts
   source: wiki
 - name: Virginia Seay
@@ -24,6 +30,9 @@ students:
 - name: Milton Barnes
   source: llm
   quote: His students included Milton Barnes, Lorne Betts, Roque Cordero
+  corroborated_by:
+  - llm
+  - wiki
 - name: Roque Cordero
   source: llm
   quote: His students included Milton Barnes, Lorne Betts, Roque Cordero
@@ -34,6 +43,9 @@ students:
   source: llm
   quote: His students included Milton Barnes, Lorne Betts, Roque Cordero, Samuel Dolin,
     Robert Erickson
+  corroborated_by:
+  - llm
+  - wiki
 - name: Halim El-Dabh
   source: llm
   quote: His students included Milton Barnes, Lorne Betts, Roque Cordero, Samuel Dolin,
@@ -76,6 +88,9 @@ students:
 - name: Harold Shapero
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 mentors: []
 ---
 

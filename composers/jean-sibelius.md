@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Ferruccio Busoni
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Martin Wegelius
   source: llm
   quote: Wegelius gave the self-taught Sibelius his first formal lessons in composition
@@ -25,6 +28,9 @@ teachers:
   source: llm
   quote: in Vienna (from 1890 to 1891) with Robert Fuchs and Hungarian-Jewish composer
     Karl Goldmark
+  corroborated_by:
+  - llm
+  - wiki
 - name: Karl Goldmark
   source: llm
   quote: in Vienna (from 1890 to 1891) with Robert Fuchs and Hungarian-Jewish composer

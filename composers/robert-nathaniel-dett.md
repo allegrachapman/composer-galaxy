@@ -18,6 +18,9 @@ teachers:
   source: llm
   quote: Dett travelled to France to study at the Fontainebleau school of music with
     composer Nadia Boulanger.
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Zenobia Powell Perry
   source: llm

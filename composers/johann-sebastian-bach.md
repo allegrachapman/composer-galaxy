@@ -43,6 +43,9 @@ students:
 - name: Johann Christoph Friedrich Bach
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Johann Ernst Bach II
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
@@ -61,6 +64,9 @@ students:
 - name: Johann Gottlieb Goldberg
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gottfried August Homilius
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B

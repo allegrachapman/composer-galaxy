@@ -16,6 +16,9 @@ teachers:
   source: llm
   quote: study composition with the conservatory teachers Reinecke and Richter in
     Leipzig
+  corroborated_by:
+  - llm
+  - wiki
 - name: Richter
   source: llm
   quote: study composition with the conservatory teachers Reinecke and Richter in

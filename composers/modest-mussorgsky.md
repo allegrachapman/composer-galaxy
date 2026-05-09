@@ -19,6 +19,9 @@ teachers:
   source: llm
   quote: I explained to him the form of compositions, and to do this we played through
     both Beethoven symphonies
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

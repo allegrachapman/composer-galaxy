@@ -16,10 +16,16 @@ teachers:
   source: llm
   quote: his teachers included Claude Debussy, Max Reger, Fritz Steinbach, and Willi
     Thern
+  corroborated_by:
+  - llm
+  - wiki
 - name: Max Reger
   source: llm
   quote: his teachers included Claude Debussy, Max Reger, Fritz Steinbach, and Willi
     Thern
+  corroborated_by:
+  - llm
+  - wiki
 - name: Fritz Steinbach
   source: llm
   quote: his teachers included Claude Debussy, Max Reger, Fritz Steinbach, and Willi

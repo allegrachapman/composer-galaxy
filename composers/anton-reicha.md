@@ -31,9 +31,15 @@ students:
   source: wiki
 - name: Hector Berlioz
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: César Franck
   source: llm
   quote: the young César Franck took private lessons.
+  corroborated_by:
+  - llm
+  - wiki
 - name: George Onslow
   source: llm
   quote: George Onslow being one of his pupils by 1808.
@@ -43,15 +49,24 @@ students:
 - name: Louise Farrenc
   source: llm
   quote: he began teaching harmony and music theory to Louise Farrenc
+  corroborated_by:
+  - llm
+  - wiki
 - name: Henri Cohen
   source: llm
   quote: Henri Cohen became students of his
 - name: Charles Gounod
   source: llm
   quote: as did composers Charles Gounod and Pauline Viardot sometime later.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Pauline Viardot
   source: llm
   quote: as did composers Charles Gounod and Pauline Viardot sometime later.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Adolphe Adam
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S

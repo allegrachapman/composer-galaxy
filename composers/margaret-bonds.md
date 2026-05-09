@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Florence Price
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Roy Harris
   source: wiki
 - name: Robert Starer

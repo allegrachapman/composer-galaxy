@@ -22,6 +22,9 @@ teachers:
   source: llm
   quote: studying composition under Le Sueur and counterpoint and fugue with Anton
     Reicha
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Villa Medici
   source: wiki

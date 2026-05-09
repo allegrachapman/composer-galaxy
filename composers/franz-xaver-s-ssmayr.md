@@ -15,6 +15,9 @@ teachers:
 - name: Wolfgang Amadeus Mozart
   source: llm
   quote: he became a student and friend of Mozart
+  corroborated_by:
+  - llm
+  - wiki
 - name: Georg von Pasterwitz
   source: llm
   quote: Georg von Pasterwitz was a teacher

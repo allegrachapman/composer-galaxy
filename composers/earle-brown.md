@@ -26,6 +26,9 @@ students:
 - name: Michael Daugherty
   source: llm
   quote: Brown's notable students included Michael Daugherty
+  corroborated_by:
+  - llm
+  - wiki
 - name: Sarah Meneely Kyder
   source: llm
   quote: Brown's notable students included Sarah Meneely Kyder

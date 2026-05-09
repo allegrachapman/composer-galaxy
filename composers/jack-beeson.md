@@ -34,6 +34,9 @@ students:
 - name: Joan Tower
   source: llm
   quote: His notable students include Alice Shields, Joan Tower, Harvey Sollberger
+  corroborated_by:
+  - llm
+  - wiki
 - name: Harvey Sollberger
   source: llm
   quote: His notable students include Alice Shields, Joan Tower, Harvey Sollberger
@@ -43,6 +46,9 @@ students:
 - name: Bright Sheng
   source: llm
   quote: His notable students include Michael Rosenzweig, Bright Sheng, Mark Birnbaum
+  corroborated_by:
+  - llm
+  - wiki
 - name: Mark Birnbaum
   source: llm
   quote: His notable students include Michael Rosenzweig, Bright Sheng, Mark Birnbaum

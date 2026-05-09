@@ -17,6 +17,9 @@ teachers:
 - name: Edward Burlingame Hill
   source: llm
   quote: studied music with, among others, composers Edward Burlingame Hill
+  corroborated_by:
+  - llm
+  - wiki
 - name: Walter Piston
   source: llm
   quote: studied music with, among others, composers Edward Burlingame Hill and Walter

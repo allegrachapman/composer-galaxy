@@ -27,6 +27,9 @@ students:
   source: manual
   quote: The most renowned of them was Frescobaldi, who praised him as a musician
     and teacher
+  corroborated_by:
+  - manual
+  - wiki
 - name: Girolamo Belli
   source: manual
   quote: Others were Girolamo Belli

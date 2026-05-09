@@ -22,6 +22,9 @@ teachers:
   source: llm
   quote: studied with Paul Dukas, Maurice Emmanuel, Charles-Marie Widor and Marcel
     Dupré, among others
+  corroborated_by:
+  - llm
+  - wiki
 - name: Jean Gallon
   source: llm
   quote: having been taught in that subject by professor Jean Gallon
@@ -119,6 +122,9 @@ students:
 - name: William Bolcom
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 - name: Joanna Bruzdowicz
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
@@ -182,6 +188,9 @@ students:
 - name: Betsy Jolas
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 - name: Quincy Jones
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

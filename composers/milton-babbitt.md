@@ -23,6 +23,9 @@ students:
   source: wiki
 - name: John Rahn
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Marion Bauer
   source: wiki
 - name: Phi Beta Kappa

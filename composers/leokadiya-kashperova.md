@@ -26,6 +26,9 @@ students:
 - name: Igor Stravinsky
   source: llm
   quote: She was the piano teacher of composer Igor Stravinsky
+  corroborated_by:
+  - llm
+  - wiki
 - name: Alexander Tcherepnin
   source: llm
   quote: Among his teachers in Russia were... Leokadiya Kashperova

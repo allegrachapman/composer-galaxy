@@ -25,6 +25,9 @@ teachers:
 - name: Bohuslav Martinů
   source: llm
   quote: to study in Czech composer Bohuslav Martinů's master class.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Masatoshi Shamoto
   source: llm
   quote: studied Japanese gagaku music... in the spring of 1962 with Rev. Masatoshi

@@ -25,6 +25,9 @@ teachers:
 - name: Mily Balakirev
   source: llm
   quote: Balakirev encouraged Rimsky-Korsakov to compose and taught him the rudiments
+  corroborated_by:
+  - llm
+  - wiki
 - name: Anton Gerke
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
@@ -83,6 +86,9 @@ students:
 - name: Sergei Prokofiev
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ottorino Respighi
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -101,6 +107,9 @@ students:
 - name: Igor Stravinsky
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Nikolai Tcherepnin
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S

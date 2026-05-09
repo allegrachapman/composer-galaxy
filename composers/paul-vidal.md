@@ -16,9 +16,15 @@ teachers:
   source: llm
   quote: studied at the conservatoires there and in Paris, under Jules Massenet at
     the latter.
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Lili Boulanger
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Marc Delmas
   source: wiki
 - name: Jacques Ibert

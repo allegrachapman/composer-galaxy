@@ -31,9 +31,15 @@ teachers:
 - name: Hugo Weisgall
   source: llm
   quote: his teachers included Nicolas Nabokov, Henry Cowell, and Hugo Weisgall
+  corroborated_by:
+  - llm
+  - wiki
 - name: Howard Hanson
   source: llm
   quote: he studied with Alan Hovhaness, Bernard Rogers, and Howard Hanson
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Philip Brunelle
   source: wiki
@@ -43,6 +49,9 @@ students:
   source: llm
   quote: His students included composers Philip Brunelle, Juliana Hall, Libby Larsen,
     Stephen Paulus, and Marjorie Rusche
+  corroborated_by:
+  - llm
+  - wiki
 - name: Stephen Paulus
   source: llm
   quote: His students included composers Philip Brunelle, Juliana Hall, Libby Larsen,

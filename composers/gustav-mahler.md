@@ -18,9 +18,15 @@ teachers:
 - name: Robert Fuchs
   source: llm
   quote: he concentrated on composition and harmony under Robert Fuchs
+  corroborated_by:
+  - llm
+  - wiki
 - name: Franz Krenn
   source: llm
   quote: composition and harmony under Robert Fuchs and Franz Krenn
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Alban Berg
   source: wiki

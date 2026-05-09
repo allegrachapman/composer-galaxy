@@ -24,6 +24,9 @@ teachers:
 - name: Anton Reicha
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Ada Adini
   source: wiki

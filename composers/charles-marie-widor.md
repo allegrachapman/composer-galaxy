@@ -25,6 +25,9 @@ teachers:
 students:
 - name: Albert Schweitzer
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Marcel Dupré
   source: llm
   quote: He was succeeded in 1934 by his former student and assistant, Marcel Dupré
@@ -38,6 +41,9 @@ students:
   source: llm
   quote: most notably the aforementioned Dupré, Louis Vierne, Charles Tournemire,
     Darius Milhaud
+  corroborated_by:
+  - llm
+  - wiki
 - name: Alexander Schreiner
   source: llm
   quote: Darius Milhaud, Alexander Schreiner, Edgard Varèse, Hans Klotz
@@ -65,12 +71,18 @@ students:
 - name: Arthur Honegger
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+  corroborated_by:
+  - llm
+  - wiki
 - name: Dumitru Georgescu Kiriac
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 - name: Olivier Messiaen
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+  corroborated_by:
+  - llm
+  - wiki
 - name: Georges Migot
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z

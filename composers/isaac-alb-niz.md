@@ -17,6 +17,9 @@ teachers:
 - name: Antoine François Marmontel
   source: llm
   quote: after apparently taking lessons from Antoine François Marmontel
+  corroborated_by:
+  - llm
+  - wiki
 - name: Felip Pedrell
   source: llm
   quote: Albéniz met the teacher and composer Felip Pedrell, who inspired him to write
@@ -30,6 +33,9 @@ teachers:
 - name: Carl Reinecke
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Budapest
   source: wiki

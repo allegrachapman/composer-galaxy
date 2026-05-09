@@ -28,6 +28,9 @@ teachers:
 - name: Johann Georg Albrechtsberger
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gilles van den Eeden
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
@@ -39,6 +42,9 @@ students:
   source: wiki
 - name: Carl Czerny
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Emperor Leopold II
   source: wiki
 - name: Ferdinand Ries

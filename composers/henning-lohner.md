@@ -29,6 +29,9 @@ teachers:
 - name: Karlheinz Stockhausen
   source: llm
   quote: Lohner became assistant to German composer Karlheinz Stockhausen in 1984
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Comparative Literature
   source: wiki

@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Gabriel Fauré
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ernest Boulanger
   source: llm
   quote: the singing lessons her father gave, and she began to study the rudiments
@@ -21,6 +24,9 @@ teachers:
 - name: Louis Vierne
   source: llm
   quote: She took private lessons from Louis Vierne
+  corroborated_by:
+  - llm
+  - wiki
 - name: Alexandre Guilmant
   source: llm
   quote: She took private lessons from Louis Vierne and Alexandre Guilmant.
@@ -37,12 +43,21 @@ students:
 - name: Grażyna Bacewicz
   source: llm
   quote: Among her students were many important composers... including Grażyna Bacewicz
+  corroborated_by:
+  - llm
+  - wiki
 - name: Lennox Berkeley
   source: llm
   quote: students were... Lennox Berkeley, İdil Biret, Elliott Carter
+  corroborated_by:
+  - llm
+  - wiki
 - name: Elliott Carter
   source: llm
   quote: students were... Elliott Carter, Aaron Copland, David Diamond
+  corroborated_by:
+  - llm
+  - wiki
 - name: Aaron Copland
   source: llm
   quote: Among the students attending the first year at Fontainebleau was Aaron Copland.
@@ -52,6 +67,9 @@ students:
 - name: Philip Glass
   source: llm
   quote: students were... John Eliot Gardiner, Philip Glass, Roy Harris
+  corroborated_by:
+  - llm
+  - wiki
 - name: Roy Harris
   source: llm
   quote: students were... Philip Glass, Roy Harris, Quincy Jones
@@ -64,6 +82,9 @@ students:
 - name: Astor Piazzolla
   source: llm
   quote: students were... Igor Markevitch, Astor Piazzolla, Julia Perry
+  corroborated_by:
+  - llm
+  - wiki
 - name: Julia Perry
   source: llm
   quote: students were... Astor Piazzolla, Julia Perry, George Walker
@@ -205,6 +226,9 @@ students:
 - name: Noah Creshevsky
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Tan Crone
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
@@ -232,6 +256,9 @@ students:
 - name: Robert Nathaniel Dett
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Liam Devlin
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
@@ -298,6 +325,9 @@ students:
 - name: Peggy Glanville-Hicks
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Richard Franko Goldman
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
@@ -373,6 +403,9 @@ students:
 - name: Vítězslava Kaprálová
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Harrison Kerr
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
@@ -604,6 +637,9 @@ students:
 - name: Bernard Rogers
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: José Rolón
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B

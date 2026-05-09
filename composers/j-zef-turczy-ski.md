@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Ferruccio Busoni
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Anna Yesipova
   source: wiki
 students:

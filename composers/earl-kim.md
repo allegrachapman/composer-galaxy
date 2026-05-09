@@ -22,10 +22,16 @@ teachers:
 - name: Arnold Schoenberg
   source: llm
   quote: studying under Arnold Schoenberg
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: John Adams
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 - name: William Banchs
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
@@ -44,6 +50,9 @@ students:
 - name: Peter Maxwell Davies
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 - name: Doug Davis
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
@@ -89,6 +98,9 @@ students:
 - name: David Lewin
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 - name: Douglas McGilvra
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

@@ -16,10 +16,16 @@ teachers:
   source: llm
   quote: continue her studies at the Conservatoire national supérieur de musique,
     notably with Darius Milhaud
+  corroborated_by:
+  - llm
+  - wiki
 - name: Olivier Messiaen
   source: llm
   quote: continue her studies at the Conservatoire national supérieur de musique,
     notably with Darius Milhaud and Olivier Messiaen
+  corroborated_by:
+  - llm
+  - wiki
 - name: Simone Plé-Caussade
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q

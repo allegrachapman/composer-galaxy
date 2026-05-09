@@ -15,6 +15,9 @@ teachers:
 - name: Vincent Persichetti
   source: llm
   quote: studying composition with Vincent Persichetti
+  corroborated_by:
+  - llm
+  - wiki
 - name: Darius Milhaud
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

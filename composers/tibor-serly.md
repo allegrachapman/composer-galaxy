@@ -23,6 +23,9 @@ teachers:
 - name: Béla Bartók
   source: llm
   quote: became a young apprentice of Béla Bartók
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Merv Griffin
   source: wiki

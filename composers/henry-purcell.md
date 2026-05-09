@@ -16,6 +16,9 @@ era_source: infobox
 teachers:
 - name: Henry Cooke (composer)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: John Blow
   source: wiki
 - name: Jean-Baptiste Lully
@@ -23,6 +26,9 @@ teachers:
 - name: Henry Cooke
   source: llm
   quote: Henry studied first under Captain Henry Cooke, Master of the Children
+  corroborated_by:
+  - llm
+  - wiki
 - name: Pelham Humfrey
   source: llm
   quote: afterwards under Cooke's successor Pelham Humfrey, who was a pupil of Lully

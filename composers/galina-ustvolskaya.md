@@ -18,6 +18,9 @@ teachers:
   source: llm
   quote: Her teachers included Dmitri Shostakovich; at the time, she was the only
     woman in his composition class.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Viktor Voloshinov
   source: llm
   quote: From late 1947 until 1952, she pursued postgraduate studies under the guidance

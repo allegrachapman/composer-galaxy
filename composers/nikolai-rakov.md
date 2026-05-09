@@ -15,6 +15,9 @@ teachers:
 - name: Reinhold Glière
   source: llm
   quote: composition at the Moscow Conservatory with Reinhold Glière
+  corroborated_by:
+  - llm
+  - wiki
 - name: Sergei Vasilenko
   source: llm
   quote: composition at the Moscow Conservatory with Reinhold Glière and Sergei Vasilenko
@@ -34,6 +37,9 @@ students:
   source: llm
   quote: Rakov's pupils included Edison Denisov, Boris Tchaikovsky, Nikolai Peiko,
     Andrei Eshpai, and Alfred Schnittke
+  corroborated_by:
+  - llm
+  - wiki
 mentors: []
 ---
 

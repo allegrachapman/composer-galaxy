@@ -16,14 +16,23 @@ teachers:
   source: wiki
 - name: Philipp Jarnach
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Chou Wen-chung
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Charles Wuorinen
   source: wiki
 - name: Joan Tower
   source: llm
   quote: His notable students include Chou Wen-chung, Charles Wuorinen, Joan Tower
+  corroborated_by:
+  - llm
+  - wiki
 - name: John Corigliano
   source: llm
   quote: His notable students include Chou Wen-chung, Charles Wuorinen, Joan Tower,

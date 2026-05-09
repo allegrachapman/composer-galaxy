@@ -25,6 +25,9 @@ students:
   quote: Among his notable pupils are Hubert Clifford, Arthur Duff, Arwel Hughes,
     John F. Larchet, Herbert Sanders, Robert Still, Michael Tippett, and S. Drummond
     Wolff.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Arwel Hughes
   source: llm
   quote: Among his notable pupils are Hubert Clifford, Arthur Duff, Arwel Hughes,

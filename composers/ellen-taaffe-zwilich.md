@@ -18,9 +18,15 @@ teachers:
 - name: Elliott Carter
   source: llm
   quote: Her teachers included John Boda, Elliott Carter, and Roger Sessions.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Roger Sessions
   source: llm
   quote: Her teachers included John Boda, Elliott Carter, and Roger Sessions.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ivan Galamian
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J

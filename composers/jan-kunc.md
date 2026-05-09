@@ -17,10 +17,16 @@ teachers:
 - name: Leoš Janáček
   source: llm
   quote: his teacher was the composer Leoš Janáček
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Pavel Haas
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 - name: Antonín Tučapský
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

@@ -17,6 +17,9 @@ teachers:
 - name: Jacob Druckman
   source: llm
   quote: Jacob Druckman at Yale University
+  corroborated_by:
+  - llm
+  - wiki
 - name: Alan Stout
   source: llm
   quote: Alan Stout and Bill Karlins at Northwestern University

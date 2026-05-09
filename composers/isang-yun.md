@@ -41,6 +41,9 @@ students:
   quote: Among his students are Kazuhisa Akita, Jolyon Brettingham Smith, In-Chan
     Choe, Conrado del Rosario, Raymond Deane, Francisco F. Feliciano, Masanori Fujita,
     Keith Gifford, Holger Groschopp, Toshio Hosokawa
+  corroborated_by:
+  - llm
+  - wiki
 - name: Jolyon Brettingham-Smith
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z

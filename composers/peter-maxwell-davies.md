@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Goffredo Petrassi
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Roger Sessions
   source: wiki
 - name: Milton Babbitt
@@ -24,6 +27,9 @@ teachers:
 - name: Earl Kim
   source: llm
   quote: there he studied with Roger Sessions, Milton Babbitt and Earl Kim
+  corroborated_by:
+  - llm
+  - wiki
 - name: Richard Hall (composer)
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J

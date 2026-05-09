@@ -23,6 +23,9 @@ students:
 - name: Joseph Haydn
   source: llm
   quote: As his accompanist and valet he hired the youthful Joseph Haydn
+  corroborated_by:
+  - llm
+  - wiki
 - name: Duchess Maria Antonia of Bavaria
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q

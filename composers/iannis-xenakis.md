@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Darius Milhaud
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Olivier Messiaen
   source: llm
   quote: Xenakis regularly attended Messiaen's classes from 1951 until 1953

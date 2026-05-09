@@ -15,6 +15,9 @@ teachers:
 - name: Goffredo Petrassi
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ildebrando Pizzetti
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
@@ -63,6 +66,9 @@ students:
 - name: Esa-Pekka Salonen
   source: llm
   quote: Sylvie Bodorová, Esa-Pekka Salonen, Magnus Lindberg
+  corroborated_by:
+  - llm
+  - wiki
 - name: Magnus Lindberg
   source: llm
   quote: Esa-Pekka Salonen, Magnus Lindberg, Katia Tiutiunnik

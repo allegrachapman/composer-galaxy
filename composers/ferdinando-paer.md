@@ -19,6 +19,9 @@ students:
 - name: Franz Liszt
   source: llm
   quote: he taught composition to the young Franz Liszt
+  corroborated_by:
+  - llm
+  - wiki
 mentors: []
 ---
 

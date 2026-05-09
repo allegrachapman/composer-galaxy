@@ -21,6 +21,9 @@ teachers:
 - name: Giovanni Battista Martini
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - manual
+  - wiki
 students:
 - name: Elizabeth Billington
   source: wiki

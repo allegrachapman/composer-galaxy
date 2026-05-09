@@ -15,6 +15,9 @@ teachers:
 - name: Girolamo Frescobaldi
   source: manual
   quote: he was granted leave to go to Rome to study with Frescobaldi
+  corroborated_by:
+  - manual
+  - wiki
 - name: Athanasius Kircher
   source: manual
   quote: appears to have led to further study with the Jesuit polymath Athanasius

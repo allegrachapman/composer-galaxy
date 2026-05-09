@@ -19,6 +19,9 @@ teachers:
 - name: Maurice Ravel
   source: llm
   quote: Maurice Ravel, whose pupil, friend and biographer he soon became.
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors:
 - name: Erik Satie

@@ -14,12 +14,18 @@ era_source: null
 teachers:
 - name: Antoine François Marmontel
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: François Benoist
   source: wiki
 - name: Ambroise Thomas
   source: llm
   quote: studied with Antoine François Marmontel, François Benoist and Ambroise Thomas
     at the Conservatoire de Paris
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Henri Casadesus
   source: wiki
@@ -28,6 +34,9 @@ students:
 - name: Vincent d'Indy
   source: llm
   quote: Among his pupils were Henri Casadesus, Claude Debussy, Vincent d'Indy
+  corroborated_by:
+  - llm
+  - wiki
 - name: Amédée Gastoué
   source: llm
   quote: Among his pupils were... Amédée Gastoué, Philipp Jarnach

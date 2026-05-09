@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Ernst Krenek
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Roger Sessions
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -22,6 +25,9 @@ students:
   source: wiki
 - name: Pauline Oliveros
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Terry Riley
   source: llm
   quote: His notable students are Morton Subotnick, Pauline Oliveros, Terry Riley

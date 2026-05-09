@@ -15,6 +15,9 @@ teachers:
 - name: Ferruccio Busoni
   source: llm
   quote: What need is there for this? I have heard you play!
+  corroborated_by:
+  - llm
+  - wiki
 - name: Michael Wexler
   source: llm
   quote: Sirota began studying piano at age 5 with a pianist who was boarding with

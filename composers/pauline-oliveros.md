@@ -21,6 +21,9 @@ teachers:
   source: llm
   quote: her teachers included composer Robert Erickson, with whom she had private
     lessons
+  corroborated_by:
+  - llm
+  - wiki
 - name: Hugh Le Caine
   source: llm
   quote: studying with Hugh Le Caine

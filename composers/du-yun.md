@@ -24,10 +24,16 @@ teachers:
   source: llm
   quote: received a Ph.D. in music composition from Harvard University with Bernard
     Rands and Mario Davidovsky
+  corroborated_by:
+  - llm
+  - wiki
 - name: Mario Davidovsky
   source: llm
   quote: received a Ph.D. in music composition from Harvard University with Bernard
     Rands and Mario Davidovsky
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors: []
 ---

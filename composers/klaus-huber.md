@@ -23,14 +23,23 @@ teachers:
 students:
 - name: Brian Ferneyhough
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Michael Jarrell
   source: wiki
 - name: Younghi Pagh-Paan
   source: llm
   quote: students were Brian Ferneyhough, Michael Jarrell, Younghi Pagh-Paan
+  corroborated_by:
+  - llm
+  - wiki
 - name: Toshio Hosokawa
   source: llm
   quote: students were... Younghi Pagh-Paan, Toshio Hosokawa
+  corroborated_by:
+  - llm
+  - wiki
 - name: Wolfgang Rihm
   source: llm
   quote: students were... Toshio Hosokawa, Wolfgang Rihm

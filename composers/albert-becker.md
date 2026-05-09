@@ -15,6 +15,9 @@ teachers:
 - name: Siegfried Dehn
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Jean Sibelius
   source: llm

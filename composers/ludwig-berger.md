@@ -18,11 +18,17 @@ teachers:
 - name: Muzio Clementi
   source: llm
   quote: became a pupil of the composer Muzio Clementi
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Felix Mendelssohn
   source: llm
   quote: numbering Felix and Fanny Mendelssohn, as well as Taubert, Dorn, and August
     Wilhelm Bach among his more distinguished pupils
+  corroborated_by:
+  - llm
+  - wiki
 - name: Fanny Mendelssohn
   source: llm
   quote: numbering Felix and Fanny Mendelssohn, as well as Taubert, Dorn, and August
@@ -33,6 +39,9 @@ students:
 - name: Heinrich Dorn
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Adolf von Henselt
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B

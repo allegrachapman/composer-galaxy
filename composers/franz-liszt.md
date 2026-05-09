@@ -16,15 +16,24 @@ teachers:
   source: wiki
 - name: Ferdinando Paer
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Carl Czerny
   source: llm
   quote: received piano lessons from Carl Czerny
 - name: Antonio Salieri
   source: llm
   quote: received lessons in composition from Antonio Salieri
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Hans von Bülow
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Amy Fay
   source: wiki
 - name: Caroline Boissier-Butini
@@ -115,6 +124,9 @@ students:
 - name: Carl Reinecke
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 - name: Eduard Reuss
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
@@ -157,6 +169,9 @@ students:
 - name: István Thomán
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 - name: Clara E. Thoms
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

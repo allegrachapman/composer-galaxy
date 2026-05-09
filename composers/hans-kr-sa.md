@@ -15,6 +15,9 @@ teachers:
 - name: Alexander von Zemlinsky
   source: llm
   quote: who had a major influence on Krása's career
+  corroborated_by:
+  - llm
+  - wiki
 - name: Albert Roussel
   source: llm
   quote: made a number of trips to France to study under Roussel

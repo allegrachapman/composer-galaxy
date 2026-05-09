@@ -21,17 +21,26 @@ teachers:
 students:
 - name: Albert Becker (composer)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ludwig Bussler
   source: wiki
 - name: Albert Becker
   source: llm
   quote: His students included Albert Becker
+  corroborated_by:
+  - llm
+  - wiki
 - name: Peter Cornelius
   source: llm
   quote: His students included Peter Cornelius
 - name: Mikhail Glinka
   source: llm
   quote: His students included Mikhail Glinka
+  corroborated_by:
+  - llm
+  - wiki
 - name: Heinrich Hofmann
   source: llm
   quote: His students included Heinrich Hofmann

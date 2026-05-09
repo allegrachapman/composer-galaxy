@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Yasuji Kiyose
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Fumio Hayasaka
   source: wiki
 students:

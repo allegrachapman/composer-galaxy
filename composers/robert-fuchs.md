@@ -55,6 +55,9 @@ students:
 - name: Gustav Mahler
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 - name: Erkki Melartin
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
@@ -67,9 +70,15 @@ students:
 - name: Franz Schreker
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 - name: Jean Sibelius
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 - name: Richard Stöhr
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
@@ -88,8 +97,14 @@ students:
 - name: Alexander von Zemlinsky
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 - name: Karl Weigl
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Karl Weigl
   source: llm
   quote: he became a composition pupil of Robert Fuchs

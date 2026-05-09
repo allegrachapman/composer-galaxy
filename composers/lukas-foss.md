@@ -37,9 +37,15 @@ teachers:
 - name: Fritz Reiner
   source: llm
   quote: Fritz Reiner (conducting)
+  corroborated_by:
+  - llm
+  - wiki
 - name: Paul Hindemith
   source: llm
   quote: composition with Paul Hindemith at Yale University
+  corroborated_by:
+  - llm
+  - wiki
 - name: Richard Stöhr
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -97,6 +103,9 @@ students:
 - name: Noah Creshevsky
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+  corroborated_by:
+  - llm
+  - wiki
 - name: Nancy Bloomer Deussen
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F

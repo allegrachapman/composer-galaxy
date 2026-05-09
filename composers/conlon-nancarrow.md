@@ -15,9 +15,15 @@ teachers:
 - name: Roger Sessions
   source: llm
   quote: studying music, first in Cincinnati and later in Boston, with Roger Sessions
+  corroborated_by:
+  - llm
+  - wiki
 - name: Walter Piston
   source: llm
   quote: studying music, first in Cincinnati and later in Boston, with Walter Piston
+  corroborated_by:
+  - llm
+  - wiki
 - name: Nicolas Slonimsky
   source: llm
   quote: studying music, first in Cincinnati and later in Boston, with Nicolas Slonimsky

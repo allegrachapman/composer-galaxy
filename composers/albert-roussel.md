@@ -20,13 +20,22 @@ teachers:
 - name: Vincent d'Indy
   source: llm
   quote: one of his teachers was Vincent d'Indy
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Erik Satie
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Edgard Varèse
   source: wiki
 - name: Bohuslav Martinů
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Yvonne Rokseth
   source: wiki
 - name: Georges Auric

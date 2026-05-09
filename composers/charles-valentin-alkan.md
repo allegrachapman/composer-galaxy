@@ -24,6 +24,9 @@ teachers:
 - name: Pierre-Joseph-Guillaume Zimmerman
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Georges Bizet
   source: wiki

@@ -18,9 +18,15 @@ teachers:
 - name: André Gedalge
   source: llm
   quote: studied at the Paris Conservatoire with Émile Pessard and André Gedalge
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gabriel Fauré
   source: llm
   quote: was the star pupil and close friend of Gabriel Fauré
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Jehan Alain
   source: wiki

@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Johann Georg Albrechtsberger
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Bedřich Diviš Weber
   source: llm
   quote: his teacher at the Prague Conservatory
@@ -23,9 +26,15 @@ teachers:
 - name: Antonio Salieri
   source: llm
   quote: Salieri for composition
+  corroborated_by:
+  - llm
+  - wiki
 - name: Muzio Clementi
   source: llm
   quote: Moscheles was also a student of Muzio Clementi
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Felix Mendelssohn
   source: wiki

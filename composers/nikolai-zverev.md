@@ -25,11 +25,17 @@ teachers:
 students:
 - name: Alexander Siloti
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Sergei Rachmaninoff
   source: wiki
 - name: Alexander Scriabin
   source: llm
   quote: Sergei Rachmaninoff, Alexander Scriabin, Konstantin Igumnov
+  corroborated_by:
+  - llm
+  - wiki
 - name: Konstantin Igumnov
   source: llm
   quote: Alexander Scriabin, Konstantin Igumnov, Alexander Goldenweiser

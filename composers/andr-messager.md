@@ -17,9 +17,15 @@ teachers:
 - name: Camille Saint-Saëns
   source: llm
   quote: studied composition with, among others, Camille Saint-Saëns and Gabriel Fauré.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gabriel Fauré
   source: llm
   quote: studied composition with, among others, Camille Saint-Saëns and Gabriel Fauré.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Adam Lausset
   source: llm
   quote: Messager studied piano with Adam Lausset

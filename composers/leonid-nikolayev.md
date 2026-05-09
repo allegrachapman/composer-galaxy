@@ -29,6 +29,9 @@ students:
   source: llm
   quote: His students at the Conservatory included Vladimir Sofronitsky, Maria Yudina,
     Dmitri Shostakovich
+  corroborated_by:
+  - llm
+  - wiki
 - name: Vera Razumovskaya
   source: llm
   quote: His students at the Conservatory included Vladimir Sofronitsky, Maria Yudina,

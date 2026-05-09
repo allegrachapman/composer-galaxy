@@ -23,6 +23,9 @@ teachers:
 students:
 - name: Chester Biscardi
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Walter Mays
   source: llm
   quote: His notable students include Chester Biscardi and Walter Mays

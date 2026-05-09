@@ -43,6 +43,9 @@ students:
   source: llm
   quote: taught many composers at Minnesota including Eric Stokes, Donald Keats, Marjorie
     Rusche, Michael Schelle, Stephen Paulus, Libby Larsen
+  corroborated_by:
+  - llm
+  - wiki
 - name: Carol Barnett
   source: llm
   quote: taught many composers at Minnesota including Eric Stokes, Donald Keats, Marjorie

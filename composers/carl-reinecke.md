@@ -23,6 +23,9 @@ teachers:
 - name: Franz Liszt
   source: llm
   quote: he studied under Felix Mendelssohn, Robert Schumann and Franz Liszt
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Edvard Grieg
   source: wiki
@@ -37,9 +40,15 @@ students:
 - name: Leoš Janáček
   source: llm
   quote: Christian Sinding, Leoš Janáček, Isaac Albéniz
+  corroborated_by:
+  - llm
+  - wiki
 - name: Isaac Albéniz
   source: llm
   quote: Leoš Janáček, Isaac Albéniz, August Max Fiedler
+  corroborated_by:
+  - llm
+  - wiki
 - name: August Max Fiedler
   source: llm
   quote: Isaac Albéniz, August Max Fiedler, Walter Niemann
@@ -61,6 +70,9 @@ students:
 - name: Mikalojus Konstantinas Čiurlionis
   source: llm
   quote: Max Bruch, Mikalojus Konstantinas Čiurlionis, Anna Diller Starbuck
+  corroborated_by:
+  - llm
+  - wiki
 - name: Anna Diller Starbuck
   source: llm
   quote: Mikalojus Konstantinas Čiurlionis, Anna Diller Starbuck, Ernest Hutcheson
@@ -94,12 +106,18 @@ students:
 - name: Ferruccio Busoni
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Frederic Cowen
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 - name: Fanny Davies
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Constanta Erbiceanu
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -142,6 +160,9 @@ students:
 - name: Amanda Röntgen-Maier
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Cornelius Rübner
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S

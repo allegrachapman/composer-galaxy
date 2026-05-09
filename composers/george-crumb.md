@@ -20,6 +20,9 @@ students:
   source: wiki
 - name: Jennifer Higdon
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ofer Ben-Amots
   source: wiki
 - name: Margaret Brouwer

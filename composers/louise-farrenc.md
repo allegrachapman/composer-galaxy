@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Anton Reicha
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Cecile Soria
   source: llm
   quote: a former student of Muzio Clementi

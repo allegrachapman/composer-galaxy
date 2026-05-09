@@ -15,6 +15,9 @@ teachers:
 - name: Robert Fuchs
   source: llm
   quote: composition class of Robert Fuchs, graduating as a composer in 1900
+  corroborated_by:
+  - llm
+  - wiki
 - name: Sigismund Bachrich
   source: llm
   quote: Starting with violin studies, with Sigismund Bachrich and Arnold Rosé
@@ -26,6 +29,9 @@ students:
   source: llm
   quote: with Berthold Goldschmidt, Alois Hába, Jascha Horenstein, Julius Bürger,
     Ernst Krenek
+  corroborated_by:
+  - llm
+  - wiki
 - name: Alois Hába
   source: llm
   quote: with Berthold Goldschmidt, Alois Hába, Jascha Horenstein, Julius Bürger,
@@ -42,6 +48,9 @@ students:
   source: llm
   quote: with Berthold Goldschmidt, Alois Hába, Jascha Horenstein, Julius Bürger,
     Ernst Krenek
+  corroborated_by:
+  - llm
+  - wiki
 - name: Artur Rodziński
   source: llm
   quote: Artur Rodziński, Stefan Wolpe, Zdenka Ticharich and Grete von Zieritz numbering

@@ -27,6 +27,9 @@ teachers:
 - name: Pran Nath (musician)
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Mark Alburger
   source: wiki

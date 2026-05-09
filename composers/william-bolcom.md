@@ -32,6 +32,9 @@ teachers:
 - name: Olivier Messiaen
   source: llm
   quote: studied with Olivier Messiaen at the Paris Conservatoire
+  corroborated_by:
+  - llm
+  - wiki
 - name: George Rochberg
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -40,6 +43,9 @@ students:
   source: wiki
 - name: Gabriela Lena Frank
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: David T. Little
   source: llm
   quote: Notable students include Derek Bermel, Gabriela Lena Frank, David T. Little

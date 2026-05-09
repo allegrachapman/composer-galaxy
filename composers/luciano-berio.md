@@ -25,9 +25,15 @@ students:
   source: wiki
 - name: Noah Creshevsky
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Steve Reich
   source: llm
   quote: His students included Steve Reich
+  corroborated_by:
+  - llm
+  - wiki
 - name: Luca Francesconi
   source: llm
   quote: His students included Luca Francesconi
@@ -58,6 +64,9 @@ students:
 - name: Bernard Rands
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Max Richter
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B

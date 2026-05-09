@@ -113,6 +113,9 @@ students:
   source: llm
   quote: Robert Moevs, Daniel Pinkham, Mildred Barnes Royse, Frederic Rzewski, Allen
     Sapp, Harold Shapero, and Claudio Spies
+  corroborated_by:
+  - llm
+  - wiki
 - name: Claudio Spies
   source: llm
   quote: Robert Moevs, Daniel Pinkham, Mildred Barnes Royse, Frederic Rzewski, Allen
@@ -152,6 +155,9 @@ students:
 - name: Conlon Nancarrow
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+  corroborated_by:
+  - llm
+  - wiki
 mentors: []
 ---
 

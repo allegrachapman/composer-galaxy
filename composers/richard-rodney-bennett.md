@@ -20,10 +20,16 @@ teachers:
   source: llm
   quote: He later studied at the Royal Academy of Music with Howard Ferguson and Lennox
     Berkeley.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Pierre Boulez
   source: llm
   quote: He later spent two years in Paris as a student of the prominent serialist
     Pierre Boulez between 1957 and 1959.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Richard Hall (composer)
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J

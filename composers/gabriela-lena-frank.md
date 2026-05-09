@@ -22,9 +22,15 @@ teachers:
 - name: William Bolcom
   source: llm
   quote: studied composition with William Bolcom
+  corroborated_by:
+  - llm
+  - wiki
 - name: Michael Daugherty
   source: llm
   quote: studied composition with Michael Daugherty
+  corroborated_by:
+  - llm
+  - wiki
 - name: Samuel Jones
   source: llm
   quote: studied composition with Samuel Jones

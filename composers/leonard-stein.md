@@ -17,11 +17,17 @@ teachers:
 - name: Arnold Schoenberg
   source: llm
   quote: composition and theory under Schoenberg at University of Southern California
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: La Monte Young
   source: llm
   quote: influential teacher in the lives of many younger composers, such as the influential
     minimalist La Monte Young
+  corroborated_by:
+  - llm
+  - wiki
 - name: John Luther Adams
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S

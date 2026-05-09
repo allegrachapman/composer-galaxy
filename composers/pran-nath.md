@@ -21,9 +21,15 @@ students:
   source: llm
   quote: Nath exerted an influence on notable American minimalist and jazz musicians,
     including La Monte Young
+  corroborated_by:
+  - llm
+  - wiki
 - name: Terry Riley
   source: llm
   quote: including La Monte Young, Terry Riley, and Don Cherry
+  corroborated_by:
+  - llm
+  - wiki
 - name: Don Cherry
   source: llm
   quote: Jazz musicians such as Don Cherry and Lee Konitz also drew influence from

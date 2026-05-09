@@ -32,8 +32,14 @@ students:
   source: wiki
 - name: Violet Archer
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Tibor Serly
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ernő Balogh
   source: llm
   quote: Among his notable students were Ernő Balogh
@@ -73,9 +79,15 @@ students:
 - name: Fritz Reiner
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: György Sándor
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 - name: Georg Solti
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
@@ -85,6 +97,9 @@ students:
 - name: Sándor Veress
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+  corroborated_by:
+  - llm
+  - wiki
 mentors: []
 ---
 

@@ -24,9 +24,15 @@ teachers:
 - name: André Gedalge
   source: llm
   quote: harmony with André Gedalge, and composition with Jules Massenet
+  corroborated_by:
+  - llm
+  - wiki
 - name: Jules Massenet
   source: llm
   quote: composition with Jules Massenet and Gabriel Fauré
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gabriel Fauré
   source: llm
   quote: composition with Jules Massenet and Gabriel Fauré

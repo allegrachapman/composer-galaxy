@@ -24,6 +24,9 @@ teachers:
 - name: Earl Kim
   source: llm
   quote: studied theory and composition with Earl Kim
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Lee Hyla
   source: wiki

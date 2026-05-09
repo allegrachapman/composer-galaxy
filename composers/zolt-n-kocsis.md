@@ -14,11 +14,17 @@ era_source: llm
 teachers:
 - name: Pál Kadosa
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ferenc Rados
   source: wiki
 - name: György Kurtág
   source: llm
   quote: he was a pupil of Pál Kadosa, Ferenc Rados and György Kurtág
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Ferenc Rados
   source: wiki

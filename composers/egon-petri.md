@@ -19,6 +19,9 @@ teachers:
 - name: Ferruccio Busoni
   source: llm
   quote: He studied with Busoni, who greatly influenced him
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Victor Borge
   source: wiki

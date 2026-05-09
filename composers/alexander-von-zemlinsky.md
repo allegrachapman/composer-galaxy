@@ -19,6 +19,9 @@ teachers:
 - name: Robert Fuchs
   source: llm
   quote: studying theory with Robert Fuchs
+  corroborated_by:
+  - llm
+  - wiki
 - name: Johann Nepomuk Fuchs
   source: llm
   quote: composition with Johann Nepomuk Fuchs
@@ -28,11 +31,17 @@ teachers:
 - name: Franz Krenn
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Erich Wolfgang Korngold
   source: wiki
 - name: Hans Krása
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Arnold Schoenberg
   source: llm
   quote: Zemlinsky gave Schoenberg lessons in counterpoint

@@ -30,6 +30,9 @@ teachers:
 - name: Lambert Massart
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Arthur Hartmann
   source: wiki

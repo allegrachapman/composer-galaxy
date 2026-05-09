@@ -14,10 +14,16 @@ era_source: null
 teachers:
 - name: Clara Schumann
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Carl Reinecke
   source: llm
   quote: studied privately in Birmingham, then at Leipzig Conservatory under Carl
     Reinecke
+  corroborated_by:
+  - llm
+  - wiki
 - name: Oscar Paul
   source: llm
   quote: Leipzig Conservatory under Carl Reinecke and Oscar Paul

@@ -21,6 +21,9 @@ teachers:
 - name: Giacomo Carissimi
   source: manual
   quote: sent him to Rome to study with Carissimi in the late 1640s and early 50s
+  corroborated_by:
+  - llm
+  - manual
 - name: Girolamo Frescobaldi
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F

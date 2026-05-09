@@ -32,6 +32,9 @@ teachers:
 students:
 - name: Leonard Bernstein
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Roger Sessions
   source: wiki
 - name: Elliott Carter
@@ -46,6 +49,9 @@ students:
 - name: Virgil Thomson
   source: llm
   quote: pupils included... Virgil Thomson
+  corroborated_by:
+  - llm
+  - wiki
 - name: Irving Fine
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J

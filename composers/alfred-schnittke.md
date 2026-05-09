@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Nikolai Rakov
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Evgeny Golubev
   source: llm
   quote: Evgeny Golubev was one of his composition teachers.

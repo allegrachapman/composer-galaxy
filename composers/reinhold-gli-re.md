@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Sergei Taneyev
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Oskar Fried
   source: wiki
 - name: Otakar Ševčík
@@ -51,6 +54,9 @@ students:
 - name: Aram Khachaturian
   source: llm
   quote: Aram Khachaturian... were some of his pupils from the Moscow era
+  corroborated_by:
+  - llm
+  - wiki
 - name: Alexander Davidenko
   source: llm
   quote: Alexander Davidenko... were some of his pupils
@@ -69,6 +75,9 @@ students:
 - name: Nikolai Rakov
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+  corroborated_by:
+  - llm
+  - wiki
 mentors:
 - name: Serge Koussevitzky
   source: llm

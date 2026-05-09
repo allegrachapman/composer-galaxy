@@ -26,16 +26,29 @@ teachers:
 - name: Otto Luening
   source: llm
   quote: Chou studied composition with Otto Luening at Columbia University
+  corroborated_by:
+  - llm
+  - wiki
 - name: Bohuslav Martinů
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: Zhou Long
   source: infobox
 - name: Chen Yi (composer)
   source: infobox
+  corroborated_by:
+  - infobox
+  - wiki
 - name: Tan Dun
   source: infobox
+  corroborated_by:
+  - infobox
+  - llm
+  - wiki
 - name: Chinary Ung
   source: infobox
 - name: David Froom
@@ -44,6 +57,9 @@ students:
   source: infobox
 - name: Bright Sheng
   source: infobox
+  corroborated_by:
+  - infobox
+  - wiki
 - name: James Tenney
   source: infobox
 - name: Jing Jing Luo

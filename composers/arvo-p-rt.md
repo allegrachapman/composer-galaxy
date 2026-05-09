@@ -15,6 +15,9 @@ teachers:
 - name: Heino Eller
   source: wiki
   quote: he studied composition with Heino Eller
+  corroborated_by:
+  - llm
+  - wiki
 students: []
 mentors:
 - name: Manfred Eicher

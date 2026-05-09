@@ -21,12 +21,18 @@ teachers:
 students:
 - name: François Bazin (composer)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Bernhard Crusell
   source: wiki
 - name: François Bazin
   source: llm
   quote: Among his students were François Bazin, Bernhard Crusell, Louis-Barthélémy
     Pradher and Adolf Schimon.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Louis-Barthélémy Pradher
   source: llm
   quote: Among his students were François Bazin, Bernhard Crusell, Louis-Barthélémy

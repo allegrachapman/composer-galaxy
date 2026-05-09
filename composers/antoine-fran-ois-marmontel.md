@@ -33,6 +33,9 @@ teachers:
 students:
 - name: Isaac Albéniz
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Georges Bizet
   source: wiki
 - name: Claude Debussy
@@ -56,9 +59,15 @@ students:
 - name: Vincent d'Indy
   source: llm
   quote: He had many pupils including... Vincent d'Indy
+  corroborated_by:
+  - llm
+  - wiki
 - name: Albert Lavignac
   source: llm
   quote: He had many pupils including... Albert Lavignac
+  corroborated_by:
+  - llm
+  - wiki
 - name: Marguerite Long
   source: llm
   quote: He had many pupils including... Marguerite Long

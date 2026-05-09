@@ -14,12 +14,18 @@ era_source: llm
 teachers:
 - name: Leonid Nikolayev (pianist)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Alexander Glazunov
   source: llm
   quote: monitored his progress closely and promoted him
 - name: Leonid Nikolayev
   source: llm
   quote: Shostakovich studied piano with Leonid Nikolayev
+  corroborated_by:
+  - llm
+  - wiki
 - name: Elena Rozanova
   source: llm
   quote: Shostakovich studied piano with Elena Rozanova
@@ -44,6 +50,9 @@ students:
 - name: Galina Ustvolskaya
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Georgy Sviridov
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S

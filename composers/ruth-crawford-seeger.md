@@ -31,6 +31,9 @@ teachers:
 - name: Charles Seeger
   source: llm
   quote: began studying composition with Charles Seeger that autumn
+  corroborated_by:
+  - llm
+  - wiki
 - name: Valborg Collett
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F

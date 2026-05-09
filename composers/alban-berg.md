@@ -14,6 +14,9 @@ era_source: llm
 teachers:
 - name: Arnold Schoenberg
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gustav Mahler
   source: wiki
 students:

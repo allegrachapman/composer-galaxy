@@ -20,6 +20,9 @@ students:
   source: manual
   quote: the singers Corona Schröter and Gertrud Elisabeth Schmeling both received
     his support
+  corroborated_by:
+  - manual
+  - wiki
 - name: Christian Gottlob Neefe
   source: wiki
   quote: pupil of the composer Johann Adam Hiller under whose guidance he wrote his

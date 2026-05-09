@@ -18,6 +18,9 @@ teachers:
 - name: Jules Massenet
   source: llm
   quote: In 1892 he started studying composition with Jules Massenet
+  corroborated_by:
+  - llm
+  - wiki
 - name: André Gedalge
   source: llm
   quote: fugue and counterpoint with André Gedalge
@@ -27,6 +30,9 @@ teachers:
 - name: Gabriel Fauré
   source: llm
   quote: From 1896 he was a student of Gabriel Fauré
+  corroborated_by:
+  - llm
+  - wiki
 students:
 - name: George Enescu
   source: wiki
@@ -45,6 +51,9 @@ students:
 - name: Francis Poulenc
   source: llm
   quote: Composers who studied with him included Francis Poulenc
+  corroborated_by:
+  - llm
+  - wiki
 - name: Henri Sauguet
   source: llm
   quote: Composers who studied with him included Henri Sauguet

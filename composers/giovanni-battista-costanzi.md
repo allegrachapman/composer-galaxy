@@ -19,6 +19,9 @@ students:
 - name: Luigi Boccherini
   source: llm
   quote: a teacher of Luigi Boccherini
+  corroborated_by:
+  - llm
+  - wiki
 mentors: []
 ---
 

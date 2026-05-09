@@ -39,6 +39,9 @@ students:
   source: llm
   quote: She eventually moved in with her student and friend, Margaret Bonds, also
     a Black pianist and composer
+  corroborated_by:
+  - llm
+  - wiki
 mentors: []
 ---
 

@@ -17,6 +17,9 @@ teachers:
 - name: Edward Burlingame Hill
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+  corroborated_by:
+  - llm
+  - wiki
 - name: Rosario Scalero
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -25,6 +28,9 @@ students:
   source: llm
   quote: He also encouraged many younger composers and literary figures such as Theodor
     Adorno, Ned Rorem, Lou Harrison
+  corroborated_by:
+  - llm
+  - wiki
 - name: Lou Harrison
   source: llm
   quote: He also encouraged many younger composers and literary figures such as Theodor

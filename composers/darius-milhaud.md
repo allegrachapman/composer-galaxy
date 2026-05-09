@@ -14,11 +14,20 @@ era_source: llm
 teachers:
 - name: Charles-Marie Widor
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Vincent d'Indy
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: André Gedalge
   source: llm
   quote: harmony and counterpoint with André Gedalge
+  corroborated_by:
+  - llm
+  - wiki
 - name: Henri Berthelier
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
@@ -42,10 +51,16 @@ students:
   source: llm
   quote: He taught many future jazz and classical composers, including Burt Bacharach,
     Dave Brubeck, Philip Glass
+  corroborated_by:
+  - llm
+  - wiki
 - name: Steve Reich
   source: llm
   quote: He taught many future jazz and classical composers, including Burt Bacharach,
     Dave Brubeck, Philip Glass, Steve Reich
+  corroborated_by:
+  - llm
+  - wiki
 - name: György Kurtág
   source: llm
   quote: He taught many future jazz and classical composers, including Burt Bacharach,
@@ -54,11 +69,17 @@ students:
   source: llm
   quote: He taught many future jazz and classical composers, including Burt Bacharach,
     Dave Brubeck, Philip Glass, Steve Reich, György Kurtág, Karlheinz Stockhausen
+  corroborated_by:
+  - llm
+  - wiki
 - name: Iannis Xenakis
   source: llm
   quote: He taught many future jazz and classical composers, including Burt Bacharach,
     Dave Brubeck, Philip Glass, Steve Reich, György Kurtág, Karlheinz Stockhausen
     and Iannis Xenakis
+  corroborated_by:
+  - llm
+  - wiki
 - name: Murray Adaskin
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
@@ -218,6 +239,9 @@ students:
 - name: Betsy Jolas
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+  corroborated_by:
+  - llm
+  - wiki
 - name: Paul Kont
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M

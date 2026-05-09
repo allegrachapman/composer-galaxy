@@ -16,6 +16,9 @@ teachers:
   source: wiki
 - name: Nadia Boulanger
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Béla Wilda
   source: llm
   quote: a student of Rachmaninoff, who taught him to play Bach on his bandoneon

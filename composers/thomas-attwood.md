@@ -25,6 +25,9 @@ teachers:
 students:
 - name: John Goss (composer)
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Cipriani Potter
   source: wiki
 - name: Thomas Attwood Walmisley
@@ -32,6 +35,9 @@ students:
 - name: John Goss
   source: llm
   quote: He taught John Goss, Cipriani Potter, his godson Thomas Attwood Walmisley
+  corroborated_by:
+  - llm
+  - wiki
 - name: Elizabeth Jonas
   source: llm
   quote: He taught John Goss, Cipriani Potter, his godson Thomas Attwood Walmisley,

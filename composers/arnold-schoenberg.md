@@ -27,6 +27,9 @@ teachers:
 students:
 - name: Felix Greissle
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Winfried Zillig
   source: wiki
 - name: Edward B. Powell
@@ -37,6 +40,9 @@ students:
 - name: Alban Berg
   source: llm
   quote: Mentoring Anton Webern and Alban Berg
+  corroborated_by:
+  - llm
+  - wiki
 - name: Karl Horwitz
   source: llm
   quote: obtained these poems from one of his own composition pupils, Karl Horwitz
@@ -46,6 +52,9 @@ students:
 - name: Hanns Eisler
   source: llm
   quote: They included Anton Webern, Alban Berg, and Hanns Eisler
+  corroborated_by:
+  - llm
+  - wiki
 - name: Rudolf Kolisch
   source: llm
   quote: sister of his pupil, the violinist Rudolf Kolisch
@@ -109,6 +118,9 @@ students:
 - name: Lou Harrison
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Marij Kogoj
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -130,6 +142,9 @@ students:
 - name: Earl Kim
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Leon Kirchner
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -166,6 +181,9 @@ students:
 - name: Leonard Stein
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Eduard Steuermann
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
@@ -175,6 +193,9 @@ students:
 - name: Viktor Ullmann
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  corroborated_by:
+  - llm
+  - wiki
 - name: Vilma von Webenau
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S

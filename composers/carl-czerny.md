@@ -15,9 +15,15 @@ teachers:
 - name: Ludwig van Beethoven
   source: llm
   quote: Beethoven was impressed with the 10-year-old and accepted him as a pupil.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Johann Nepomuk Hummel
   source: llm
   quote: he transferred to be Johann Nepomuk Hummel's star pupil.
+  corroborated_by:
+  - llm
+  - wiki
 - name: Antonio Salieri
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S

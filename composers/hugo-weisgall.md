@@ -15,6 +15,9 @@ teachers:
 - name: Roger Sessions
   source: llm
   quote: privately with Roger Sessions
+  corroborated_by:
+  - llm
+  - wiki
 - name: Fritz Reiner
   source: llm
   quote: with conductor Fritz Reiner
@@ -24,6 +27,9 @@ teachers:
 students:
 - name: Dominick Argento
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Bruce Saylor
   source: wiki
 - name: William Schimmel

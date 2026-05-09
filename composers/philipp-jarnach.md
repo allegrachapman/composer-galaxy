@@ -20,6 +20,9 @@ teachers:
 - name: Ferruccio Busoni
   source: llm
   quote: During the First World War he was a student of Ferruccio Busoni in Zürich
+  corroborated_by:
+  - llm
+  - wiki
 - name: Paul Juon
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
@@ -30,10 +33,16 @@ students:
   source: llm
   quote: His students included Ivan Rebroff (known as Hans Rolf Rippert at that time),
     Kurt Weill
+  corroborated_by:
+  - llm
+  - wiki
 - name: Otto Luening
   source: llm
   quote: His students included Ivan Rebroff (known as Hans Rolf Rippert at that time),
     Kurt Weill, Otto Luening
+  corroborated_by:
+  - llm
+  - wiki
 - name: Bernd Alois Zimmermann
   source: llm
   quote: His students included Ivan Rebroff (known as Hans Rolf Rippert at that time),

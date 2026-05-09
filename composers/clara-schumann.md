@@ -28,6 +28,9 @@ students:
 - name: Fanny Davies
   source: llm
   quote: Among her 68 known students who made a musical career were Fanny Davies
+  corroborated_by:
+  - llm
+  - wiki
 - name: Ilona Eibenschütz
   source: llm
   quote: Among her 68 known students who made a musical career were Ilona Eibenschütz
@@ -37,6 +40,9 @@ students:
 - name: Adelina de Lara
   source: llm
   quote: Among her 68 known students who made a musical career were Adelina de Lara
+  corroborated_by:
+  - llm
+  - wiki
 - name: Franklin Taylor
   source: llm
   quote: Among her 68 known students who made a musical career were Franklin Taylor

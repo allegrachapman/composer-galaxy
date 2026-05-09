@@ -18,6 +18,9 @@ teachers:
   source: llm
   quote: studied music and composition under such masters as Isidor Philipp of the
     Paris Conservatory, Rafael Joseffy, Paolo Gallico, Ernest Bloch
+  corroborated_by:
+  - llm
+  - wiki
 - name: Rubin Goldmark
   source: llm
   quote: studied music and composition under such masters as Isidor Philipp of the

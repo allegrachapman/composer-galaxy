@@ -16,6 +16,9 @@ teachers:
   source: wiki
 - name: Isidor Philipp
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Louis Théophile Schweitzer
   source: llm
   quote: his father, the local Lutheran-Evangelical pastor of the EPCAAL, taught him
@@ -26,6 +29,9 @@ teachers:
 - name: Charles-Marie Widor
   source: llm
   quote: Widor, deeply impressed, agreed to teach Schweitzer without fee
+  corroborated_by:
+  - llm
+  - wiki
 - name: Gustav Jacobsthal
   source: llm
   quote: he also received instruction in piano and counterpoint from professor Gustav

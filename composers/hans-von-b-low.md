@@ -17,10 +17,16 @@ teachers:
 - name: Friedrich Wieck
   source: llm
   quote: he was a student of Professor Friedrich Wieck
+  corroborated_by:
+  - llm
+  - wiki
 - name: Franz Liszt
   source: llm
   quote: Bülow was perhaps the most prominent of the early students of the Hungarian
     composer, pianist and conductor Franz Liszt
+  corroborated_by:
+  - llm
+  - wiki
 - name: Carl Eberwein
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F

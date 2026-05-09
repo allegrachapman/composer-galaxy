@@ -23,6 +23,9 @@ teachers:
 students:
 - name: Lukas Foss
   source: wiki
+  corroborated_by:
+  - llm
+  - wiki
 - name: Graham George
   source: wiki
 - name: Andrew Hill
@@ -40,6 +43,9 @@ students:
 - name: Harold Shapero
   source: llm
   quote: Harold Shapero
+  corroborated_by:
+  - llm
+  - wiki
 - name: Hans Otte
   source: llm
   quote: Hans Otte
@@ -64,6 +70,9 @@ students:
 - name: Franz Reizenstein
   source: llm
   quote: the composers Franz Reizenstein
+  corroborated_by:
+  - llm
+  - wiki
 - name: Harald Genzmer
   source: llm
   quote: Harald Genzmer
