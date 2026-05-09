@@ -1201,7 +1201,7 @@ function buildGraph(data) {
   const _edgeMeta = {};
   links = data.edges.map(e => {
     const id = e.data.id;
-    _edgeMeta[id] = { url: e.data.source_url, quote: e.data.quote || "", fileOwner: e.data.file_owner, field: e.data.field, edgeName: e.data.edge_name };
+    _edgeMeta[id] = { url: e.data.source_url, quote: e.data.quote || "", fileOwner: e.data.file_owner, field: e.data.field, edgeName: e.data.edge_name, corroboratedBy: e.data.corroborated_by || null };
     return {
       id: id,
       source: e.data.source,
@@ -1319,7 +1319,9 @@ function showDetail(node) {
       const qid = `llmq${_quoteCounter++}`;
       const quoteBlock = e.quote ? `<div style="margin-top:4px;font-style:italic;color:#5a7a8a;font-size:11px">\u201c${_escHtml(e.quote)}\u201d</div>` : "";
       const wikiLink = e.url ? `<div style="margin-top:4px"><a class="src-verify" data-url="${_escHtml(e.url)}" data-quote="${_escHtml(e.quote || highlightText)}" style="color:var(--wiki);font-size:10px;cursor:pointer">see on Wikipedia \u2197</a></div>` : "";
-      const detailContent = `<div class="edge-prov">${origin} \u00b7 ${method}</div>${quoteBlock}${wikiLink}`;
+      const meta = window._edgeMeta && window._edgeMeta[e.linkObj ? e.linkObj.id : ""];
+      const corrobLine = meta && meta.corroboratedBy ? `<div class="edge-prov" style="color:#4ade80">corroborated by: ${meta.corroboratedBy.join(", ")}</div>` : "";
+      const detailContent = `<div class="edge-prov">${origin} \u00b7 ${method}</div>${corrobLine}${quoteBlock}${wikiLink}`;
       const details = `<span class="src-toggle" data-qid="${qid}" style="color:var(--muted);font-size:10px;margin-left:4px;cursor:pointer">details \u25be</span><div id="${qid}" class="llm-quote">${badge}${detailContent}</div>`;
       return `<li data-node-id="${_escHtml(e.node.id)}">${e.node.label || e.node.id}${dates}${details}</li>`;
     }).join("") + '</ul>';

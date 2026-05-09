@@ -145,6 +145,14 @@ def _merge_edges(
 
     corroborated = by_tag.get("llm", set()) | by_tag.get("manual", set()) | by_tag.get("infobox", set()) | by_tag.get("grove", set())
 
+    # Track which distinct sources found each edge
+    found_by: dict[str, set[str]] = {}
+    for vals, tag in source_lists:
+        for v in vals:
+            name = v.get("name", "").strip() if isinstance(v, dict) else str(v).strip()
+            if name:
+                found_by.setdefault(_normalize_name(name), set()).add(tag)
+
     seen: dict[str, dict] = {}
     for vals, tag in source_lists:
         for v in vals:
@@ -168,6 +176,9 @@ def _merge_edges(
                     entry["quote"] = quote
                 if source_url:
                     entry["source_url"] = source_url
+                sources = found_by.get(key, {tag})
+                if len(sources) > 1:
+                    entry["corroborated_by"] = sorted(sources)
                 seen[key] = entry
     return list(seen.values())
 

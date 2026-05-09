@@ -118,13 +118,15 @@ def load_graph() -> dict[str, Any]:
                 }
             }
 
-    def edge(src: str, tgt: str, kind: str, source: str, source_url: str | None = None, quote: str | None = None, file_owner: str | None = None, field: str | None = None, edge_name: str | None = None):
+    def edge(src: str, tgt: str, kind: str, source: str, source_url: str | None = None, quote: str | None = None, file_owner: str | None = None, field: str | None = None, edge_name: str | None = None, corroborated_by: list | None = None):
         ensure_node(src)
         ensure_node(tgt)
         origin, method = SOURCE_MAP.get(source, ("unknown", "unknown"))
         conf = BASE_CONFIDENCE.get(method, 0.50)
         if quote:
             conf = min(conf + MOD_QUOTE, 1.0)
+        if corroborated_by and len(corroborated_by) > 1:
+            conf = min(conf + 0.10, 1.0)
         d = {
             "id": f"{_node_id(src)}__{kind}__{_node_id(tgt)}",
             "source": _node_id(src),
@@ -138,6 +140,8 @@ def load_graph() -> dict[str, Any]:
         }
         if quote:
             d["quote"] = quote
+        if corroborated_by and len(corroborated_by) > 1:
+            d["corroborated_by"] = corroborated_by
         if file_owner:
             d["file_owner"] = file_owner
             d["field"] = field
@@ -152,13 +156,13 @@ def load_graph() -> dict[str, Any]:
         owner_id = _node_id(name)
         for t in rec.get("teachers") or []:
             url = t.get("source_url") or wiki_urls.get(_node_id(t["name"])) or wiki_url
-            edge(t["name"], name, "teacher", t["source"], url, t.get("quote"), owner_id, "teachers", t["name"])
+            edge(t["name"], name, "teacher", t["source"], url, t.get("quote"), owner_id, "teachers", t["name"], t.get("corroborated_by"))
         for s in rec.get("students") or []:
             url = s.get("source_url") or wiki_urls.get(_node_id(s["name"])) or wiki_url
-            edge(name, s["name"], "teacher", s["source"], url, s.get("quote"), owner_id, "students", s["name"])
+            edge(name, s["name"], "teacher", s["source"], url, s.get("quote"), owner_id, "students", s["name"], s.get("corroborated_by"))
         for m in rec.get("mentors") or []:
             url = m.get("source_url") or wiki_urls.get(_node_id(m["name"])) or wiki_url
-            edge(m["name"], name, "mentor", m["source"], url, m.get("quote"), owner_id, "mentors", m["name"])
+            edge(m["name"], name, "mentor", m["source"], url, m.get("quote"), owner_id, "mentors", m["name"], m.get("corroborated_by"))
 
     # Dedupe edges (same src/tgt/kind): prefer version with a quote, then by source priority
     priority = {"infobox": 0, "wiki": 1, "manual": 2, "llm": 3}
