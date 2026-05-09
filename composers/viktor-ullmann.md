@@ -1,5 +1,6 @@
 ---
 name: Viktor Ullmann
+wikidata: Q78530
 wikipedia: https://en.wikipedia.org/wiki/Viktor_Ullmann
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ullmann_2013.jpg/250px-Ullmann_2013.jpg
 birth: '1898'
@@ -20,18 +21,16 @@ teachers:
   source: llm
   quote: His mentor was now Alexander von Zemlinsky, under whose direction he served
     as a conductor
+- name: Alexander Zemlinsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students: []
-influenced_by:
-- name: Arnold Schoenberg
-  source: llm
-  quote: While his works of the 1920s still clearly show the influence of Schönberg's
-    atonal period
-- name: Alban Berg
-  source: llm
-  quote: the opera Fall of the Antichrist develops the issues raised by Alban Berg's
-    opera Wozzeck
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Viktor Ullmann
 

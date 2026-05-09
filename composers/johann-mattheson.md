@@ -1,5 +1,6 @@
 ---
 name: Johann Mattheson
+wikidata: Q170333
 wikipedia: https://en.wikipedia.org/wiki/Johann_Mattheson
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Johann_Mattheson_by_Haid.jpg/250px-Johann_Mattheson_by_Haid.jpg
 birth: '1681'
@@ -10,14 +11,23 @@ nationality: Hamburg
 nationality_source: infobox
 era: Baroque
 era_source: llm
-teachers: []
+teachers:
+- name: J. N. Hanff
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Johann Peter Kellner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Jacob Praetorius
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
 students: []
-influenced_by: []
-influenced:
-- name: George Frideric Handel
-  source: llm
-  quote: a close friend of George Frideric Handel
+mentors: []
 ---
+
+
+
+
 
 # Johann Mattheson
 

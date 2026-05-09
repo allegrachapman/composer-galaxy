@@ -1,5 +1,6 @@
 ---
 name: Johann Nikolaus Forkel
+wikidata: Q57922
 wikipedia: https://en.wikipedia.org/wiki/Johann_Nikolaus_Forkel
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Johann_Nikolaus_Forkel.jpg/250px-Johann_Nikolaus_Forkel.jpg
 birth: '1749'
@@ -16,13 +17,10 @@ teachers:
   quote: received early musical training, especially in keyboard playing, from Johann
     Heinrich Schulthesius
 students: []
-influenced_by:
-- name: Johann Sebastian Bach
-  source: llm
-  quote: an enthusiastic admirer of Johann Sebastian Bach, whose music he did much
-    to popularize
-influenced: []
+mentors: []
 ---
+
+
 
 # Johann Nikolaus Forkel
 

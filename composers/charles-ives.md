@@ -1,5 +1,6 @@
 ---
 name: Charles Ives
+wikidata: Q309648
 wikipedia: https://en.wikipedia.org/wiki/Charles_Ives
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Charles_Edward_Ives_-_National_Portrait_Gallery%2C_Smithsonian_Institution_%28NPG.82.185%29.jpg/250px-Charles_Edward_Ives_-_National_Portrait_Gallery%2C_Smithsonian_Institution_%28NPG.82.185%29.jpg
 birth: '1874'
@@ -13,37 +14,21 @@ era_source: llm
 teachers:
 - name: George Ives
   source: llm
-  quote: His father taught him and his brother (Joseph) Moss Ives music, teaching
-    harmony and counterpoint
+  quote: His father taught him and his brother (Joseph) Moss Ives ... music, teaching
+    harmony and counterpoint and guided his first compositions
 - name: Horatio Parker
   source: llm
   quote: In September 1894, Ives entered Yale University, studying under Horatio Parker.
+- name: Harry Rowe Shelley
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students: []
-influenced_by:
-- name: Ralph Waldo Emerson
-  source: llm
-  quote: The Unanswered Question was influenced by the New England writers Ralph Waldo
-    Emerson and Henry David Thoreau.
-- name: Henry David Thoreau
-  source: llm
-  quote: The Unanswered Question was influenced by the New England writers Ralph Waldo
-    Emerson and Henry David Thoreau.
-- name: Stephen Foster
-  source: llm
-  quote: It was from him that Ives also learned the music of Stephen Foster.
-influenced:
-- name: Elliott Carter
-  source: llm
-  quote: Ives befriended and encouraged a young Elliott Carter.
-- name: Frank Zappa
-  source: llm
-  quote: American singer and composer Frank Zappa included Charles Ives in a list
-    of influences
-- name: Albert Ayler
-  source: llm
-  quote: Jazz musician Albert Ayler also named Charles Ives as an influence in a 1970
-    interview
+mentors: []
 ---
+
+
+
+
 
 # Charles Ives
 

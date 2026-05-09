@@ -1,5 +1,6 @@
 ---
 name: Michael Tippett
+wikidata: Q356499
 wikipedia: https://en.wikipedia.org/wiki/Michael_Tippett
 thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Tippett_old_age.jpg/250px-Tippett_old_age.jpg
 birth: '1905'
@@ -26,7 +27,7 @@ teachers:
   quote: whose pedantic approach and lack of sympathy with Tippett's compositional
     aims strained the relationship
 - name: R. O. Morris
-  source: llm_confirmed
+  source: llm
   quote: an expert on 16th-century music
 - name: Gordon Jacob
   source: llm
@@ -34,21 +35,28 @@ teachers:
 - name: Frances Tinkler
   source: llm
   quote: introduced him to the music of Bach, Beethoven, Schubert, and Chopin
-students:
-- name: Ralph Vaughan Williams
+- name: Malcolm Sargent
   source: wiki
-influenced_by:
-- name: T. S. Eliot
-  source: llm
-  quote: came to consider Eliot his "spiritual father"
-- name: William Blake
-  source: llm
-  quote: Franks had a passion for the poetry of both William Blake and Wilfred Owen
-- name: Wilfred Owen
-  source: llm
-  quote: Franks had a passion for the poetry of both William Blake and Wilfred Owen
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+students:
+- name: John Purser
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Alan Ridout
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Elliott Schwartz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Raymond Warren
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+mentors: []
 ---
+
+
+
+
 
 # Michael Tippett
 

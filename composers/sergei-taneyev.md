@@ -1,5 +1,6 @@
 ---
 name: Sergei Taneyev
+wikidata: Q335006
 wikipedia: https://en.wikipedia.org/wiki/Sergei_Taneyev
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Taneev.jpg/250px-Taneev.jpg
 birth: '1856'
@@ -12,7 +13,7 @@ era: Romantic
 era_source: llm
 teachers:
 - name: Pyotr Ilyich Tchaikovsky
-  source: llm_confirmed
+  source: llm
   quote: the composition class of Pyotr Ilyich Tchaikovsky
 - name: Nikolai Rubinstein
   source: llm
@@ -48,23 +49,39 @@ students:
 - name: Thomas de Hartmann
   source: llm
   quote: His pupils included Thomas de Hartmann
-influenced_by:
-- name: Johann Sebastian Bach
+- name: Georgi Conus
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Lev Conus
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Alexander Goldenweiser
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Alexander Kastalsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Yuri Pomerantsiev
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Konstantin Saradzhev
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Sergei Vasilenko
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Alexander Siloti
+  source: wiki
+- name: Leonid Nikolayev
   source: llm
-  quote: He engrossed himself in the music of J. S. Bach
-- name: Giovanni Pierluigi da Palestrina
-  source: llm
-  quote: He engrossed himself in the music of J. S. Bach, Palestrina
-influenced:
-- name: Sergei Rachmaninoff
-  source: llm
-  quote: The polyphonic interweaves in the music of Rachmaninoff stem directly from
-    Taneyev's teaching
-- name: Nikolai Medtner
-  source: llm
-  quote: The polyphonic interweaves in the music of Medtner stem directly from Taneyev's
-    teaching
+  quote: He studied at the Moscow Conservatory with Sergei Taneyev
+mentors: []
 ---
+
+
+
+
+
 
 # Sergei Taneyev
 

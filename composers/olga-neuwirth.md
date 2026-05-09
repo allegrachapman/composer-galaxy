@@ -1,5 +1,6 @@
 ---
 name: Olga Neuwirth
+wikidata: Q273654
 wikipedia: https://en.wikipedia.org/wiki/Olga_Neuwirth
 thumbnail: null
 birth: '1968'
@@ -27,16 +28,19 @@ teachers:
   source: llm
   quote: studies at the University of Music and Performing Arts Vienna under Erich
     Urbanner
-students: []
-influenced_by:
-- name: Luigi Nono
-  source: llm
-  quote: Luigi Nono has inspired her both musically and politically
 - name: Adriana Hölszky
-  source: llm
-  quote: significant inspiration in this period from Adriana Hölszky
-influenced: []
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Luigi Nono
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+students: []
+mentors: []
 ---
+
+
+
+
 
 # Olga Neuwirth
 

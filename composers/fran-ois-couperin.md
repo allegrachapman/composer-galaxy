@@ -1,5 +1,6 @@
 ---
 name: François Couperin
+wikidata: Q50186
 wikipedia: https://en.wikipedia.org/wiki/François_Couperin
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Francois_Couperin_2.jpg/250px-Francois_Couperin_2.jpg
 birth: '1668'
@@ -21,33 +22,11 @@ teachers:
   source: llm
   quote: approbation by his teacher, Michel Richard Delalande
 students: []
-influenced_by:
-- name: Arcangelo Corelli
-  source: llm
-  quote: Couperin acknowledged his debt to the Italian composer Corelli
-- name: Jean-Baptiste Lully
-  source: llm
-  quote: composed in honor of Jean-Baptiste Lully
-influenced:
-- name: Johann Sebastian Bach
-  source: llm
-  quote: These volumes were admired by Johann Sebastian Bach, who exchanged letters
-    with Couperin
-- name: Johannes Brahms
-  source: llm
-  quote: Johannes Brahms's piano music was influenced by the keyboard music of Couperin
-- name: Maurice Ravel
-  source: llm
-  quote: later by Brahms and by Ravel, the latter of whom memorialized the composer
-    in Le Tombeau de Couperin
-- name: Richard Strauss
-  source: llm
-  quote: These features attracted Richard Strauss, who orchestrated some of them
-- name: Thomas Adès
-  source: llm
-  quote: Modern English composer Thomas Adès took three pieces from different sets
-    of Couperin suites and orchestrated them
+mentors: []
 ---
+
+
+
 
 # François Couperin
 

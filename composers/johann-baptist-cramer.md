@@ -1,5 +1,6 @@
 ---
 name: Johann Baptist Cramer
+wikidata: Q455212
 wikipedia: https://en.wikipedia.org/wiki/Johann_Baptist_Cramer
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Johann_Baptist_Cramer_by_William_Sharp.jpg/250px-Johann_Baptist_Cramer_by_William_Sharp.jpg
 birth: '1771'
@@ -12,22 +13,25 @@ era: Classical
 era_source: llm
 teachers:
 - name: Muzio Clementi
-  source: llm_confirmed
+  source: llm
   quote: From 1782 to 1784, he studied piano under Muzio Clementi
-students: []
-influenced_by:
-- name: Ludwig van Beethoven
+- name: Hélène de Montgeroult
   source: llm
-  quote: was particularly appreciated by Beethoven when he visited Vienna
-- name: Franz Joseph Haydn
-  source: llm
-  quote: renewing his friendship with Haydn
-influenced:
-- name: Ludwig van Beethoven
-  source: llm
-  quote: Beethoven considered him the finest pianist of the day from the standpoint
-    of pure technical perfection
+  quote: She also gave piano lessons to the young Johann Baptist Cramer at this time.
+students:
+- name: George Eugene Griffin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Rudolf Joseph Schachner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
+
 
 # Johann Baptist Cramer
 

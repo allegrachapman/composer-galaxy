@@ -1,5 +1,6 @@
 ---
 name: Johann van Beethoven
+wikidata: Q2153541
 wikipedia: https://en.wikipedia.org/wiki/Johann_van_Beethoven
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ludwig_van_Beethoven%27s_parents.jpg/250px-Ludwig_van_Beethoven%27s_parents.jpg
 birth: '1739'
@@ -15,11 +16,14 @@ teachers:
   source: wiki
 students:
 - name: Ludwig van Beethoven
-  source: llm_confirmed
+  source: llm
   quote: Johann realized Ludwig's talent and became his first teacher.
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Johann van Beethoven
 

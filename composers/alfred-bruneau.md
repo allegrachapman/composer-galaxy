@@ -1,5 +1,6 @@
 ---
 name: Alfred Bruneau
+wikidata: Q933351
 wikipedia: https://en.wikipedia.org/wiki/Alfred_Bruneau
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Alfred_Bruneau.jpg/250px-Alfred_Bruneau.jpg
 birth: '1857'
@@ -8,19 +9,17 @@ death: '1934'
 death_source: llm
 nationality: French
 nationality_source: llm
-era: null
-era_source: null
+era: 20th-century
+era_source: llm
 teachers: []
 students: []
-influenced_by:
-- name: Richard Wagner
-  source: llm
-  quote: Bruneau's orchestral works show the influence of Wagner
+mentors:
 - name: Émile Zola
   source: llm
-  quote: beginning a two-decade-long collaboration
-influenced: []
+  quote: In 1888, Bruneau met Émile Zola, beginning a two-decade-long collaboration.
 ---
+
+
 
 # Alfred Bruneau
 

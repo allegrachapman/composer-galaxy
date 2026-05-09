@@ -1,5 +1,6 @@
 ---
 name: Felix Mendelssohn
+wikidata: Q46096
 wikipedia: https://en.wikipedia.org/wiki/Felix_Mendelssohn
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Felix_Mendelssohn_Bartholdy_by_Eduard_Magnus_%281833%29.jpg/250px-Felix_Mendelssohn_Bartholdy_by_Eduard_Magnus_%281833%29.jpg
 birth: '1809'
@@ -8,43 +9,49 @@ death: '1847'
 death_source: infobox
 nationality: Hamburg
 nationality_source: infobox
-era: Romantic
-era_source: llm
+era: null
+era_source: null
 teachers:
 - name: Ludwig Berger (composer)
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 - name: Ignaz Moscheles
   source: wiki
-- name: W. F. Bach
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Carl Friedrich Zelter
   source: wiki
-- name: Marie Bigot
-  source: llm
-  quote: at seven was tutored by Marie Bigot in Paris
-- name: Ludwig Berger
-  source: llm
-  quote: studied piano with Ludwig Berger, who was himself a former student of Muzio
-    Clementi
-- name: Carl Friedrich Zelter
-  source: llm_confirmed
-  quote: studied counterpoint and composition with Carl Friedrich Zelter in Berlin.
-    This was an important influence on his future career
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students:
-- name: William Sterndale Bennett
+- name: Charles Gounod
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Charles Edward Horsley
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Carl Reinecke
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: W. S. Rockstro
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Camille-Marie Stamaty
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Friedrich Hieronymus Truhn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Richard Wüerst
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Josephine Lang
   source: llm
-  quote: His protégé, the British composer and pianist William Sterndale Bennett,
-    worked closely with Mendelssohn
-influenced_by:
-- name: Johann Sebastian Bach
-  source: llm
-  quote: whose music influenced him deeply
-- name: Carl Friedrich Zelter
-  source: llm
-  quote: This was an important influence on his future career
-influenced:
-- name: Robert Schumann
-  source: llm
-  quote: he persuaded Ignaz Moscheles and Robert Schumann to join him
+  quote: Both Felix Mendelssohn and Ferdinand Hiller went to great lengths to ensure
+    that Lang learned the proper theory for song-writing
+mentors: []
 ---
+
+
+
 
 # Felix Mendelssohn
 

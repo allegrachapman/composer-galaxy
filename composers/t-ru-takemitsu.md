@@ -1,5 +1,6 @@
 ---
 name: Tōru Takemitsu
+wikidata: Q155467
 wikipedia: https://en.wikipedia.org/wiki/Tōru_Takemitsu
 thumbnail: https://upload.wikimedia.org/wikipedia/en/4/4c/TakemitsuToru.jpg
 birth: '1930'
@@ -15,27 +16,16 @@ teachers:
   source: wiki
 - name: Fumio Hayasaka
   source: wiki
-students: []
-influenced_by:
-- name: Igor Stravinsky
+students:
+- name: Chester Biscardi
   source: llm
-  quote: Stravinsky insisted on hearing it to the end
-- name: John Cage
-  source: llm
-  quote: came into contact with the experimental work of John Cage
-- name: Anton Webern
-  source: llm
-  quote: partly as a result of Takemitsu's renewed interest in the music of Anton
-    Webern
-- name: Claude Debussy
-  source: llm
-  quote: Green (or November Steps II) written 10 years earlier, is heavily influenced
-    by Debussy
-influenced:
-- name: Toshi Ichiyanagi
-  source: llm
-  quote: the composer Toshi Ichiyanagi returned from his studies in America in 1961
+  quote: His composition instructors have included Tōru Takemitsu
+mentors: []
 ---
+
+
+
+
 
 # Tōru Takemitsu
 

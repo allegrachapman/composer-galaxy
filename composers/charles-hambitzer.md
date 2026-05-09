@@ -1,5 +1,6 @@
 ---
 name: Charles Hambitzer
+wikidata: Q23675262
 wikipedia: https://en.wikipedia.org/wiki/Charles_Hambitzer
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Charles_Hambitzer.jpg/250px-Charles_Hambitzer.jpg
 birth: '1878'
@@ -23,12 +24,11 @@ students:
 - name: Nathaniel Shilkret
   source: llm
   quote: I studied piano with him
-influenced_by: []
-influenced:
-- name: George Gershwin
-  source: llm
-  quote: George once said that Charles was his first major musical influence in life
+mentors: []
 ---
+
+
+
 
 # Charles Hambitzer
 

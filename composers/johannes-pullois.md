@@ -1,5 +1,6 @@
 ---
 name: Johannes Pullois
+wikidata: Q654912
 wikipedia: https://en.wikipedia.org/wiki/Johannes_Pullois
 thumbnail: null
 birth: null
@@ -12,16 +13,10 @@ era: Renaissance
 era_source: llm
 teachers: []
 students: []
-influenced_by:
-- name: English composers
-  source: llm
-  quote: It shows such influence of English music
-influenced:
-- name: Johannes Ockeghem
-  source: llm
-  quote: During his career he was a colleague of both Johannes Philibert and Johannes
-    Ockeghem
+mentors: []
 ---
+
+
 
 # Johannes Pullois
 

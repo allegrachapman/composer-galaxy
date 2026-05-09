@@ -1,5 +1,6 @@
 ---
 name: Ludwig van Beethoven
+wikidata: Q255
 wikipedia: https://en.wikipedia.org/wiki/Ludwig_van_Beethoven
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg/250px-Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg
 birth: '1770'
@@ -22,14 +23,18 @@ teachers:
 - name: Johann Albrechtsberger
   source: wiki
 - name: Johann van Beethoven
-  source: llm_confirmed
-  quote: He was initially taught intensively by his father, Johann van Beethoven
-- name: Ignaz Schuppanzikh
   source: llm
-  quote: He also studied violin under Ignaz Schuppanzigh
-students:
-- name: Julie Guicciardi
+  quote: He was initially taught intensively by his father, Johann van Beethoven
+- name: Johann Georg Albrechtsberger
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Gilles van den Eeden
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Johann Baptist Schenk
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+students:
 - name: Ferdinand Hiller
   source: wiki
 - name: Carl Czerny
@@ -37,17 +42,20 @@ students:
 - name: Emperor Leopold II
   source: wiki
 - name: Ferdinand Ries
-  source: llm_confirmed
+  source: llm
   quote: he tutored Ferdinand Ries, who went on to become a composer
-influenced_by:
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: he composed in the classical style of Haydn and Wolfgang Amadeus Mozart
-- name: Joseph Haydn
-  source: llm
-  quote: composed in the classical style of Haydn and Wolfgang Amadeus Mozart
-influenced: []
+- name: Dorothea von Ertmann
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Archduke Rudolph
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+mentors: []
 ---
+
+
+
+
 
 # Ludwig van Beethoven
 

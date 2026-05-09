@@ -1,5 +1,6 @@
 ---
 name: Nikolai Zaremba
+wikidata: Q2717812
 wikipedia: https://en.wikipedia.org/wiki/Nikolai_Zaremba
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Nicolai_Zaremba_%281821-1879%29.JPG/250px-Nicolai_Zaremba_%281821-1879%29.JPG
 birth: '1821'
@@ -25,14 +26,27 @@ students:
 - name: Vasily Safonov
   source: llm
   quote: Then Vasily Safonov became his (private) pupil
-influenced_by:
-- name: Frédéric Chopin
+- name: Ella Adayevskaya
   source: wiki
-- name: Ludwig van Beethoven
-  source: llm
-  quote: influenced by Beethoven
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Ippolit Al'tani
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Herman Laroche
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Nadezhda Rímskaya-Kórsakova
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Nicolai Soloviev
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+mentors: []
 ---
+
+
+
+
 
 # Nikolai Zaremba
 

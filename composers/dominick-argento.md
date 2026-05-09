@@ -1,5 +1,6 @@
 ---
 name: Dominick Argento
+wikidata: Q2630943
 wikipedia: https://en.wikipedia.org/wiki/Dominick_Argento
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Dominick_Argento_in_2016_by_King_Elder_02.jpg/250px-Dominick_Argento_in_2016_by_King_Elder_02.jpg
 birth: '1927'
@@ -38,10 +39,8 @@ students:
   source: wiki
 - name: Juliana Hall
   source: wiki
-- name: Bernard Rogers
-  source: wiki
 - name: Libby Larsen
-  source: llm_confirmed
+  source: llm
   quote: His students included composers Philip Brunelle, Juliana Hall, Libby Larsen,
     Stephen Paulus, and Marjorie Rusche
 - name: Stephen Paulus
@@ -52,9 +51,43 @@ students:
   source: llm
   quote: His students included composers Philip Brunelle, Juliana Hall, Libby Larsen,
     Stephen Paulus, and Marjorie Rusche
-influenced_by: []
-influenced: []
+- name: Carol E. Barnett
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Leonard Danek
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Frank Felice
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Donald Keats
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Richard Hillert
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Richard Marriott
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Arthur Maud
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Paul Reller
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Eric Stokes
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: David Evan Thomas
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+mentors: []
 ---
+
+
+
+
+
 
 # Dominick Argento
 

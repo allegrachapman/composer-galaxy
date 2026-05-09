@@ -1,5 +1,6 @@
 ---
 name: Kurt Weill
+wikidata: Q55004
 wikipedia: https://en.wikipedia.org/wiki/Kurt_Weill
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Bundesarchiv_Bild_146-2005-0119%2C_Kurt_Weill.jpg/250px-Bundesarchiv_Bild_146-2005-0119%2C_Kurt_Weill.jpg
 birth: '1900'
@@ -24,8 +25,11 @@ teachers:
   source: llm
   quote: studied composition with Engelbert Humperdinck
 - name: Ferruccio Busoni
-  source: llm_confirmed
+  source: llm
   quote: Busoni, then approaching the end of his life, was a major influence on Weill
+- name: Friedrich Koch
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 students:
 - name: Claudio Arrau
   source: wiki
@@ -35,28 +39,12 @@ students:
   source: llm
   quote: Among his students were Claudio Arrau, Maurice Abravanel, Heinz Jolles, Nikos
     Skalkottas
-influenced_by:
-- name: Gustav Mahler
-  source: wiki
-- name: Arnold Schoenberg
-  source: wiki
-- name: Igor Stravinsky
-  source: llm
-  quote: influenced by Gustav Mahler, Arnold Schoenberg and Igor Stravinsky
-influenced:
-- name: Alban Berg
-  source: llm
-  quote: Weill's music was admired by composers such as Alban Berg, Alexander von
-    Zemlinsky
-- name: Alexander von Zemlinsky
-  source: llm
-  quote: admired by composers such as Alban Berg, Alexander von Zemlinsky, Darius
-    Milhaud
-- name: Darius Milhaud
-  source: llm
-  quote: admired by composers such as Alban Berg, Alexander von Zemlinsky, Darius
-    Milhaud and Stravinsky
+mentors: []
 ---
+
+
+
+
 
 # Kurt Weill
 

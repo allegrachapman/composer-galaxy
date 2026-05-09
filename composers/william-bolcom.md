@@ -1,5 +1,6 @@
 ---
 name: William Bolcom
+wikidata: Q710714
 wikipedia: https://en.wikipedia.org/wiki/William_Bolcom
 thumbnail: null
 birth: '1938'
@@ -31,6 +32,9 @@ teachers:
 - name: Olivier Messiaen
   source: llm
   quote: studied with Olivier Messiaen at the Paris Conservatoire
+- name: George Rochberg
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
 - name: Derek Bermel
   source: wiki
@@ -49,23 +53,27 @@ students:
 - name: Elena Ruehr
   source: llm
   quote: Carter Pann, Joel Puckett, and Elena Ruehr
-influenced_by:
-- name: Pierre Boulez
+- name: Andrew Bishop
   source: wiki
-- name: Karlheinz Stockhausen
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Kenneth Hesketh
   source: wiki
-- name: Roy Harris
-  source: llm
-  quote: his early influences include Roy Harris and Béla Bartók
-- name: Béla Bartók
-  source: llm
-  quote: his early influences include Roy Harris and Béla Bartók
-- name: Luciano Berio
-  source: llm
-  quote: under the influence of Pierre Boulez, Karlheinz Stockhausen, and Luciano
-    Berio
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Chihchun Chi-sun Lee
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Felicia Sandler
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Matthew Tommasini
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+mentors: []
 ---
+
+
+
+
 
 # William Bolcom
 

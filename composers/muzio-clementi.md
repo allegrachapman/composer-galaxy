@@ -1,5 +1,6 @@
 ---
 name: Muzio Clementi
+wikidata: Q193673
 wikipedia: https://en.wikipedia.org/wiki/Muzio_Clementi
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Muzio_Clementi.jpeg/250px-Muzio_Clementi.jpeg
 birth: '1752'
@@ -11,64 +12,54 @@ nationality_source: infobox
 era: Classical
 era_source: infobox
 teachers:
-- name: Antonio Baroni
-  source: llm
-  quote: private musical instruction with a relative, Antonio Baroni
-- name: S. Giovanni Cardarelli
-  source: llm
-  quote: studies in figured bass with the organist S. Giovanni Cardarelli
 - name: Giuseppe Santarelli
-  source: llm
-  quote: followed by voice lessons from Giuseppe Santarelli
-- name: Gaetano Carpani
-  source: llm
-  quote: he was given counterpoint lessons by Gaetano Carpani
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
+- name: Therese Jansen Bartolozzi
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Ludwig Berger
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Catherina Cibbini-Kozeluch
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 - name: Johann Baptist Cramer
   source: wiki
-- name: Thomas Paul Chipp
-  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 - name: John Field
-  source: llm
-  quote: John Field (who, in turn, would become a major influence on Frédéric Chopin)
-- name: Ignaz Moscheles
-  source: llm
-  quote: Ignaz Moscheles, Therese Jansen Bartolozzi, Johann Nepomuk Hummel
-- name: Therese Jansen Bartolozzi
-  source: llm
-  quote: Therese Jansen Bartolozzi, Johann Nepomuk Hummel, Ludwig Berger
-- name: Johann Nepomuk Hummel
-  source: llm_confirmed
-  quote: Johann Nepomuk Hummel, Ludwig Berger (who went on to teach Felix Mendelssohn)
-- name: Ludwig Berger
-  source: llm
-  quote: Ludwig Berger (who went on to teach Felix Mendelssohn)
-influenced_by:
-- name: Domenico Scarlatti
   source: wiki
-- name: Joseph Haydn
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: August Alexander Klengel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Francesco Lanza
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Ignaz Moscheles
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Venanzio Rauzzini
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Carl Traugott Zeuner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Anne Soria
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Hélène de Montgeroult
   source: llm
-  quote: Domenico Scarlatti's harpsichord school and Joseph Haydn's classical school
-- name: Johann Christian Bach
+  quote: These included... Muzio Clementi
+- name: Thomas Paul Chipp
   source: llm
-  quote: stile Galante of Johann Christian Bach and Ignazio Cirri
-- name: Ignazio Cirri
-  source: llm
-  quote: stile Galante of Johann Christian Bach and Ignazio Cirri
-influenced:
-- name: Ludwig van Beethoven
-  source: llm
-  quote: He was a notable influence on Ludwig van Beethoven and Frédéric Chopin
-- name: Frédéric Chopin
-  source: llm
-  quote: He was a notable influence on Ludwig van Beethoven and Frédéric Chopin
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: the set of variations K. 500 of 1786 clearly reflect the influence of Clementi
-- name: Carl Czerny
-  source: llm
-  quote: Carl Czerny also had the highest regard for Clementi's piano sonatas
+  quote: he was taught the piano by Muzio Clementi
+mentors: []
 ---
+
+
+
 
 # Muzio Clementi
 

@@ -1,5 +1,6 @@
 ---
 name: Aldo Clementi
+wikidata: Q553059
 wikipedia: https://en.wikipedia.org/wiki/Aldo_Clementi
 thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Aldo_Clementi_-_1983.jpg/250px-Aldo_Clementi_-_1983.jpg
 birth: '1925'
@@ -17,14 +18,16 @@ teachers:
 - name: Goffredo Petrassi
   source: llm
   quote: his teachers included Alfredo Sangiorgi and Goffredo Petrassi
+- name: Karlheinz Stockhausen
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students: []
-influenced_by:
-- name: Bruno Maderna
-  source: llm
-  quote: Important influences during this period included meeting Bruno Maderna in
-    1956
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Aldo Clementi
 

@@ -1,0 +1,89 @@
+SELECT ?composer ?composerLabel ?birth ?death ?countryLabel WHERE {
+  VALUES ?name {
+    "Atis"@en
+    "Chen Yi"@en
+    "Christian Wolff"@en
+    "Georg Reutter the Younger"@en
+    "George Benjamin"@en
+    "George Walker"@en
+    "Heinrich Dorn"@en
+    "Josepha Barbara Auenbrugger"@en
+    "Leonard Stein"@en
+    "Leonid Nikolayev"@en
+    "Ludwig Berger"@en
+    "Nadia Judd"@en
+    "Nikolai Rakov"@en
+    "Nikolai Zaremba"@en
+    "Nikolai Zverev"@en
+    "Nikos Skalkottas"@en
+    "Nina Simone"@en
+    "Noah Creshevsky"@en
+    "Olga Neuwirth"@en
+    "Oliver Knussen"@en
+    "Orlando di Lasso"@en
+    "Oscar Peterson"@en
+    "Osvaldo Golijov"@en
+    "Otto Luening"@en
+    "Pascal Dusapin"@en
+    "Paul Alday"@en
+    "Paul Fetler"@en
+    "Paul Vidal"@en
+    "Pauline Duchambge"@en
+    "Peggy Glanville-Hicks"@en
+    "Peter Philips"@en
+    "Philipp Jarnach"@en
+    "Philippe Manoury"@en
+    "Pierre-Joseph-Guillaume Zimmerman"@en
+    "Pran Nath"@en
+    "Priaulx Rainier"@en
+    "Raoul Bardac"@en
+    "Rebecca Clarke"@en
+    "Richard Einhorn"@en
+    "Richard Rodney Bennett"@en
+    "Robert Erickson"@en
+    "Robert Nathaniel Dett"@en
+    "Robin Holloway"@en
+    "Roger Sessions"@en
+    "Rosa Giacinta Badalla"@en
+    "Rubin Goldmark"@en
+    "Ruth Crawford Seeger"@en
+    "Samuel Coleridge-Taylor"@en
+    "Saverio Mercadante"@en
+    "Siegfried Dehn"@en
+    "Silvestre Revueltas"@en
+    "Sophie Gail"@en
+    "Steve Reich"@en
+    "T. J. Anderson"@en
+    "Tan Dun"@en
+    "Thea Musgrave"@en
+    "Thomas Attwood"@en
+    "Thomas Paul Chipp"@en
+    "Thomas Tomkins"@en
+    "Thomas Wiggins"@en
+    "Tibor Serly"@en
+    "Toshio Hosokawa"@en
+    "Ulysses Kay"@en
+    "Unsuk Chin"@en
+    "Valerie Coleman"@en
+    "Veniamin Fleishman"@en
+    "Vincent Persichetti"@en
+    "Virgil Thomson"@en
+    "Walter Braunfels"@en
+    "Walter Piston"@en
+    "Wilhelm Friedemann Bach"@en
+    "William Billings"@en
+    "William Bolcom"@en
+    "William Grant Still"@en
+    "William Schuman"@en
+    "Wladimir Vogel"@en
+    "Yasuji Kiyose"@en
+    "Yehudi Wyner"@en
+    "Younghi Pagh-Paan"@en
+  }
+  ?composer wdt:P31 wd:Q5 ;
+            rdfs:label ?name .
+  OPTIONAL { ?composer wdt:P569 ?birth . }
+  OPTIONAL { ?composer wdt:P570 ?death . }
+  OPTIONAL { ?composer wdt:P27 ?country . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
+}

@@ -1,5 +1,6 @@
 ---
 name: Judith Bingham
+wikidata: Q6303298
 wikipedia: https://en.wikipedia.org/wiki/Judith_Bingham
 thumbnail: null
 birth: '1952'
@@ -26,9 +27,11 @@ teachers:
   source: llm
   quote: John Hall (composition)
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Judith Bingham
 

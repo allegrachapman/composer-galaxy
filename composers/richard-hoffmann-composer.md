@@ -1,5 +1,6 @@
 ---
 name: Richard Hoffmann (composer
+wikidata: Q7327804
 wikipedia: https://en.wikipedia.org/wiki/Richard_Hoffmann_(composer
 thumbnail: null
 birth: null
@@ -12,9 +13,10 @@ era: null
 era_source: null
 teachers: []
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Richard Hoffmann (composer
 

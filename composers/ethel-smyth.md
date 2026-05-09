@@ -1,5 +1,6 @@
 ---
 name: Ethel Smyth
+wikidata: Q236599
 wikipedia: https://en.wikipedia.org/wiki/Ethel_Smyth
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Ethel_Smyth.jpg/250px-Ethel_Smyth.jpg
 birth: '1858'
@@ -18,22 +19,19 @@ teachers:
 - name: Carl Reinecke
   source: llm
   quote: she studied Brahmsian musical composition with Carl Reinecke
+- name: George Henschel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Salomon Jadassohn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 students: []
-influenced_by:
-- name: Wagner
-  source: llm
-  quote: He introduced her to the music of Wagner and Berlioz.
-- name: Berlioz
-  source: llm
-  quote: He introduced her to the music of Wagner and Berlioz.
-- name: Brahms
-  source: llm
-  quote: Through Herzogenberg, she also met Clara Schumann and Brahms.
-influenced:
-- name: Arthur Sullivan
-  source: llm
-  quote: he respected her and encouraged her work
+mentors: []
 ---
+
+
+
+
 
 # Ethel Smyth
 

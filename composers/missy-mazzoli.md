@@ -1,5 +1,6 @@
 ---
 name: Missy Mazzoli
+wikidata: Q6879955
 wikipedia: https://en.wikipedia.org/wiki/Missy_Mazzoli
 thumbnail: null
 birth: '1980'
@@ -10,20 +11,20 @@ nationality: American
 nationality_source: llm
 era: 21st-century
 era_source: llm
-teachers: []
+teachers:
+- name: Louis Andriessen
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Clarence Barlow
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 students: []
-influenced_by:
-- name: Olivier Messiaen
-  source: llm
-  quote: whose layers and colors suggest Messiaen, Britten and Janáček
-- name: Benjamin Britten
-  source: llm
-  quote: whose layers and colors suggest Messiaen, Britten and Janáček
-- name: Leoš Janáček
-  source: llm
-  quote: whose layers and colors suggest Messiaen, Britten and Janáček
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Missy Mazzoli
 

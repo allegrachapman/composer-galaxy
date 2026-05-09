@@ -1,44 +1,22 @@
 ---
 name: Valerie Coleman
+wikidata: Q16728141
 wikipedia: https://en.wikipedia.org/wiki/Valerie_Coleman
 thumbnail: null
 birth: '1970'
-birth_source: llm
+birth_source: wikidata
 death: null
 death_source: null
-nationality: American
-nationality_source: llm
-era: 20th-century, 21st-century
-era_source: llm
-teachers:
-- name: Julius Baker
-  source: wiki
-- name: Alan Weiss (musician)
-  source: wiki
-- name: Alan Weiss
-  source: llm
-  quote: Coleman studied flute with Julius Baker, Alan Weiss
-- name: Judith Mendenhall
-  source: llm
-  quote: Coleman studied flute with Julius Baker, Alan Weiss, Judith Mendenhall
-- name: Doriot Dwyer
-  source: llm
-  quote: Coleman studied flute with Julius Baker, Alan Weiss, Judith Mendenhall, Doriot
-    Dwyer
-- name: Mark Sparks
-  source: llm
-  quote: Coleman studied flute with Julius Baker, Alan Weiss, Judith Mendenhall, Doriot
-    Dwyer, and Mark Sparks
-- name: Martin Amlin
-  source: llm
-  quote: Coleman studied composition with Martin Amlin and Randall Woolf
-- name: Randall Woolf
-  source: llm
-  quote: Coleman studied composition with Martin Amlin and Randall Woolf
+nationality: null
+nationality_source: null
+era: null
+era_source: null
+teachers: []
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Valerie Coleman
 

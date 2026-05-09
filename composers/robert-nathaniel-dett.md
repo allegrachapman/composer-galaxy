@@ -1,5 +1,6 @@
 ---
 name: Robert Nathaniel Dett
+wikidata: Q2158341
 wikipedia: https://en.wikipedia.org/wiki/Robert_Nathaniel_Dett
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Robert_Nathaniel_Dett.jpg/250px-Robert_Nathaniel_Dett.jpg
 birth: '1882'
@@ -8,34 +9,24 @@ death: '1943'
 death_source: infobox
 nationality: Niagara Falls, Ontario, Canada
 nationality_source: infobox
-era: Romantic
+era: 19th-century Romantic
 era_source: llm
 teachers:
 - name: Arthur Foote
   source: wiki
 - name: Nadia Boulanger
   source: llm
-  quote: In 1929, Dett travelled to France to study at the Fontainebleau school of
-    music with composer Nadia Boulanger
+  quote: Dett travelled to France to study at the Fontainebleau school of music with
+    composer Nadia Boulanger.
 students:
-- name: Dorothy Maynor
-  source: llm
-  quote: He encouraged his Hampton student, soprano Dorothy Maynor, to pursue a career
-    as a concert artist
 - name: Zenobia Powell Perry
   source: llm
   quote: Zenobia Powell Perry, one of his students
-influenced_by:
-- name: Samuel Coleridge-Taylor
-  source: wiki
-- name: Emma Azalia Hackley
-  source: wiki
-- name: Antonín Dvořák
-  source: llm
-  quote: He heard the music of Antonín Dvořák, a Czech composer who had toured the
-    United States
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Robert Nathaniel Dett
 

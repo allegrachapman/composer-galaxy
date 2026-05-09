@@ -1,5 +1,6 @@
 ---
 name: Léo Delibes
+wikidata: Q207951
 wikipedia: https://en.wikipedia.org/wiki/Léo_Delibes
 thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/4/46/L%C3%A9o-Delibes-1875.png/250px-L%C3%A9o-Delibes-1875.png
 birth: '1836'
@@ -26,34 +27,19 @@ teachers:
 - name: François Bazin
   source: llm
   quote: François Bazin (harmony)
-students: []
-influenced_by:
-- name: Adolphe Adam
-  source: llm
-  quote: from whom he had the example of "a sparkling operetta style"
-- name: Boieldieu
-  source: llm
-  quote: clearly influenced by and in the tradition of Boieldieu, Hérold and Adam
-- name: Hérold
-  source: llm
-  quote: clearly influenced by and in the tradition of Boieldieu, Hérold and Adam
-- name: Meyerbeer
-  source: llm
-  quote: his works show the influence of Meyerbeer and Gounod
-- name: Gounod
-  source: llm
-  quote: his works show the influence of Meyerbeer and Gounod
-- name: Georges Bizet
-  source: llm
-  quote: the slightly younger Bizet and Lalo
-- name: Édouard Lalo
-  source: llm
-  quote: the slightly younger Bizet and Lalo
-influenced:
-- name: Pyotr Ilyich Tchaikovsky
-  source: llm
-  quote: Tchaikovsky was greatly impressed by it, calling Sylvia
+students:
+- name: Maurice Emmanuel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Spyridon Samaras
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Léo Delibes
 

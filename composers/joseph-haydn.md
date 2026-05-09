@@ -1,44 +1,72 @@
 ---
 name: Joseph Haydn
+wikidata: Q7349
 wikipedia: https://en.wikipedia.org/wiki/Joseph_Haydn
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Joseph_Haydn.jpg/250px-Joseph_Haydn.jpg
 birth: '1732'
-birth_source: llm
+birth_source: wikidata
 death: '1809'
 death_source: infobox
 nationality: Rohrau, Austria
 nationality_source: infobox
-era: Classical
-era_source: llm
+era: null
+era_source: null
 teachers:
-- name: Johann Matthias Frankh
-  source: llm
-  quote: schoolmaster and choirmaster in nearby Hainburg
-- name: Georg Reutter the Younger
-  source: llm
-  quote: director of music in St. Stephen's Cathedral in Vienna
 - name: Nicola Porpora
-  source: llm_confirmed
-  quote: from whom he later said he learned "the true fundamentals of composition"
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
 students:
+- name: Marianna Auenbrugger
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Ludwig van Beethoven
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: George Bridgetower
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Thomas Haigh
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Peter Hänsel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Michael Haydn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Jean-Baptiste Krumpholz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Franciszek Lessel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Marianna Martines
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Sigismund von Neukomm
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Franz Nikolaus Novotny
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 - name: Ignaz Pleyel
   source: wiki
-- name: Ludwig van Beethoven
-  source: llm_confirmed
-  quote: a teacher of Beethoven
-influenced_by:
-- name: Carl Philipp Emanuel Bach
-  source: llm
-  quote: whom he later acknowledged as an important influence
-- name: Johann Joseph Fux
-  source: llm
-  quote: he worked his way through the counterpoint exercises in the text Gradus ad
-    Parnassum
-influenced:
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: Mozart returned the esteem in his "Haydn" quartets
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Rebecca Schroeter
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Anton Wranitzky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Johann Georg Albrechtsberger
+  source: wiki
+- name: Johann van Beethoven
+  source: wiki
+mentors: []
 ---
+
+
+
 
 # Joseph Haydn
 

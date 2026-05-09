@@ -1,5 +1,6 @@
 ---
 name: Gioachino Rossini
+wikidata: Q9726
 wikipedia: https://en.wikipedia.org/wiki/Gioachino_Rossini
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Rossini_young-circa-1815.jpg/250px-Rossini_young-circa-1815.jpg
 birth: '1792'
@@ -18,25 +19,20 @@ teachers:
 - name: Giovanni Morandi
   source: llm
   quote: under the tutelage of the composer Giovanni Morandi, a family friend
-students: []
-influenced_by:
-- name: Wolfgang Amadeus Mozart
+- name: Stanislao Mattei
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+students:
+- name: Teresa Carreño
   source: llm
-  quote: opera buffa tradition he inherited from masters such as Wolfgang Amadeus
-    Mozart
-- name: Domenico Cimarosa
-  source: llm
-  quote: opera buffa tradition he inherited from masters such as Wolfgang Amadeus
-    Mozart, Domenico Cimarosa
-- name: Giovanni Paisiello
-  source: llm
-  quote: opera buffa tradition he inherited from masters such as Wolfgang Amadeus
-    Mozart, Domenico Cimarosa and Giovanni Paisiello
-influenced:
-- name: Giuseppe Verdi
-  source: llm
-  quote: Guests included Franz Liszt, Anton Rubinstein, Giuseppe Verdi, Meyerbeer
+  quote: she studied voice with Rossini
+mentors: []
 ---
+
+
+
+
+
 
 # Gioachino Rossini
 

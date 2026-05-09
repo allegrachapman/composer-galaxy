@@ -1,5 +1,6 @@
 ---
 name: Louise Farrenc
+wikidata: Q442198
 wikipedia: https://en.wikipedia.org/wiki/Louise_Farrenc
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Louise_Farrenc_painting.jpg/250px-Louise_Farrenc_painting.jpg
 birth: '1804'
@@ -22,21 +23,12 @@ teachers:
 - name: Johann Nepomuk Hummel
   source: llm
   quote: given lessons by such masters as Ignaz Moscheles and Johann Nepomuk Hummel
-students:
-- name: Johann Nepomuk Hummel
-  source: wiki
-influenced_by:
-- name: Franz Joseph Haydn
-  source: llm
-  quote: Inspired by the symphonic works of Haydn, Mozart, and Beethoven
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: Inspired by the symphonic works of Haydn, Mozart, and Beethoven
-- name: Ludwig van Beethoven
-  source: llm
-  quote: Inspired by the symphonic works of Haydn, Mozart, and Beethoven
-influenced: []
+students: []
+mentors: []
 ---
+
+
+
 
 # Louise Farrenc
 

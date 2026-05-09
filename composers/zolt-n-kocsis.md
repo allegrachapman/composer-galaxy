@@ -1,7 +1,8 @@
 ---
 name: Zoltán Kocsis
+wikidata: Q218958
 wikipedia: https://en.wikipedia.org/wiki/Zoltán_Kocsis
-thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Kocsis_Zolt%C3%A1n_autogram.jpg/250px-Kocsis_Zolt%C3%A1n_autogram.jpg
+thumbnail: null
 birth: '1952'
 birth_source: llm
 death: '2016'
@@ -16,17 +17,17 @@ teachers:
 - name: Ferenc Rados
   source: wiki
 - name: György Kurtág
-  source: llm_confirmed
+  source: llm
   quote: he was a pupil of Pál Kadosa, Ferenc Rados and György Kurtág
 students:
 - name: Ferenc Rados
   source: wiki
-influenced_by:
-- name: Béla Bartók
-  source: llm
-  quote: studied piano and composition at the Béla Bartók Conservatory
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Zoltán Kocsis
 

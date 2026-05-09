@@ -1,5 +1,6 @@
 ---
 name: Christoph Willibald Gluck
+wikidata: Q130759
 wikipedia: https://en.wikipedia.org/wiki/Christoph_Willibald_Gluck
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Joseph_Siffred_Duplessis_-_Christoph_Willibald_Gluck_-_Google_Art_Project.jpg/250px-Joseph_Siffred_Duplessis_-_Christoph_Willibald_Gluck_-_Google_Art_Project.jpg
 birth: '1714'
@@ -18,13 +19,15 @@ students:
 - name: Marie Antoinette
   source: llm
   quote: Under the teaching of Gluck, Marie Antoinette developed into a good musician
-influenced_by:
-- name: Georg Friedrich Händel
-  source: llm
-  quote: exposure to the music of Handel – whom he later credited as a great influence
-    on his style
-influenced: []
+- name: Antonio Salieri
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+mentors: []
 ---
+
+
+
+
 
 # Christoph Willibald Gluck
 

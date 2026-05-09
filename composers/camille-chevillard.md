@@ -1,5 +1,6 @@
 ---
 name: Camille Chevillard
+wikidata: Q1029147
 wikipedia: https://en.wikipedia.org/wiki/Camille_Chevillard
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Camille_Chevillard.jpg/250px-Camille_Chevillard.jpg
 birth: '1859'
@@ -34,13 +35,18 @@ students:
   source: llm
   quote: His pupils included Suzanne Chaigneau, Clotilde Coulombe, Sophie Carmen Eckhardt-Gramatté,
     Yvonne Hubert, Eugeniusz Morawski, and Robert Soetens
-influenced_by:
-- name: Alexandre Chevillard
-  source: llm
-  quote: Camille Chevillard was the son of the famous cellist and composer Alexandre
-    Chevillard
-influenced: []
+- name: Gösta Nystroem
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Claude Debussy
+  source: wiki
+mentors: []
 ---
+
+
+
+
+
 
 # Camille Chevillard
 

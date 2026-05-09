@@ -1,5 +1,6 @@
 ---
 name: Bernhard Romberg
+wikidata: Q213914
 wikipedia: https://en.wikipedia.org/wiki/Bernhard_Romberg
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bernhard_Romberg.jpg/250px-Bernhard_Romberg.jpg
 birth: '1767'
@@ -15,14 +16,28 @@ teachers:
   source: llm
   quote: His father, Anton Romberg, played the bassoon and cello and gave Bernhard
     his first cello lessons
-students: []
-influenced_by: []
-influenced:
-- name: Johannes Brahms
-  source: llm
-  quote: Romberg's cello sonata in E minor was a strong influence on the first cello
-    sonata in E minor by Johannes Brahms
+- name: Andrea Luchesi
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+students:
+- name: Friedrich Dotzauer
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Ferdinand Ries
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Julius Rietz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Matwei Georgevitch Vielhorsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
+
+
 
 # Bernhard Romberg
 

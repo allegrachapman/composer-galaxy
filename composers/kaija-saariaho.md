@@ -1,5 +1,6 @@
 ---
 name: Kaija Saariaho
+wikidata: Q241432
 wikipedia: https://en.wikipedia.org/wiki/Kaija_Saariaho
 thumbnail: null
 birth: '1952'
@@ -21,16 +22,16 @@ teachers:
   source: llm
   quote: study at the Hochschule für Musik Freiburg under Brian Ferneyhough and Klaus
     Huber
-students: []
-influenced_by:
-- name: Tristan Murail
-  source: llm
-  quote: attended a concert of the French spectralists Tristan Murail and Gérard Grisey
-- name: Gérard Grisey
-  source: llm
-  quote: attended a concert of the French spectralists Tristan Murail and Gérard Grisey
-influenced: []
+students:
+- name: Johan Tallgren
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
+
+
 
 # Kaija Saariaho
 

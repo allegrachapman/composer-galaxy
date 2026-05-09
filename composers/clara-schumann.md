@@ -1,5 +1,6 @@
 ---
 name: Clara Schumann
+wikidata: Q132232
 wikipedia: https://en.wikipedia.org/wiki/Clara_Schumann
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Franz_Hanfstaengl_-_Clara_Schumann_%281857%29.jpg/250px-Franz_Hanfstaengl_-_Clara_Schumann_%281857%29.jpg
 birth: '1819'
@@ -13,16 +14,14 @@ era_source: llm
 teachers:
 - name: Friedrich Wieck
   source: llm
-  quote: She began taking daily one-hour lessons from her father.
-- name: Mariane Wieck
+  quote: She began taking daily one-hour lessons from her father
+- name: Christian Theodor Weinlig
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Heinrich Dorn
   source: llm
-  quote: She started receiving basic piano instruction from her mother at the age
-    of four.
+  quote: Dorn taught counterpoint to Clara Schumann
 students:
-- name: Nina Simone
-  source: wiki
-- name: Malcolm Frager
-  source: wiki
 - name: Leonard Borwick
   source: llm
   quote: Among her 68 known students who made a musical career were Leonard Borwick
@@ -38,19 +37,37 @@ students:
 - name: Adelina de Lara
   source: llm
   quote: Among her 68 known students who made a musical career were Adelina de Lara
-influenced_by:
-- name: Robert Schumann
+- name: Franklin Taylor
   source: llm
-  quote: She married the composer Robert Schumann, on 12 September 1840
-- name: Johannes Brahms
+  quote: Among her 68 known students who made a musical career were Franklin Taylor
+- name: Mary Wurm
   source: llm
-  quote: Together, they encouraged Johannes Brahms and maintained a close relationship
-    with him.
-influenced:
-- name: Johannes Brahms
-  source: llm
-  quote: She was the first to perform many of his works in public
+  quote: Among her 68 known students who made a musical career were Mary Wurm
+- name: Nathalie Janotha
+  source: manual
+  quote: Grove cross-reference as student at Hoch Conservatory
+- name: John Arthur St. Oswald Dykes
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Luise Adolpha Le Beau
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Adine O'Neill
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Hermann Hans Wetzler
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Mathilde Verne
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
+
+
+
 
 # Clara Schumann
 

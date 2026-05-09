@@ -1,5 +1,6 @@
 ---
 name: Josquin des Prez
+wikidata: Q143100
 wikipedia: https://en.wikipedia.org/wiki/Josquin_des_Prez
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Josquin_woodcut.jpg/250px-Josquin_woodcut.jpg
 birth: '1450'
@@ -13,32 +14,20 @@ era_source: llm
 teachers:
 - name: Johannes Ockeghem
   source: wiki
-- name: Guillaume Du Fay
-  source: llm
-  quote: Josquin was certainly influenced by Du Fay's music
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
 students:
-- name: Jean Lhéritier
-  source: wiki
 - name: Nicolas Gombert
   source: wiki
-influenced_by:
-- name: Johannes Ockeghem
-  source: llm
-  quote: Building on the work of predecessors like Johannes Ockeghem
-influenced:
-- name: Martin Luther
-  source: llm
-  quote: He earned praised from figures like Martin Luther, Heinrich Glarean, and
-    Gioseffo Zarlino
-- name: Heinrich Glarean
-  source: llm
-  quote: He earned praised from figures like Martin Luther, Heinrich Glarean, and
-    Gioseffo Zarlino
-- name: Gioseffo Zarlino
-  source: llm
-  quote: He earned praised from figures like Martin Luther, Heinrich Glarean, and
-    Gioseffo Zarlino
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Jean l'Héritier
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Josquin des Prez
 

@@ -1,5 +1,6 @@
 ---
 name: Nikolai Rakov
+wikidata: Q1268922
 wikipedia: https://en.wikipedia.org/wiki/Nikolai_Rakov
 thumbnail: null
 birth: '1908'
@@ -30,18 +31,15 @@ students:
   quote: Rakov's pupils included Edison Denisov, Boris Tchaikovsky, Nikolai Peiko,
     Andrei Eshpai
 - name: Alfred Schnittke
-  source: llm_confirmed
+  source: llm
   quote: Rakov's pupils included Edison Denisov, Boris Tchaikovsky, Nikolai Peiko,
     Andrei Eshpai, and Alfred Schnittke
-influenced_by:
-- name: Alexander Glazunov
-  source: llm
-  quote: only a little beyond the style of Alexander Glazunov and Reinhold Glière
-- name: Reinhold Glière
-  source: llm
-  quote: only a little beyond the style of Alexander Glazunov and Reinhold Glière
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Nikolai Rakov
 

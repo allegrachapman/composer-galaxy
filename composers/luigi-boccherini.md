@@ -1,5 +1,6 @@
 ---
 name: Luigi Boccherini
+wikidata: Q189766
 wikipedia: https://en.wikipedia.org/wiki/Luigi_Boccherini
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Portrait_de_Luigi_Boccherini%2C_1814_%28cropped%29.jpg/250px-Portrait_de_Luigi_Boccherini%2C_1814_%28cropped%29.jpg
 birth: '1743'
@@ -13,25 +14,16 @@ era_source: llm
 teachers:
 - name: Giovanni Battista Costanzi
   source: wiki
-- name: Leopoldo Boccherini
-  source: llm
-  quote: Luigi received his first music lessons at age five by his father, who taught
-    him cello
 - name: Abbé Vanucci
   source: llm
-  quote: continued his studies at age nine with Abbé Vanucci, music director of a
-    local cathedral
+  quote: then continued his studies at age nine with Abbé Vanucci, music director
+    of a local cathedral
 students: []
-influenced_by:
-- name: Joseph Haydn
-  source: llm
-  quote: Much of Boccherini's chamber music follows models established by Joseph Haydn
-- name: Giovanni Battista Cirri
-  source: llm
-  quote: Some sources for Boccherini's style are in the works of a famous Italian
-    cellist, Giovanni Battista Cirri
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Luigi Boccherini
 

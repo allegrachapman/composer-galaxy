@@ -1,5 +1,6 @@
 ---
 name: Barbara Strozzi
+wikidata: Q232235
 wikipedia: https://en.wikipedia.org/wiki/Barbara_Strozzi
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bernardo_Strozzi_001.jpg/250px-Bernardo_Strozzi_001.jpg
 birth: '1619'
@@ -8,21 +9,14 @@ death: '1677'
 death_source: infobox
 nationality: Venice
 nationality_source: infobox
-era: Baroque
-era_source: llm
-teachers:
-- name: Francesco Cavalli
-  source: llm
-  quote: Giulio to arrange lessons in composition for her with one of the leading
-    composers, Francesco Cavalli
+era: null
+era_source: null
+teachers: []
 students: []
-influenced_by:
-- name: Marino
-  source: llm
-  quote: Like many of her contemporary composers, Strozzi mostly used texts from the
-    poet Marino
-influenced: []
+mentors: []
 ---
+
+
 
 # Barbara Strozzi
 

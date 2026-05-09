@@ -1,5 +1,6 @@
 ---
 name: Alfred Schnittke
+wikidata: Q158078
 wikipedia: https://en.wikipedia.org/wiki/Alfred_Schnittke
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/6/66/Alfred_Schnittke_April_6_1989_Moscow.jpg
 birth: '1934'
@@ -16,25 +17,28 @@ teachers:
 - name: Evgeny Golubev
   source: llm
   quote: Evgeny Golubev was one of his composition teachers.
+- name: Philip Herschkowitz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 students: []
-influenced_by:
-- name: Dmitri Shostakovich
+mentors:
+- name: Gidon Kremer
   source: llm
-  quote: Schnittke's early music shows the strong influence of Dmitri Shostakovich.
-- name: Luigi Nono
+  quote: the violinists Gidon Kremer and Mark Lubotsky
+- name: Mark Lubotsky
   source: llm
-  quote: after the visit of the Italian composer Luigi Nono to the USSR, he took up
-    the serial technique
-- name: Wolfgang Amadeus Mozart
+  quote: the violinists Gidon Kremer and Mark Lubotsky
+- name: Mstislav Rostropovich
   source: llm
-  quote: It was Mozart and Schubert, not Tchaikovsky and Rachmaninoff, whom he kept
-    in mind
-- name: Franz Schubert
+  quote: the cellist and conductor Mstislav Rostropovich
+- name: Gennady Rozhdestvensky
   source: llm
-  quote: It was Mozart and Schubert, not Tchaikovsky and Rachmaninoff, whom he kept
-    in mind
-influenced: []
+  quote: but also by the conductor Gennady Rozhdestvensky
 ---
+
+
+
+
 
 # Alfred Schnittke
 

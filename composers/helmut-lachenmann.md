@@ -1,5 +1,6 @@
 ---
 name: Helmut Lachenmann
+wikidata: Q549442
 wikipedia: https://en.wikipedia.org/wiki/Helmut_Lachenmann
 thumbnail: null
 birth: '1935'
@@ -14,7 +15,7 @@ teachers:
 - name: Jürgen Uhde
   source: wiki
 - name: Luigi Nono
-  source: llm_confirmed
+  source: llm
   quote: became Nono's first private student in Venice from 1958 to 1960
 - name: Johann Nepomuk David
   source: llm
@@ -22,19 +23,49 @@ teachers:
 - name: Olivier Messiaen
   source: llm
   quote: Lachenmann was inspired by Olivier Messiaen who taught in Darmstadt
+- name: Karlheinz Stockhausen
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
 - name: Enno Poppe
   source: llm
   quote: evening with Lachenmann in conversation with Enno Poppe
-influenced_by:
-- name: Olivier Messiaen
+- name: Mark Andre
   source: wiki
-- name: Luigi Nono
-  source: llm
-  quote: Nono inspired him to reflect social and political contexts, and to use unconventional
-    techniques
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Pierluigi Billone
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Olga Bochihina
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Orm Finnendahl
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Guoping Jia
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Elsa Justel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Shigeru Kan-no
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Mayako Kubo
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Wolfram Schurig
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Bert Van Herck
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # Helmut Lachenmann
 

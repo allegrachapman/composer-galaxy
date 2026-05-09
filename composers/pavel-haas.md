@@ -1,5 +1,6 @@
 ---
 name: Pavel Haas
+wikidata: Q449748
 wikipedia: https://en.wikipedia.org/wiki/Pavel_Haas
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/1/17/PavelHaas.jpg
 birth: '1899'
@@ -23,12 +24,11 @@ teachers:
   source: llm
   quote: Janáček was by far Haas's most influential teacher
 students: []
-influenced_by:
-- name: Leoš Janáček
-  source: llm
-  quote: an exponent of Leoš Janáček's school of composition
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Pavel Haas
 

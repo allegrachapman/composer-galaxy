@@ -3,16 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>Composer Galaxy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <style>
   :root {
-    --bg: #12131a;
-    --panel: #1c1e2a;
-    --border: #2a2d3d;
-    --text: #e8e8f0;
-    --muted: #8a8da0;
-    --accent: #c8a45a;
-    --wiki: #e0c14a;
+    --bg: #f4f3ef;
+    --panel: #ffffff;
+    --border: #d8d6ce;
+    --text: #2a2a2e;
+    --muted: #7a7a82;
+    --accent: #9a7430;
+    --wiki: #8a6820;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
@@ -27,7 +30,7 @@
     background: var(--panel); border: 1px solid var(--border); color: var(--muted);
     border-radius: 6px; cursor: pointer; font-size: 14px; display: flex;
     align-items: center; justify-content: center; padding: 0; }
-  .panel-toggle:hover { color: var(--text); background: #242736; }
+  .panel-toggle:hover { color: var(--text); background: #e8e6de; }
   #toggleLeft { left: 12px; }
   #toggleRight { right: 12px; }
   #sidebar, #detail { background: var(--panel); border-right: 1px solid var(--border);
@@ -35,14 +38,15 @@
   #detail { border-right: none; border-left: 1px solid var(--border); }
   #graph-area { position: relative; overflow: hidden; }
   canvas { display: block; }
-  h1 { font-size: 16px; margin: 0 0 12px 0; letter-spacing: 0.5px; }
+  h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; margin: 0 0 14px 0;
+    letter-spacing: 0.3px; color: var(--accent); }
   h2 { font-size: 13px; color: var(--muted); text-transform: uppercase;
     letter-spacing: 0.8px; margin: 16px 0 8px 0; font-weight: 600; }
   label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
   select, button { width: 100%; padding: 6px 8px; background: var(--bg);
     color: var(--text); border: 1px solid var(--border); border-radius: 4px;
     font-size: 13px; margin-bottom: 8px; cursor: pointer; }
-  button:hover { background: #242736; }
+  button:hover { background: #e8e6de; }
   .legend { font-size: 12px; color: var(--muted); line-height: 1.8; }
   .legend .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%;
     vertical-align: middle; margin-right: 6px; }
@@ -51,10 +55,11 @@
   .edge-list { font-size: 12px; color: var(--text); margin: 6px 0 0 0; padding-left: 16px; }
   .edge-list li { margin: 2px 0; cursor: pointer; }
   .edge-list li:hover { color: var(--accent); }
-  .llm-quote { display: none; font-size: 11px; color: #9ab; font-style: italic;
-    margin: 2px 0 4px 0; padding-left: 8px; border-left: 2px solid #78b4f0; }
+  .llm-quote { display: none; font-size: 11px; color: #5a7a8a; font-style: italic;
+    margin: 2px 0 4px 0; padding-left: 8px; border-left: 2px solid #3a7ac0; }
   .llm-quote.open { display: block; }
   a { color: var(--accent); }
+  button.view-active { background: var(--accent); color: #fff; border-color: var(--accent); }
   #searchWrap { position: relative; margin-bottom: 8px; }
   #searchInput { width: 100%; padding: 6px 8px; background: var(--bg);
     color: var(--text); border: 1px solid var(--border); border-radius: 4px;
@@ -74,7 +79,7 @@
   #expandStatus { position: fixed; top: 12px; left: 50%; transform: translateX(-50%);
     background: var(--panel); border: 1px solid var(--accent); color: var(--accent);
     padding: 6px 16px; border-radius: 4px; font-size: 13px; display: none; z-index: 10; }
-  #tooltip { position: absolute; pointer-events: none; background: rgba(28,30,42,0.92);
+  #tooltip { position: absolute; pointer-events: none; background: rgba(255,255,255,0.95);
     border: 1px solid var(--border); color: var(--text); padding: 4px 10px;
     border-radius: 4px; font-size: 12px; display: none; z-index: 10; white-space: nowrap; }
   #zoomControls { position: absolute; bottom: 16px; right: 16px; display: flex;
@@ -88,6 +93,27 @@
 <div id="app">
   <aside id="sidebar">
     <h1>Composer Galaxy</h1>
+
+    <h2>View</h2>
+    <div style="display:flex;gap:4px;margin-bottom:8px">
+      <button id="viewTeachers" style="flex:1;font-size:12px;padding:5px 0" class="view-active">Teachers</button>
+      <button id="viewMentors" style="flex:1;font-size:12px;padding:5px 0">Mentors</button>
+    </div>
+
+    <label>Era filter</label>
+    <select id="eraFilter"><option value="">All eras</option></select>
+
+    <label style="display:flex;align-items:center;gap:6px;margin:8px 0">
+      <input type="checkbox" id="womenFilter" style="width:auto;margin:0">
+      Women composers only
+    </label>
+
+    <label>Connection depth: <span id="depthValue">1</span></label>
+    <input type="range" id="depthSlider" min="1" max="6" value="1" style="width:100%">
+
+    <label>Min confidence: <span id="confValue">0%</span></label>
+    <input type="range" id="confSlider" min="0" max="100" value="0" style="width:100%">
+
     <label>Search</label>
     <div id="searchWrap">
       <input type="text" id="searchInput" placeholder="Type a composer name…"
@@ -95,7 +121,16 @@
       <ul id="searchResults"></ul>
     </div>
 
-    <h2>Find Path</h2>
+    <h2>Ask</h2>
+    <div id="askWrap">
+      <input type="text" id="askInput" placeholder="e.g. Who had the most students?"
+        autocomplete="off" spellcheck="false"
+        style="width:100%;padding:6px 8px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:4px;font-size:13px;outline:none;margin-bottom:4px">
+      <button id="askBtn">Ask</button>
+      <div id="askAnswer" style="font-size:12px;color:var(--text);margin-top:6px;white-space:pre-wrap;display:none;max-height:300px;overflow-y:auto;line-height:1.5"></div>
+    </div>
+
+    <h2>Trace Lineage</h2>
     <div id="pathWrap">
       <div style="position:relative;margin-bottom:4px">
         <input type="text" id="pathFrom" placeholder="From…"
@@ -109,23 +144,17 @@
           style="width:100%;padding:6px 8px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:4px;font-size:13px;outline:none">
         <ul id="pathToResults" style="display:none;position:absolute;top:100%;left:0;right:0;background:var(--panel);border:1px solid var(--border);border-top:none;border-radius:0 0 4px 4px;margin:0;padding:0;list-style:none;max-height:160px;overflow-y:auto;z-index:20"></ul>
       </div>
-      <button id="pathFind">Find Path</button>
+      <button id="pathFind">Trace Lineage</button>
+      <button id="pathClear" style="display:none;background:var(--accent);color:white;border:none">Clear Lineage</button>
       <div id="pathStatus" style="font-size:12px;color:var(--muted);margin-bottom:4px"></div>
     </div>
 
-    <label>Era filter</label>
-    <select id="eraFilter"><option value="">All eras</option></select>
-
-    <label>Connection depth: <span id="depthValue">1</span></label>
-    <input type="range" id="depthSlider" min="1" max="6" value="1" style="width:100%">
-
     <h2>Legend</h2>
     <div class="legend" id="legendEras"></div>
-    <div class="legend" style="margin-top:8px">
-      <div style="color:#666">· small dots = not yet seeded (dbl-click to expand)</div>
-      <div style="color:#c8a45a">― solid = Wikipedia sourced</div>
-      <div style="color:#50c864">― solid = text-extracted (confirmed)</div>
-      <div style="color:#78b4f0">┄ dashed = text-extracted (unverified)</div>
+    <div class="legend" style="margin-top:8px" id="legendEdges">
+      <div style="color:#999">· small dots = not yet seeded (dbl-click to expand)</div>
+      <div style="color:#9a7430">― solid yellow = Teacher / Student</div>
+      <div style="color:#b478dc">┄ dashed purple = Mentor / Mentee</div>
     </div>
 
     <h2>Stats</h2>
@@ -152,23 +181,46 @@
 
 <script>
 const ERA_ORDER = ["Contemporary", "20th-century", "Romantic", "Classical", "Baroque", "Renaissance", "Medieval"];
+const ERA_RANGES = {
+  "Medieval": [1100, 1400], "Renaissance": [1400, 1600], "Baroque": [1600, 1750],
+  "Classical": [1750, 1820], "Romantic": [1820, 1910], "20th-century": [1910, 1975],
+  "Contemporary": [1975, 2030],
+};
 const ERA_COLORS = {
   "Medieval": "#5a6a8a", "Renaissance": "#6a8a5a", "Baroque": "#8a6a3a",
   "Classical": "#aa8a4a", "Romantic": "#b06060", "20th-century": "#7a5aa0",
   "Contemporary": "#4a8090", "Modern": "#7a5aa0",
 };
 
-function eraBucket(era) {
-  if (!era) return null;
-  const e = era.toLowerCase();
-  if (e.includes("medieval")) return "Medieval";
-  if (e.includes("renaissance")) return "Renaissance";
-  if (e.includes("baroque")) return "Baroque";
-  if (e.includes("classical") && !e.includes("20")) return "Classical";
-  if (e.includes("romantic")) return "Romantic";
-  if (e.includes("20th") || e.includes("modern")) return "20th-century";
-  if (e.includes("contemp") || e.includes("21st")) return "Contemporary";
+function eraFromBirth(birth) {
+  const y = parseInt(birth);
+  if (isNaN(y)) return null;
+  for (const [era, [lo, hi]] of Object.entries(ERA_RANGES)) {
+    if (y >= lo && y < hi) return era;
+  }
   return null;
+}
+
+function eraBucket(era, birth) {
+  let fromText = null;
+  if (era) {
+    const e = era.toLowerCase();
+    if (e.includes("medieval")) fromText = "Medieval";
+    else if (e.includes("renaissance")) fromText = "Renaissance";
+    else if (e.includes("baroque")) fromText = "Baroque";
+    else if (e.includes("classical") && !e.includes("20")) fromText = "Classical";
+    else if (e.includes("romantic")) fromText = "Romantic";
+    else if (e.includes("20th") || e.includes("modern")) fromText = "20th-century";
+    else if (e.includes("contemp") || e.includes("21st")) fromText = "Contemporary";
+  }
+  const fromBirth = eraFromBirth(birth);
+  if (!fromText) return fromBirth;
+  if (!fromBirth) return fromText;
+  // If text-based era contradicts birth year, trust the birth year
+  const [lo, hi] = ERA_RANGES[fromText];
+  const y = parseInt(birth);
+  if (y < lo - 30 || y >= hi + 30) return fromBirth;
+  return fromText;
 }
 
 const canvas = document.getElementById("canvas");
@@ -182,6 +234,16 @@ let transform = d3.zoomIdentity;
 let hoveredNode = null, selectedNode = null, hoveredLink = null;
 let connectionDepth = 1;
 let currentData = null;
+let morphProgress = 1, morphTimer = null, galaxyPositions = {};
+let viewMode = "teachers"; // "teachers" or "mentors"
+let familyTreeMode = false, _familyTreeNodes = new Set(), _familyTreeLinks = new Set(), _familyTreeRoot = null;
+
+let minConfidence = 0;
+
+function activeLinks() {
+  const kind = viewMode === "teachers" ? "teacher" : "mentor";
+  return links.filter(l => l.kind === kind && l.confidence >= minConfidence);
+}
 
 // Silhouette bust SVG as data URI fallback
 const SILHOUETTE_URI = "data:image/svg+xml," + encodeURIComponent(
@@ -248,27 +310,344 @@ function nodeColor(n) {
   return ERA_COLORS[n.eraBucket] || "#6a6d8d";
 }
 
+
+// --- Family Tree ---
+function buildFamilyTree(rootNode) {
+  const treeNodes = new Set([rootNode]);
+  const treeLinks = new Set();
+  const teacherKind = viewMode === "teachers" ? "teacher" : "mentor";
+
+  // Build adjacency for the active edge kind
+  const parentsOf = new Map(); // node -> [{node, link}] (teachers/sources)
+  const childrenOf = new Map(); // node -> [{node, link}] (students/targets)
+  for (const l of links) {
+    if (l.kind !== teacherKind) continue;
+    const s = typeof l.source === "object" ? l.source : nodeById[l.source];
+    const t = typeof l.target === "object" ? l.target : nodeById[l.target];
+    if (!s || !t) continue;
+    if (!parentsOf.has(t)) parentsOf.set(t, []);
+    parentsOf.get(t).push({ node: s, link: l });
+    if (!childrenOf.has(s)) childrenOf.set(s, []);
+    childrenOf.get(s).push({ node: t, link: l });
+  }
+
+  // BFS upstream (ancestors / teachers)
+  const ancestors = new Map(); // node -> generation (negative: -1 = direct teacher, -2 = grandteacher)
+  ancestors.set(rootNode, 0);
+  let queue = [{ n: rootNode, gen: 0 }];
+  while (queue.length) {
+    const { n, gen } = queue.shift();
+    for (const { node: parent, link } of (parentsOf.get(n) || [])) {
+      treeLinks.add(link);
+      treeNodes.add(parent);
+      if (!ancestors.has(parent)) {
+        ancestors.set(parent, gen - 1);
+        queue.push({ n: parent, gen: gen - 1 });
+      }
+    }
+  }
+
+  // BFS downstream (descendants / students)
+  const descendants = new Map();
+  descendants.set(rootNode, 0);
+  queue = [{ n: rootNode, gen: 0 }];
+  while (queue.length) {
+    const { n, gen } = queue.shift();
+    for (const { node: child, link } of (childrenOf.get(n) || [])) {
+      treeLinks.add(link);
+      treeNodes.add(child);
+      if (!descendants.has(child)) {
+        descendants.set(child, gen + 1);
+        queue.push({ n: child, gen: gen + 1 });
+      }
+    }
+  }
+
+  // Merge generations: ancestors have negative gen, descendants positive, root is 0
+  const generations = new Map();
+  for (const [n, gen] of ancestors) generations.set(n, gen);
+  for (const [n, gen] of descendants) {
+    if (!generations.has(n)) generations.set(n, gen);
+  }
+
+  return { treeNodes, treeLinks, generations };
+}
+
+function layoutFamilyTree(rootNode, generations) {
+  const w = canvas.width / devicePixelRatio;
+  const h = canvas.height / devicePixelRatio;
+
+  const genGroups = new Map();
+  for (const [n, gen] of generations) {
+    if (!genGroups.has(gen)) genGroups.set(gen, []);
+    genGroups.get(gen).push(n);
+  }
+
+  const gens = [...genGroups.keys()].sort((a, b) => a - b);
+  const minGen = gens[0] || 0;
+  const maxGen = gens[gens.length - 1] || 0;
+  const genSpan = maxGen - minGen || 1;
+
+  const genSpacing = 200;
+  const centerY = h / 2;
+  const padX = 60;
+  const nodeSpacingBase = 100;
+
+  // Build adjacency between generations
+  const visibleKind = viewMode === "teachers" ? "teacher" : "mentor";
+  const neighbors = new Map();
+  for (const l of links) {
+    if (l.kind !== visibleKind) continue;
+    const s = typeof l.source === "object" ? l.source : nodeById[l.source];
+    const t = typeof l.target === "object" ? l.target : nodeById[l.target];
+    if (!generations.has(s) || !generations.has(t)) continue;
+    if (!neighbors.has(s)) neighbors.set(s, []);
+    if (!neighbors.has(t)) neighbors.set(t, []);
+    neighbors.get(s).push(t);
+    neighbors.get(t).push(s);
+  }
+
+  // Initial order: birth year
+  for (const [gen, group] of genGroups) {
+    group.sort((a, b) => (parseInt(a.birth) || 1800) - (parseInt(b.birth) || 1800));
+  }
+
+  // Assign initial x positions
+  const xPos = new Map();
+  function assignX(gen) {
+    const group = genGroups.get(gen);
+    const totalWidth = (group.length - 1) * nodeSpacingBase;
+    const startX = w / 2 - totalWidth / 2;
+    group.forEach((n, i) => xPos.set(n, startX + i * nodeSpacingBase));
+  }
+  for (const gen of gens) assignX(gen);
+
+  // Barycenter passes: reorder each generation by average x of neighbors
+  for (let pass = 0; pass < 4; pass++) {
+    // Sweep down (from ancestors toward descendants)
+    for (const gen of gens) {
+      const group = genGroups.get(gen);
+      group.sort((a, b) => {
+        const aN = (neighbors.get(a) || []).filter(n => {
+          const ng = generations.get(n);
+          return ng !== undefined && ng < gen;
+        });
+        const bN = (neighbors.get(b) || []).filter(n => {
+          const ng = generations.get(n);
+          return ng !== undefined && ng < gen;
+        });
+        const aAvg = aN.length ? aN.reduce((s, n) => s + (xPos.get(n) || 0), 0) / aN.length : xPos.get(a) || 0;
+        const bAvg = bN.length ? bN.reduce((s, n) => s + (xPos.get(n) || 0), 0) / bN.length : xPos.get(b) || 0;
+        return aAvg - bAvg;
+      });
+      assignX(gen);
+    }
+    // Sweep up (from descendants toward ancestors)
+    for (let i = gens.length - 1; i >= 0; i--) {
+      const gen = gens[i];
+      const group = genGroups.get(gen);
+      group.sort((a, b) => {
+        const aN = (neighbors.get(a) || []).filter(n => {
+          const ng = generations.get(n);
+          return ng !== undefined && ng > gen;
+        });
+        const bN = (neighbors.get(b) || []).filter(n => {
+          const ng = generations.get(n);
+          return ng !== undefined && ng > gen;
+        });
+        const aAvg = aN.length ? aN.reduce((s, n) => s + (xPos.get(n) || 0), 0) / aN.length : xPos.get(a) || 0;
+        const bAvg = bN.length ? bN.reduce((s, n) => s + (xPos.get(n) || 0), 0) / bN.length : xPos.get(b) || 0;
+        return aAvg - bAvg;
+      });
+      assignX(gen);
+    }
+  }
+
+  const positions = {};
+  for (const gen of gens) {
+    const group = genGroups.get(gen);
+    const y = centerY + gen * genSpacing;
+    group.forEach(n => {
+      positions[n.id] = { x: xPos.get(n), y };
+    });
+  }
+
+  const totalH = Math.max(h, genSpan * genSpacing + 200);
+  return { positions, totalW: totalH };
+}
+
+function showFamilyTree(rootNode) {
+  const { treeNodes, treeLinks, generations } = buildFamilyTree(rootNode);
+
+  if (treeNodes.size <= 1) return;
+
+  // Save current positions for morph
+  const morphFrom = {};
+  nodes.forEach(n => { morphFrom[n.id] = { x: n.x, y: n.y }; });
+
+  // Store pre-tree state for restoration
+  if (!familyTreeMode) {
+    galaxyPositions = {};
+    nodes.forEach(n => { galaxyPositions[n.id] = { x: n.x, y: n.y }; });
+  }
+
+  familyTreeMode = true;
+  _familyTreeNodes = treeNodes;
+  _familyTreeLinks = treeLinks;
+  _familyTreeRoot = rootNode;
+
+  // Stop simulation
+  if (simulation) simulation.stop();
+
+  // Compute layout
+  const { positions: treePositions, totalW } = layoutFamilyTree(rootNode, generations);
+
+  // Set connected flags
+  nodes.forEach(n => { n._connected = treeNodes.has(n); });
+  links.forEach(l => { l.visible = treeLinks.has(l); });
+
+  // Count generations for status
+  const gens = new Set(generations.values());
+  const ancestorCount = [...generations.values()].filter(g => g < 0).length;
+  const descendantCount = [...generations.values()].filter(g => g > 0).length;
+  document.getElementById("pathStatus").textContent =
+    `Family tree: ${ancestorCount} ancestor${ancestorCount !== 1 ? "s" : ""}, ${descendantCount} descendant${descendantCount !== 1 ? "s" : ""}`;
+  document.getElementById("pathClear").style.display = "none";
+  const clearBtn = document.getElementById("familyTreeClearBtn");
+  if (clearBtn) clearBtn.style.display = "block";
+
+  // Morph animation
+  morphProgress = 0;
+  if (morphTimer) cancelAnimationFrame(morphTimer);
+  const duration = 900;
+  const startTime = performance.now();
+
+  function animateMorph(now) {
+    const elapsed = now - startTime;
+    morphProgress = Math.min(1, elapsed / duration);
+    const t = morphProgress < 0.5
+      ? 2 * morphProgress * morphProgress
+      : 1 - Math.pow(-2 * morphProgress + 2, 2) / 2;
+
+    nodes.forEach(n => {
+      const from = morphFrom[n.id];
+      const to = treePositions[n.id];
+      if (from && to) {
+        n.x = from.x + (to.x - from.x) * t;
+        n.y = from.y + (to.y - from.y) * t;
+      }
+    });
+    draw();
+
+    if (morphProgress < 1) {
+      morphTimer = requestAnimationFrame(animateMorph);
+    } else {
+      morphTimer = null;
+      // Zoom to fit the tree
+      const treeNodesArr = [...treeNodes];
+      let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+      treeNodesArr.forEach(n => {
+        x0 = Math.min(x0, n.x); y0 = Math.min(y0, n.y);
+        x1 = Math.max(x1, n.x); y1 = Math.max(y1, n.y);
+      });
+      const w = canvas.width / devicePixelRatio;
+      const h = canvas.height / devicePixelRatio;
+      const pad = 80;
+      const dx = (x1 - x0) || 1, dy = (y1 - y0) || 1;
+      const scale = Math.min((w - pad * 2) / dx, (h - pad * 2) / dy, 2.5);
+      const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+      const tx = w / 2 - cx * scale, ty = h / 2 - cy * scale;
+      d3.select(canvas).transition().duration(600)
+        .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+    }
+  }
+
+  morphTimer = requestAnimationFrame(animateMorph);
+}
+
+function clearFamilyTree() {
+  if (!familyTreeMode) return;
+
+  const morphFrom = {};
+  nodes.forEach(n => { morphFrom[n.id] = { x: n.x, y: n.y }; });
+
+  familyTreeMode = false;
+  _familyTreeNodes = new Set();
+  _familyTreeLinks = new Set();
+  _familyTreeRoot = null;
+  selectedNode = null;
+  nodes.forEach(n => { n._connected = false; n.fx = null; n.fy = null; });
+  links.forEach(l => l.visible = false);
+  document.getElementById("pathStatus").textContent = "";
+  document.getElementById("pathClear").style.display = "none";
+  document.getElementById("pathClear").textContent = "Clear Lineage";
+  clearDetail();
+
+  // Morph back
+  morphProgress = 0;
+  if (morphTimer) cancelAnimationFrame(morphTimer);
+  const duration = 900;
+  const startTime = performance.now();
+
+  function animateMorph(now) {
+    const elapsed = now - startTime;
+    morphProgress = Math.min(1, elapsed / duration);
+    const t = morphProgress < 0.5
+      ? 2 * morphProgress * morphProgress
+      : 1 - Math.pow(-2 * morphProgress + 2, 2) / 2;
+
+    nodes.forEach(n => {
+      const from = morphFrom[n.id];
+      const to = galaxyPositions[n.id];
+      if (from && to) {
+        n.x = from.x + (to.x - from.x) * t;
+        n.y = from.y + (to.y - from.y) * t;
+      }
+    });
+    draw();
+
+    if (morphProgress < 1) {
+      morphTimer = requestAnimationFrame(animateMorph);
+    } else {
+      morphTimer = null;
+      initSimulation();
+    }
+  }
+
+  morphTimer = requestAnimationFrame(animateMorph);
+}
+
+
+
 function draw() {
   const w = canvas.width / devicePixelRatio;
   const h = canvas.height / devicePixelRatio;
   const _pendingLabels = [];
   ctx.save();
-  ctx.clearRect(0, 0, w, h);
+  ctx.fillStyle = "#12131a";
+  ctx.fillRect(0, 0, w, h);
   ctx.translate(transform.x, transform.y);
   ctx.scale(transform.k, transform.k);
 
   // Draw edges — always visible, dim by default, bright when connected to selection
+  const visibleKind = viewMode === "teachers" ? "teacher" : "mentor";
   for (const link of links) {
+    if (link.kind !== visibleKind) continue;
+    if (link.confidence < minConfidence) continue;
     const s = link.source, t = link.target;
-    if (s.hidden || t.hidden) continue;
+    if (familyTreeMode) { if (!_familyTreeLinks.has(link)) continue; }
+    else if (s.hidden || t.hidden) continue;
     const hoveredConn = !selectedNode && hoveredNode && (s === hoveredNode || t === hoveredNode);
     const active = link.visible || link === hoveredLink || hoveredConn;
-    const isLlm = link.source_tag === "llm";
-    const isLlmConfirmed = link.source_tag === "llm_confirmed";
+    const isMentor = link.kind === "mentor";
+    const conf = link.confidence;
+    const confAlpha = 0.3 + 0.7 * conf;
+    const confWidth = 0.4 + 1.6 * conf;
 
     const onPath = _pathLinks.has(link);
+    const onTree = _familyTreeLinks.has(link);
     ctx.beginPath();
-    if (isLlm && !onPath) {
+    if (isMentor && !onPath && !onTree) {
       ctx.setLineDash([4, 4]);
     } else {
       ctx.setLineDash([]);
@@ -278,21 +657,21 @@ function draw() {
     if (onPath) {
       ctx.strokeStyle = "rgba(0,220,255,0.95)";
       ctx.lineWidth = 3;
-    } else if (isLlmConfirmed) {
-      ctx.strokeStyle = active ? "rgba(80,200,100,0.85)" : "rgba(60,150,75,0.4)";
-      ctx.lineWidth = active ? 2 : 0.6;
-    } else if (isLlm) {
-      ctx.strokeStyle = active ? "rgba(120,180,240,0.8)" : "rgba(80,130,180,0.3)";
-      ctx.lineWidth = active ? 2 : 0.6;
+    } else if (onTree) {
+      ctx.strokeStyle = "rgba(0,220,255,0.7)";
+      ctx.lineWidth = 2;
+    } else if (isMentor) {
+      ctx.strokeStyle = active ? `rgba(180,120,220,${(0.6 + 0.4*confAlpha).toFixed(2)})` : `rgba(140,90,180,${(0.15 + 0.25*confAlpha).toFixed(2)})`;
+      ctx.lineWidth = active ? Math.max(1.5, confWidth * 1.2) : confWidth * 0.5;
     } else {
-      ctx.strokeStyle = active ? "rgba(224,193,74,0.7)" : "rgba(138,141,160,0.4)";
-      ctx.lineWidth = active ? 2 : 0.6;
+      ctx.strokeStyle = active ? `rgba(224,193,74,${(0.5 + 0.3*confAlpha).toFixed(2)})` : `rgba(138,141,160,${(0.15 + 0.35*confAlpha).toFixed(2)})`;
+      ctx.lineWidth = active ? Math.max(1.5, confWidth * 1.2) : confWidth * 0.5;
     }
     ctx.stroke();
     ctx.setLineDash([]);
 
-    // Arrow on active edges
-    if (active) {
+    // Arrow on active or tree edges
+    if (active || onTree) {
       const angle = Math.atan2(t.y - s.y, t.x - s.x);
       const r = nodeRadius(t) + 3;
       const ax = t.x - Math.cos(angle) * r;
@@ -302,7 +681,7 @@ function draw() {
       ctx.lineTo(ax - 8 * Math.cos(angle - 0.3), ay - 8 * Math.sin(angle - 0.3));
       ctx.lineTo(ax - 8 * Math.cos(angle + 0.3), ay - 8 * Math.sin(angle + 0.3));
       ctx.closePath();
-      ctx.fillStyle = isLlm ? "rgba(120,180,240,0.8)" : "rgba(224,193,74,0.7)";
+      ctx.fillStyle = onTree ? "rgba(0,220,255,0.7)" : isMentor ? "rgba(180,120,220,0.8)" : "rgba(224,193,74,0.7)";
       ctx.fill();
     }
   }
@@ -310,7 +689,7 @@ function draw() {
   // Precompute nodes connected to hovered node
   const _hoverConnected = new Set();
   if (hoveredNode && !selectedNode) {
-    for (const l of links) {
+    for (const l of activeLinks()) {
       const s = typeof l.source === "object" ? l.source : nodeById[l.source];
       const t = typeof l.target === "object" ? l.target : nodeById[l.target];
       if (s === hoveredNode) _hoverConnected.add(t);
@@ -320,13 +699,13 @@ function draw() {
 
   // Draw nodes
   for (const node of nodes) {
-    if (node.hidden) continue;
-    const r = nodeRadius(node);
     const onHoveredLink = hoveredLink && (hoveredLink.source === node || hoveredLink.target === node);
     const isActive = node === hoveredNode || node === selectedNode || node._connected || onHoveredLink || _hoverConnected.has(node);
+    if (node.hidden && !isActive) continue;
+    const r = nodeRadius(node);
 
     ctx.save();
-    ctx.globalAlpha = node.stub ? 0.4 : (selectedNode && !isActive ? 0.3 : 1);
+    ctx.globalAlpha = node.stub ? 0.4 : (familyTreeMode && !_familyTreeNodes.has(node)) ? 0.08 : (selectedNode && !isActive ? 0.3 : (node.hidden ? 0.5 : 1));
 
     // Draw circle
     ctx.beginPath();
@@ -341,7 +720,11 @@ function draw() {
       const img = thumbLoaded ? imageCache[node.thumbnail] : silhouetteImg;
       ctx.save();
       ctx.clip();
-      ctx.drawImage(img, node.x - r, node.y - r, r * 2, r * 2);
+      const iw = img.naturalWidth, ih = img.naturalHeight;
+      const scale = Math.max((r * 2) / iw, (r * 2) / ih);
+      const sw = iw * scale, sh = ih * scale;
+      const yOff = (sh - r * 2) * 0.4;
+      ctx.drawImage(img, node.x - sw / 2, node.y - sh / 2 + yOff, sw, sh);
       ctx.restore();
     }
 
@@ -353,7 +736,7 @@ function draw() {
     ctx.stroke();
 
     // Label — collect for dedup pass below
-    if (isActive) {
+    if (isActive && !(familyTreeMode && !_familyTreeNodes.has(node))) {
       const dates = node.birth ? `${node.birth}\u2013${node.death || ""}` : null;
       const isTop = TOP_COMPOSERS.has(node.label);
       _pendingLabels.push({ name: node.label, dates, x: node.x, y: node.y + r + 14, top: isTop });
@@ -389,6 +772,7 @@ function draw() {
   }
 
   ctx.restore();
+
 }
 
 // --- Force simulation ---
@@ -468,7 +852,7 @@ function initSimulation() {
   const h = canvas.height / devicePixelRatio;
 
   simulation = d3.forceSimulation(nodes)
-    .force("link", d3.forceLink(links).id(d => d.id).distance(180).strength(0.04))
+    .force("link", d3.forceLink(activeLinks()).id(d => d.id).distance(180).strength(0.04))
     .force("charge", d3.forceManyBody().strength(d => d.stub ? 0 : -800).distanceMax(1200))
     .force("x", d3.forceX(d => xScale(d)).strength(0.25))
     .force("y", d3.forceY(h / 2).strength(0.3))
@@ -509,7 +893,9 @@ function nodeAt(mx, my) {
 function linkAt(mx, my) {
   const [x, y] = transform.invert([mx, my]);
   const threshold = 6 / transform.k;
+  const hitKind = viewMode === "teachers" ? "teacher" : "mentor";
   for (const link of links) {
+    if (link.kind !== hitKind) continue;
     const s = link.source, t = link.target;
     if (s.hidden || t.hidden) continue;
     const dx = t.x - s.x, dy = t.y - s.y;
@@ -530,22 +916,23 @@ canvas.addEventListener("mousemove", e => {
   const node = nodeAt(mx, my);
   let needDraw = false;
 
-  const effectiveNode = selectedNode ? null : node;
+  const inPathMode = _pathLinks.size > 0;
+  const effectiveNode = (selectedNode && !inPathMode && !familyTreeMode) ? null : node;
   if (effectiveNode !== hoveredNode) {
     hoveredNode = effectiveNode;
     needDraw = true;
   }
 
-  // Check link hover when not on a node and nothing selected
-  const link = (!node && !selectedNode) ? linkAt(mx, my) : null;
+  // Check link hover when not on a node and nothing selected (or in path mode)
+  const link = (!node && (!selectedNode || inPathMode)) ? linkAt(mx, my) : null;
   if (link !== hoveredLink) {
     hoveredLink = link;
     needDraw = true;
   }
 
-  canvas.style.cursor = node ? "pointer" : (link && !selectedNode) ? "pointer" : "default";
+  canvas.style.cursor = node ? "pointer" : (link && (!selectedNode || inPathMode)) ? "pointer" : "default";
 
-  if (node && !selectedNode) {
+  if (node && (!selectedNode || inPathMode || familyTreeMode)) {
     tooltip.style.display = "block";
     tooltip.textContent = node.label + (node.birth ? ` (${node.birth})` : "");
     tooltip.style.left = (mx + 12) + "px";
@@ -553,8 +940,14 @@ canvas.addEventListener("mousemove", e => {
   } else if (link) {
     const sLabel = (typeof link.source === "object" ? link.source : nodeById[link.source]).label;
     const tLabel = (typeof link.target === "object" ? link.target : nodeById[link.target]).label;
+    const meta = window._edgeMeta && window._edgeMeta[link.id];
+    const pct = Math.round(link.confidence * 100);
+    let tip = `${sLabel} → ${tLabel}\n${link.origin} · ${link.method} · ${pct}%`;
+    if (meta && meta.quote) tip += `\n"${meta.quote.length > 120 ? meta.quote.slice(0,117) + '…' : meta.quote}"`;
     tooltip.style.display = "block";
-    tooltip.textContent = `${sLabel} → ${tLabel}`;
+    tooltip.style.whiteSpace = "pre-wrap";
+    tooltip.style.maxWidth = "360px";
+    tooltip.textContent = tip;
     tooltip.style.left = (mx + 12) + "px";
     tooltip.style.top = (my - 8) + "px";
   } else {
@@ -567,6 +960,26 @@ canvas.addEventListener("mousemove", e => {
 canvas.addEventListener("click", e => {
   const rect = canvas.getBoundingClientRect();
   const node = nodeAt(e.clientX - rect.left, e.clientY - rect.top);
+  const inPathMode = _pathLinks.size > 0;
+
+  if (familyTreeMode) {
+    if (node && _familyTreeNodes.has(node)) {
+      showDetail(node);
+      draw();
+    } else {
+      clearFamilyTree();
+    }
+    return;
+  }
+  if (inPathMode) {
+    if (node && _pathNodes.has(node)) {
+      showDetail(node);
+      draw();
+    } else {
+      clearLineage();
+    }
+    return;
+  }
   if (!node) selectNode(null);
 });
 
@@ -579,6 +992,15 @@ canvas.addEventListener("dblclick", e => {
 });
 
 function selectNode(node) {
+  // Clear family tree if active
+  if (familyTreeMode) {
+    familyTreeMode = false;
+    _familyTreeNodes = new Set();
+    _familyTreeLinks = new Set();
+    _familyTreeRoot = null;
+    document.getElementById("pathClear").style.display = "none";
+    document.getElementById("pathClear").textContent = "Clear Lineage";
+  }
   // Clear path highlight
   _pathLinks.clear();
   _pathNodes.clear();
@@ -591,7 +1013,7 @@ function selectNode(node) {
   if (node) {
     // BFS: find entire connected component
     const adjacency = new Map();
-    links.forEach(l => {
+    activeLinks().forEach(l => {
       const s = typeof l.source === "object" ? l.source : nodeById[l.source];
       const t = typeof l.target === "object" ? l.target : nodeById[l.target];
       if (!adjacency.has(s)) adjacency.set(s, []);
@@ -617,39 +1039,39 @@ function selectNode(node) {
       }
     }
 
-    // Identify direct teachers/students for layout
+    // Identify direct connections for layout
     const teachers = [], students = [];
-    links.forEach(l => {
+    activeLinks().forEach(l => {
       const s = typeof l.source === "object" ? l.source : nodeById[l.source];
       const t = typeof l.target === "object" ? l.target : nodeById[l.target];
-      if (l.kind === "teacher") {
-        if (t === node) teachers.push(s);
-        else if (s === node) students.push(t);
-      }
+      if (t === node) teachers.push(s);
+      else if (s === node) students.push(t);
     });
 
     showDetail(node);
 
-    // Pin selected node in place, arrange direct teachers left / students right
-    const spacing = 80;
-    node.fx = node.x;
-    node.fy = node.y;
+    {
+      // Pin selected node in place, arrange direct teachers left / students right
+      const spacing = 80;
+      node.fx = node.x;
+      node.fy = node.y;
 
-    teachers.forEach((t, i) => {
-      const yOff = (i - (teachers.length - 1) / 2) * spacing;
-      t.fx = node.x - 160;
-      t.fy = node.y + yOff;
-    });
-    students.forEach((s, i) => {
-      const yOff = (i - (students.length - 1) / 2) * spacing;
-      s.fx = node.x + 160;
-      s.fy = node.y + yOff;
-    });
+      teachers.forEach((t, i) => {
+        const yOff = (i - (teachers.length - 1) / 2) * spacing;
+        t.fx = node.x - 160;
+        t.fy = node.y + yOff;
+      });
+      students.forEach((s, i) => {
+        const yOff = (i - (students.length - 1) / 2) * spacing;
+        s.fx = node.x + 160;
+        s.fy = node.y + yOff;
+      });
 
-    simulation.alpha(0.5).restart();
-    setTimeout(() => {
-      simulation.alphaTarget(0);
-    }, 1200);
+      simulation.alpha(0.5).restart();
+      setTimeout(() => {
+        simulation.alphaTarget(0);
+      }, 1200);
+    }
 
     // Zoom to fit the full connected component
     const component = [...visited.keys()];
@@ -692,6 +1114,7 @@ d3.select(canvas).call(
       _dragged = false;
       _dragStartX = e.sourceEvent.clientX;
       _dragStartY = e.sourceEvent.clientY;
+      if (familyTreeMode) return;
       if (!e.active) simulation.alphaTarget(0.3).restart();
       const [gx, gy] = transform.invert([
         e.sourceEvent.clientX - canvas.getBoundingClientRect().left,
@@ -704,6 +1127,7 @@ d3.select(canvas).call(
       const dx = e.sourceEvent.clientX - _dragStartX;
       const dy = e.sourceEvent.clientY - _dragStartY;
       if (dx * dx + dy * dy > 9) _dragged = true;
+      if (familyTreeMode) return;
       const rect = canvas.getBoundingClientRect();
       const [gx, gy] = transform.invert([
         e.sourceEvent.clientX - rect.left,
@@ -713,10 +1137,30 @@ d3.select(canvas).call(
       e.subject.fy = gy;
     })
     .on("end", e => {
-      if (!e.active) simulation.alphaTarget(0);
-      e.subject.fx = null;
-      e.subject.fy = null;
-      if (!_dragged) selectNode(e.subject);
+      if (!familyTreeMode) {
+        if (!e.active) simulation.alphaTarget(0);
+        e.subject.fx = null;
+        e.subject.fy = null;
+      }
+      if (!_dragged) {
+        if (familyTreeMode) {
+          if (_familyTreeNodes.has(e.subject)) {
+            showDetail(e.subject);
+            draw();
+          } else {
+            clearFamilyTree();
+          }
+        } else if (_pathLinks.size > 0) {
+          if (_pathNodes.has(e.subject)) {
+            showDetail(e.subject);
+            draw();
+          } else {
+            clearLineage();
+          }
+        } else {
+          selectNode(e.subject);
+        }
+      }
     })
 );
 
@@ -737,8 +1181,9 @@ function buildGraph(data) {
     death: n.data.death,
     nationality: n.data.nationality,
     era: n.data.era,
-    eraBucket: eraBucket(n.data.era),
+    eraBucket: eraBucket(n.data.era, n.data.birth),
     stub: n.data.stub,
+    woman: n.data.woman || false,
     wikipedia: n.data.wikipedia,
     thumbnail: n.data.thumbnail,
     hidden: false,
@@ -754,13 +1199,16 @@ function buildGraph(data) {
   const _edgeMeta = {};
   links = data.edges.map(e => {
     const id = e.data.id;
-    _edgeMeta[id] = { url: e.data.source_url, quote: e.data.quote || "" };
+    _edgeMeta[id] = { url: e.data.source_url, quote: e.data.quote || "", fileOwner: e.data.file_owner, field: e.data.field, edgeName: e.data.edge_name };
     return {
       id: id,
       source: e.data.source,
       target: e.data.target,
       kind: e.data.kind,
       source_tag: e.data.source_tag,
+      origin: e.data.origin || "unknown",
+      method: e.data.method || "unknown",
+      confidence: e.data.confidence || 0.5,
       visible: false,
     };
   });
@@ -781,7 +1229,7 @@ function buildLegend() {
   const eras = ERA_ORDER.filter(e => present.has(e));
   const el = document.getElementById("legendEras");
   el.innerHTML = eras.map(e =>
-    `<div><span class="swatch" style="background:${ERA_COLORS[e]}"></span>${e}</div>`
+    `<div><span class="swatch" style="background:${ERA_COLORS[e]}"></span>${e} (${ERA_RANGES[e][0]}–${ERA_RANGES[e][1]})</div>`
   ).join("");
 }
 
@@ -794,49 +1242,61 @@ function populateEraFilter() {
     const o = document.createElement("option");
     o.value = b; o.textContent = b; sel.appendChild(o);
   });
-  sel.onchange = e => {
-    const era = e.target.value;
-    nodes.forEach(n => { n.hidden = era && n.eraBucket !== era && !n.stub; });
+  sel.onchange = () => {
+    applyFilters();
     draw();
   };
 }
 
+function applyFilters() {
+  const era = document.getElementById("eraFilter").value;
+  const womenOnly = document.getElementById("womenFilter").checked;
+  nodes.forEach(n => {
+    if (n.stub) { n.hidden = false; return; }
+    let hide = false;
+    if (era && n.eraBucket !== era) hide = true;
+    if (womenOnly && !n.woman) hide = true;
+    n.hidden = hide;
+  });
+}
+
+document.getElementById("womenFilter").addEventListener("change", () => {
+  applyFilters();
+  draw();
+});
+
 function updateStats(data) {
   const seeded = data.nodes.filter(n => !n.data.stub).length;
   const stubs = data.nodes.filter(n => n.data.stub).length;
+  const teacherEdges = data.edges.filter(e => e.data.kind === "teacher").length;
+  const mentorEdges = data.edges.filter(e => e.data.kind === "mentor").length;
   document.getElementById("stats").innerHTML =
-    `${seeded} seeded · ${stubs} stubs<br>${data.edges.length} connections`;
+    `${seeded} seeded · ${stubs} stubs<br>${teacherEdges} teacher · ${mentorEdges} mentor`;
 }
 
 function showDetail(node) {
   const el = document.getElementById("detailBody");
   el.classList.remove("empty");
 
+  const edgeMapper = l => {
+    const meta = _edgeMeta[l.id] || {};
+    return { linkObj: l, tag: l.source_tag, url: meta.url, quote: meta.quote, fileOwner: meta.fileOwner, field: meta.field, edgeName: meta.edgeName };
+  };
+
   const teachersIn = links.filter(l => {
     const t = typeof l.target === "object" ? l.target : nodeById[l.target];
     return t === node && l.kind === "teacher";
-  }).map(l => {
-    const meta = _edgeMeta[l.id] || {};
-    return {
-      node: typeof l.source === "object" ? l.source : nodeById[l.source],
-      tag: l.source_tag,
-      url: meta.url,
-      quote: meta.quote,
-    };
-  }).filter(e => e.node);
+  }).map(l => ({ node: typeof l.source === "object" ? l.source : nodeById[l.source], ...edgeMapper(l) })).filter(e => e.node);
 
   const studentsOut = links.filter(l => {
     const s = typeof l.source === "object" ? l.source : nodeById[l.source];
     return s === node && l.kind === "teacher";
-  }).map(l => {
-    const meta = _edgeMeta[l.id] || {};
-    return {
-      node: typeof l.target === "object" ? l.target : nodeById[l.target],
-      tag: l.source_tag,
-      url: meta.url,
-      quote: meta.quote,
-    };
-  }).filter(e => e.node);
+  }).map(l => ({ node: typeof l.target === "object" ? l.target : nodeById[l.target], ...edgeMapper(l) })).filter(e => e.node);
+
+  const mentorsIn = links.filter(l => {
+    const t = typeof l.target === "object" ? l.target : nodeById[l.target];
+    return t === node && l.kind === "mentor";
+  }).map(l => ({ node: typeof l.source === "object" ? l.source : nodeById[l.source], ...edgeMapper(l) })).filter(e => e.node);
 
   let _quoteCounter = 0;
   const _escHtml = s => (s || "").replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
@@ -844,28 +1304,28 @@ function showDetail(node) {
     if (!arr.length) return '<div class="empty">—</div>';
     const html = '<ul class="edge-list">' + arr.map(e => {
       const dates = e.node.birth ? ` <span style="color:var(--muted);font-size:10px">(${e.node.birth}\u2013${e.node.death || ""})</span>` : "";
+      const highlightText = e.quote || e.node.label || e.node.id;
       let srcLabel = "";
-      if ((e.tag === "llm" || e.tag === "llm_confirmed") && e.quote) {
+      if (e.url) {
         const qid = `llmq${_quoteCounter++}`;
-        const color = e.tag === "llm_confirmed" ? "#50c864" : "#78b4f0";
-        const badge = e.tag === "llm_confirmed" ? `<span style="color:#50c864;font-size:10px;margin-left:4px" title="Confirmed by cross-reference or Wikidata">\u2713</span>` : "";
-        srcLabel = `${badge} <span class="src-toggle" data-qid="${qid}" style="color:${color};font-size:10px;margin-left:4px;cursor:pointer">text \u25be</span>` +
-                   `<div id="${qid}" class="llm-quote">\u201c${_escHtml(e.quote)}\u201d <a class="src-verify" data-url="${_escHtml(e.url)}" data-quote="${_escHtml(e.quote)}" style="color:${color};font-size:10px;cursor:pointer">verify on Wikipedia \u2197</a></div>`;
-      } else if (e.tag === "llm_confirmed") {
-        srcLabel = ` <span style="color:#50c864;font-size:10px;margin-left:4px" title="Confirmed by cross-reference or Wikidata">\u2713</span>`;
-      } else if (e.tag === "llm") {
-        srcLabel = ` <span class="edge-src-link" data-href="${_escHtml(e.url)}" style="color:#78b4f0;font-size:10px;margin-left:4px;cursor:pointer;text-decoration:underline">text</span>`;
-      } else if (e.tag === "wiki") {
-        srcLabel = ` <span class="edge-src-link" data-href="${_escHtml(e.url)}" style="color:#c8a45a;font-size:10px;margin-left:4px;cursor:pointer;text-decoration:underline" title="Found in Wikipedia article prose">wiki</span>`;
-      } else if (e.tag === "infobox") {
-        srcLabel = ` <span class="edge-src-link" data-href="${_escHtml(e.url)}" style="color:#c8a45a;font-size:10px;margin-left:4px;cursor:pointer;text-decoration:underline" title="From Wikipedia infobox">info</span>`;
+        const quoteBlock = e.quote ? `\u201c${_escHtml(e.quote)}\u201d ` : "";
+        srcLabel = ` <span class="src-toggle" data-qid="${qid}" style="color:var(--wiki);font-size:10px;margin-left:4px;cursor:pointer">wiki \u25be</span>` +
+                   `<div id="${qid}" class="llm-quote">${quoteBlock}<a class="src-verify" data-url="${_escHtml(e.url)}" data-quote="${_escHtml(e.quote || highlightText)}" style="color:var(--wiki);font-size:10px;cursor:pointer">see on Wikipedia \u2197</a></div>`;
       }
       return `<li data-node-id="${_escHtml(e.node.id)}">${e.node.label || e.node.id}${dates}${srcLabel}</li>`;
     }).join("") + '</ul>';
     return html;
   };
 
-  const setupDetailListeners = () => {};
+  const setupDetailListeners = () => {
+    const btn = document.getElementById("familyTreeBtn");
+    if (btn) btn.addEventListener("click", () => showFamilyTree(node));
+    const clearBtn = document.getElementById("familyTreeClearBtn");
+    if (clearBtn) {
+      clearBtn.style.display = familyTreeMode ? "block" : "none";
+      clearBtn.addEventListener("click", () => clearFamilyTree());
+    }
+  };
 
   el.innerHTML = `
     ${node.thumbnail ? `<img src="${node.thumbnail}" alt="${node.label}" style="width:100%;border-radius:8px;margin-bottom:12px;">` : ""}
@@ -874,8 +1334,9 @@ function showDetail(node) {
     <div class="detail-row"><span class="k">Nationality</span>${node.nationality || "—"}</div>
     <div class="detail-row"><span class="k">Era</span>${node.era || "—"}</div>
     ${node.wikipedia ? `<div class="detail-row"><a href="${node.wikipedia}" target="_blank">Wikipedia ↗</a></div>` : ""}
-    <h2>Teachers</h2>${listHtml(teachersIn)}
-    <h2>Students</h2>${listHtml(studentsOut)}
+    <button id="familyTreeBtn" style="margin:8px 0;background:var(--accent);color:white;border:none;padding:7px 0;font-size:12px;border-radius:4px;cursor:pointer">Show Family Tree</button>
+    <button id="familyTreeClearBtn" style="display:none;margin:0 0 8px;background:#555;color:white;border:none;padding:7px 0;font-size:12px;border-radius:4px;cursor:pointer">Clear Family Tree</button>
+    ${viewMode === "teachers" ? `<h2>Teachers</h2>${listHtml(teachersIn)}<h2>Students</h2>${listHtml(studentsOut)}` : `<h2>Mentors</h2>${listHtml(mentorsIn)}`}
   `;
   setupDetailListeners();
 }
@@ -886,7 +1347,6 @@ function clearDetail() {
   el.innerHTML = "Click a composer to see details.";
 }
 
-// --- Zoom buttons ---
 // --- Depth slider ---
 const depthSlider = document.getElementById("depthSlider");
 const depthValue = document.getElementById("depthValue");
@@ -894,6 +1354,40 @@ depthSlider.addEventListener("input", () => {
   connectionDepth = parseInt(depthSlider.value);
   depthValue.textContent = connectionDepth;
   if (selectedNode) selectNode(selectedNode);
+});
+
+// --- Confidence slider ---
+const confSlider = document.getElementById("confSlider");
+const confValue = document.getElementById("confValue");
+confSlider.addEventListener("input", () => {
+  minConfidence = parseInt(confSlider.value) / 100;
+  confValue.textContent = confSlider.value + "%";
+  if (selectedNode) selectNode(selectedNode);
+  draw();
+});
+
+// --- View mode toggle ---
+document.getElementById("viewTeachers").addEventListener("click", () => {
+  viewMode = "teachers";
+  document.getElementById("viewTeachers").classList.add("view-active");
+  document.getElementById("viewMentors").classList.remove("view-active");
+  {
+    simulation.force("link", d3.forceLink(activeLinks()).id(d => d.id).distance(180).strength(0.04));
+    simulation.alpha(0.05).restart();
+  }
+  if (selectedNode) selectNode(selectedNode);
+  draw();
+});
+document.getElementById("viewMentors").addEventListener("click", () => {
+  viewMode = "mentors";
+  document.getElementById("viewMentors").classList.add("view-active");
+  document.getElementById("viewTeachers").classList.remove("view-active");
+  {
+    simulation.force("link", d3.forceLink(activeLinks()).id(d => d.id).distance(180).strength(0.04));
+    simulation.alpha(0.05).restart();
+  }
+  if (selectedNode) selectNode(selectedNode);
+  draw();
 });
 
 // --- Zoom buttons ---
@@ -1089,7 +1583,7 @@ function findPath() {
 
   // Build adjacency
   const adj = new Map();
-  links.forEach(l => {
+  activeLinks().forEach(l => {
     const s = typeof l.source === "object" ? l.source : nodeById[l.source];
     const t = typeof l.target === "object" ? l.target : nodeById[l.target];
     if (!adj.has(s)) adj.set(s, []);
@@ -1143,6 +1637,7 @@ function findPath() {
   const steps = pathChain.length - 1;
   status.innerHTML = `<strong>${steps} degree${steps !== 1 ? "s" : ""} of separation</strong><br>` +
     pathChain.join(" → ");
+  document.getElementById("pathClear").style.display = "block";
 
   // Update visibility: show only path
   selectedNode = _pathFromNode;
@@ -1153,7 +1648,23 @@ function findPath() {
   draw();
 }
 
+function clearLineage() {
+  _pathLinks.clear();
+  _pathNodes.clear();
+  document.getElementById("pathStatus").textContent = "";
+  document.getElementById("pathClear").style.display = "none";
+  selectedNode = null;
+  nodes.forEach(n => { n._connected = false; });
+  links.forEach(l => l.visible = false);
+  document.getElementById("detailBody").innerHTML = "";
+  draw();
+}
+
 document.getElementById("pathFind").addEventListener("click", findPath);
+document.getElementById("pathClear").addEventListener("click", () => {
+  if (familyTreeMode) clearFamilyTree();
+  else clearLineage();
+});
 
 // Delegated click handler for detail panel
 document.getElementById("detailBody").addEventListener("click", ev => {
@@ -1181,31 +1692,88 @@ document.getElementById("detailBody").addEventListener("click", ev => {
   }
   const verify = ev.target.closest(".src-verify");
   if (verify) {
+    ev.preventDefault();
     ev.stopPropagation();
     const url = verify.dataset.url;
+    if (!url) return;
     let quote = (verify.dataset.quote || "").trim();
     if (quote.length > 80) quote = quote.slice(0, 80).replace(/\s+\S*$/, "");
-    const fullUrl = `${url}#:~:text=${encodeURIComponent(quote)}`;
-    const a = document.createElement("a");
-    a.href = fullUrl;
-    a.target = "_blank";
-    a.rel = "noopener";
-    a.style.display = "none";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    window.open(`${url}#:~:text=${encodeURIComponent(quote)}`, "_blank", "noopener");
+    return;
+  }
+  const confirmBtn = ev.target.closest(".confirm-edge");
+  if (confirmBtn) {
+    ev.stopPropagation();
+    const { owner, target, field, linkId } = confirmBtn.dataset;
+    confirmBtn.textContent = "Confirming…";
+    confirmBtn.style.pointerEvents = "none";
+    fetch("/confirm-edge", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ composer: owner, target: target, field: field }),
+    }).then(r => {
+      if (!r.ok) throw new Error("Failed");
+      const link = links.find(l => l.id === linkId);
+      if (link) link.source_tag = "llm_confirmed";
+      const meta = _edgeMeta[linkId];
+      if (meta) meta.source_tag = "llm_confirmed";
+      if (selectedNode) selectNode(selectedNode);
+      draw();
+    }).catch(() => {
+      confirmBtn.textContent = "Failed — retry";
+      confirmBtn.style.pointerEvents = "";
+    });
     return;
   }
   if (ev.target.closest(".llm-quote")) return;
   const li = ev.target.closest(".edge-list li");
   if (li) {
     const nid = li.dataset.nodeId;
-    if (nid && nodeById[nid]) selectNode(nodeById[nid]);
+    if (nid && nodeById[nid]) {
+      if (_pathLinks.size > 0) {
+        showDetail(nodeById[nid]);
+        draw();
+      } else {
+        selectNode(nodeById[nid]);
+      }
+    }
   }
 });
 
 window.addEventListener("resize", resize);
 load();
+
+// --- Ask ---
+const askInput = document.getElementById("askInput");
+const askBtn = document.getElementById("askBtn");
+const askAnswer = document.getElementById("askAnswer");
+
+async function askQuestion() {
+  const q = askInput.value.trim();
+  if (!q) return;
+  askBtn.disabled = true;
+  askBtn.textContent = "Thinking…";
+  askAnswer.style.display = "block";
+  askAnswer.textContent = "…";
+  try {
+    const res = await fetch("/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question: q }),
+    });
+    if (!res.ok) throw new Error(await res.text());
+    const data = await res.json();
+    askAnswer.textContent = data.answer;
+  } catch (e) {
+    askAnswer.textContent = "Error: " + e.message;
+  } finally {
+    askBtn.disabled = false;
+    askBtn.textContent = "Ask";
+  }
+}
+
+askBtn.addEventListener("click", askQuestion);
+askInput.addEventListener("keydown", e => { if (e.key === "Enter") askQuestion(); });
 </script>
 </body>
 </html>

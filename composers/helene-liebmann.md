@@ -1,6 +1,7 @@
 ---
 name: Hélène Liebmann
-wikipedia: https://en.wikipedia.org/wiki/Helene_Liebmann
+wikidata: Q92192
+wikipedia: https://en.wikipedia.org/wiki/Hélène_Liebmann
 thumbnail: null
 birth: '1795'
 birth_source: llm
@@ -8,25 +9,23 @@ death: '1869'
 death_source: llm
 nationality: German
 nationality_source: llm
-era: null
-era_source: null
+era: Romantic
+era_source: llm
 teachers:
 - name: Franz Lauska
-  source: wiki
+  source: llm
+  quote: hired the composer Franz Lauska as her piano and composition tutor
 - name: Ferdinand Ries
   source: wiki
-students:
-- name: Berlin
-  source: wiki
-- name: Ferdinand Ries
-  source: wiki
-influenced_by: []
-influenced: []
+students: []
+mentors: []
 ---
 
-# Helene Liebmann
 
-[Wikipedia](https://en.wikipedia.org/wiki/Helene_Liebmann)
+
+# Hélène Liebmann
+
+[Wikipedia](https://en.wikipedia.org/wiki/Hélène_Liebmann)
 
 ## Notes
 

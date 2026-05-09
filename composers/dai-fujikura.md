@@ -1,5 +1,6 @@
 ---
 name: Dai Fujikura
+wikidata: Q5209001
 wikipedia: https://en.wikipedia.org/wiki/Dai_Fujikura
 thumbnail: null
 birth: '1977'
@@ -20,18 +21,11 @@ teachers:
   source: llm
   quote: continued at King's College London under George Benjamin
 students: []
-influenced_by:
-- name: Pierre Boulez
-  source: llm
-  quote: Studying the music of Pierre Boulez, György Ligeti and Tōru Takemitsu
-- name: György Ligeti
-  source: llm
-  quote: Studying the music of Pierre Boulez, György Ligeti and Tōru Takemitsu
-- name: Tōru Takemitsu
-  source: llm
-  quote: Studying the music of Pierre Boulez, György Ligeti and Tōru Takemitsu
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Dai Fujikura
 

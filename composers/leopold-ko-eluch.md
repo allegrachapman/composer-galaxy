@@ -1,5 +1,6 @@
 ---
 name: Leopold Koželuch
+wikidata: Q693843
 wikipedia: https://en.wikipedia.org/wiki/Leopold_Koželuch
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kozeluh349.jpg/250px-Kozeluh349.jpg
 birth: '1747'
@@ -29,20 +30,18 @@ students:
   source: llm
   quote: His pupils would include Maria Theresia Paradis, Archduchess Elisabeth of
     Württemberg, Archduchess Marie Louise
-influenced_by:
-- name: František Xaver Dušek
-  source: llm
-  quote: Koželuch's symphonies are influenced by those of his Prague teacher František
-    Xaver Dušek
-influenced:
-- name: Franz Schubert
-  source: llm
-  quote: these works "must have been noted by the young Schubert"
-- name: Ludwig van Beethoven
-  source: llm
-  quote: substantially anticipated ... the tragic-pathetic manner" of Beethoven and
-    Schubert
+- name: Josepha Barbara Auernhammer
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Simon Sechter
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # Leopold Koželuch
 

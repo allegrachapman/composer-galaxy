@@ -1,5 +1,6 @@
 ---
 name: Antonio Salieri
+wikidata: Q51088
 wikipedia: https://en.wikipedia.org/wiki/Antonio_Salieri
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Antonio_Salieri_painted_by_Joseph_Willibrord_M%C3%A4hler.jpg/250px-Antonio_Salieri_painted_by_Joseph_Willibrord_M%C3%A4hler.jpg
 birth: '1750'
@@ -8,60 +9,74 @@ death: '1825'
 death_source: infobox
 nationality: Legnago, Republic of Venice
 nationality_source: infobox
-era: Classical
-era_source: llm
+era: null
+era_source: null
 teachers:
+- name: Christoph Willibald Gluck
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Johann Adolph Hasse
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 - name: Giovanni Battista Pescetti
   source: wiki
-- name: Florian Leopold Gassmann
-  source: llm
-  quote: impressed with his protege's talents and concerned for the boy's future,
-    took the young orphan to Vienna
-- name: Christoph Willibald Gluck
-  source: llm
-  quote: Gluck became an informal advisor, friend, and confidante
-- name: Pietro Antonio Domenico Trapassi
-  source: llm
-  quote: Metastasio gave Salieri informal instruction in prosody and the declamation
-    of Italian poetry
-students:
-- name: Venice
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Giuseppe Simoni (composer)
   source: wiki
-- name: Franz Liszt
-  source: llm
-  quote: Franz Liszt, Franz Schubert, Ludwig van Beethoven, Anton Eberl, Johann Nepomuk
-    Hummel and Franz Xaver Wolfgang Mozart were among the most famous of his pupils
-- name: Franz Schubert
-  source: llm_confirmed
-  quote: Franz Liszt, Franz Schubert, Ludwig van Beethoven, Anton Eberl, Johann Nepomuk
-    Hummel and Franz Xaver Wolfgang Mozart were among the most famous of his pupils
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+students:
+- name: Marianna Auenbrugger
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 - name: Ludwig van Beethoven
-  source: llm_confirmed
-  quote: Franz Liszt, Franz Schubert, Ludwig van Beethoven, Anton Eberl, Johann Nepomuk
-    Hummel and Franz Xaver Wolfgang Mozart were among the most famous of his pupils
-- name: Anton Eberl
-  source: llm
-  quote: Franz Liszt, Franz Schubert, Ludwig van Beethoven, Anton Eberl, Johann Nepomuk
-    Hummel and Franz Xaver Wolfgang Mozart were among the most famous of his pupils
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Antonio Casimir Cartellieri
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Carl Czerny
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 - name: Johann Nepomuk Hummel
-  source: llm_confirmed
-  quote: Franz Liszt, Franz Schubert, Ludwig van Beethoven, Anton Eberl, Johann Nepomuk
-    Hummel and Franz Xaver Wolfgang Mozart were among the most famous of his pupils
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Franz Liszt
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Giacomo Meyerbeer
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Ignaz Moscheles
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 - name: Franz Xaver Wolfgang Mozart
-  source: llm
-  quote: Franz Liszt, Franz Schubert, Ludwig van Beethoven, Anton Eberl, Johann Nepomuk
-    Hummel and Franz Xaver Wolfgang Mozart were among the most famous of his pupils
-influenced_by:
-- name: Christoph Willibald Gluck
-  source: llm
-  quote: The work clearly followed in Gluck's footsteps and embraced his reform of
-    serious opera
-influenced:
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: This was a pattern imitated by later composers, most famously and successfully
-    by Wolfgang Amadeus Mozart in Don Giovanni
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Maria Theresia von Paradis
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Anton Reicha
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Franz Schubert
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Franz Xaver Süssmayr
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Ignaz Umlauf
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Joseph Weigl
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Peter Winter
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
 
 # Antonio Salieri
 

@@ -1,29 +1,22 @@
 ---
 name: Mel Bonis
+wikidata: Q467452
 wikipedia: https://en.wikipedia.org/wiki/Mel_Bonis
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Mel_Bonis_2.jpg/250px-Mel_Bonis_2.jpg
-birth: '1858'
-birth_source: llm
-death: '1937'
-death_source: llm
-nationality: French
-nationality_source: llm
-era: Romantic
-era_source: llm
-teachers:
-- name: César Franck
-  source: llm
-  quote: her teachers included César Franck, Ernest Guiraud, and Auguste Bazille
-- name: Ernest Guiraud
-  source: llm
-  quote: her teachers included César Franck, Ernest Guiraud, and Auguste Bazille
-- name: Auguste Bazille
-  source: llm
-  quote: her teachers included César Franck, Ernest Guiraud, and Auguste Bazille
+birth: null
+birth_source: null
+death: null
+death_source: null
+nationality: null
+nationality_source: null
+era: null
+era_source: null
+teachers: []
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Mel Bonis
 

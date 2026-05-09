@@ -1,5 +1,6 @@
 ---
 name: Alfredo Casella
+wikidata: Q337343
 wikipedia: https://en.wikipedia.org/wiki/Alfredo_Casella
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Alfredo_Casella.jpg/250px-Alfredo_Casella.jpg
 birth: '1883'
@@ -11,6 +12,9 @@ nationality_source: infobox
 era: 20th-century
 era_source: llm
 teachers:
+- name: Maria Casella
+  source: llm
+  quote: his mother was a pianist, who gave the boy his first music lessons.
 - name: Louis Diémer
   source: llm
   quote: study piano under Louis Diémer
@@ -24,53 +28,69 @@ students:
   source: wiki
 - name: Maria Curcio
   source: llm
-  quote: Casella's students included Maria Curcio
+  quote: Casella's students included Clotilde Coulombe, Stefan Bardas, Maria Curcio,
+    Francesco Mander, Branka Musulin, Maurice Ohana, Robin Orr, Primož Ramovš
 - name: Francesco Mander
   source: llm
-  quote: Casella's students included Francesco Mander
+  quote: Casella's students included Clotilde Coulombe, Stefan Bardas, Maria Curcio,
+    Francesco Mander, Branka Musulin, Maurice Ohana, Robin Orr, Primož Ramovš
 - name: Branka Musulin
   source: llm
-  quote: Casella's students included Branka Musulin
+  quote: Casella's students included Clotilde Coulombe, Stefan Bardas, Maria Curcio,
+    Francesco Mander, Branka Musulin, Maurice Ohana, Robin Orr, Primož Ramovš
 - name: Maurice Ohana
   source: llm
-  quote: Casella's students included Maurice Ohana
+  quote: Casella's students included Clotilde Coulombe, Stefan Bardas, Maria Curcio,
+    Francesco Mander, Branka Musulin, Maurice Ohana, Robin Orr, Primož Ramovš
 - name: Robin Orr
   source: llm
-  quote: Casella's students included Robin Orr
+  quote: Casella's students included Clotilde Coulombe, Stefan Bardas, Maria Curcio,
+    Francesco Mander, Branka Musulin, Maurice Ohana, Robin Orr, Primož Ramovš
 - name: Primož Ramovš
   source: llm
-  quote: Casella's students included Primož Ramovš
+  quote: Casella's students included Clotilde Coulombe, Stefan Bardas, Maria Curcio,
+    Francesco Mander, Branka Musulin, Maurice Ohana, Robin Orr, Primož Ramovš
 - name: Nino Rota
   source: llm
-  quote: Casella's students included Nino Rota
+  quote: Casella's students included Clotilde Coulombe, Stefan Bardas, Maria Curcio,
+    Francesco Mander, Branka Musulin, Maurice Ohana, Robin Orr, Primož Ramovš
 - name: Maria Tipo
   source: llm
-  quote: Casella's students included Maria Tipo
+  quote: Casella's students included Clotilde Coulombe, Stefan Bardas, Maria Curcio,
+    Francesco Mander, Branka Musulin, Maurice Ohana, Robin Orr, Primož Ramovš
 - name: Gaetano Giuffrè
   source: llm
-  quote: Casella's students included Gaetano Giuffrè
+  quote: Casella's students included Clotilde Coulombe, Stefan Bardas, Maria Curcio,
+    Francesco Mander, Branka Musulin, Maurice Ohana, Robin Orr, Primož Ramovš
 - name: Camillo Togni
   source: llm
-  quote: Casella's students included Camillo Togni
+  quote: Casella's students included Clotilde Coulombe, Stefan Bardas, Maria Curcio,
+    Francesco Mander, Branka Musulin, Maurice Ohana, Robin Orr, Primož Ramovš
 - name: Bruna Monestiroli
   source: llm
-  quote: Casella's students included Bruna Monestiroli
-influenced_by:
-- name: Claude Debussy
-  source: llm
-  quote: developed a deep admiration for Debussy's output
-- name: Richard Strauss
-  source: llm
-  quote: more romantic vein (stemming from Strauss and Mahler)
-- name: Gustav Mahler
-  source: llm
-  quote: more romantic vein (stemming from Strauss and Mahler)
-influenced:
-- name: Gian Francesco Malipiero
-  source: llm
-  quote: together with Gabriele D'Annunzio and Gian Francesco Malipiero from Venice,
-    he founded
+  quote: Casella's students included Clotilde Coulombe, Stefan Bardas, Maria Curcio,
+    Francesco Mander, Branka Musulin, Maurice Ohana, Robin Orr, Primož Ramovš
+- name: Alma Brughera Capaldo
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Jerome Moross
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Vittorio Rieti
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Michael Alcorn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: David Jennings
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Alfredo Casella
 

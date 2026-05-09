@@ -1,5 +1,6 @@
 ---
 name: Max Deutsch
+wikidata: Q78742
 wikipedia: https://en.wikipedia.org/wiki/Max_Deutsch
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/MaxDeutsch.jpg/250px-MaxDeutsch.jpg
 birth: '1892'
@@ -19,11 +20,11 @@ students:
 - name: Donald Harris (composer)
   source: wiki
 - name: György Kurtág
-  source: llm_confirmed
+  source: llm
   quote: influenced notable students such as Philippe Capdenat, Donald Harris, György
     Kurtág
 - name: Philippe Manoury
-  source: llm_confirmed
+  source: llm
   quote: influenced notable students such as Philippe Capdenat, Donald Harris, György
     Kurtág, Philippe Manoury
 - name: Jorge Arriagada
@@ -52,13 +53,33 @@ students:
 - name: David Chaitkin
   source: llm
   quote: American composers David Chaitkin
-influenced_by:
-- name: Arnold Schoenberg
-  source: llm
-  quote: devoting himself mainly to teaching music, chiefly following the principles
-    of Schönberg
-influenced: []
+- name: William Albright
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: John Carewe
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Sylvia Hallett
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Eugene Kurtz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Heinz-Klaus Metzger
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Allen Shearer
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Verdina Shlonsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Max Deutsch
 

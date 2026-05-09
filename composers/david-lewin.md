@@ -1,5 +1,6 @@
 ---
 name: David Lewin
+wikidata: Q3018295
 wikipedia: https://en.wikipedia.org/wiki/David_Lewin
 thumbnail: null
 birth: '1933'
@@ -23,10 +24,16 @@ teachers:
 - name: Earl Kim
   source: llm
   quote: studied theory and composition with Earl Kim
-students: []
-influenced_by: []
-influenced: []
+students:
+- name: Lee Hyla
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # David Lewin
 

@@ -1,5 +1,6 @@
 ---
 name: Ferenc Farkas
+wikidata: Q996204
 wikipedia: https://en.wikipedia.org/wiki/Ferenc_Farkas
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ferenc_Farkas%2C1971.jpg/250px-Ferenc_Farkas%2C1971.jpg
 birth: '1905'
@@ -22,11 +23,11 @@ teachers:
     Cecilia in Rome
 students:
 - name: György Kurtág
-  source: llm_confirmed
+  source: llm
   quote: 'Among his students were: György Kurtág, György Ligeti, László Kalmár, and
     Miklós Kocsár'
 - name: György Ligeti
-  source: llm_confirmed
+  source: llm
   quote: 'Among his students were: György Kurtág, György Ligeti, László Kalmár, and
     Miklós Kocsár'
 - name: László Kalmár
@@ -37,15 +38,15 @@ students:
   source: llm
   quote: 'Among his students were: György Kurtág, György Ligeti, László Kalmár, and
     Miklós Kocsár'
-influenced_by:
-- name: Bartók
-  source: llm
-  quote: the work and research of Bartók and Kodály raised crucial problems
-- name: Kodály
-  source: llm
-  quote: the work and research of Bartók and Kodály raised crucial problems
-influenced: []
+- name: Zsolt Durkó
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Ferenc Farkas
 

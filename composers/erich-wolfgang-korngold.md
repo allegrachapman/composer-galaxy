@@ -1,5 +1,6 @@
 ---
 name: Erich Wolfgang Korngold
+wikidata: Q313371
 wikipedia: https://en.wikipedia.org/wiki/Erich_Wolfgang_Korngold
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Erich_Wolfgang_Korngold_01.jpg/250px-Erich_Wolfgang_Korngold_01.jpg
 birth: '1897'
@@ -13,32 +14,23 @@ era_source: llm
 teachers:
 - name: Alexander von Zemlinsky
   source: wiki
-students: []
-influenced_by:
-- name: leitmotif
+- name: Robert Fuchs (composer)
   source: wiki
-- name: Gustav Mahler
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Alexander Zemlinsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Karl Weigl
   source: llm
-  quote: Mahler called him a "musical genius"
-- name: Richard Strauss
-  source: llm
-  quote: Richard Strauss also spoke highly of the youth
-- name: Johann Strauss II
-  source: llm
-  quote: he developed a passion for the music of Johann Strauss II
-- name: Franz Liszt
-  source: llm
-  quote: he needed to compose over an hour of symphonic music in only three weeks.
-    The short time frame forced him to use bits of symphonic poems by Franz Liszt
-- name: Giacomo Puccini
-  source: llm
-  quote: the delicacy and broad melodic sweep of Puccini
-influenced:
-- name: John Williams
-  source: llm
-  quote: Composer John Williams has cited Korngold as his inspiration in scoring the
-    Star Wars series
+  quote: Erich Wolfgang Korngold
+students: []
+mentors: []
 ---
+
+
+
+
+
 
 # Erich Wolfgang Korngold
 

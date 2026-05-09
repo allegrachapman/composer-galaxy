@@ -1,5 +1,6 @@
 ---
 name: Margaret Bonds
+wikidata: Q1894804
 wikipedia: https://en.wikipedia.org/wiki/Margaret_Bonds
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Margaret_Bonds.jpg/250px-Margaret_Bonds.jpg
 birth: '1913'
@@ -40,17 +41,11 @@ students:
 - name: Gerald Cook
   source: llm
   quote: Two of her notable students were Ned Rorem and Gerald Cook
-influenced_by:
-- name: Langston Hughes
-  source: llm
-  quote: best remembered today for her popular arrangements of African-American spirituals
-    and frequent collaborations with Langston Hughes
-- name: Will Marion Cook
-  source: llm
-  quote: Influential people like sopranos and composers Will Marion Cook, Countee
-    Cullen, Abbie Mitchell
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Margaret Bonds
 

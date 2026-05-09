@@ -1,5 +1,6 @@
 ---
 name: John Cage
+wikidata: Q180727
 wikipedia: https://en.wikipedia.org/wiki/John_Cage
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Componist_John_Cage.jpg/250px-Componist_John_Cage.jpg
 birth: '1912'
@@ -13,48 +14,85 @@ era_source: llm
 teachers:
 - name: Arnold Schoenberg
   source: wiki
-- name: dodecaphony
-  source: wiki
 - name: Lazare Lévy
   source: wiki
 - name: Richard Buhlig
   source: wiki
 - name: Henry Cowell
-  source: llm_confirmed
+  source: llm
   quote: Cage's teachers included Henry Cowell (1933)
 - name: Adolph Weiss
   source: llm
   quote: Cage traveled to New York City in 1933 and started studying with Weiss
+- name: Virgil Thomson
+  source: llm
+  quote: He also encouraged many younger composers and literary figures such as Theodor
+    Adorno, Ned Rorem, Lou Harrison, John Cage
 students:
-- name: dodecaphony
-  source: wiki
 - name: Lou Harrison
   source: wiki
 - name: Christian Wolff (composer)
   source: wiki
 - name: Gavin Bryars
   source: wiki
-influenced_by:
-- name: Antonin Artaud
+- name: Beth Anderson
   source: wiki
-- name: Henry David Thoreau
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Dawn Avery
   source: wiki
-- name: Oskar Fischinger
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: George Brecht
   source: wiki
-- name: Henry Cowell
-  source: llm
-  quote: Cage's teachers included Henry Cowell (1933)
-- name: Arnold Schoenberg
-  source: llm
-  quote: The older composer became one of the biggest influences on Cage
-- name: Gita Sarabhai
-  source: llm
-  quote: In early 1946, Cage agreed to tutor Gita Sarabhai, an Indian musician
-influenced:
-- name: Lou Harrison
-  source: llm
-  quote: the two immediately established a strong bond and began a working relationship
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Dubravko Detoni
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Robert Ellis Dunn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Al Hansen
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Dick Higgins
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Toshi Ichiyanagi
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Ben Johnston
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Allan Kaprow
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Jackson Mac Low
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Margaret Leng Tan
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Richard Maxfield
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Hugh Merrill
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Relly Raffman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Richard Rijnvos
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Dorothea Rockburne
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
+
 
 # John Cage
 

@@ -1,5 +1,6 @@
 ---
 name: Jean Roger-Ducasse
+wikidata: Q649959
 wikipedia: https://en.wikipedia.org/wiki/Jean_Roger-Ducasse
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/1/18/Jean_Roger-Ducasse.jpg
 birth: '1873'
@@ -18,7 +19,7 @@ teachers:
   source: llm
   quote: studied at the Paris Conservatoire with Émile Pessard and André Gedalge
 - name: Gabriel Fauré
-  source: llm_confirmed
+  source: llm
   quote: was the star pupil and close friend of Gabriel Fauré
 students:
 - name: Jehan Alain
@@ -33,15 +34,15 @@ students:
   source: llm
   quote: Among his notable pupils were Jehan Alain, Claude Arrieu, Sirvart Kalpakyan
     Karamanuk, Jean-Louis Martinet, and Francis George Scott
-influenced_by:
-- name: Hector Berlioz
-  source: llm
-  quote: unbroken tradition from Hector Berlioz through Camille Saint-Saëns
-- name: Camille Saint-Saëns
-  source: llm
-  quote: unbroken tradition from Hector Berlioz through Camille Saint-Saëns
-influenced: []
+- name: Sirvart Kalpakyan Karamanuk
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
+
+
 
 # Jean Roger-Ducasse
 

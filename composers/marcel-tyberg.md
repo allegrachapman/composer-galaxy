@@ -1,5 +1,6 @@
 ---
 name: Marcel Tyberg
+wikidata: Q512563
 wikipedia: https://en.wikipedia.org/wiki/Marcel_Tyberg
 thumbnail: http://orelfoundation.org/images/common/facebook_30.png
 birth: '1893'
@@ -12,16 +13,14 @@ era: late-Romantic
 era_source: llm
 teachers: []
 students: []
-influenced_by:
-- name: Hans Rott
+mentors:
+- name: Rafael Kubelik
   source: llm
-  quote: direct thematic citations and rhythmic over-structures that originate from
-    Hans Rott's Symphony No. 1
-- name: Gustav Mahler
-  source: llm
-  quote: were also cited by Gustav Mahler's Symphony No. 2 greatly
-influenced: []
+  quote: His Symphony No. 2 was premiered by his friend Rafael Kubelik with the Czech
+    Philharmonic
 ---
+
+
 
 # Marcel Tyberg
 

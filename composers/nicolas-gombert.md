@@ -1,5 +1,6 @@
 ---
 name: Nicolas Gombert
+wikidata: Q549689
 wikipedia: https://en.wikipedia.org/wiki/Nicolas_Gombert
 thumbnail: null
 birth: '1495'
@@ -20,22 +21,14 @@ students:
   source: llm
   quote: being succeeded by Thomas Crecquillon and later Cornelius Canis
 - name: Cornelius Canis
-  source: llm_confirmed
+  source: llm
   quote: being succeeded by Thomas Crecquillon and later Cornelius Canis
-influenced_by:
-- name: Josquin des Prez
-  source: llm
-  quote: between Josquin des Prez and Palestrina
-influenced:
-- name: Orlando di Lasso
-  source: llm
-  quote: use of his music as source material for compositions by others, including
-    Orlando di Lasso
-- name: Claudio Monteverdi
-  source: llm
-  quote: use of his music as source material for compositions by others, including
-    Orlando di Lasso and Claudio Monteverdi
+mentors: []
 ---
+
+
+
+
 
 # Nicolas Gombert
 

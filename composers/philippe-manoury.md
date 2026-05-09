@@ -1,5 +1,6 @@
 ---
 name: Philippe Manoury
+wikidata: Q952288
 wikipedia: https://en.wikipedia.org/wiki/Philippe_Manoury
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Philippe_Manoury.jpg/250px-Philippe_Manoury.jpg
 birth: '1952'
@@ -16,7 +17,7 @@ teachers:
   quote: began composition studies at the Ecole Normale de Musique de Paris with Gérard
     Condé
 - name: Max Deutsch
-  source: llm_confirmed
+  source: llm
   quote: Ecole Normale de Musique de Paris with Gérard Condé and Max Deutsch
 - name: Michel Philippot
   source: llm
@@ -31,16 +32,12 @@ teachers:
   source: llm
   quote: undertook studies in computer assisted composition with Pierre Barbaud
 students: []
-influenced_by:
-- name: Pierre Boulez
-  source: wiki
-- name: Karlheinz Stockhausen
-  source: wiki
-- name: Iannis Xenakis
-  source: llm
-  quote: strongly influenced by Pierre Boulez, Karlheinz Stockhausen, and Iannis Xenakis
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Philippe Manoury
 

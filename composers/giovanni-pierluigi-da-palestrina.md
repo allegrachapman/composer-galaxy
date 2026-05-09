@@ -1,5 +1,6 @@
 ---
 name: Giovanni Pierluigi da Palestrina
+wikidata: Q179277
 wikipedia: https://en.wikipedia.org/wiki/Giovanni_Pierluigi_da_Palestrina
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Giovanni_Pierluigi_da_Palestrina.jpg/250px-Giovanni_Pierluigi_da_Palestrina.jpg
 birth: '1525'
@@ -17,58 +18,47 @@ teachers:
   source: wiki
 - name: Claude Goudimel
   source: llm
-  quote: studied in the school of the Huguenot Claude Goudimel
+  quote: he studied in the school of the Huguenot Claude Goudimel.
 students:
 - name: Giovanni Maria Nanino
   source: llm
-  quote: Italian composers Giovanni Maria Nanino and Gregorio Allegri, both of them
-    disciples of his school
+  quote: by such students of his as Giovanni Maria Nanino, Ruggiero Giovanelli, Arcangelo
+    Crivelli, Teofilo Gargari, Francesco Soriano, and Gregorio Allegri.
 - name: Gregorio Allegri
   source: llm
   quote: Italian composers Giovanni Maria Nanino and Gregorio Allegri, both of them
-    disciples of his school
+    disciples of his school, continued his works.
 - name: Ruggiero Giovanelli
   source: llm
-  quote: such students of his as Giovanni Maria Nanino, Ruggiero Giovanelli, Arcangelo
-    Crivelli
+  quote: by such students of his as Giovanni Maria Nanino, Ruggiero Giovanelli, Arcangelo
+    Crivelli, Teofilo Gargari, Francesco Soriano, and Gregorio Allegri.
 - name: Arcangelo Crivelli
   source: llm
-  quote: such students of his as Giovanni Maria Nanino, Ruggiero Giovanelli, Arcangelo
-    Crivelli
+  quote: by such students of his as Giovanni Maria Nanino, Ruggiero Giovanelli, Arcangelo
+    Crivelli, Teofilo Gargari, Francesco Soriano, and Gregorio Allegri.
 - name: Teofilo Gargari
   source: llm
-  quote: such students of his as Giovanni Maria Nanino, Ruggiero Giovanelli, Arcangelo
-    Crivelli, Teofilo Gargari
+  quote: by such students of his as Giovanni Maria Nanino, Ruggiero Giovanelli, Arcangelo
+    Crivelli, Teofilo Gargari, Francesco Soriano, and Gregorio Allegri.
 - name: Francesco Soriano
   source: llm
-  quote: such students of his as Giovanni Maria Nanino, Ruggiero Giovanelli, Arcangelo
-    Crivelli, Teofilo Gargari, Francesco Soriano
-influenced_by:
-- name: Guillaume Du Fay
-  source: llm
-  quote: two influential Netherlandish composers, Guillaume Du Fay and Josquin des
-    Prez
-- name: Josquin des Prez
-  source: llm
-  quote: two influential Netherlandish composers, Guillaume Du Fay and Josquin des
-    Prez
-- name: Orlando di Lasso
-  source: llm
-  quote: Orlando di Lasso, who accompanied Palestrina in his early years, also played
-    an important role
-- name: Cristóbal de Morales
-  source: llm
-  quote: the book was modelled on one by Cristóbal de Morales
-influenced:
-- name: Johann Joseph Fux
-  source: llm
-  quote: the so-called "Palestrinian style" of counterpoint—especially as codified
-    by Johann Joseph Fux
-- name: Johann Sebastian Bach
-  source: llm
-  quote: His Missa sine nomine seems to have been particularly attractive to Johann
-    Sebastian Bach
+  quote: by such students of his as Giovanni Maria Nanino, Ruggiero Giovanelli, Arcangelo
+    Crivelli, Teofilo Gargari, Francesco Soriano, and Gregorio Allegri.
+- name: Giovanni Dragoni
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Annibale Stabile
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Tomás Luis de Victoria
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+mentors: []
 ---
+
+
+
+
 
 # Giovanni Pierluigi da Palestrina
 

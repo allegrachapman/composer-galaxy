@@ -1,5 +1,6 @@
 ---
 name: Raoul Bardac
+wikidata: Q15973497
 wikipedia: https://en.wikipedia.org/wiki/Raoul_Bardac
 thumbnail: null
 birth: '1881'
@@ -10,11 +11,16 @@ nationality: French
 nationality_source: llm
 era: null
 era_source: null
-teachers: []
+teachers:
+- name: Claude Debussy
+  source: wiki
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Raoul Bardac
 

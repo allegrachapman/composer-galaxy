@@ -1,5 +1,6 @@
 ---
 name: Thomas Attwood (composer)
+wikidata: Q2422110
 wikipedia: https://en.wikipedia.org/wiki/Thomas_Attwood_(composer)
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Thomas_Attwood_%28composer%29.jpg/250px-Thomas_Attwood_%28composer%29.jpg
 birth: '1765'
@@ -35,15 +36,18 @@ students:
   source: llm
   quote: He taught John Goss, Cipriani Potter, his godson Thomas Attwood Walmisley,
     and child prodigy Elizabeth Jonas
-influenced_by:
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: His compositions show the influence of his teacher Mozart
-influenced:
-- name: William Sterndale Bennett
-  source: llm
-  quote: he greatly encouraged the young William Sterndale Bennett
+- name: George Cooper
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Henry Hugh Pierson
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+mentors: []
 ---
+
+
+
+
 
 # Thomas Attwood (composer)
 

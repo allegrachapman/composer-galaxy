@@ -1,5 +1,6 @@
 ---
 name: Alexander Scriabin
+wikidata: Q185647
 wikipedia: https://en.wikipedia.org/wiki/Alexander_Scriabin
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Scriabin_1909_Cropped.jpg/250px-Scriabin_1909_Cropped.jpg
 birth: '1872'
@@ -15,48 +16,49 @@ teachers:
   source: wiki
 - name: Anton Arensky
   source: llm
-  quote: studied at the Moscow Conservatory under Anton Arensky
+  quote: studied at the Moscow Conservatory under Anton Arensky, Sergei Taneyev, and
+    Vasily Safonov.
 - name: Sergei Taneyev
-  source: llm_confirmed
-  quote: studied at the Moscow Conservatory under Sergei Taneyev
+  source: llm
+  quote: studied at the Moscow Conservatory under Anton Arensky, Sergei Taneyev, and
+    Vasily Safonov.
 - name: Vasily Safonov
   source: llm
-  quote: studied at the Moscow Conservatory under Vasily Safonov
+  quote: studied at the Moscow Conservatory under Anton Arensky, Sergei Taneyev, and
+    Vasily Safonov.
+- name: Georgi Conus
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Alexander Siloti
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
-- name: Mekhla Kumar
-  source: wiki
-- name: Konstantin Shamray
-  source: wiki
+- name: Tatiana Fyodorovna Schlözer
+  source: llm
+  quote: accompanied by Tatiana Fyodorovna Schlözer—a former pupil
 - name: Alfred La Liberté
   source: llm
-  quote: became a personal friend and disciple
-influenced_by:
-- name: Frédéric Chopin
+  quote: the Canadian composer Alfred La Liberté, who became a personal friend and
+    disciple.
+- name: Djane Lavoie-Herz
   source: wiki
-- name: synesthesia
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Wladimir Vogel
   source: wiki
-- name: theosophy
-  source: wiki
-- name: Franz Liszt
+mentors:
+- name: Mitrofan Belyayev
   source: llm
-  quote: reveal the influence of Chopin and sometimes Liszt
-- name: Schopenhauer
+  quote: Mitrofan Belyayev agreed to pay Scriabin to compose for his publishing company
+- name: Sergei Diaghilev
   source: llm
-  quote: greatly influenced his musical and philosophical thought
-- name: Richard Wagner
-  source: llm
-  quote: greatly influenced his musical and philosophical thought
-- name: Friedrich Nietzsche
-  source: llm
-  quote: greatly influenced his musical and philosophical thought
-influenced:
-- name: Nikolai Roslavets
-  source: llm
-  quote: inspired many composers, such as Nikolai Roslavets
-- name: Karol Szymanowski
-  source: llm
-  quote: inspired many composers, such as Nikolai Roslavets and Karol Szymanowski
+  quote: concerts organized by the impresario Sergei Diaghilev, who was actively promoting
+    Russian music in the West
 ---
+
+
+
+
+
 
 # Alexander Scriabin
 

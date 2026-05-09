@@ -1,26 +1,22 @@
 ---
 name: Georg Reutter the Younger
+wikidata: Q697593
 wikipedia: https://en.wikipedia.org/wiki/Georg_Reutter_the_Younger
 thumbnail: null
-birth: '1656'
-birth_source: llm
-death: '1738'
-death_source: llm
-nationality: Austrian
-nationality_source: llm
-era: Baroque
-era_source: llm
+birth: null
+birth_source: null
+death: null
+death_source: null
+nationality: null
+nationality_source: null
+era: null
+era_source: null
 teachers: []
-students:
-- name: Johann Joseph Fux
-  source: llm
-  quote: studied under Reutter
-- name: Georg Christoph Wagenseil
-  source: llm
-  quote: student of Reutter
-influenced_by: []
-influenced: []
+students: []
+mentors: []
 ---
+
+
 
 # Georg Reutter the Younger
 

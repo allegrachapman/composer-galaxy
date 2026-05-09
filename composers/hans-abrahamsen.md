@@ -1,5 +1,6 @@
 ---
 name: Hans Abrahamsen
+wikidata: Q937743
 wikipedia: https://en.wikipedia.org/wiki/Hans_Abrahamsen
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hans_Abrahamsen_w_Rattle_%26_Hannigan_London_10_Jan_2019.jpeg/250px-Hans_Abrahamsen_w_Rattle_%26_Hannigan_London_10_Jan_2019.jpeg
 birth: '1952'
@@ -19,13 +20,16 @@ teachers:
 - name: Pelle Gudmundsen-Holmgreen
   source: llm
   quote: his music was inspired by his mentors Per Nørgård and Pelle Gudmundsen-Holmgreen
-students: []
-influenced_by:
-- name: Johann Sebastian Bach
-  source: llm
-  quote: he began working on new arrangements of Johann Sebastian Bach
-influenced: []
+students:
+- name: Jörgen Dafgård
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+mentors: []
 ---
+
+
+
+
 
 # Hans Abrahamsen
 

@@ -1,5 +1,6 @@
 ---
 name: Younghi Pagh-Paan
+wikidata: Q274000
 wikipedia: https://en.wikipedia.org/wiki/Younghi_Pagh-Paan
 thumbnail: null
 birth: '1945'
@@ -19,12 +20,12 @@ teachers:
 - name: Peter Förtig
   source: llm
   quote: music theory with Peter Förtig
-students:
-- name: Germany
-  source: wiki
-influenced_by: []
-influenced: []
+students: []
+mentors: []
 ---
+
+
+
 
 # Younghi Pagh-Paan
 

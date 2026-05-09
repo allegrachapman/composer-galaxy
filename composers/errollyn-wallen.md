@@ -1,5 +1,6 @@
 ---
 name: Errollyn Wallen
+wikidata: Q5395651
 wikipedia: https://en.wikipedia.org/wiki/Errollyn_Wallen
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ErrollynWallenSnapeMaltings.jpg/250px-ErrollynWallenSnapeMaltings.jpg
 birth: '1958'
@@ -12,9 +13,10 @@ era: 20th-century
 era_source: llm
 teachers: []
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Errollyn Wallen
 

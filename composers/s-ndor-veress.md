@@ -1,5 +1,6 @@
 ---
 name: Sándor Veress
+wikidata: Q553504
 wikipedia: https://en.wikipedia.org/wiki/Sándor_Veress
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Sandorveress.jpg/250px-Sandorveress.jpg
 birth: '1907'
@@ -11,10 +12,6 @@ nationality_source: infobox
 era: 20th-century
 era_source: llm
 teachers:
-- name: György Ligeti
-  source: wiki
-- name: György Kurtág
-  source: wiki
 - name: Zoltán Kodály
   source: llm
   quote: with whom he studied composition
@@ -26,10 +23,10 @@ teachers:
   quote: as an assistant to László Lajtha he did field research
 students:
 - name: György Ligeti
-  source: llm_confirmed
+  source: llm
   quote: Among the composers who studied under him are György Ligeti
 - name: György Kurtág
-  source: llm_confirmed
+  source: llm
   quote: Among the composers who studied under him are György Kurtág
 - name: Heinz Holliger
   source: llm
@@ -43,9 +40,12 @@ students:
 - name: Roland Moser
   source: llm
   quote: Among the composers who studied under him are Roland Moser
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Sándor Veress
 

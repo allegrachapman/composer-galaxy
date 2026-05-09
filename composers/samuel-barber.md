@@ -1,5 +1,6 @@
 ---
 name: Samuel Barber
+wikidata: Q216870
 wikipedia: https://en.wikipedia.org/wiki/Samuel_Barber
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Samuel_Barber.jpg/250px-Samuel_Barber.jpg
 birth: '1910'
@@ -40,30 +41,21 @@ teachers:
 - name: John Braun
   source: llm
   quote: further studies in conducting and singing with John Braun in Vienna
+- name: Richard Stöhr
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
 - name: Guggenheim Fellowship
   source: wiki
-influenced_by:
-- name: Sidney Homer
-  source: llm
-  quote: profoundly influenced his compositional aesthetics
-- name: Louise Homer
-  source: llm
-  quote: Louise Homer is known to have influenced Barber's interest in voice
-- name: Stravinsky
-  source: llm
-  quote: greatly influenced by other composers such as Stravinsky, Schoenberg, Bartók
-- name: Schoenberg
-  source: llm
-  quote: greatly influenced by other composers such as Stravinsky, Schoenberg, Bartók
-- name: Bartók
-  source: llm
-  quote: greatly influenced by other composers such as Stravinsky, Schoenberg, Bartók
-influenced:
-- name: Gian Carlo Menotti
-  source: llm
-  quote: Menotti was Barber's librettist for two of his three operas
+- name: Daniel Pinkham
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+mentors: []
 ---
+
+
+
+
 
 # Samuel Barber
 

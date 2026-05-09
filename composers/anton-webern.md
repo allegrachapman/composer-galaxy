@@ -1,5 +1,6 @@
 ---
 name: Anton Webern
+wikidata: Q190933
 wikipedia: https://en.wikipedia.org/wiki/Anton_Webern
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Anton_Webern_in_Stettin%2C_October_1912.jpg/250px-Anton_Webern_in_Stettin%2C_October_1912.jpg
 birth: '1883'
@@ -11,46 +12,77 @@ nationality_source: infobox
 era: 20th-century
 era_source: llm
 teachers:
-- name: Bruckner
-  source: wiki
-- name: Arnold Schoenberg
-  source: llm_confirmed
-  quote: starting lessons in fall 1904, perhaps as his first Vienna pupil
 - name: Guido Adler
   source: llm
-  quote: inspired by his studies of the Franco-Flemish School under Guido Adler
+  quote: his studies of the Franco-Flemish School under Guido Adler
+- name: Arnold Schoenberg
+  source: llm
+  quote: before starting lessons in fall 1904, perhaps as his first Vienna pupil.
+- name: Amalie Webern
+  source: llm
+  quote: He began piano and sang opera with his mother Amalie (née Geer), a trained
+    pianist
+- name: Edwin Komauer
+  source: llm
+  quote: Local musician Edwin Komauer also taught him piano, cello, and likely counterpoint
+- name: Karel Navrátil
+  source: llm
+  quote: He took counterpoint with Karel Navrátil
+- name: Hermann Graedener
+  source: llm
+  quote: harmony with Hermann Graedener
+- name: Josef Háša
+  source: llm
+  quote: cello with Josef Háša
+- name: Hans Pfitzner
+  source: llm
+  quote: Webern tried Hans Pfitzner's composition lessons in Berlin but left
+- name: Gustav Mahler
+  source: wiki
 students:
-- name: Heinrich Jalowetz
+- name: Arnold Elston
   source: wiki
-- name: Karl Weigl
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Fré Focke
   source: wiki
-- name: Aldo Clementi
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Philip Herschkowitz
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: René Leibowitz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Matty Niël
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Helen Perkin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Humphrey Searle
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Leopold Spinner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Stefan Wolpe
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Hans Swarowsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Karl Amadeus Hartmann
+  source: llm
+  quote: submitted to a course of private tuition in Vienna by Schoenberg's pupil
+    Anton Webern
 - name: Nikolai Karetnikov
   source: wiki
-influenced_by:
-- name: Goethean science
-  source: wiki
-- name: Johann Sebastian Bach
-  source: llm
-  quote: Arnold Schoenberg's emphasis on structure in teaching composition from the
-    music of Johann Sebastian Bach
-- name: Johannes Brahms
-  source: llm
-  quote: teaching composition from the music of Johann Sebastian Bach, the First Viennese
-    School, and Johannes Brahms
-- name: Gustav Mahler
-  source: llm
-  quote: championing Gustav Mahler's music in Red Vienna and abroad
-influenced:
-- name: Pierre Boulez
-  source: llm
-  quote: René Leibowitz, Pierre Boulez, Robert Craft, and Hans and Rosaleen Moldenhauer
-    established it as an important part of modernism
-- name: Igor Stravinsky
-  source: llm
-  quote: Igor Stravinsky assimilated it
+mentors: []
 ---
+
+
+
+
+
 
 # Anton Webern
 

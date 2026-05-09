@@ -1,5 +1,6 @@
 ---
 name: Adolphe Gutmann
+wikidata: Q2824698
 wikipedia: https://en.wikipedia.org/wiki/Adolphe_Gutmann
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Adolphe_Gutmann5.jpg/250px-Adolphe_Gutmann5.jpg
 birth: '1819'
@@ -8,26 +9,23 @@ death: '1882'
 death_source: llm
 nationality: German
 nationality_source: llm
-era: null
-era_source: null
+era: Romantic
+era_source: llm
 teachers:
 - name: Frédéric Chopin
-  source: llm_confirmed
-  quote: came to Paris in 1834, at the age of 15, to study with Chopin
+  source: llm
+  quote: a pupil and friend of Frédéric Chopin
 - name: Franz Liszt
   source: llm
-  quote: pupil and friend of Frédéric Chopin and Franz Liszt
-students:
-- name: Frédéric Chopin
+  quote: a pupil and friend of Frédéric Chopin and Franz Liszt
+- name: Charles-Valentin Alkan
   source: wiki
-- name: Franz Liszt
-  source: wiki
-influenced_by:
-- name: Frédéric Chopin
-  source: llm
-  quote: Inspired by the style of his master
-influenced: []
+students: []
+mentors: []
 ---
+
+
+
 
 # Adolphe Gutmann
 

@@ -1,5 +1,6 @@
 ---
 name: Samuel Coleridge-Taylor
+wikidata: Q739229
 wikipedia: https://en.wikipedia.org/wiki/Samuel_Coleridge-Taylor
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Samuel_Coleridge-Taylor.jpg/250px-Samuel_Coleridge-Taylor.jpg
 birth: '1875'
@@ -12,29 +13,34 @@ era: Romantic
 era_source: llm
 teachers:
 - name: Charles Villiers Stanford
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  quote: working under Charles Villiers Stanford.
+- name: Benjamin Holmans
   source: llm
-  quote: working under Charles Villiers Stanford
+  quote: her father played the violin, teaching it to his grandson from an early age.
+- name: Edward Elgar
+  source: llm
+  quote: Elgar was of enough consequence locally to recommend the young composer Samuel
+    Coleridge-Taylor to the Three Choirs Festival
 students: []
-influenced_by:
+mentors:
 - name: Edward Elgar
   source: llm
   quote: He was later helped by Edward Elgar, who recommended him to the Three Choirs
-    Festival
+    Festival.
 - name: August Jaeger
   source: llm
   quote: His early work was also guided by the influential music editor and critic
     August Jaeger
-- name: Johannes Brahms
+- name: Paul Laurence Dunbar
   source: llm
-  quote: which he considered Johannes Brahms to have done with Hungarian music
-- name: Antonín Dvořák
-  source: llm
-  quote: and Antonín Dvořák with Bohemian music
-influenced:
-- name: Avril Coleridge-Taylor
-  source: llm
-  quote: Gwendolen started composing music early in life, and also became a conductor-composer
+  quote: Dunbar and other black people encouraged Coleridge-Taylor to draw from his
+    Sierra Leonean ancestry
 ---
+
+
+
 
 # Samuel Coleridge-Taylor
 

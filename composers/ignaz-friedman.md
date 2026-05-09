@@ -1,5 +1,6 @@
 ---
 name: Ignaz Friedman
+wikidata: Q1657463
 wikipedia: https://en.wikipedia.org/wiki/Ignaz_Friedman
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ignaz_Friedman.jpg/250px-Ignaz_Friedman.jpg
 birth: '1882'
@@ -17,7 +18,7 @@ teachers:
   source: llm
   quote: studied with Hugo Riemann in Leipzig and Theodor Leschetizky in Vienna
 - name: Ferruccio Busoni
-  source: llm_confirmed
+  source: llm
   quote: participated in Ferruccio Busoni's master classes
 students:
 - name: Joseph Gurt
@@ -38,13 +39,15 @@ students:
   source: llm
   quote: taught several important pianists, including Joseph Gurt, Karol Klein, Anna
     Schytte, Ignace Tiegerman and Bruce Hungerford
-influenced_by: []
-influenced:
-- name: Sergei Rachmaninoff
-  source: llm
-  quote: Rachmaninoff admired Friedman's playing very much and considered him as a
-    great virtuoso
+- name: Victor Schiøler
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Ignaz Friedman
 

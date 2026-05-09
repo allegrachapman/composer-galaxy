@@ -1,5 +1,6 @@
 ---
 name: Johann Gottlieb Goldberg
+wikidata: Q60914
 wikipedia: https://en.wikipedia.org/wiki/Johann_Gottlieb_Goldberg
 thumbnail: null
 birth: '1727'
@@ -18,16 +19,16 @@ teachers:
 - name: Johann Sebastian Bach
   source: llm
   quote: Goldberg was reported to have studied with both J. S. Bach
-students: []
-influenced_by:
-- name: Johann Sebastian Bach
-  source: llm
-  quote: His earlier works are similar to those of J. S. Bach
-- name: Carl Philipp Emanuel Bach
-  source: llm
-  quote: akin to that of Bach's son Carl Philipp Emanuel
-influenced: []
+students:
+- name: Gottlieb Friedrich Müller
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+mentors: []
 ---
+
+
+
+
 
 # Johann Gottlieb Goldberg
 

@@ -1,5 +1,6 @@
 ---
 name: Pran Nath (musician)
+wikidata: Q252291
 wikipedia: https://en.wikipedia.org/wiki/Pran_Nath_(musician)
 thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Pandit_Pran_Nath.jpg/250px-Pandit_Pran_Nath.jpg
 birth: '1918'
@@ -8,8 +9,8 @@ death: '1996'
 death_source: infobox
 nationality: Lahore, British India
 nationality_source: infobox
-era: North Indian classical, dhrupad, khayal
-era_source: infobox
+era: 20th-century
+era_source: manual
 teachers:
 - name: Abdul Wahid Khan
   source: llm
@@ -33,25 +34,90 @@ students:
 - name: Michael Harrison
   source: llm
   quote: Michael Harrison
-influenced_by:
-- name: Abdul Wahid Khan
-  source: llm
-  quote: Nath stuck to Abdul Wahid Khan's extra-methodical and austere singing style
-influenced:
-- name: La Monte Young
-  source: llm
-  quote: Pran Nath attracted a strong following among the American minimalist composers,
-    including La Monte Young
-- name: Terry Riley
-  source: llm
-  quote: including La Monte Young, Terry Riley
+- name: Joan Allekote
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: George Brooks
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
 - name: Rhys Chatham
-  source: llm
-  quote: Rhys Chatham
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Brian Crittenden
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: John Da'ud Constant
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Alex Dea
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Sheila Dhar
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Henry Flynt
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Simone Forti
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
 - name: Jon Hassell
-  source: llm
-  quote: Jon Hassell
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Catherine Christer Hennix
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Shabda Kahn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Sri Karunamayee
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Lee Konitz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Douglas Leedy
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Rik Masterson
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: W.A. Mathieu
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Rose Okada
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Charlemagne Palestine
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Sargam Shah
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Michael Stirling
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Lee Torchia
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Bernard Xolotl
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Yoshi Wada
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: David Weinrib
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Marian Zazeela
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+mentors: []
 ---
+
+
+
+
 
 # Pran Nath (musician)
 

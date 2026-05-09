@@ -1,5 +1,6 @@
 ---
 name: Johannes Brahms
+wikidata: Q7294
 wikipedia: https://en.wikipedia.org/wiki/Johannes_Brahms
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/JohannesBrahms_%28cropped%29.jpg/250px-JohannesBrahms_%28cropped%29.jpg
 birth: '1833'
@@ -11,56 +12,53 @@ nationality_source: llm
 era: Romantic
 era_source: llm
 teachers:
+- name: Johann Jakob Brahms
+  source: llm
+  quote: Johann Jakob gave his son his first musical training
 - name: Otto Friedrich Willibald Cossel
   source: llm
-  quote: From 1840 he studied piano with Otto Friedrich Willibald Cossel.
+  quote: he studied piano with Otto Friedrich Willibald Cossel.
 - name: Eduard Marxsen
   source: llm
-  quote: From 1845 to 1848 Brahms studied with Cossel's teacher, the pianist and composer
-    Eduard Marxsen.
-students:
-- name: Albert Dietrich
+  quote: Brahms studied with Cossel's teacher, the pianist and composer Eduard Marxsen.
+- name: Carl Maria von Bocklet
   source: wiki
-influenced_by:
-- name: Johann Sebastian Bach
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+students:
+- name: Gustav Jenner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: William Charles Ernest Seeboeck
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Carl Friedberg
   source: llm
-  quote: was a devotee of the music of J. S. Bach
-- name: Ludwig van Beethoven
-  source: llm
-  quote: Marxsen had been a personal acquaintance of Beethoven and Schubert
-- name: Franz Schubert
-  source: llm
-  quote: Marxsen had been a personal acquaintance of Beethoven and Schubert
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: admired the works of Mozart and Haydn
-- name: Franz Joseph Haydn
-  source: llm
-  quote: admired the works of Mozart and Haydn
+  quote: who later coached him in private on the performance of the majority of his
+    piano works
+mentors:
 - name: Robert Schumann
   source: llm
   quote: He gained both Robert and Clara Schumann's support and guidance.
-influenced:
-- name: Antonín Dvořák
+- name: Clara Schumann
   source: llm
-  quote: admired by his contemporaries like Antonín Dvořák, whose music he enthusiastically
-    supported
-- name: Max Reger
+  quote: Clara continued to support Brahms's career by programming his music in her
+    recitals.
+- name: Joseph Joachim
   source: llm
-  quote: Max Reger and Alexander Zemlinsky reconciled Brahms's and Wagner's often
-    contrasted styles.
-- name: Alexander Zemlinsky
+  quote: with a letter of introduction from Joachim, was welcomed by the Schumanns.
+- name: Eduard Hanslick
   source: llm
-  quote: Max Reger and Alexander Zemlinsky reconciled Brahms's and Wagner's often
-    contrasted styles.
-- name: Arnold Schoenberg
+  quote: Eduard Hanslick celebrated them polemically as absolute music
+- name: Hans von Bülow
   source: llm
-  quote: So did Arnold Schoenberg, who emphasized Brahms's "progressive" side.
-- name: Anton Webern
-  source: llm
-  quote: He and Anton Webern were inspired by the intricate structural coherence of
-    Brahms's music
+  quote: Hans von Bülow even cast Brahms as the successor of Johann Sebastian Bach
+    and Ludwig van Beethoven
 ---
+
+
+
+
+
 
 # Johannes Brahms
 

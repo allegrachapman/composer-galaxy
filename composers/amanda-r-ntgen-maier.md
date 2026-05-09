@@ -1,5 +1,6 @@
 ---
 name: Amanda Röntgen-Maier
+wikidata: Q273661
 wikipedia: https://en.wikipedia.org/wiki/Amanda_Röntgen-Maier
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Amanda_R%C3%B6ngten_portrait.jpg/250px-Amanda_R%C3%B6ngten_portrait.jpg
 birth: '1853'
@@ -23,15 +24,11 @@ teachers:
   source: llm
   quote: violin from Engelbert Röntgen, concert master at Gewandhaus Orchestra
 students: []
-influenced_by:
-- name: Ethel Smyth
-  source: llm
-  quote: In the late 1870s Maier also met Ethel Smyth, who was studying in Leipzig
-influenced:
-- name: Julius Röntgen
-  source: llm
-  quote: In Leipzig she met the German-Dutch pianist and composer Julius Röntgen
+mentors: []
 ---
+
+
+
 
 # Amanda Röntgen-Maier
 

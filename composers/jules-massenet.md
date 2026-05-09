@@ -1,46 +1,82 @@
 ---
 name: Jules Massenet
+wikidata: Q194436
 wikipedia: https://en.wikipedia.org/wiki/Jules_Massenet
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Jules_Massenet_by_Eug%C3%A8ne_Pirou.jpg/250px-Jules_Massenet_by_Eug%C3%A8ne_Pirou.jpg
 birth: '1842'
-birth_source: llm
+birth_source: wikidata
 death: '1912'
-death_source: llm
-nationality: French
-nationality_source: llm
-era: Romantic
-era_source: llm
+death_source: wikidata
+nationality: null
+nationality_source: null
+era: null
+era_source: null
 teachers:
+- name: Ernest Guiraud
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Napoléon Henri Reber
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Marie Gabriel Augustin Savard
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 - name: Ambroise Thomas
   source: wiki
 students:
+- name: Valborg Aulin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: André Bloch
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 - name: Gustave Charpentier
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 - name: Ernest Chausson
   source: wiki
-- name: Alfred Bruneau
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: George Enescu
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 - name: Reynaldo Hahn
-  source: llm
-  quote: Among his students were Gustave Charpentier, Ernest Chausson, Reynaldo Hahn
-    and Gabriel Pierné.
-- name: Gabriel Pierné
-  source: llm
-  quote: Among his students were Gustave Charpentier, Ernest Chausson, Reynaldo Hahn
-    and Gabriel Pierné.
-influenced_by:
-- name: Richard Wagner
-  source: llm
-  quote: He met Wagner who, along with Berlioz, was one of his two musical heroes.
-- name: Hector Berlioz
-  source: llm
-  quote: Wagner who, along with Berlioz, was one of his two musical heroes.
-influenced:
-- name: Claude Debussy
-  source: llm
-  quote: Romain Rolland and Francis Poulenc have both considered Massenet an influence
-    on Debussy's Pelléas et Mélisande
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Charles Koechlin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Raoul Laparra
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Spyridon Samaras
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Marie Emmanuel Augustin Savard
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Gerhard Schjelderup
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Mon Schjelderup
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Florent Schmitt
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Charles Silver
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Zygmunt Stojowski
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Paul Vidal
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
 
 # Jules Massenet
 

@@ -1,5 +1,6 @@
 ---
 name: Alessandro Scarlatti
+wikidata: Q183087
 wikipedia: https://en.wikipedia.org/wiki/Alessandro_Scarlatti
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Alessandro_Scarlatti.jpg/250px-Alessandro_Scarlatti.jpg
 birth: '1660'
@@ -8,55 +9,44 @@ death: '1725'
 death_source: infobox
 nationality: Palermo or Trapani, Sicily
 nationality_source: infobox
-era: Baroque
-era_source: llm
+era: null
+era_source: null
 teachers:
 - name: Giacomo Carissimi
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 students:
+- name: Gaetano Carpani
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Carlo Cotumacci
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Francesco Durante
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Francesco Geminiani
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Johann Adolph Hasse
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Nicola Logroscino
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Johann Joachim Quantz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 - name: Domenico Scarlatti
-  source: llm
-  quote: He was the father of two other composers, Domenico Scarlatti and Pietro Filippo
-    Scarlatti
-- name: Pietro Filippo Scarlatti
-  source: llm
-  quote: He was the father of two other composers, Domenico Scarlatti and Pietro Filippo
-    Scarlatti
-influenced_by:
-- name: Claudio Monteverdi
-  source: llm
-  quote: begun by Monteverdi at the beginning of 17th century and continued by Cesti,
-    Cavalli
-- name: Antonio Cesti
-  source: llm
-  quote: begun by Monteverdi at the beginning of 17th century and continued by Cesti,
-    Cavalli
-- name: Francesco Cavalli
-  source: llm
-  quote: continued by Cesti, Cavalli, Carissimi, Legrenzi and Stradella
-- name: Giovanni Legrenzi
-  source: llm
-  quote: continued by Cesti, Cavalli, Carissimi, Legrenzi and Stradella
-- name: Alessandro Stradella
-  source: llm
-  quote: continued by Cesti, Cavalli, Carissimi, Legrenzi and Stradella
-- name: Giovanni Bononcini
-  source: llm
-  quote: influenced partly perhaps by the style of Giovanni Bononcini and the taste
-influenced:
-- name: Georg Friedrich Händel
-  source: llm
-  quote: as evoked by Handel's Italian works, who was deeply influenced by his theatrical
-    music
-- name: Johann Sebastian Bach
-  source: llm
-  quote: further developed by later composers such as Johann Sebastian Bach and Ludwig
-    van Beethoven
-- name: Ludwig van Beethoven
-  source: llm
-  quote: further developed by later composers such as Johann Sebastian Bach and Ludwig
-    van Beethoven
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Domenico Zipoli
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
 
 # Alessandro Scarlatti
 

@@ -1,5 +1,6 @@
 ---
 name: Amy Beach
+wikidata: Q235699
 wikipedia: https://en.wikipedia.org/wiki/Amy_Beach
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Amy_Beach_01.jpg/250px-Amy_Beach_01.jpg
 birth: '1867'
@@ -11,34 +12,32 @@ nationality_source: infobox
 era: Romantic
 era_source: llm
 teachers:
+- name: Clara Imogene Cheney
+  source: llm
+  quote: began formal piano lessons with her mother at age six
 - name: Ernst Perabo
   source: llm
-  quote: hiring Ernst Perabo and later Carl Baermann (himself a student of Franz Liszt)
-    as piano teachers
+  quote: hiring Ernst Perabo and later Carl Baermann ... as piano teachers
 - name: Carl Baermann
   source: llm
-  quote: hiring Ernst Perabo and later Carl Baermann (himself a student of Franz Liszt)
-    as piano teachers
+  quote: hiring Ernst Perabo and later Carl Baermann ... as piano teachers
 - name: Junius W. Hill
   source: llm
-  quote: In 1881–82, the fourteen-year-old also studied harmony and counterpoint with
-    Junius W. Hill
+  quote: studied harmony and counterpoint with Junius W. Hill
+- name: Ernst Bacon
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 students: []
-influenced_by:
-- name: Brahms
-  source: llm
-  quote: Her writing is mainly in a Romantic idiom, often compared to that of Brahms
-    or Rachmaninoff
-influenced:
+mentors:
 - name: George Whitefield Chadwick
   source: llm
-  quote: I always feel a thrill of pride myself whenever I hear a fine work by any
-    of us
-- name: Horatio Parker
-  source: llm
-  quote: he and his colleague Horatio Parker (1863–1919) had attended the Gaelic Symphony's
-    premiere and much enjoyed it
+  quote: you will have to be counted in, whether you [like it] or not – one of the
+    boys.
 ---
+
+
+
+
 
 # Amy Beach
 

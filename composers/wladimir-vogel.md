@@ -1,5 +1,6 @@
 ---
 name: Wladimir Vogel
+wikidata: Q115947
 wikipedia: https://en.wikipedia.org/wiki/Wladimir_Vogel
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/CH-KBAR_-_Schriftstellerkongress_St._Gallen_-_KB-021134.tif/lossy-page1-250px-CH-KBAR_-_Schriftstellerkongress_St._Gallen_-_KB-021134.tif.jpg
 birth: '1896'
@@ -17,14 +18,15 @@ teachers:
   source: llm
   quote: between 1918 and 1924 with Heinz Tiessen and Ferruccio Busoni
 - name: Ferruccio Busoni
-  source: llm_confirmed
+  source: llm
   quote: between 1918 and 1924 with Heinz Tiessen and Ferruccio Busoni
+- name: Erik Bergman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 students:
 - name: Erik Bergman
   source: wiki
 - name: Tauno Marttinen
-  source: wiki
-- name: Moscow
   source: wiki
 - name: Maurice Karkoff
   source: llm
@@ -36,7 +38,7 @@ students:
   source: llm
   quote: Rodolfo Holzmann, Robert Suter, Einojuhani Rautavaara
 - name: Einojuhani Rautavaara
-  source: llm_confirmed
+  source: llm
   quote: Robert Suter, Einojuhani Rautavaara, Andree Aeschlimann Rochat
 - name: Rolf Liebermann
   source: llm
@@ -44,9 +46,12 @@ students:
 - name: Hermann Meier
   source: llm
   quote: Rolf Liebermann and Hermann Meier
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Wladimir Vogel
 

@@ -1,5 +1,6 @@
 ---
 name: Manuel de Falla
+wikidata: Q193283
 wikipedia: https://en.wikipedia.org/wiki/Manuel_de_Falla
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/ManuelDeFalla.JPG/250px-ManuelDeFalla.JPG
 birth: '1876'
@@ -25,22 +26,18 @@ teachers:
 students:
 - name: Rosa García Ascot
   source: wiki
-influenced_by:
-- name: Maurice Ravel
-  source: llm
-  quote: he met a number of composers who had an influence on his style, including
-    Maurice Ravel
-- name: Claude Debussy
-  source: llm
-  quote: including Maurice Ravel, Claude Debussy and Paul Dukas
-- name: Paul Dukas
-  source: llm
-  quote: Maurice Ravel, Claude Debussy and Paul Dukas
-- name: Igor Stravinsky
-  source: llm
-  quote: as well as Igor Stravinsky, Florent Schmitt, Isaac Albéniz
-influenced: []
+- name: Ernesto Halffter
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Antonio María Valencia
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Manuel de Falla
 

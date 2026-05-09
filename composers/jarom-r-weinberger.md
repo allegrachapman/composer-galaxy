@@ -1,5 +1,6 @@
 ---
 name: Jaromír Weinberger
+wikidata: Q215828
 wikipedia: https://en.wikipedia.org/wiki/Jaromír_Weinberger
 thumbnail: https://upload.wikimedia.org/wikipedia/en/2/2b/Jaromir_Weinberger.jpg
 birth: '1896'
@@ -26,15 +27,12 @@ teachers:
 - name: Karel Hoffmeister
   source: llm
   quote: studied composition with Vítězslav Novák and Karel Hoffmeister
-students:
-- name: Leipzig
-  source: wiki
-influenced_by:
-- name: Max Reger
-  source: llm
-  quote: Max Reger, who influenced Weinberger on the use of counterpoint
-influenced: []
+students: []
+mentors: []
 ---
+
+
+
 
 # Jaromír Weinberger
 

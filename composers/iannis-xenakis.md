@@ -1,5 +1,6 @@
 ---
 name: Iannis Xenakis
+wikidata: Q152880
 wikipedia: https://en.wikipedia.org/wiki/Iannis_Xenakis
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/XenakisMDaniel_crop.jpg/250px-XenakisMDaniel_crop.jpg
 birth: '1922'
@@ -41,24 +42,21 @@ students:
   source: llm
   quote: His notable students include Pascal Dusapin, Henning Lohner, Miguel Ángel
     Coria, Susan Frykberg, Norma Tyer, Robert Carl, and Julio Estrada
-influenced_by:
-- name: Ludwig van Beethoven
-  source: llm
-  quote: being introduced to the music of Ludwig van Beethoven and Johannes Brahms
-- name: Johannes Brahms
-  source: llm
-  quote: being introduced to the music of Ludwig van Beethoven and Johannes Brahms
-- name: Béla Bartók
-  source: llm
-  quote: well acquainted with music of Debussy, Béla Bartók, and Stravinsky
-- name: Claude Debussy
-  source: llm
-  quote: well acquainted with music of Debussy, Béla Bartók, and Stravinsky
-- name: Igor Stravinsky
-  source: llm
-  quote: well acquainted with music of Debussy, Béla Bartók, and Stravinsky
-influenced: []
+- name: Georges Aperghis
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Eugene O'Brien
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Suzanne Giraud
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+mentors: []
 ---
+
+
+
+
 
 # Iannis Xenakis
 

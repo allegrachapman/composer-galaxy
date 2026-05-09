@@ -1,5 +1,6 @@
 ---
 name: Joel Thompson
+wikidata: Q115131607
 wikipedia: https://en.wikipedia.org/wiki/Joel_Thompson
 thumbnail: null
 birth: null
@@ -12,9 +13,10 @@ era: null
 era_source: null
 teachers: []
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Joel Thompson
 

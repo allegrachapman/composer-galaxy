@@ -1,5 +1,6 @@
 ---
 name: Michael Abels
+wikidata: Q2413003
 wikipedia: https://en.wikipedia.org/wiki/Michael_Abels
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Michael_Abels%288%29.Photo_by_Eric_Schwabel.jpg/250px-Michael_Abels%288%29.Photo_by_Eric_Schwabel.jpg
 birth: '1962'
@@ -8,13 +9,14 @@ death: null
 death_source: null
 nationality: Phoenix, Arizona, U.S.
 nationality_source: infobox
-era: 20th-century, 21st-century
+era: 20th-century
 era_source: llm
 teachers: []
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Michael Abels
 

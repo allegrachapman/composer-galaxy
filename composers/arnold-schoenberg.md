@@ -1,5 +1,6 @@
 ---
 name: Arnold Schoenberg
+wikidata: Q154770
 wikipedia: https://en.wikipedia.org/wiki/Arnold_Schoenberg
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/%E9%98%BF%E8%AF%BA%E5%BE%B7%C2%B7%E5%8B%8B%E4%BC%AF%E6%A0%BC%E8%82%96%E5%83%8F.jpg/250px-%E9%98%BF%E8%AF%BA%E5%BE%B7%C2%B7%E5%8B%8B%E4%BC%AF%E6%A0%BC%E8%82%96%E5%83%8F.jpg
 birth: '1874'
@@ -13,34 +14,41 @@ era_source: llm
 teachers:
 - name: Alexander Zemlinsky
   source: llm
-  quote: took only counterpoint lessons with the composer Alexander Zemlinsky
+  quote: He took only counterpoint lessons with the composer Alexander Zemlinsky
+- name: Oskar Adler
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Josef Labor
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Alexander von Zemlinsky
+  source: llm
+  quote: Zemlinsky gave Schoenberg lessons in counterpoint
 students:
 - name: Felix Greissle
   source: wiki
 - name: Winfried Zillig
   source: wiki
-- name: Richard Hoffmann (composer, 1925)
-  source: wiki
-- name: John Cage
-  source: wiki
-- name: Lou Harrison
-  source: wiki
-- name: Max Deutsch
-  source: wiki
 - name: Edward B. Powell
   source: wiki
 - name: Anton Webern
-  source: llm_confirmed
-  quote: Mentoring Anton Webern and Alban Berg, he became the central figure
-- name: Alban Berg
-  source: llm_confirmed
-  quote: Mentoring Anton Webern and Alban Berg, he became the central figure
-- name: Hanns Eisler
   source: llm
-  quote: They included Anton Webern, Alban Berg, and Hanns Eisler, all of whom
+  quote: Mentoring Anton Webern and Alban Berg
+- name: Alban Berg
+  source: llm
+  quote: Mentoring Anton Webern and Alban Berg
+- name: Karl Horwitz
+  source: llm
+  quote: obtained these poems from one of his own composition pupils, Karl Horwitz
 - name: Edward Clark
   source: llm
-  quote: Clark became his sole English student, and in his later capacity
+  quote: Clark became his sole English student
+- name: Hanns Eisler
+  source: llm
+  quote: They included Anton Webern, Alban Berg, and Hanns Eisler
+- name: Rudolf Kolisch
+  source: llm
+  quote: sister of his pupil, the violinist Rudolf Kolisch
 - name: Robert Gerhard
   source: llm
   quote: Among his notable students during this period were the composers Robert Gerhard
@@ -58,30 +66,133 @@ students:
     in April 1936)
 - name: Leonard Rosenman
   source: llm
-  quote: Composers Leonard Rosenman and George Tremblay and the Hollywood orchestrator
-    Edward B. Powell studied with Schoenberg
+  quote: Composers Leonard Rosenman and George Tremblay...studied with Schoenberg
 - name: George Tremblay
   source: llm
-  quote: Composers Leonard Rosenman and George Tremblay and the Hollywood orchestrator
-    Edward B. Powell studied with Schoenberg
-influenced_by:
+  quote: Composers Leonard Rosenman and George Tremblay...studied with Schoenberg
+- name: Richard Hoffmann
+  source: llm
+  quote: His secretary and student Richard Hoffmann
+- name: Hans Erich Apostel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Marc Blitzstein
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Dave Brubeck
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: John Cage
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Jay Chernis
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Richard Cumming
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Max Deutsch
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Roberto Gerhard
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Alexander Goehr
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Walter Goehr
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Norbert von Hannenheim
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Lou Harrison
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Marij Kogoj
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Kunihiko Hashimoto
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Richard Hoffman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Heinrich Jalowetz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Hanns Jelinek
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Eunice Katunda
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Earl Kim
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Leon Kirchner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Józef Koffler
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: René Leibowitz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Dika Newlin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Paul Pisk
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: David Raksin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Karl Rankl
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Jeannine Richer
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Alfredo Sangiorgi
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Rudolf Serkin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Erwin Stein
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Leonard Stein
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Eduard Steuermann
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Hans Swarowsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Viktor Ullmann
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Vilma von Webenau
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Egon Wellesz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Benjamin Britten
+  source: wiki
+mentors:
 - name: Gustav Mahler
   source: llm
-  quote: he was converted by the "thunderbolt" of Mahler's Third Symphony
-- name: Richard Strauss
-  source: llm
-  quote: Both Richard Strauss and Gustav Mahler recognized Schoenberg's significance
-    as a composer
-influenced:
-- name: Theodor W. Adorno
-  source: llm
-  quote: His aesthetic and music-historical views influenced musicologists Theodor
-    W. Adorno and Carl Dahlhaus
-- name: Carl Dahlhaus
-  source: llm
-  quote: His aesthetic and music-historical views influenced musicologists Theodor
-    W. Adorno and Carl Dahlhaus
+  quote: Mahler adopted him as a protégé and continued to support him
 ---
+
+
+
+
+
 
 # Arnold Schoenberg
 

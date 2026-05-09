@@ -1,5 +1,6 @@
 ---
 name: Frederick Jacobi
+wikidata: Q707264
 wikipedia: https://en.wikipedia.org/wiki/Frederick_Jacobi
 thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/6/66/FrederickJacobiArmy1917.jpg/250px-FrederickJacobiArmy1917.jpg
 birth: '1891'
@@ -14,7 +15,7 @@ teachers:
 - name: Isidor Philipp
   source: wiki
 - name: Ernest Bloch
-  source: llm_confirmed
+  source: llm
   quote: studied music and composition under such masters as Isidor Philipp of the
     Paris Conservatory, Rafael Joseffy, Paolo Gallico, Ernest Bloch
 - name: Rubin Goldmark
@@ -25,6 +26,9 @@ teachers:
 - name: Paul Juon
   source: llm
   quote: and Paul Juon in Berlin
+- name: Paolo Gallico
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 students:
 - name: Mark Bucci
   source: wiki
@@ -42,9 +46,15 @@ students:
 - name: Robert Ward
   source: llm
   quote: Julia Frances Smith, Robert Starer, John Verrall, and Robert Ward
-influenced_by: []
-influenced: []
+- name: Barbara Pentland
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+mentors: []
 ---
+
+
+
+
 
 # Frederick Jacobi
 

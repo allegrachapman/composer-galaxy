@@ -1,5 +1,6 @@
 ---
 name: Oliver Knussen
+wikidata: Q949003
 wikipedia: https://en.wikipedia.org/wiki/Oliver_Knussen
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Oliver_knussen.jpg/250px-Oliver_knussen.jpg
 birth: '1952'
@@ -19,16 +20,22 @@ teachers:
 - name: Gunther Schuller
   source: llm
   quote: spent several summers studying with Gunther Schuller at Tanglewood
-students: []
-influenced_by:
-- name: Benjamin Britten
-  source: llm
-  quote: influences of modernist composers Britten and Berg
-- name: Alban Berg
-  source: llm
-  quote: influences of modernist composers Britten and Berg
-influenced: []
+- name: Olivier Messiaen
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+students:
+- name: Mark-Anthony Turnage
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Augusta Read Thomas
+  source: wiki
+mentors: []
 ---
+
+
+
+
+
 
 # Oliver Knussen
 

@@ -1,5 +1,6 @@
 ---
 name: José Maurício Nunes Garcia
+wikidata: Q636408
 wikipedia: https://en.wikipedia.org/wiki/José_Maurício_Nunes_Garcia
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Retrato_de_Jos%C3%A9_Maur%C3%ADcio_Nunes_Garcia_-_detalhe.jpg/250px-Retrato_de_Jos%C3%A9_Maur%C3%ADcio_Nunes_Garcia_-_detalhe.jpg
 birth: '1767'
@@ -22,19 +23,11 @@ teachers:
 students:
 - name: Francisco Manuel da Silva
   source: wiki
-influenced_by:
-- name: Mozart
-  source: wiki
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: His musical style was strongly influenced by Viennese composers of the period,
-    such as Mozart and Haydn
-- name: Franz Joseph Haydn
-  source: llm
-  quote: His musical style was strongly influenced by Viennese composers of the period,
-    such as Mozart and Haydn
-influenced: []
+mentors: []
 ---
+
+
+
 
 # José Maurício Nunes Garcia
 

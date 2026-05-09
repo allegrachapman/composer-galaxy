@@ -1,5 +1,6 @@
 ---
 name: Ambroise Thomas
+wikidata: Q297717
 wikipedia: https://en.wikipedia.org/wiki/Ambroise_Thomas
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Wilhelm_Benque_-_Photograph_of_Ambroise_Thomas.jpg/250px-Wilhelm_Benque_-_Photograph_of_Ambroise_Thomas.jpg
 birth: '1811'
@@ -8,27 +9,37 @@ death: '1896'
 death_source: llm
 nationality: French
 nationality_source: llm
-era: Romantic
+era: 19th-century
 era_source: llm
 teachers:
-- name: Pierre-Joseph-Guillaume Zimmerman
-  source: wiki
 - name: Friedrich Kalkbrenner
   source: wiki
-- name: Raoul Pugno
-  source: wiki
+- name: Martin Thomas
+  source: llm
+  quote: Martin Thomas (1770–1823) and his wife, Jeanne, née Willaume... both music
+    teachers.
+- name: Jeanne Willaume
+  source: llm
+  quote: Martin Thomas (1770–1823) and his wife, Jeanne, née Willaume... both music
+    teachers.
 - name: Pierre Zimmerman
   source: llm
   quote: He studied the piano with Pierre Zimmerman
 - name: Victor Dourlen
   source: llm
-  quote: harmony and counterpoint with Victor Dourlen
+  quote: harmony and counterpoint with Victor Dourlen.
 - name: Jean-François Lesueur
   source: llm
-  quote: composition with Jean-François Lesueur and Auguste Barbereau
+  quote: composition with Jean-François Lesueur
 - name: Auguste Barbereau
   source: llm
-  quote: composition with Jean-François Lesueur and Auguste Barbereau
+  quote: composition with Jean-François Lesueur and Auguste Barbereau.
+- name: Jean-François Le Sueur
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Pierre-Joseph-Guillaume Zimmerman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students:
 - name: Jules Massenet
   source: wiki
@@ -46,24 +57,25 @@ students:
   quote: future academics included Théodore Dubois
 - name: Charles Lenepveu
   source: llm
-  quote: future academics included Théodore Dubois and Charles Lenepveu
-influenced_by:
-- name: Louis-Joseph-Ferdinand Hérold
-  source: llm
-  quote: Forbes writes that Thomas was an eclectic composer able to write in a wide
-    variety of styles. She identifies Hérold and Auber as influences
-- name: Daniel Auber
-  source: llm
-  quote: identifies Hérold and Auber as influences on his early works
-- name: Gioachino Rossini
-  source: llm
-  quote: Le caïd the first of his works to show true originality, though nonetheless
-    clearly showing the influence of Rossini
+  quote: academics included Théodore Dubois and Charles Lenepveu
+- name: Gerónimo Giménez
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Albert Lavignac
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Raoul Pugno
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+mentors:
 - name: Hector Berlioz
   source: llm
-  quote: he also met Berlioz, who encouraged him and wrote about him favourably
-influenced: []
+  quote: Berlioz, who encouraged him and wrote about him favourably.
 ---
+
+
+
+
 
 # Ambroise Thomas
 

@@ -1,7 +1,8 @@
 ---
 name: Dubravko Detoni
+wikidata: Q5311122
 wikipedia: https://en.wikipedia.org/wiki/Dubravko_Detoni
-thumbnail: https://www.nacional.hr/wp-content/themes/nacional-tiskano/assets/images/footer/Facebook.png
+thumbnail: null
 birth: '1937'
 birth_source: llm
 death: null
@@ -13,12 +14,16 @@ era_source: llm
 teachers:
 - name: John Cage
   source: wiki
-students:
-- name: Darmstadt
-  source: wiki
-influenced_by: []
-influenced: []
+  quote: studied with John Cage in Paris
+- name: Grażyna Bacewicz
+  source: llm
+  quote: she recommended a piece of her trainee, Dubravko Detoni
+students: []
+mentors: []
 ---
+
+
+
 
 # Dubravko Detoni
 

@@ -1,5 +1,6 @@
 ---
 name: Albert Dietrich
+wikidata: Q565548
 wikipedia: https://en.wikipedia.org/wiki/Albert_Dietrich
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Albert_Dietrich%2C_1829-1908%2C_Bild_Nieders%C3%A4chsisches_Landesarchiv%2C_Abt._Oldenburg.tif/lossy-page1-250px-Albert_Dietrich%2C_1829-1908%2C_Bild_Nieders%C3%A4chsisches_Landesarchiv%2C_Abt._Oldenburg.tif.jpg
 birth: '1829'
@@ -13,15 +14,15 @@ era_source: llm
 teachers:
 - name: Robert Schumann
   source: wiki
+  quote: From 1851 he studied composition with Robert Schumann
 students:
 - name: Ernst Eduard Taubert
   source: wiki
-influenced_by:
-- name: Johannes Brahms
-  source: llm
-  quote: he is remembered for his friendship with Johannes Brahms
-influenced: []
+  quote: One of his students was Ernst Eduard Taubert.
+mentors: []
 ---
+
+
 
 # Albert Dietrich
 

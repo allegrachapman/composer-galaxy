@@ -1,5 +1,6 @@
 ---
 name: Ruth Crawford Seeger
+wikidata: Q451393
 wikipedia: https://en.wikipedia.org/wiki/Ruth_Crawford_Seeger
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Ruth_Crawford_Seeger_early_1920s.jpg/250px-Ruth_Crawford_Seeger_early_1920s.jpg
 birth: '1901'
@@ -30,27 +31,25 @@ teachers:
 - name: Charles Seeger
   source: llm
   quote: began studying composition with Charles Seeger that autumn
-students: []
-influenced_by:
-- name: Arnold Schoenberg
+- name: Valborg Collett
   source: wiki
-- name: Alexander Scriabin
-  source: llm
-  quote: Herz sparked Crawford's interest in Theosophy and the Theosophy-influenced
-    music of Russian composer Alexander Scriabin
-- name: Dane Rudhyar
-  source: llm
-  quote: introduced her pupil to an influential community of artists and thinkers
-    including Dane Rudhyar and Henry Cowell
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 - name: Henry Cowell
-  source: llm
-  quote: introduced her pupil to an influential community of artists and thinkers
-    including Dane Rudhyar and Henry Cowell
-influenced:
-- name: Elliott Carter
-  source: llm
-  quote: Her music influenced later composers including Elliott Carter
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+students:
+- name: Johanna Beyer
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Vivian Fine
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Ruth Crawford Seeger
 

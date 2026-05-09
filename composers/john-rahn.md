@@ -1,5 +1,6 @@
 ---
 name: John Rahn
+wikidata: Q1565424
 wikipedia: https://en.wikipedia.org/wiki/John_Rahn
 thumbnail: null
 birth: '1944'
@@ -12,15 +13,18 @@ era: 20th-century
 era_source: llm
 teachers:
 - name: Milton Babbitt
-  source: llm_confirmed
+  source: llm
   quote: A former student of Milton Babbitt and Benjamin Boretz
 - name: Benjamin Boretz
   source: llm
   quote: A former student of Milton Babbitt and Benjamin Boretz
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # John Rahn
 

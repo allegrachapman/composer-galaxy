@@ -1,5 +1,6 @@
 ---
 name: Antonio Vivaldi
+wikidata: Q1340
 wikipedia: https://en.wikipedia.org/wiki/Antonio_Vivaldi
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Vivaldi.jpg/250px-Vivaldi.jpg
 birth: '1678'
@@ -11,30 +12,17 @@ nationality_source: infobox
 era: Baroque
 era_source: infobox
 teachers:
-- name: Étienne Périer (director)
-  source: wiki
 - name: Giovanni Legrenzi
-  source: llm
-  quote: It is possible that Legrenzi gave the young Antonio his first lessons in
-    composition.
-- name: Giovanni Battista Vivaldi
-  source: llm
-  quote: He taught Antonio to play the violin and then toured Venice, playing the
-    violin with his young son.
-students:
-- name: Anna Tessieri Girò
-  source: llm
-  quote: Vivaldi became acquainted with an aspiring young singer Anna Tessieri Girò,
-    who would become his student, protégée, and favorite prima donna.
-influenced_by:
-- name: Arcangelo Corelli
   source: wiki
-influenced:
-- name: George Frideric Handel
-  source: llm
-  quote: Vivaldi's influence during his lifetime was widespread across Europe, giving
-    origin to many imitators and admirers.
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+students:
+- name: Johann Georg Pisendel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+mentors: []
 ---
+
+
 
 # Antonio Vivaldi
 

@@ -1,5 +1,6 @@
 ---
 name: Winfried Zillig
+wikidata: Q90965
 wikipedia: https://en.wikipedia.org/wiki/Winfried_Zillig
 thumbnail: null
 birth: '1905'
@@ -17,12 +18,11 @@ teachers:
   source: llm
   quote: One of his teachers there was Hermann Zilcher.
 students: []
-influenced_by:
-- name: Arnold Schoenberg
-  source: llm
-  quote: his former teacher Arnold Schoenberg
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Winfried Zillig
 

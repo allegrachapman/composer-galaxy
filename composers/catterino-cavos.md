@@ -1,5 +1,6 @@
 ---
 name: Catterino Cavos
+wikidata: Q1051346
 wikipedia: https://en.wikipedia.org/wiki/Catterino_Cavos
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Catterino_Cavos.jpg/250px-Catterino_Cavos.jpg
 birth: '1777'
@@ -24,25 +25,11 @@ students:
   source: llm
   quote: the first singer of Ivan Susanin in the Cavos opera was a pupil of Catterino
     Cavos Piotr Zlov
-influenced_by:
-- name: Russian folk melodies
-  source: llm
-  quote: his music was strongly influenced by Russian and Ukrainian folk songs
-influenced:
-- name: Mikhail Glinka
-  source: llm
-  quote: Much of Glinka's operatic music, which the nationalists would champion as
-    the foundation of the Russian tradition, was in fact anticipated by Cavos
-- name: Nikolai Rimsky-Korsakov
-  source: llm
-  quote: which was subsequently used Glinka, Rimsky-Korsakov, and Borodin
-- name: Alexander Borodin
-  source: llm
-  quote: which was subsequently used Glinka, Rimsky-Korsakov, and Borodin
-- name: Modest Mussorgsky
-  source: llm
-  quote: and reached its zenith in the works of Mussorgsky
+mentors: []
 ---
+
+
+
 
 # Catterino Cavos
 

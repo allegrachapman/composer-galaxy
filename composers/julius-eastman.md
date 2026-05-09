@@ -1,5 +1,6 @@
 ---
 name: Julius Eastman
+wikidata: Q6309766
 wikipedia: https://en.wikipedia.org/wiki/Julius_Eastman
 thumbnail: https://upload.wikimedia.org/wikipedia/en/9/9a/Julius_Eastman.jpg
 birth: '1940'
@@ -16,22 +17,19 @@ teachers:
 - name: Constant Vauclain
   source: llm
   quote: composition with Constant Vauclain
-students: []
-influenced_by:
-- name: Peter Maxwell Davies
-  source: llm
-  quote: Eight Songs for a Mad King by the British composer Peter Maxwell Davies
-- name: John Cage
-  source: llm
-  quote: John Cage's aleatoric Song Books
 - name: Morton Feldman
-  source: llm
-  quote: S.E.M. Ensemble under the aegis of Morton Feldman
-influenced:
-- name: Arthur Russell
-  source: llm
-  quote: presaging the later innovations of Arthur Russell and Rhys Chatham
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Lukas Foss
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+students: []
+mentors: []
 ---
+
+
+
+
 
 # Julius Eastman
 

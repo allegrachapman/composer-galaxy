@@ -1,5 +1,6 @@
 ---
 name: Franz Krenn
+wikidata: Q695347
 wikipedia: https://en.wikipedia.org/wiki/Franz_Krenn
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Franz_Krenn.jpg/250px-Franz_Krenn.jpg
 birth: '1816'
@@ -12,8 +13,6 @@ era: null
 era_source: null
 teachers:
 - name: Ignaz von Seyfried
-  source: wiki
-- name: Richard Robert
   source: wiki
 - name: Hans Rott
   source: wiki
@@ -39,9 +38,19 @@ students:
   quote: Among his well-known pupils are Leoš Janáček, Mathilde Kralik, Gustav Mahler,
     who studied with him between 1875 and 1878, Richard Robert, Hans Rott, and Alexander
     von Zemlinsky
-influenced_by: []
-influenced: []
+- name: Friedrich Spigl
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Juliusz Zarębski
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
+
 
 # Franz Krenn
 

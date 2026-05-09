@@ -1,5 +1,6 @@
 ---
 name: Heinrich Jalowetz
+wikidata: Q4537431
 wikipedia: https://en.wikipedia.org/wiki/Heinrich_Jalowetz
 thumbnail: null
 birth: '1882'
@@ -8,18 +9,21 @@ death: '1946'
 death_source: infobox
 nationality: Brünn, Kingdom of Bohemia, Austria-Hungary
 nationality_source: infobox
-era: null
-era_source: null
+era: 20th-century
+era_source: llm
 teachers:
 - name: Guido Adler
   source: wiki
+  quote: A musicology pupil of Guido Adler
 - name: Arnold Schoenberg
-  source: llm
-  quote: among Arnold Schoenberg's first students in Vienna, 1904–1908
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  quote: Jalowetz was among Arnold Schoenberg's first students
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Heinrich Jalowetz
 

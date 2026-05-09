@@ -1,5 +1,6 @@
 ---
 name: David Conte
+wikidata: Q5232529
 wikipedia: https://en.wikipedia.org/wiki/David_Conte
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/DavidConte.jpg/250px-DavidConte.jpg
 birth: '1955'
@@ -26,12 +27,11 @@ teachers:
 students:
 - name: Steven Stucky
   source: wiki
-influenced_by:
-- name: Aaron Copland
-  source: llm
-  quote: Conte lived and worked at the home of Aaron Copland
-influenced: []
+mentors: []
 ---
+
+
+
 
 # David Conte
 

@@ -1,5 +1,6 @@
 ---
 name: Erich Zeisl
+wikidata: Q214385
 wikipedia: https://en.wikipedia.org/wiki/Erich_Zeisl
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ericzeisl.jpg/250px-Ericzeisl.jpg
 birth: '1905'
@@ -19,9 +20,11 @@ teachers:
   source: llm
   quote: he studied with Richard Stöhr, Joseph Marx and Hugo Kauder
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Erich Zeisl
 

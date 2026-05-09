@@ -1,6 +1,7 @@
 ---
-name: Johann Matthias Frankh
-wikipedia: https://en.wikipedia.org/wiki/Johann_Matthias_Frankh
+name: Nadia Judd
+wikidata: null
+wikipedia: https://en.wikipedia.org/wiki/Nadia_Judd
 thumbnail: null
 birth: null
 birth_source: null
@@ -12,13 +13,13 @@ era: null
 era_source: null
 teachers: []
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
 
-# Johann Matthias Frankh
 
-[Wikipedia](https://en.wikipedia.org/wiki/Johann_Matthias_Frankh)
+# Nadia Judd
+
+[Wikipedia](https://en.wikipedia.org/wiki/Nadia_Judd)
 
 ## Notes
 

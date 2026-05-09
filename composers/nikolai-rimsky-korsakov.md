@@ -1,5 +1,6 @@
 ---
 name: Nikolai Rimsky-Korsakov
+wikidata: Q93227
 wikipedia: https://en.wikipedia.org/wiki/Nikolai_Rimsky-Korsakov
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Walentin_Alexandrowitsch_Serow_004_%28cropped_3x4%29.jpg/250px-Walentin_Alexandrowitsch_Serow_004_%28cropped_3x4%29.jpg
 birth: '1844'
@@ -22,44 +23,99 @@ teachers:
   source: llm
   quote: took lessons in piano and composition from Kanille
 - name: Mily Balakirev
-  source: llm_confirmed
+  source: llm
   quote: Balakirev encouraged Rimsky-Korsakov to compose and taught him the rudiments
+- name: Anton Gerke
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 students:
 - name: Anatoly Lyadov
   source: llm
   quote: under the direction of Konstantin Lyadov (father of composer Anatoly Lyadov)
-influenced_by:
-- name: Mikhail Glinka
-  source: llm
-  quote: influences of Mikhail Glinka and fellow members of The Five
-- name: Richard Wagner
-  source: llm
-  quote: techniques of composition and orchestration were further enriched by his
-    exposure to the works of Richard Wagner
-- name: Hector Berlioz
-  source: llm
-  quote: style was based on those of Glinka, Balakirev, Hector Berlioz, Franz Liszt
-- name: Franz Liszt
-  source: llm
-  quote: style was based on those of Glinka, Balakirev, Hector Berlioz, Franz Liszt
-influenced:
-- name: Maurice Ravel
-  source: llm
-  quote: influenced non-Russian composers including Maurice Ravel, Claude Debussy,
-    Paul Dukas, and Ottorino Respighi
-- name: Claude Debussy
-  source: llm
-  quote: influenced non-Russian composers including Maurice Ravel, Claude Debussy,
-    Paul Dukas, and Ottorino Respighi
-- name: Paul Dukas
-  source: llm
-  quote: influenced non-Russian composers including Maurice Ravel, Claude Debussy,
-    Paul Dukas, and Ottorino Respighi
+- name: Anton Arensky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Semyon Barmotin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Vladimir Drozdov
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Alexander Glazunov
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Mikhail Gnessin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Konstanty Gorski
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Mikhail Ippolitov-Ivanov
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Artur Kapp
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Nikolai Kazanli
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Ivan Kryzhanovsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Mykola Lysenko
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Witold Maliszewski
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Nikolai Malko
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Emil Młynarski
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Nikolai Myaskovsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Alexander Ossovsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Sergei Prokofiev
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 - name: Ottorino Respighi
-  source: llm
-  quote: influenced non-Russian composers including Maurice Ravel, Claude Debussy,
-    Paul Dukas, and Ottorino Respighi
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Leonid Sabaneyev
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Lazare Saminsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Vladimir Alexievitch Seniloff
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Alexander Spendiaryan
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Igor Stravinsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Nikolai Tcherepnin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Yuliya Veysberg
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Howard Hanson
+  source: wiki
+mentors: []
 ---
+
+
+
+
+
 
 # Nikolai Rimsky-Korsakov
 

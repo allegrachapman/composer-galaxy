@@ -1,5 +1,6 @@
 ---
 name: Thomas Tomkins
+wikidata: Q968698
 wikipedia: https://en.wikipedia.org/wiki/Thomas_Tomkins
 thumbnail: null
 birth: '1572'
@@ -20,12 +21,11 @@ students:
   source: llm
   quote: Thomas's only son, Nathaniel, was born in Worcester in 1599, where he was
     to spend the rest of his life and become a respected musician
-influenced_by:
-- name: Thomas Morley
-  source: llm
-  quote: Tomkins was acquainted with Thomas Morley, also a pupil of Byrd's
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Thomas Tomkins
 

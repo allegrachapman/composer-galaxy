@@ -1,58 +1,136 @@
 ---
 name: Ralph Vaughan Williams
+wikidata: Q207947
 wikipedia: https://en.wikipedia.org/wiki/Ralph_Vaughan_Williams
 thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Ralph-Vaughan-Williams-by-Hopp%C3%A9-1921.jpg/250px-Ralph-Vaughan-Williams-by-Hopp%C3%A9-1921.jpg
 birth: '1872'
-birth_source: llm
+birth_source: wikidata
 death: '1958'
-death_source: llm
-nationality: English
-nationality_source: llm
-era: 20th-century
-era_source: llm
+death_source: wikidata
+nationality: null
+nationality_source: null
+era: null
+era_source: null
 teachers:
-- name: Walter Parratt
+- name: Hubert Parry
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Maurice Ravel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Herbert Sharpe
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Charles Villiers Stanford
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 - name: Charles Wood (composer)
   source: wiki
-- name: Max Bruch
-  source: wiki
-- name: Hubert Parry
-  source: llm
-  quote: Write choral music as befits an Englishman and a democrat
-- name: Charles Villiers Stanford
-  source: llm_confirmed
-  quote: Relations between teacher and student were stormy but affectionate
-- name: Maurice Ravel
-  source: llm_confirmed
-  quote: Ravel took few pupils, and was known as a demanding taskmaster
-- name: Charles Wood
-  source: llm
-  quote: studied composition with Charles Wood and organ with Alan Gray
-- name: Alan Gray
-  source: llm
-  quote: studied composition with Charles Wood and organ with Alan Gray
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students:
-- name: Francis Edward Gladstone
+- name: Stanley Bate
   source: wiki
-influenced_by:
-- name: William Blake
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Arthur Bliss
   source: wiki
-- name: Tudor music
-  source: llm
-  quote: Strongly influenced by Tudor music and English folk-song
-- name: English folk-song
-  source: llm
-  quote: Strongly influenced by Tudor music and English folk-song
-- name: Maurice Ravel
-  source: llm
-  quote: his studies in 1907–1908 with the French composer Maurice Ravel helped him
-    clarify the textures of his music
-influenced:
-- name: Gustav Holst
-  source: llm
-  quote: Holst declared that his music was influenced by that of his friend
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Ina Boyle
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Amice Calverley
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Hubert Clifford
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Jean Coulthard
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: David Cox
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Cedric Thorpe Davie
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Howard Ferguson
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Armstrong Gibbs
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Ruth Gipps
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Peggy Glanville-Hicks
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Helen Glatz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Dorothy Gow
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Ivor Gurney
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Patrick Hadley
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Imogen Holst
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Gordon Jacob
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Constant Lambert
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: William Lloyd Webber
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Elizabeth Maconchy
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Frederick May
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Robin Milford
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Angus Morrison
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Archibald Potter
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Franz Reizenstein
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Edmund Rubbra
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Anna Russell
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Bernard Stevens
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Joan Trimble
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Percy Turnbull
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Grace Williams
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Michael Tippett
+  source: wiki
+mentors: []
 ---
+
+
+
 
 # Ralph Vaughan Williams
 

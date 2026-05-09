@@ -1,5 +1,6 @@
 ---
 name: Du Yun
+wikidata: Q17385858
 wikipedia: https://en.wikipedia.org/wiki/Du_Yun
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Portrait_of_Du_Yun.jpg/250px-Portrait_of_Du_Yun.jpg
 birth: '1977'
@@ -8,8 +9,8 @@ death: null
 death_source: null
 nationality: Shanghai, China
 nationality_source: infobox
-era: classical, Avant-garde, experimental, punk, crossover, folk,
-era_source: infobox
+era: Contemporary
+era_source: manual
 teachers:
 - name: Deng Erbo
   source: llm
@@ -28,21 +29,11 @@ teachers:
   quote: received a Ph.D. in music composition from Harvard University with Bernard
     Rands and Mario Davidovsky
 students: []
-influenced_by:
-- name: Dou Wei
-  source: llm
-  quote: She counts Dou Wei and Faye Wong among the Chinese pop musicians who have
-    had the most influence on her musical life
-- name: Faye Wong
-  source: llm
-  quote: She counts Dou Wei and Faye Wong among the Chinese pop musicians who have
-    had the most influence on her musical life
-influenced:
-- name: Raven Chacon
-  source: llm
-  quote: her site-specific opera Sweet Land, co-composed with composer Raven Chacon,
-    premiered in LA
+mentors: []
 ---
+
+
+
 
 # Du Yun
 

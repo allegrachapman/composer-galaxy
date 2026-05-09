@@ -1,5 +1,6 @@
 ---
 name: Charles Herbert Kitson
+wikidata: Q5078996
 wikipedia: https://en.wikipedia.org/wiki/Charles_Herbert_Kitson
 thumbnail: null
 birth: '1874'
@@ -10,14 +11,17 @@ nationality: English
 nationality_source: llm
 era: null
 era_source: null
-teachers: []
+teachers:
+- name: Charles Wood (composer)
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students:
 - name: Hubert Clifford
   source: wiki
 - name: Arthur Duff (composer)
   source: wiki
 - name: Michael Tippett
-  source: llm_confirmed
+  source: llm
   quote: Among his notable pupils are Hubert Clifford, Arthur Duff, Arwel Hughes,
     John F. Larchet, Herbert Sanders, Robert Still, Michael Tippett, and S. Drummond
     Wolff.
@@ -31,9 +35,24 @@ students:
   quote: Among his notable pupils are Hubert Clifford, Arthur Duff, Arwel Hughes,
     John F. Larchet, Herbert Sanders, Robert Still, Michael Tippett, and S. Drummond
     Wolff.
-influenced_by: []
-influenced: []
+- name: Cyril Stanley Christopher
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Herbert Sanders
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Robert Still
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: S. Drummond Wolff
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # Charles Herbert Kitson
 

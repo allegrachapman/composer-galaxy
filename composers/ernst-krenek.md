@@ -1,5 +1,6 @@
 ---
 name: Ernst Krenek
+wikidata: Q158436
 wikipedia: https://en.wikipedia.org/wiki/Ernst_Krenek
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Krenek_Jonny-spielt-auf_Titel.jpg/250px-Krenek_Jonny-spielt-auf_Titel.jpg
 birth: '1900'
@@ -57,24 +58,30 @@ students:
 - name: Gladys Nordenstrom
   source: llm
   quote: the composer Gladys Nordenstrom, who was his student at the time
-influenced_by:
-- name: Ernst Kurth
+- name: Sergio Cervetti
   source: wiki
-- name: Franz Schreker
-  source: llm
-  quote: showing the influence of his teacher Franz Schreker
-- name: Ferruccio Busoni
-  source: llm
-  quote: the tenets of Busoni, Schnabel, Erdmann, and Scherchen, amongst others
-- name: Igor Stravinsky
-  source: llm
-  quote: he became familiar with the work of Igor Stravinsky (Pulcinella was especially
-    influential)
-- name: Arnold Schoenberg
-  source: llm
-  quote: embrace Arnold Schoenberg's twelve-tone technique
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Beverly Grigsby
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Henry Mancini
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Usko Meriläinen
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Dieter Schnebel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Harold Shapero
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # Ernst Krenek
 

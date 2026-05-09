@@ -1,5 +1,6 @@
 ---
 name: Giovanni Battista Viotti
+wikidata: Q313188
 wikipedia: https://en.wikipedia.org/wiki/Giovanni_Battista_Viotti
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/3/34/Giovanni_Battista_Viotti.jpg
 birth: '1755'
@@ -8,40 +9,48 @@ death: '1824'
 death_source: infobox
 nationality: Fontanetto Po, Piemonte, Kingdom of Sardinia
 nationality_source: infobox
-era: Classical
-era_source: llm
+era: null
+era_source: null
 teachers:
 - name: Gaetano Pugnani
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
 students:
 - name: Paul Alday
   source: wiki
-- name: August Duranowski
-  source: wiki
-- name: Turin
-  source: wiki
-- name: Pierre Rode
-  source: llm
-  quote: The teacher of both Pierre Rode and Pierre Baillot
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 - name: Pierre Baillot
-  source: llm
-  quote: The teacher of both Pierre Rode and Pierre Baillot
-influenced_by:
-- name: Joseph Haydn
-  source: llm
-  quote: most of his string quartets largely ignore the balanced texture pioneered
-    by Haydn
-influenced:
-- name: Ludwig van Beethoven
-  source: llm
-  quote: which were an influence on Ludwig van Beethoven
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Charles Auguste de Bériot
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Jean-Baptiste Cartier
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Auguste Duranowski
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 - name: Rodolphe Kreutzer
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: André Robberechts
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Pierre Rode
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Friedrich Wilhelm Pixis
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: August Duranowski
   source: llm
-  quote: an important influence on Rodolphe Kreutzer
-- name: Niccolò Paganini
-  source: llm
-  quote: who was an influence on Niccolò Paganini
+  quote: He studied the violin in Paris with Giovanni Battista Viotti
+mentors: []
 ---
+
+
+
 
 # Giovanni Battista Viotti
 

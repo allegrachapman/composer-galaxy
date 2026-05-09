@@ -1,5 +1,6 @@
 ---
 name: Sergei Prokofiev
+wikidata: Q49481
 wikipedia: https://en.wikipedia.org/wiki/Sergei_Prokofiev
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sergei_Prokofiev_circa_1918_over_Chair_Bain.jpg/250px-Sergei_Prokofiev_circa_1918_over_Chair_Bain.jpg
 birth: '1891'
@@ -29,6 +30,18 @@ teachers:
 - name: Anna Yesipova
   source: llm
   quote: studying piano under Anna Yesipova
+- name: Alexander Glazunov
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Yuri Pomerantsiev
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Serge Tcherepnin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Jāzeps Vītols
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students:
 - name: Sviatoslav Richter
   source: llm
@@ -36,22 +49,12 @@ students:
 - name: Mstislav Rostropovich
   source: llm
   quote: his Symphony-Concerto for the latter
-influenced_by:
-- name: Frédéric Chopin
-  source: llm
-  quote: mostly works by Chopin and Beethoven
-- name: Ludwig van Beethoven
-  source: llm
-  quote: mostly works by Chopin and Beethoven
-- name: Joseph Haydn
-  source: llm
-  quote: Joseph Haydn would have used if he were alive at the time
-influenced:
-- name: Igor Stravinsky
-  source: llm
-  quote: Stravinsky called the ballet the single piece of modern music he could listen
-    to with pleasure
+mentors: []
 ---
+
+
+
+
 
 # Sergei Prokofiev
 

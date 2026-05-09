@@ -1,5 +1,6 @@
 ---
 name: Violet Archer
+wikidata: Q292581
 wikipedia: https://en.wikipedia.org/wiki/Violet_Archer
 thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Portrait_of_Violet_Archer.jpg/250px-Portrait_of_Violet_Archer.jpg
 birth: '1913'
@@ -21,7 +22,7 @@ teachers:
   source: llm
   quote: she studied composition with Claude Champagne and Douglas Clarke
 - name: Béla Bartók
-  source: llm_confirmed
+  source: llm
   quote: study composition, including Hungarian folk music and variation technique,
     with Béla Bartók
 students:
@@ -37,9 +38,12 @@ students:
   source: llm
   quote: Her notable students included Larry Austin, Jan Randall, Allan Gilliland,
     and Allan Gordon Bell
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Violet Archer
 

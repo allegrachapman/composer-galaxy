@@ -1,5 +1,6 @@
 ---
 name: Cornelius Cardew
+wikidata: Q1133758
 wikipedia: https://en.wikipedia.org/wiki/Cornelius_Cardew
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Cornelius_Cardew_at_Grunwick_march.jpg/250px-Cornelius_Cardew_at_Grunwick_march.jpg
 birth: '1936'
@@ -12,40 +13,43 @@ era: 20th-century
 era_source: llm
 teachers:
 - name: Karlheinz Stockhausen
-  source: llm_confirmed
+  source: llm
   quote: I hired him to become my assistant in the late 50s and he worked with me
     for over three years.
+- name: Howard Ferguson (composer)
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Kyla Greenbaum
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Goffredo Petrassi
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Percy Waller
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students:
 - name: Christopher Hobbs
   source: llm
   quote: one of his first students at the Royal Academy
-influenced_by:
-- name: John Cage
-  source: llm
-  quote: In 1958, Cardew witnessed a series of concerts in Cologne by John Cage and
-    David Tudor which had a considerable influence on him
-- name: David Tudor
-  source: llm
-  quote: witnessed a series of concerts in Cologne by John Cage and David Tudor which
-    had a considerable influence on him
-- name: Morton Feldman
-  source: llm
-  quote: particularly prominent in introducing the works of American experimental
-    composers such as Morton Feldman
-- name: La Monte Young
-  source: llm
-  quote: introducing the works of American experimental composers such as Morton Feldman,
-    La Monte Young, Earle Brown
-- name: Earle Brown
-  source: llm
-  quote: introducing the works of American experimental composers such as Morton Feldman,
-    La Monte Young, Earle Brown, Christian Wolff, and Cage
-- name: Christian Wolff
-  source: llm
-  quote: introducing the works of American experimental composers such as Morton Feldman,
-    La Monte Young, Earle Brown, Christian Wolff, and Cage
-influenced: []
+- name: Craig Armstrong
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: John Cale
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Hugh Shrapnel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Howard Skempton
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Cornelius Cardew
 

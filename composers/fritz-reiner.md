@@ -1,5 +1,6 @@
 ---
 name: Fritz Reiner
+wikidata: Q364179
 wikipedia: https://en.wikipedia.org/wiki/Fritz_Reiner
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Fritz_Reiner_%28cropped%29.jpg/250px-Fritz_Reiner_%28cropped%29.jpg
 birth: '1888'
@@ -20,8 +21,11 @@ teachers:
   source: llm
   quote: From 1907 until 1909 he studied piano pedagogy with Kálmán Chován
 - name: Béla Bartók
-  source: llm_confirmed
+  source: llm
   quote: During his last two years there, his piano teacher was the young Béla Bartók
+- name: Leó Weiner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students:
 - name: Leonard Bernstein
   source: wiki
@@ -31,26 +35,21 @@ students:
   source: llm
   quote: Some of his pupils included Nino Rota
 - name: Vincent Persichetti
-  source: llm_confirmed
+  source: llm
   quote: Some of his pupils included Vincent Persichetti
 - name: Hugo Weisgall
   source: llm
   quote: Some of his pupils included Hugo Weisgall
-influenced_by:
-- name: Richard Strauss
+- name: Samuel Barber
   source: llm
-  quote: he worked closely with Richard Strauss
-- name: Arthur Nikisch
-  source: llm
-  quote: in the manner of Arthur Nikisch and Arturo Toscanini
-- name: Arturo Toscanini
-  source: llm
-  quote: in the manner of Arthur Nikisch and Arturo Toscanini
-influenced:
-- name: Igor Stravinsky
-  source: llm
-  quote: Igor Stravinsky called the Chicago Symphony under Reiner
+  quote: conducting with Fritz Reiner
+mentors: []
 ---
+
+
+
+
+
 
 # Fritz Reiner
 

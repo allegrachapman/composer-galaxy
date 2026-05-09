@@ -1,5 +1,6 @@
 ---
 name: Jan Kunc
+wikidata: Q3487599
 wikipedia: https://en.wikipedia.org/wiki/Jan_Kunc
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Album_representant%C5%AF_v%C5%A1ech_obor%C5%AF_ve%C5%99ejn%C3%A9ho_%C5%BEivota_%C4%8Deskoslovensk%C3%A9ho_-_1927_-_Jan_Kunc.png/250px-Album_representant%C5%AF_v%C5%A1ech_obor%C5%AF_ve%C5%99ejn%C3%A9ho_%C5%BEivota_%C4%8Deskoslovensk%C3%A9ho_-_1927_-_Jan_Kunc.png
 birth: '1883'
@@ -14,12 +15,21 @@ teachers:
 - name: Vítězslav Novák
   source: wiki
 - name: Leoš Janáček
-  source: llm_confirmed
+  source: llm
   quote: his teacher was the composer Leoš Janáček
-students: []
-influenced_by: []
-influenced: []
+students:
+- name: Pavel Haas
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Antonín Tučapský
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # Jan Kunc
 

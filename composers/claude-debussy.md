@@ -1,5 +1,6 @@
 ---
 name: Claude Debussy
+wikidata: Q4700
 wikipedia: https://en.wikipedia.org/wiki/Claude_Debussy
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Claude_Debussy_by_Atelier_Nadar.jpg/250px-Claude_Debussy_by_Atelier_Nadar.jpg
 birth: '1862'
@@ -29,54 +30,27 @@ teachers:
 - name: César Franck
   source: llm
   quote: organ with César Franck
+- name: Marie Mauté de Fleurville
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Albert Lavignac
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Antoinette Mauté de Fleurville
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 students:
 - name: Raoul Bardac
   source: wiki
-influenced_by:
-- name: Symbolism (movement)
+- name: Erwin Schulhoff
   source: wiki
-- name: Herbie Hancock
-  source: wiki
-- name: McCoy Tyner
-  source: wiki
-- name: Franz Liszt
-  source: wiki
-- name: Edgar Allan Poe
-  source: wiki
-- name: Frédéric Chopin
-  source: llm
-  quote: early influences including Russian and Far Eastern music and works by Chopin
-- name: Richard Wagner
-  source: llm
-  quote: His music was to a considerable extent a reaction against Wagner
-- name: Jules Massenet
-  source: llm
-  quote: Debussy's works showed the influence of Jules Massenet
-- name: Nikolai Rimsky-Korsakov
-  source: llm
-  quote: its harmonic freedom and non-Teutonic tone colours influenced his own developing
-    musical style
-influenced:
-- name: Béla Bartók
-  source: llm
-  quote: strongly influenced a wide range of composers including Béla Bartók
-- name: Igor Stravinsky
-  source: llm
-  quote: strongly influenced a wide range of composers including Béla Bartók, Igor
-    Stravinsky
-- name: George Gershwin
-  source: llm
-  quote: strongly influenced a wide range of composers including Béla Bartók, Igor
-    Stravinsky, George Gershwin
-- name: Olivier Messiaen
-  source: llm
-  quote: strongly influenced a wide range of composers including Béla Bartók, Igor
-    Stravinsky, George Gershwin, Olivier Messiaen
-- name: George Benjamin
-  source: llm
-  quote: strongly influenced a wide range of composers including Béla Bartók, Igor
-    Stravinsky, George Gershwin, Olivier Messiaen, George Benjamin
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Claude Debussy
 

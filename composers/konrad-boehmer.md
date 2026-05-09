@@ -1,5 +1,6 @@
 ---
 name: Konrad Boehmer
+wikidata: Q382893
 wikipedia: https://en.wikipedia.org/wiki/Konrad_Boehmer
 thumbnail: null
 birth: '1941'
@@ -12,16 +13,19 @@ era: 20th-century
 era_source: llm
 teachers:
 - name: Karlheinz Stockhausen
-  source: llm_confirmed
+  source: llm
   quote: studied composition in Cologne with Karlheinz Stockhausen
 - name: Gottfried Michael Koenig
   source: llm
   quote: studied composition in Cologne with Karlheinz Stockhausen and Gottfried Michael
     Koenig
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Konrad Boehmer
 

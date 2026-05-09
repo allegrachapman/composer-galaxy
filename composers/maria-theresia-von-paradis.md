@@ -1,40 +1,25 @@
 ---
 name: Maria Theresia von Paradis
+wikidata: Q293171
 wikipedia: https://en.wikipedia.org/wiki/Maria_Theresia_von_Paradis
 thumbnail: null
 birth: '1759'
-birth_source: llm
+birth_source: wikidata
 death: '1824'
-death_source: llm
-nationality: Austrian
-nationality_source: llm
-era: Classical
-era_source: llm
+death_source: wikidata
+nationality: null
+nationality_source: null
+era: null
+era_source: null
 teachers:
-- name: Leopold Kozeluch
+- name: Antonio Salieri
   source: wiki
-- name: Karl Frieberth
-  source: llm
-  quote: Karl Frieberth (music theory and composition)
-- name: Vincenzo Righini
-  source: llm
-  quote: Vincenzo Righini (singing)
-- name: Antonio Salieri
-  source: llm_confirmed
-  quote: Antonio Salieri (singing and composition)
-- name: Abbé Vogler
-  source: llm_confirmed
-  quote: Abbé Vogler (music theory and composition)
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students: []
-influenced_by:
-- name: Antonio Salieri
-  source: llm
-  quote: Salieri's influence may be seen in the dramatically composed scenes
-- name: Leopold Kozeluch
-  source: llm
-  quote: her piano works show a great influence by her teacher Leopold Kozeluch
-influenced: []
+mentors: []
 ---
+
+
 
 # Maria Theresia von Paradis
 

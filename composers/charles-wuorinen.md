@@ -1,5 +1,6 @@
 ---
 name: Charles Wuorinen
+wikidata: Q961861
 wikipedia: https://en.wikipedia.org/wiki/Charles_Wuorinen
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Charles_Wuorinen_at_desk_2.jpg/250px-Charles_Wuorinen_at_desk_2.jpg
 birth: '1938'
@@ -10,29 +11,51 @@ nationality: New York City, U.S.
 nationality_source: infobox
 era: 20th-century
 era_source: llm
-teachers: []
+teachers:
+- name: Jack Beeson
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Otto Luening
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Vladimir Ussachevsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students:
 - name: Arthur Russell (musician)
   source: wiki
 - name: Robert Bonfiglio
   source: wiki
-influenced_by:
-- name: William Blake
+- name: Wendy Mae Chambers
   source: wiki
-- name: Arnold Schoenberg
-  source: llm
-  quote: Schoenberg, late Stravinsky, and Babbitt as primary influences
-- name: Igor Stravinsky
-  source: llm
-  quote: Schoenberg, late Stravinsky, and Babbitt as primary influences
-- name: Milton Babbitt
-  source: llm
-  quote: Schoenberg, late Stravinsky, and Babbitt as primary influences
-influenced:
-- name: Robert Black
-  source: llm
-  quote: Robert Black cited him as a particular influence on his style
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Michael Daugherty
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Eibhlís Farrell
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Aaron Jay Kernis
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Peter Lieberson
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Caroline Lloyd
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Tobias Picker
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: James Romig
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+mentors: []
 ---
+
+
+
+
 
 # Charles Wuorinen
 

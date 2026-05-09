@@ -1,40 +1,88 @@
 ---
 name: Pierre Boulez
+wikidata: Q156193
 wikipedia: https://en.wikipedia.org/wiki/Pierre_Boulez
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pierre_Boulez_%281968%29.jpg/250px-Pierre_Boulez_%281968%29.jpg
 birth: '1925'
-birth_source: llm
+birth_source: wikidata
 death: '2016'
-death_source: llm
-nationality: French
-nationality_source: llm
-era: 20th-century
-era_source: llm
+death_source: wikidata
+nationality: null
+nationality_source: null
+era: null
+era_source: null
 teachers:
-- name: Olivier Messiaen
-  source: llm_confirmed
-  quote: studied at the Conservatoire de Paris with Olivier Messiaen
-- name: Andrée Vaurabourg
-  source: llm
-  quote: studied counterpoint privately with her
 - name: René Leibowitz
-  source: llm
-  quote: and privately with Andrée Vaurabourg and René Leibowitz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Olivier Messiaen
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 students:
+- name: Gilbert Amy
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Charles Ansbacher
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 - name: Richard Rodney Bennett
   source: wiki
-- name: Olivier Messiaen
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: John Carewe
   source: wiki
-influenced_by:
-- name: John Cage
-  source: llm
-  quote: Cage introduced Boulez to two publishers (Heugel and Amphion)
-- name: Karlheinz Stockhausen
-  source: llm
-  quote: 'two composers who were to be important influences: John Cage and Karlheinz
-    Stockhausen'
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Jeff Cook
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Marc-André Dalbavie
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Michael Daugherty
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Richard Dufallo
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Jean-Claude Éloy
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Serge Garant
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Jacques Guyonnet
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Heinz Holliger
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Hans Ulrich Lehmann
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Jeffrey Means
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Gilberto Mendes
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Henri Pousseur
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Grażyna Pstrokońska-Nawratil
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Bernard Rands
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Robert Rowe
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Serge Tcherepnin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+mentors: []
 ---
+
+
 
 # Pierre Boulez
 

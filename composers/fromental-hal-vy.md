@@ -1,5 +1,6 @@
 ---
 name: Fromental Halévy
+wikidata: Q313917
 wikipedia: https://en.wikipedia.org/wiki/Fromental_Halévy
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Fromental_Halevy_by_Etienne_Carjat-crop.jpg/250px-Fromental_Halevy_by_Etienne_Carjat-crop.jpg
 birth: '1799'
@@ -14,21 +15,50 @@ teachers:
 - name: Luigi Cherubini
   source: llm
   quote: A student of Luigi Cherubini
-students: []
-influenced_by:
-- name: Pierre Corneille
+- name: Étienne Méhul
   source: wiki
-- name: Giacomo Meyerbeer
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+students:
+- name: François Bazin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Georges Bizet
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Charles Dancla
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Charles Delioux
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Charles Gounod
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Charles Lecocq
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Antoine François Marmontel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Victor Massé
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Théodore Mozin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Joseph O'Kelly
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Ernest Guiraud
   source: llm
-  quote: dazzling successor to Giacomo Meyerbeer's Robert le Diable
-- name: Cherubini
-  source: llm
-  quote: the grand tradition of Méhul, Le Sueur and Cherubini
-influenced:
-- name: Gustav Mahler
-  source: llm
-  quote: Gustav Mahler considered one of the greatest operas ever written
+  quote: composition under Halévy at the Paris Conservatoire
+mentors: []
 ---
+
+
+
+
+
 
 # Fromental Halévy
 

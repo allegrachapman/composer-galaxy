@@ -1,5 +1,6 @@
 ---
 name: Hans Gál
+wikidata: Q213815
 wikipedia: https://en.wikipedia.org/wiki/Hans_Gál
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Hans_Gal.jpg/250px-Hans_Gal.jpg
 birth: '1890'
@@ -24,18 +25,18 @@ students:
   source: wiki
 - name: Rudolf Serkin
   source: wiki
-influenced_by:
-- name: Johannes Brahms
-  source: llm
-  quote: Eusebius Mandyczewski, who had been a close friend of Johannes Brahms
-- name: Johann Sebastian Bach
-  source: llm
-  quote: derives from his lifelong engagement with the works of J. S. Bach
-- name: Franz Schubert
-  source: llm
-  quote: a Schubert-like love of melody
-influenced: []
+- name: Rudolf Schwarz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Fritz Spielmann
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+mentors: []
 ---
+
+
+
+
 
 # Hans Gál
 

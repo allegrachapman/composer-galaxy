@@ -55,7 +55,7 @@ _NON_PORTRAIT_KEYWORDS = [
     "building", "house", "statue", "bust", "memorial", "birthplace",
     "museum", "church", "cathedral", "chapel", "cemetery", "stamp",
     "coin", "medal", "logo", "cover", "title_page", "titlepage",
-    "autograph", "signature", "handwriting", "map", "flag", "coat_of_arms",
+    "autograph", "autogram", "signature", "handwriting", "map", "flag", "coat_of_arms",
     "exterior", "interior", "facade", "organ", "piano", "instrument",
     "sheet_music", "frontispiece", "engraving_of_a",
     "centre", "center", "hall", "theatre", "theater", "school", "stift",
@@ -197,11 +197,11 @@ _SKIP_DOMAINS = {
     "instagram.com", "ircam.fr", "bibliotheken.nl", "imslp.org",
     "gramophone.co.uk", "classicfm.com", "medici.tv", "bachtrack.com",
     "boosey.com", "bruceduffie.com", "kcstudio.com", "daifujikura.com",
-    "goldbergfestival.pl", "libraries.ucsd.edu", "oboeclassics.com",
+    "goldbergfestival.pl", "libraries.ucsd.edu", "oboeclassics.com", "nacional.hr",
 }
 
 _IMG_RE = re.compile(
-    r'<img[^>]+src=["\']([^"\']+\.(?:jpg|jpeg|png|webp))["\']',
+    r'<img[^>]+(?:src|data-src)=["\']([^"\']+\.(?:jpg|jpeg|png|webp))["\']',
     re.I,
 )
 
@@ -270,21 +270,26 @@ async def _find_portrait_on_official_site(title: str, canonical: str) -> str | N
             if not img_urls:
                 continue
 
-            from urllib.parse import urljoin
+            from urllib.parse import urljoin, urlparse
+            first_viable = None
+            is_surname_site = (
+                surname and len(surname) > 3
+                and surname in (urlparse(str(r2.url)).hostname or "").lower()
+            )
             for img_url in img_urls:
                 full_url = urljoin(str(r2.url), img_url)
                 fname = full_url.rsplit("/", 1)[-1].lower()
                 if _is_non_portrait(fname):
                     continue
-                # Prefer images with surname in filename
                 if surname and surname in fname:
                     return full_url
-                # Accept images with portrait-like hints
                 for hint in _PORTRAIT_HINTS:
                     if hint in fname:
                         return full_url
-
-            # Skip generic fallback — too many false positives (logos, banners)
+                if first_viable is None:
+                    first_viable = full_url
+            if first_viable and is_surname_site:
+                return first_viable
 
     return None
 
@@ -484,6 +489,7 @@ _REVERSE_STUDENT_PATTERNS = [
     re.compile(r"\[\[([^\]|]+)\]\][\w,\s]{0,120}(?:studied|study|studies)\s+(?:[\w,]+\s+){0,8}(?:under|with)\b", re.I),
     re.compile(r"\[\[([^\]|]+)\]\][\w,\s]{0,120}(?:was\s+a\s+)?(?:pupil|student)\s+of\b", re.I),
     re.compile(r"\[\[([^\]|]+)\]\][\w,\s]{0,120}(?:was\s+)?(?:taught|instructed|mentored)\s+(?:[\w,]+\s+){0,3}by\b", re.I),
+    re.compile(r"\[\[([^\]|]+)\]\][,\w\s]{0,60}(?:was\s+)?(?:\w+\s+){0,5}(?:pupil|student)\b", re.I),
 ]
 
 _INFLUENCE_PATTERNS = [
@@ -505,6 +511,10 @@ _NON_PERSON_WORDS = {
     "music", "folk", "baroque", "classical", "romantic", "neoclassicism",
     "modernism", "impressionism", "serialism", "atonality",
     "prize", "award", "diploma", "medal", "society", "theory", "form",
+    "vienna", "paris", "london", "berlin", "munich", "turin", "venice",
+    "rome", "milan", "florence", "basel", "darmstadt", "oakland",
+    "fortification", "amanuensis", "castrato", "scholarship",
+    "dodecaphony", "polyphony", "counterpoint", "war",
 }
 
 
@@ -540,6 +550,15 @@ def _find_list_links(wikitext: str, match_end: int, max_chars: int = 200) -> lis
     return names
 
 
+_NEGATION_RE = re.compile(r"\b(?:not|never|no|neither|nor|didn['']?t|did not|hardly|unlikely)\b", re.I)
+
+
+def _has_negation(wikitext: str, match_start: int, lookback: int = 40) -> bool:
+    """Check if the text before a regex match contains negation words."""
+    context = wikitext[max(0, match_start - lookback):match_start]
+    return bool(_NEGATION_RE.search(context))
+
+
 def parse_prose_relationships(wikitext: str) -> dict[str, list[str]]:
     """Extract teacher/student/influence relationships from article wikitext prose."""
     result: dict[str, list[str]] = {
@@ -555,6 +574,8 @@ def parse_prose_relationships(wikitext: str) -> dict[str, list[str]]:
         seen: set[str] = set()
         for pat in patterns:
             for m in pat.finditer(wikitext):
+                if _has_negation(wikitext, m.start()):
+                    continue
                 target = m.group(1).strip()
                 if _safe_link(target) and target not in seen:
                     seen.add(target)

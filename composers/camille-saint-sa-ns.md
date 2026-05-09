@@ -1,64 +1,49 @@
 ---
 name: Camille Saint-Saëns
+wikidata: Q150445
 wikipedia: https://en.wikipedia.org/wiki/Camille_Saint-Saëns
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Saint-Sa%C3%ABns-circa-1880.jpg/250px-Saint-Sa%C3%ABns-circa-1880.jpg
 birth: '1835'
-birth_source: llm
+birth_source: wikidata
 death: '1921'
-death_source: llm
-nationality: French
-nationality_source: llm
-era: Romantic
-era_source: llm
+death_source: wikidata
+nationality: null
+nationality_source: null
+era: null
+era_source: null
 teachers:
-- name: Camille-Marie Stamaty
-  source: wiki
-- name: Friedrich Kalkbrenner
-  source: wiki
-- name: Alexandre Pierre François Boëly
-  source: wiki
 - name: François Benoist
-  source: llm
-  quote: His organ professor was François Benoist
-- name: Fromental Halévy
-  source: llm
-  quote: His professor was a protégé of Cherubini, Fromental Halévy
-students:
-- name: Gabriel Fauré
   source: wiki
-- name: Maurice Ravel
-  source: wiki
-- name: Adolphe Adam
-  source: wiki
-- name: César Franck
-  source: wiki
-- name: Charles Gounod
-  source: wiki
-- name: Charles Koechlin
-  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 - name: Camille-Marie Stamaty
   source: wiki
-influenced_by:
-- name: Robert Schumann
-  source: llm
-  quote: particularly that of Schumann, Liszt and Wagner
-- name: Franz Liszt
-  source: llm
-  quote: particularly that of Schumann, Liszt and Wagner
-- name: Richard Wagner
-  source: llm
-  quote: particularly that of Schumann, Liszt and Wagner
-- name: Johann Sebastian Bach
-  source: llm
-  quote: From the latter he acquired a lifelong love of the music of Bach
-influenced:
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+students:
+- name: Cécile Chaminade
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 - name: Gabriel Fauré
-  source: llm
-  quote: Both of them were strongly influenced by Saint-Saëns
-- name: Maurice Ravel
-  source: llm
-  quote: Both of them were strongly influenced by Saint-Saëns
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Eugène Gigout
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Reynaldo Hahn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: André Messager
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Isidor Philipp
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Albert van Raalte
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
 
 # Camille Saint-Saëns
 

@@ -1,5 +1,6 @@
 ---
 name: Erwin Schulhoff
+wikidata: Q89540
 wikipedia: https://en.wikipedia.org/wiki/Erwin_Schulhoff
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Schulhoff_Mayerova_1931.jpg/250px-Schulhoff_Mayerova_1931.jpg
 birth: '1894'
@@ -27,25 +28,16 @@ teachers:
   source: llm
   quote: his teachers included Claude Debussy, Max Reger, Fritz Steinbach, and Willi
     Thern
+- name: Willi and Louis Thern
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students: []
-influenced_by:
-- name: Antonín Dvořák
-  source: llm
-  quote: Antonín Dvořák encouraged Schulhoff's earliest musical studies
-- name: Claude Debussy
-  source: llm
-  quote: His early works exhibit the influence of composers from the preceding generation,
-    including Debussy, Scriabin, and Richard Strauss
-- name: Alexander Scriabin
-  source: llm
-  quote: His early works exhibit the influence of composers from the preceding generation,
-    including Debussy, Scriabin, and Richard Strauss
-- name: Richard Strauss
-  source: llm
-  quote: His early works exhibit the influence of composers from the preceding generation,
-    including Debussy, Scriabin, and Richard Strauss
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Erwin Schulhoff
 

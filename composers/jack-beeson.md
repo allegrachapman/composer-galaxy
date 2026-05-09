@@ -1,5 +1,6 @@
 ---
 name: Jack Beeson
+wikidata: Q323757
 wikipedia: https://en.wikipedia.org/wiki/Jack_Beeson
 thumbnail: https://www.boosey.com/images/composer/Snap_Beeson_x2.jpg
 birth: '1921'
@@ -13,6 +14,12 @@ era_source: llm
 teachers:
 - name: Béla Bartók
   source: wiki
+- name: Howard Hanson
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Bernard Rogers
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
 - name: Charles Wuorinen
   source: wiki
@@ -25,7 +32,7 @@ students:
   source: llm
   quote: His notable students include Alice Shields, Joan Tower, Harvey Sollberger
 - name: Joan Tower
-  source: llm_confirmed
+  source: llm
   quote: His notable students include Alice Shields, Joan Tower, Harvey Sollberger
 - name: Harvey Sollberger
   source: llm
@@ -42,12 +49,24 @@ students:
 - name: Richard Einhorn
   source: llm
   quote: His notable students include Mark Birnbaum, and Richard Einhorn.
-influenced_by:
-- name: Metropolitan Opera
-  source: llm
-  quote: influenced by Metropolitan Opera radio broadcasts
-influenced: []
+- name: Gloria Coates
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: John Heiss
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Eric Salzman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Judith Lang Zaimont
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+mentors: []
 ---
+
+
+
+
 
 # Jack Beeson
 

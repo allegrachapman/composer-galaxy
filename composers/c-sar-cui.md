@@ -1,31 +1,28 @@
 ---
 name: César Cui
+wikidata: Q208546
 wikipedia: https://en.wikipedia.org/wiki/César_Cui
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/AveCesar_Raevsky_CuiIP_177_600_cap.JPG/250px-AveCesar_Raevsky_CuiIP_177_600_cap.JPG
 birth: '1835'
-birth_source: llm
+birth_source: infobox
 death: '1918'
-death_source: llm
-nationality: Russian
-nationality_source: llm
-era: Romantic
-era_source: llm
+death_source: infobox
+nationality: Vilnius, Vilna Governorate, Russian Empire
+nationality_source: infobox
+era: null
+era_source: null
 teachers:
 - name: Stanisław Moniuszko
-  source: llm
-  quote: he took music lessons with Stanisław Moniuszko in 1850
-students:
-- name: fortification
   source: wiki
-influenced_by:
-- name: Mily Balakirev
-  source: llm
-  quote: Cui's musical direction changed in 1856, when he met Mily Balakirev
-- name: Franz Liszt
-  source: llm
-  quote: Among the many musicians Cui knew in his life, Franz Liszt looms large
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+students:
+- name: Mischa Elman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
 
 # César Cui
 

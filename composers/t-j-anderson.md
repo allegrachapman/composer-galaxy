@@ -1,7 +1,8 @@
 ---
 name: T. J. Anderson
+wikidata: Q7668318
 wikipedia: https://en.wikipedia.org/wiki/T._J._Anderson
-thumbnail: null
+thumbnail: https://www.tjandersonmusic.com/images/tj_home.jpg
 birth: '1928'
 birth_source: infobox
 death: null
@@ -10,11 +11,15 @@ nationality: American
 nationality_source: llm
 era: 20th-century
 era_source: llm
-teachers: []
+teachers:
+- name: Darius Milhaud
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # T. J. Anderson
 

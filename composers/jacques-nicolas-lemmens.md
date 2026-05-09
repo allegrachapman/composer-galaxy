@@ -1,5 +1,6 @@
 ---
 name: Jacques-Nicolas Lemmens
+wikidata: Q712718
 wikipedia: https://en.wikipedia.org/wiki/Jacques-Nicolas_Lemmens
 thumbnail: null
 birth: '1823'
@@ -23,15 +24,15 @@ students:
   quote: he trained numerous young musicians, including two eminent Frenchmen, Alexandre
     Guilmant and Charles-Marie Widor
 - name: Charles-Marie Widor
-  source: llm_confirmed
+  source: llm
   quote: he trained numerous young musicians, including two eminent Frenchmen, Alexandre
     Guilmant and Charles-Marie Widor
-influenced_by:
-- name: Johann Sebastian Bach
-  source: llm
-  quote: learn Johann Sebastian Bach's tradition
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Jacques-Nicolas Lemmens
 

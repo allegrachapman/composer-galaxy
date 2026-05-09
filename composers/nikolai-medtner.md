@@ -1,5 +1,6 @@
 ---
 name: Nikolai Medtner
+wikidata: Q365574
 wikipedia: https://en.wikipedia.org/wiki/Nikolai_Medtner
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Metner_N.K._Postcard-1910.jpg/250px-Metner_N.K._Postcard-1910.jpg
 birth: '1880'
@@ -8,49 +9,30 @@ death: '1951'
 death_source: infobox
 nationality: Moscow, Russia
 nationality_source: infobox
-era: Romantic
-era_source: llm
+era: null
+era_source: null
 teachers:
-- name: Pavel Pabst
-  source: wiki
-- name: Wassily Sapellnikoff
-  source: wiki
-- name: Alexander Scriabin
-  source: wiki
-- name: Alfred La Liberté
-  source: wiki
-- name: Vasily Safonov
-  source: llm
-  quote: studied under Pavel Pabst, Wassily Sapellnikoff, Vasily Safonov and Sergei
-    Taneyev
 - name: Sergei Taneyev
   source: llm
-  quote: studied under Pavel Pabst, Wassily Sapellnikoff, Vasily Safonov and Sergei
-    Taneyev
+  quote: having studied under Pavel Pabst, Wassily Sapellnikoff, Vasily Safonov and
+    Sergei Taneyev among others
+- name: Pavel Pabst
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Vasily Safonov
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
-- name: Abram Shatskes
-  source: wiki
-- name: Anton Rubinstein
-  source: wiki
-- name: Wassily Sapellnikoff
-  source: wiki
 - name: Alexander Vasilyevich Alexandrov
   source: llm
   quote: Among his students in that period were Alexander Vasilyevich Alexandrov and
     Xenia Prochorowa
-- name: Xenia Prochorowa
-  source: llm
-  quote: Among his students in that period were Alexander Vasilyevich Alexandrov and
-    Xenia Prochorowa
-influenced_by:
-- name: Ludwig van Beethoven
-  source: wiki
-influenced:
-- name: Sergei Rachmaninoff
-  source: llm
-  quote: he was noticed by Sergei Rachmaninoff, who would remain a friend of Medtner's
-    throughout his life
+mentors: []
 ---
+
+
+
+
 
 # Nikolai Medtner
 

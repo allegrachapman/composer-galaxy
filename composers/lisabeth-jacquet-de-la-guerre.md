@@ -1,23 +1,22 @@
 ---
 name: Élisabeth Jacquet de La Guerre
+wikidata: Q57704
 wikipedia: https://en.wikipedia.org/wiki/Élisabeth_Jacquet_de_La_Guerre
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Elisabeth_Jacquet_de_La_Guerre-full.jpg/250px-Elisabeth_Jacquet_de_La_Guerre-full.jpg
 birth: '1665'
 birth_source: infobox
 death: '1729'
 death_source: infobox
-nationality: French
-nationality_source: llm
-era: Baroque
-era_source: llm
-teachers:
-- name: Claude Jacquet
-  source: llm
-  quote: Élisabeth received her initial musical education from her father
+nationality: null
+nationality_source: null
+era: null
+era_source: null
+teachers: []
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Élisabeth Jacquet de La Guerre
 

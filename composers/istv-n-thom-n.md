@@ -1,5 +1,6 @@
 ---
 name: István Thomán
+wikidata: Q375024
 wikipedia: https://en.wikipedia.org/wiki/István_Thomán
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Thom%C3%A1n_Istv%C3%A1n.jpg/250px-Thom%C3%A1n_Istv%C3%A1n.jpg
 birth: '1862'
@@ -8,8 +9,8 @@ death: '1940'
 death_source: infobox
 nationality: Homonna, Kingdom of Hungary, Austrian Empire
 nationality_source: infobox
-era: Classical music
-era_source: infobox
+era: Romantic
+era_source: manual
 teachers:
 - name: Jenő Hubay
   source: wiki
@@ -37,9 +38,19 @@ students:
   source: llm
   quote: students including Béla Bartók, Ernő Dohnányi, Paul de Marky, Gisela Selden-Goth,
     and Georges Cziffra
-influenced_by: []
-influenced: []
+- name: Fritz Reiner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Ernst von Dohnányi
+  source: llm
+  quote: studying piano with István Thomán
+mentors: []
 ---
+
+
+
+
+
 
 # István Thomán
 

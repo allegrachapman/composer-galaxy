@@ -1,5 +1,6 @@
 ---
 name: Luigi Cherubini
+wikidata: Q20721
 wikipedia: https://en.wikipedia.org/wiki/Luigi_Cherubini
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Portrait_of_Cherubini.jpg/250px-Portrait_of_Cherubini.jpg
 birth: '1760'
@@ -13,27 +14,31 @@ era: 'Classical, Romantic
   }}'
 era_source: infobox
 teachers:
-- name: Bartolomeo Cherubini
-  source: llm
-  quote: His instruction in music began at the age of six with his father, Bartolomeo
-students: []
-influenced_by:
-- name: Niccolò Jommelli
+- name: Giuseppe Sarti
   source: wiki
-- name: Tommaso Traetta
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+students:
+- name: Daniel Auber
   source: wiki
-- name: Antonio Sacchini
-  source: llm
-  quote: His music was strongly influenced by Niccolò Jommelli, Tommaso Traetta, and
-    Antonio Sacchini
-influenced:
-- name: Ludwig van Beethoven
-  source: llm
-  quote: Beethoven regarded Cherubini as the greatest living composer of his era
-- name: Gioachino Rossini
-  source: llm
-  quote: Cherubini's operas were heavily praised and interpreted by Rossini
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: François-Adrien Boieldieu
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Isabella Colbran
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Fromental Halévy
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Pauline Duchambge
+  source: wiki
+- name: Pierre-Joseph-Guillaume Zimmerman
+  source: wiki
+mentors: []
 ---
+
+
+
 
 # Luigi Cherubini
 

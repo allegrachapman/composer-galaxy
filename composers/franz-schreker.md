@@ -1,5 +1,6 @@
 ---
 name: Franz Schreker
+wikidata: Q78528
 wikipedia: https://en.wikipedia.org/wiki/Franz_Schreker
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Schreker_1912.jpg/250px-Schreker_1912.jpg
 birth: '1878'
@@ -22,7 +23,7 @@ teachers:
   quote: Starting with violin studies, with Sigismund Bachrich and Arnold Rosé
 students:
 - name: Berthold Goldschmidt
-  source: llm_confirmed
+  source: llm
   quote: with Berthold Goldschmidt, Alois Hába, Jascha Horenstein, Julius Bürger,
     Ernst Krenek
 - name: Alois Hába
@@ -38,7 +39,7 @@ students:
   quote: with Berthold Goldschmidt, Alois Hába, Jascha Horenstein, Julius Bürger,
     Ernst Krenek
 - name: Ernst Krenek
-  source: llm_confirmed
+  source: llm
   quote: with Berthold Goldschmidt, Alois Hába, Jascha Horenstein, Julius Bürger,
     Ernst Krenek
 - name: Artur Rodziński
@@ -57,17 +58,24 @@ students:
   source: llm
   quote: Artur Rodziński, Stefan Wolpe, Zdenka Ticharich and Grete von Zieritz numbering
     among his students
-influenced_by:
-- name: Richard Strauss
+- name: Ernst Kanitz
   source: wiki
-- name: Richard Wagner
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Karol Rathaus
   source: wiki
-- name: Arnold Schoenberg
-  source: llm
-  quote: took musical inspiration from his close friend Arnold Schoenberg with the
-    use of expressionist style
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Marij Kogoj
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Hans J. Salter
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
+
+
 
 # Franz Schreker
 

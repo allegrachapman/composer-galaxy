@@ -1,20 +1,25 @@
 ---
 name: Carlos Simon
+wikidata: Q112114799
 wikipedia: https://en.wikipedia.org/wiki/Carlos_Simon
 thumbnail: null
-birth: null
-birth_source: null
+birth: '1986'
+birth_source: llm
 death: null
 death_source: null
-nationality: null
-nationality_source: null
+nationality: American
+nationality_source: llm
 era: null
 era_source: null
-teachers: []
+teachers:
+- name: Michael Daugherty
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Carlos Simon
 

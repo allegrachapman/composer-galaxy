@@ -1,5 +1,6 @@
 ---
 name: Johann Strauss II
+wikidata: Q83309
 wikipedia: https://en.wikipedia.org/wiki/Johann_Strauss_II
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Johann_Strauss_II_by_Fritz_Luckhardt_3-4_crop.jpg/250px-Johann_Strauss_II_by_Fritz_Luckhardt_3-4_crop.jpg
 birth: '1825'
@@ -25,15 +26,11 @@ teachers:
   quote: His other violin teacher, Anton Kollmann, who was the ballet répétiteur of
     the Vienna Court Opera
 students: []
-influenced_by:
-- name: Johann Strauss I
-  source: llm
-  quote: son of Johann Strauss I and his first wife Maria Anna Streim
-influenced:
-- name: Richard Strauss
-  source: llm
-  quote: How could I forget the laughing genius of Vienna?
+mentors: []
 ---
+
+
+
 
 # Johann Strauss II
 

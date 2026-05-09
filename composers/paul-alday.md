@@ -1,5 +1,6 @@
 ---
 name: Paul Alday
+wikidata: Q64946210
 wikipedia: https://en.wikipedia.org/wiki/Paul_Alday
 thumbnail: null
 birth: '1763'
@@ -8,15 +9,17 @@ death: '1835'
 death_source: llm
 nationality: French
 nationality_source: llm
-era: Classical
-era_source: llm
+era: null
+era_source: null
 teachers:
 - name: Giovanni Battista Viotti
   source: wiki
+  quote: Paul Alday studied with Giovanni Battista Viotti in Paris
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Paul Alday
 

@@ -1,5 +1,6 @@
 ---
 name: William Walton
+wikidata: Q310939
 wikipedia: https://en.wikipedia.org/wiki/William_Walton
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/William_Walton_%281976%29.jpg/250px-William_Walton_%281976%29.jpg
 birth: '1902'
@@ -27,34 +28,16 @@ teachers:
   source: llm
   quote: He came under the influence of Hugh Allen, the dominant figure in Oxford's
     musical life.
-students: []
-influenced_by:
-- name: Hugh Allen (conductor)
+- name: Basil Allchin
   source: wiki
-- name: Igor Stravinsky
-  source: llm
-  quote: Allen introduced Walton to modern music, including Stravinsky's Petrushka
-- name: Claude Debussy
-  source: llm
-  quote: Walton spent much time in the university library, studying scores by Stravinsky,
-    Debussy, Sibelius, Roussel and others.
-- name: Jean Sibelius
-  source: llm
-  quote: Walton spent much time in the university library, studying scores by Stravinsky,
-    Debussy, Sibelius, Roussel and others.
-- name: Albert Roussel
-  source: llm
-  quote: Walton spent much time in the university library, studying scores by Stravinsky,
-    Debussy, Sibelius, Roussel and others.
-- name: Second Viennese School
-  source: llm
-  quote: wrote an experimental string quartet heavily influenced by the Second Viennese
-    School
-influenced:
-- name: Benjamin Britten
-  source: llm
-  quote: Walton admired many of Britten's works, and considered him a genius
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+students: []
+mentors: []
 ---
+
+
+
+
 
 # William Walton
 

@@ -1,5 +1,6 @@
 ---
 name: Johann Pachelbel
+wikidata: Q76485
 wikipedia: https://en.wikipedia.org/wiki/Johann_Pachelbel
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Portrait_des_Johann_Christoph_Pachelbel_-_1748.jpg/250px-Portrait_des_Johann_Christoph_Pachelbel_-_1748.jpg
 birth: '1653'
@@ -32,25 +33,27 @@ students:
 - name: Johann Valentin Eckelt
   source: llm
   quote: compiled by Pachelbel's pupil Johann Valentin Eckelt
-influenced_by:
-- name: Johann Jakob Froberger
-  source: llm
-  quote: influenced by southern German composers, such as Johann Jakob Froberger
-- name: Johann Caspar Kerll
-  source: llm
-  quote: influenced by southern German composers, such as Johann Jakob Froberger and
-    Johann Caspar Kerll
-- name: Girolamo Frescobaldi
-  source: llm
-  quote: Italians such as Girolamo Frescobaldi and Alessandro Poglietti
-- name: Alessandro Poglietti
-  source: llm
-  quote: Italians such as Girolamo Frescobaldi and Alessandro Poglietti
-influenced:
-- name: Dieterich Buxtehude
-  source: llm
-  quote: he dedicated the Hexachordum Apollinis to Dieterich Buxtehude
+- name: Johann Christoph Bach (organist at Ohrdruf)
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Johann Heinrich Buttstett
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Charles Theodore Pachelbel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Wilhelm Hieronymus Pachelbel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Nicolaus Vetter
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+mentors: []
 ---
+
+
+
+
 
 # Johann Pachelbel
 

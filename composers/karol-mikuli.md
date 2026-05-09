@@ -1,5 +1,6 @@
 ---
 name: Karol Mikuli
+wikidata: Q549666
 wikipedia: https://en.wikipedia.org/wiki/Karol_Mikuli
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/c/c0/Karol_Mikuli.jpg
 birth: '1821'
@@ -40,9 +41,15 @@ students:
   source: llm
   quote: His students included Moriz Rosenthal, Raoul Koczalski, Aleksander Michałowski,
     Ciprian Porumbescu, Jaroslaw Zieliński, Kornelia Parnas and Heinrich Schenker
-influenced_by: []
-influenced: []
+- name: Yevheniya Barvinska
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # Karol Mikuli
 

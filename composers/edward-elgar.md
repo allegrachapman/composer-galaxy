@@ -1,5 +1,6 @@
 ---
 name: Edward Elgar
+wikidata: Q179631
 wikipedia: https://en.wikipedia.org/wiki/Edward_Elgar
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Edward_Elgar.jpg/250px-Edward_Elgar.jpg
 birth: '1857'
@@ -18,33 +19,15 @@ students:
   source: llm
   quote: Elgar was of enough consequence locally to recommend the young composer Samuel
     Coleridge-Taylor to the Three Choirs Festival
-influenced_by:
-- name: Felix Mendelssohn
+- name: John Alden Carpenter
   source: wiki
-- name: Henry Wadsworth Longfellow
-  source: wiki
-- name: Berlioz
-  source: llm
-  quote: masters of orchestration from whom he learned much, such as Berlioz and Richard
-    Wagner
-- name: Richard Wagner
-  source: llm
-  quote: masters of orchestration from whom he learned much, such as Berlioz and Richard
-    Wagner
-- name: Hubert Parry
-  source: llm
-  quote: he had been most helped by Hubert Parry's articles in the Grove Dictionary
-    of Music and Musicians
-- name: Dvořák
-  source: llm
-  quote: one great experience was to play Dvořák's Symphony No. 6 and Stabat Mater
-    under the composer's baton
-influenced:
-- name: Richard Strauss
-  source: llm
-  quote: his orchestral music and this work in particular share much with the Central
-    European tradition typified at the time by the work of Richard Strauss
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Edward Elgar
 

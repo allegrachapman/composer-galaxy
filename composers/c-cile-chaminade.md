@@ -1,5 +1,6 @@
 ---
 name: Cécile Chaminade
+wikidata: Q236438
 wikipedia: https://en.wikipedia.org/wiki/Cécile_Chaminade
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Cecile_chaminade.jpg/250px-Cecile_chaminade.jpg
 birth: '1857'
@@ -23,16 +24,16 @@ teachers:
 - name: Benjamin Godard
   source: llm
   quote: music composition with Benjamin Godard
-students: []
-influenced_by:
 - name: Camille Saint-Saëns
-  source: llm
-  quote: affiliated herself with nationalist composers such as Camille Saint-Saëns
-- name: Charles Gounod
-  source: llm
-  quote: nationalist composers such as Camille Saint-Saëns and Charles Gounod
-influenced: []
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+students: []
+mentors: []
 ---
+
+
+
+
 
 # Cécile Chaminade
 

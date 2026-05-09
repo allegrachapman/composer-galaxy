@@ -1,5 +1,6 @@
 ---
 name: Yasuji Kiyose
+wikidata: Q2896810
 wikipedia: https://en.wikipedia.org/wiki/Yasuji_Kiyose
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kiyose_Yasuji.JPG/250px-Kiyose_Yasuji.JPG
 birth: '1900'
@@ -16,6 +17,9 @@ teachers:
 - name: Kōsuke Komatsu
   source: llm
   quote: studied composition privately with Kōsaku Yamada and Kōsuke Komatsu
+- name: Kosaku Yamada
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students:
 - name: Takemitsu
   source: wiki
@@ -24,15 +28,18 @@ students:
   quote: Kiyose took on Hiroyoshi Suzuki and Tōru Takemitsu for a brief period as
     pupils
 - name: Tōru Takemitsu
-  source: llm_confirmed
+  source: llm
   quote: took on Hiroyoshi Suzuki and Tōru Takemitsu for a brief period as pupils
     in composition
-influenced_by: []
-influenced:
-- name: Tōru Takemitsu
-  source: llm
-  quote: his far better known pupil Takemitsu, developed this tendency further
+- name: Toru Takemitsu
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # Yasuji Kiyose
 

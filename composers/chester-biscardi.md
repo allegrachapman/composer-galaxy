@@ -1,5 +1,6 @@
 ---
 name: Chester Biscardi
+wikidata: Q5093469
 wikipedia: https://en.wikipedia.org/wiki/Chester_Biscardi
 thumbnail: null
 birth: '1948'
@@ -27,15 +28,21 @@ teachers:
   source: llm
   quote: His composition instructors have included Yehudi Wyner
 - name: Krzysztof Penderecki
-  source: llm_confirmed
+  source: llm
   quote: His composition instructors have included Krzysztof Penderecki
 - name: Tōru Takemitsu
   source: llm
   quote: His composition instructors have included Tōru Takemitsu
+- name: Toru Takemitsu
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Chester Biscardi
 

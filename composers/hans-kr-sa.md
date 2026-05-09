@@ -1,5 +1,6 @@
 ---
 name: Hans Krása
+wikidata: Q695501
 wikipedia: https://en.wikipedia.org/wiki/Hans_Krása
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/e/e8/Hans_Kr%C3%A1sa_%281899-1944%29.jpg
 birth: '1899'
@@ -12,24 +13,21 @@ era: 20th-century
 era_source: llm
 teachers:
 - name: Alexander von Zemlinsky
-  source: llm_confirmed
+  source: llm
   quote: who had a major influence on Krása's career
 - name: Albert Roussel
   source: llm
   quote: made a number of trips to France to study under Roussel
+- name: Alexander Zemlinsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students: []
-influenced_by:
-- name: Gustav Mahler
-  source: llm
-  quote: whose primary influences were Mahler, Schoenberg and Zemlinsky
-- name: Arnold Schoenberg
-  source: llm
-  quote: whose primary influences were Mahler, Schoenberg and Zemlinsky
-- name: Alexander von Zemlinsky
-  source: llm
-  quote: whose primary influences were Mahler, Schoenberg and Zemlinsky
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Hans Krása
 

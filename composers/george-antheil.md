@@ -1,5 +1,6 @@
 ---
 name: George Antheil
+wikidata: Q137739
 wikipedia: https://en.wikipedia.org/wiki/George_Antheil
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Antheil_1927.jpg/250px-Antheil_1927.jpg
 birth: '1900'
@@ -11,43 +12,31 @@ nationality_source: infobox
 era: 20th-century
 era_source: llm
 teachers:
-- name: Franz Liszt
-  source: wiki
-- name: Nadia Boulanger
-  source: wiki
 - name: Constantine von Sternberg
   source: llm
   quote: a former pupil of Franz Liszt
 - name: Ernest Bloch
-  source: llm_confirmed
+  source: llm
   quote: the more progressive Ernest Bloch in New York
+- name: Constantin Sternberg
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
-- name: Philadelphia
+- name: Henry Brant
   source: wiki
-- name: George Gershwin
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Benjamin Lees
   source: wiki
-influenced_by:
-- name: Igor Stravinsky
-  source: llm
-  quote: Antheil continued his piano studies, and the study of modernist compositions,
-    such as those by Igor Stravinsky
-- name: Claude Debussy
-  source: llm
-  quote: The concert featured works by Claude Debussy and Stravinsky
-influenced:
-- name: Arthur Honegger
-  source: llm
-  quote: emulated by other prominent composers such as Arthur Honegger, Sergei Prokofiev,
-    and Erik Satie
-- name: Sergei Prokofiev
-  source: llm
-  quote: emulated by other prominent composers such as Arthur Honegger, Sergei Prokofiev,
-    and Erik Satie
-- name: Erik Satie
-  source: llm
-  quote: emulated by other prominent composers such as Arthur Honegger, Sergei Prokofiev,
-    and Erik Satie
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Ruth White
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+mentors: []
 ---
+
+
+
+
 
 # George Antheil
 

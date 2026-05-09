@@ -1,5 +1,6 @@
 ---
 name: Jan Oleszkowicz
+wikidata: Q52692698
 wikipedia: https://en.wikipedia.org/wiki/Jan_Oleszkowicz
 thumbnail: null
 birth: null
@@ -10,11 +11,16 @@ nationality: null
 nationality_source: null
 era: null
 era_source: null
-teachers: []
+teachers:
+- name: Grażyna Bacewicz
+  source: llm
+  quote: an orchestral piece by another student of hers, Jan Oleszkowicz
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Jan Oleszkowicz
 

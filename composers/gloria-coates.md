@@ -1,5 +1,6 @@
 ---
 name: Gloria Coates
+wikidata: Q178208
 wikipedia: https://en.wikipedia.org/wiki/Gloria_Coates
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/9/9a/Maximiliano_de_Brito%2C_Gloria_Coates%2C_Renato_Mismetti%2C_in_Bayreuth_%28cropped%29_%281a%29.jpg
 birth: '1933'
@@ -24,15 +25,11 @@ teachers:
   quote: She met composer Alexander Tcherepnin in 1952, who encouraged her and gave
     her private lessons
 students: []
-influenced_by:
-- name: Emily Dickinson
-  source: llm
-  quote: She set texts to music by Emily Dickinson
-- name: Vincent van Gogh
-  source: llm
-  quote: swirls of colours reminiscent of the style of Vincent van Gogh
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Gloria Coates
 

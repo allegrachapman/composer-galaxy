@@ -1,5 +1,6 @@
 ---
 name: Thomas Paul Chipp
+wikidata: Q18529003
 wikipedia: https://en.wikipedia.org/wiki/Thomas_Paul_Chipp
 thumbnail: null
 birth: '1793'
@@ -8,16 +9,17 @@ death: '1870'
 death_source: llm
 nationality: English
 nationality_source: llm
-era: null
-era_source: null
+era: Romantic
+era_source: llm
 teachers:
 - name: Muzio Clementi
-  source: llm_confirmed
-  quote: taught the piano by Muzio Clementi
+  source: llm
+  quote: he was taught the piano by Muzio Clementi
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Thomas Paul Chipp
 

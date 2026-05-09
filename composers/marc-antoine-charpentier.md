@@ -1,5 +1,6 @@
 ---
 name: Marc-Antoine Charpentier
+wikidata: Q55524
 wikipedia: https://en.wikipedia.org/wiki/Marc-Antoine_Charpentier
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/6/66/MA_Charpentier_I.gif
 birth: '1643'
@@ -8,29 +9,17 @@ death: '1704'
 death_source: infobox
 nationality: France
 nationality_source: infobox
-era: Baroque
-era_source: llm
+era: null
+era_source: null
 teachers:
 - name: Giacomo Carissimi
   source: wiki
-students:
-- name: Philippe, Duke of Chartres
-  source: llm
-  quote: Charpentier succeeded Étienne Loulié as music teacher to Philippe, Duke of
-    Chartres
-influenced_by:
-- name: Giacomo Carissimi
-  source: wiki
-- name: Domenico Mazzocchi
-  source: llm
-  quote: fell under the influence of Giacomo Carissimi as well as other Italian composers,
-    perhaps Domenico Mazzocchi
-influenced:
-- name: Jean-Joseph Cassanéa de Mondonville
-  source: llm
-  quote: become the only one with Jean-Joseph Cassanéa de Mondonville in France to
-    approach the oratorio
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+students: []
+mentors: []
 ---
+
+
 
 # Marc-Antoine Charpentier
 

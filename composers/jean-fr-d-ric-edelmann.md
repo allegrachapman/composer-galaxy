@@ -1,5 +1,6 @@
 ---
 name: Jean-Frédéric Edelmann
+wikidata: Q1684863
 wikipedia: https://en.wikipedia.org/wiki/Jean-Frédéric_Edelmann
 thumbnail: null
 birth: '1749'
@@ -11,16 +12,17 @@ nationality_source: llm
 era: Classical
 era_source: llm
 teachers: []
-students: []
-influenced_by: []
-influenced:
-- name: Franz Joseph Haydn
-  source: llm
-  quote: His work was praised by Haydn and Mozart.
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: His work was praised by Haydn and Mozart.
+students:
+- name: Louis Adam
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Étienne Méhul
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
 
 # Jean-Frédéric Edelmann
 

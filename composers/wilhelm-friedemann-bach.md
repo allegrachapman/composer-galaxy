@@ -1,49 +1,41 @@
 ---
 name: Wilhelm Friedemann Bach
+wikidata: Q107277
 wikipedia: https://en.wikipedia.org/wiki/Wilhelm_Friedemann_Bach
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Wilhelm_Friedemann_Bach_sketch.png/250px-Wilhelm_Friedemann_Bach_sketch.png
 birth: '1710'
-birth_source: llm
+birth_source: wikidata
 death: '1784'
-death_source: llm
-nationality: German
-nationality_source: llm
-era: Baroque
-era_source: llm
+death_source: wikidata
+nationality: null
+nationality_source: null
+era: null
+era_source: null
 teachers:
+- name: Johann Sebastian Bach
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 - name: Johann Gottlieb Graun
   source: wiki
-- name: Johann Sebastian Bach
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Georg Philipp Telemann
   source: llm
-  quote: J. S. Bach supervised Friedemann's musical education and career with great
-    attention.
+  quote: Composers he influenced musically included pupils of J.S. Bach in Leipzig,
+    such as Wilhelm Friedemann Bach
 students:
+- name: Friedrich Wilhelm Rust
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Sara Levy (née Itzig)
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 - name: Johann Gottlieb Goldberg
   source: wiki
-- name: Johann Nikolaus Forkel
-  source: wiki
-- name: Carl Friedrich Zelter
-  source: wiki
-- name: Friedrich Wilhelm Rust
-  source: llm
-  quote: Bach had at least two pupils, Friedrich Wilhelm Rust and Johann Samuel Petri.
-- name: Johann Samuel Petri
-  source: llm
-  quote: Bach had at least two pupils, Friedrich Wilhelm Rust and Johann Samuel Petri.
-- name: Sarah Itzig Levy
-  source: llm
-  quote: he gave harpsichord lessons to Sarah Levy
-influenced_by:
-- name: Johann Sebastian Bach
-  source: llm
-  quote: He incorporated more elements of the contrapuntal style learned from his
-    father
-influenced:
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: the sixth fugue in F minor, is a transcription of one of the Eight Fugues
-    of Wilhelm Friedemann Bach.
+mentors: []
 ---
+
+
+
 
 # Wilhelm Friedemann Bach
 

@@ -1,5 +1,6 @@
 ---
 name: Libby Larsen
+wikidata: Q2161571
 wikipedia: https://en.wikipedia.org/wiki/Libby_Larsen
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Libby_Larsen_at_book_release.jpg/250px-Libby_Larsen_at_book_release.jpg
 birth: '1950'
@@ -24,9 +25,11 @@ students:
 - name: Adam Berndt
   source: llm
   quote: She has taken independent students, including composer Adam Berndt
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Libby Larsen
 

@@ -1,5 +1,6 @@
 ---
 name: Charles-Marie Widor
+wikidata: Q215161
 wikipedia: https://en.wikipedia.org/wiki/Charles-Marie_Widor
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Charles-Marie_Widor_%282%29.jpg/250px-Charles-Marie_Widor_%282%29.jpg
 birth: '1844'
@@ -15,15 +16,13 @@ teachers:
   source: llm
   quote: initially studied music there with his father
 - name: Jacques-Nicolas Lemmens
-  source: llm_confirmed
+  source: llm
   quote: study in Brussels in 1863 with Jacques-Nicolas Lemmens for organ technique
 - name: François-Joseph Fétis
   source: llm
   quote: with the elderly François-Joseph Fétis, director of the Brussels Conservatoire,
     for composition
 students:
-- name: Lyon
-  source: wiki
 - name: Albert Schweitzer
   source: wiki
 - name: Marcel Dupré
@@ -36,7 +35,7 @@ students:
   source: llm
   quote: most notably the aforementioned Dupré, Louis Vierne, Charles Tournemire
 - name: Darius Milhaud
-  source: llm_confirmed
+  source: llm
   quote: most notably the aforementioned Dupré, Louis Vierne, Charles Tournemire,
     Darius Milhaud
 - name: Alexander Schreiner
@@ -51,31 +50,54 @@ students:
 - name: Henri Gagnon
   source: llm
   quote: and the Canadian Henri Gagnon
-influenced_by:
-- name: Aristide Cavaillé-Coll
+- name: Seth Bingham
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Nadia Boulanger
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Virginia Carrington-Thomas
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Georges Dandelot
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Arthur Honegger
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Dumitru Georgescu Kiriac
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Olivier Messiaen
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Georges Migot
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: André Pirro
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Olga Samaroff
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Horace Whitehouse
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Christopher Wilson
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Edward Burlingame Hill
   source: llm
-  quote: the organ's spectacular capabilities proved an inspiration to Widor
-- name: Jacques-Nicolas Lemmens
-  source: llm
-  quote: Widor, whose own master Lemmens was an important Bach exponent
-influenced:
-- name: Gigout
-  source: llm
-  quote: served as a model for later works by Gigout, Boëllmann, Mulet, Vierne and
-    Dupré
-- name: Boëllmann
-  source: llm
-  quote: served as a model for later works by Gigout, Boëllmann, Mulet, Vierne and
-    Dupré
-- name: Mulet
-  source: llm
-  quote: served as a model for later works by Gigout, Boëllmann, Mulet, Vierne and
-    Dupré
-- name: Vierne
-  source: llm
-  quote: served as a model for later works by Gigout, Boëllmann, Mulet, Vierne and
-    Dupré
+  quote: in Paris with Charles Marie Widor
+- name: Zoltán Kodály
+  source: wiki
+mentors: []
 ---
+
+
+
+
+
 
 # Charles-Marie Widor
 

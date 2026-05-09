@@ -1,5 +1,6 @@
 ---
 name: César Franck
+wikidata: Q50187
 wikipedia: https://en.wikipedia.org/wiki/César_Franck
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/C%C3%A9sar_Franck_by_Pierre_Petit.jpg/250px-C%C3%A9sar_Franck_by_Pierre_Petit.jpg
 birth: '1822'
@@ -8,65 +9,80 @@ death: '1890'
 death_source: infobox
 nationality: Liège, United Kingdom of the Netherlands
 nationality_source: infobox
-era: Romantic
-era_source: llm
+era: null
+era_source: null
 teachers:
 - name: François Benoist
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Joseph Daussoigne-Méhul
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: François Habeneck
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 - name: Anton Reicha
-  source: llm_confirmed
-  quote: harmony and counterpoint with Anton Reicha
-- name: Pierre Zimmerman
-  source: llm
-  quote: piano with Pierre Zimmerman
-- name: Hippolyte-Raymond Colet
-  source: llm
-  quote: solfège with Hippolyte-Raymond Colet
-- name: Aimé Leborn
-  source: llm
-  quote: beginning composition with Aimé Leborn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Pierre-Joseph-Guillaume Zimmerman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Charles-Valentin Alkan
+  source: wiki
 students:
+- name: Henri Büsser
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 - name: Ernest Chausson
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Henri Dallier
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Henri Duparc
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Maurice Emmanuel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Louis Ganne
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Augusta Holmès
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 - name: Vincent d'Indy
   source: wiki
-- name: Jacques-Nicolas Lemmens
-  source: wiki
-- name: Henri Duparc
-  source: llm
-  quote: His pupils included Ernest Chausson, Vincent d'Indy, Henri Duparc
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 - name: Guillaume Lekeu
-  source: llm
-  quote: His pupils included Ernest Chausson, Vincent d'Indy, Henri Duparc, Guillaume
-    Lekeu
-- name: Albert Renaud
-  source: llm
-  quote: His pupils included Ernest Chausson, Vincent d'Indy, Henri Duparc, Guillaume
-    Lekeu, Albert Renaud
-- name: Charles Tournemire
-  source: llm
-  quote: His pupils included Ernest Chausson, Vincent d'Indy, Henri Duparc, Guillaume
-    Lekeu, Albert Renaud, Charles Tournemire
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: André Pirro
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Henri Quittard
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Alice Sauvrezis
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 - name: Louis Vierne
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Alberto Williams
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Raymond Huntington Woodman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Claude Debussy
   source: llm
-  quote: His pupils included Ernest Chausson, Vincent d'Indy, Henri Duparc, Guillaume
-    Lekeu, Albert Renaud, Charles Tournemire and Louis Vierne
-influenced_by:
-- name: Franz Liszt
-  source: llm
-  quote: Liszt saw them, offered encouragement and constructive criticism
-- name: Jacques-Nicolas Lemmens
-  source: llm
-  quote: Franck appeared on the same inaugural concert program as Lemmens in 1854
-- name: Anton Bruckner
-  source: llm
-  quote: Franck reinforced his understanding of German organ music by hearing Anton
-    Bruckner at Notre-Dame in 1869
-influenced:
-- name: Hans von Bülow
-  source: llm
-  quote: not only Liszt but Hans von Bülow was including them in concerts in Germany
+  quote: organ with César Franck
+mentors: []
 ---
+
+
+
 
 # César Franck
 

@@ -1,5 +1,6 @@
 ---
 name: Mekhla Kumar
+wikidata: Q43977549
 wikipedia: https://en.wikipedia.org/wiki/Mekhla_Kumar
 thumbnail: null
 birth: null
@@ -19,9 +20,11 @@ teachers:
 students:
 - name: Hochschule für Musik Freiburg
   source: wiki
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Mekhla Kumar
 

@@ -1,30 +1,26 @@
 ---
 name: Francesca Caccini
+wikidata: Q232035
 wikipedia: https://en.wikipedia.org/wiki/Francesca_Caccini
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/a/ab/Francesca_Caccini.jpg
 birth: '1587'
-birth_source: llm
+birth_source: manual
 death: '1641'
-death_source: llm
+death_source: manual
 nationality: Italian
-nationality_source: llm
+nationality_source: manual
 era: Baroque
-era_source: llm
-teachers: []
-students: []
-influenced_by:
+era_source: manual
+teachers:
 - name: Giulio Caccini
-  source: llm
-  quote: She was the daughter of Giulio Caccini
-- name: Jacopo Peri
-  source: llm
-  quote: most of the music was composed by Jacopo Peri
-- name: Monteverdi
-  source: llm
-  quote: Caccini's musical and compositional style has been likened to that of Monteverdi
-    and Jacopo Peri
-influenced: []
+  source: manual
+  quote: elder daughter of Giulio Caccini; training in singing, guitar, harp and keyboard
+    playing, and composition
+students: []
+mentors: []
 ---
+
+
 
 # Francesca Caccini
 
@@ -32,4 +28,4 @@ influenced: []
 
 ## Notes
 
-_Add your own notes here. This section is preserved across re-seeds._
+Source: Oxford/Grove Music Online (via Notion). First woman known to have composed opera. Death date approximate (after June 1641).

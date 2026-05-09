@@ -1,5 +1,6 @@
 ---
 name: Henri-Montan Berton
+wikidata: Q1605961
 wikipedia: https://en.wikipedia.org/wiki/Henri-Montan_Berton
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/HenriMontanBerton.jpg/250px-HenriMontanBerton.jpg
 birth: '1767'
@@ -10,7 +11,13 @@ nationality: French
 nationality_source: llm
 era: null
 era_source: null
-teachers: []
+teachers:
+- name: Louis-Charles-Joseph Rey
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Antonio Sacchini
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
 - name: François Bazin (composer)
   source: wiki
@@ -28,9 +35,15 @@ students:
   source: llm
   quote: Among his students were François Bazin, Bernhard Crusell, Louis-Barthélémy
     Pradher and Adolf Schimon.
-influenced_by: []
-influenced: []
+- name: Charles Gounod
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+mentors: []
 ---
+
+
+
+
 
 # Henri-Montan Berton
 

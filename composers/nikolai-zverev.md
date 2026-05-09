@@ -1,5 +1,6 @@
 ---
 name: Nikolai Zverev
+wikidata: Q553959
 wikipedia: https://en.wikipedia.org/wiki/Nikolai_Zverev
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Nikolai-Zverev.jpg/250px-Nikolai-Zverev.jpg
 birth: '1833'
@@ -16,15 +17,18 @@ teachers:
 - name: Pyotr Ilyich Tchaikovsky
   source: wiki
 - name: Alexander Dubuque
-  source: llm_confirmed
+  source: llm
   quote: taking piano lessons from Alexander Dubuque
+- name: Alexandre Dubuque
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 students:
 - name: Alexander Siloti
   source: wiki
 - name: Sergei Rachmaninoff
   source: wiki
 - name: Alexander Scriabin
-  source: llm_confirmed
+  source: llm
   quote: Sergei Rachmaninoff, Alexander Scriabin, Konstantin Igumnov
 - name: Konstantin Igumnov
   source: llm
@@ -32,9 +36,18 @@ students:
 - name: Alexander Goldenweiser
   source: llm
   quote: Konstantin Igumnov, Alexander Goldenweiser, and others
-influenced_by: []
-influenced: []
+- name: Fyodor Keneman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Leonid Sabaneyev
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+mentors: []
 ---
+
+
+
+
 
 # Nikolai Zverev
 

@@ -1,5 +1,6 @@
 ---
 name: Isang Yun
+wikidata: Q153611
 wikipedia: https://en.wikipedia.org/wiki/Isang_Yun
 thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Yun_Isang.jpg/250px-Yun_Isang.jpg
 birth: '1917'
@@ -29,6 +30,9 @@ teachers:
   source: llm
   quote: at the Musikhochschule Berlin under Boris Blacher, Josef Rufer, and Reinhard
     Schwarz-Schilling
+- name: Tomojirō Ikenouchi
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 students:
 - name: Tokyo
   source: wiki
@@ -37,9 +41,24 @@ students:
   quote: Among his students are Kazuhisa Akita, Jolyon Brettingham Smith, In-Chan
     Choe, Conrado del Rosario, Raymond Deane, Francisco F. Feliciano, Masanori Fujita,
     Keith Gifford, Holger Groschopp, Toshio Hosokawa
-influenced_by: []
-influenced: []
+- name: Jolyon Brettingham-Smith
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Raymond Deane
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Michalis Travlos
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Byung-dong Paik
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+mentors: []
 ---
+
+
+
+
 
 # Isang Yun
 

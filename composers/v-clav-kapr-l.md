@@ -1,5 +1,6 @@
 ---
 name: Václav Kaprál
+wikidata: Q775837
 wikipedia: https://en.wikipedia.org/wiki/Václav_Kaprál
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/a/ae/V%C3%A1clav_Kapr%C3%A1l_%281889-1947%29.jpg
 birth: '1889'
@@ -19,9 +20,11 @@ teachers:
   source: llm
   quote: with Vítězslav Novák (1919–1920) in Prague
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Václav Kaprál
 

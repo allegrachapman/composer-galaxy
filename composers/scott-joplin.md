@@ -1,5 +1,6 @@
 ---
 name: Scott Joplin
+wikidata: Q191499
 wikipedia: https://en.wikipedia.org/wiki/Scott_Joplin
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Scott_Joplin_in_1912.jpg/250px-Scott_Joplin_in_1912.jpg
 birth: '1868'
@@ -27,21 +28,11 @@ students:
 - name: Scott Hayden
   source: llm
   quote: future ragtime composers Arthur Marshall, Brun Campbell and Scott Hayden
-influenced_by:
-- name: Julius Weiss
-  source: llm
-  quote: achievements were influenced by his classically trained German music teacher
-    Julius Weiss
-influenced:
-- name: Joseph Lamb
-  source: llm
-  quote: influenced subsequent rag composers for at least 12 years after its initial
-    publication
-- name: James Scott
-  source: llm
-  quote: influenced subsequent rag composers for at least 12 years after its initial
-    publication
+mentors: []
 ---
+
+
+
 
 # Scott Joplin
 

@@ -1,5 +1,6 @@
 ---
 name: Ernst von Dohnányi
+wikidata: Q78532
 wikipedia: https://en.wikipedia.org/wiki/Ernst_von_Dohnányi
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ern%C5%91_Dohn%C3%A1nyi.jpg/250px-Ern%C5%91_Dohn%C3%A1nyi.jpg
 birth: '1877'
@@ -25,8 +26,6 @@ students:
   source: wiki
 - name: Mischa Levitzki
   source: wiki
-- name: Eugen d'Albert
-  source: wiki
 - name: Ervin Nyiregyházi
   source: llm
   quote: His pupils included Ervin Nyiregyházi
@@ -45,18 +44,37 @@ students:
 - name: Ľudovít Rajter
   source: llm
   quote: His pupils included Ľudovít Rajter
-influenced_by:
-- name: Franz Liszt
-  source: llm
-  quote: Liszt for his piano playing
-- name: Johannes Brahms
-  source: llm
-  quote: Brahms for his music
-influenced:
 - name: Béla Bartók
-  source: llm
-  quote: promoted the music of Béla Bartók
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: György Cziffra
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Ferenc Fricsay
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Boris Goldovsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Laszlo Halasz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Istvan Kantor
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Edward Kilenyi, Jr.
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Balint Vazsonyi
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
+
 
 # Ernst von Dohnányi
 

@@ -1,5 +1,6 @@
 ---
 name: Johann Nepomuk Hummel
+wikidata: Q151953
 wikipedia: https://en.wikipedia.org/wiki/Johann_Nepomuk_Hummel
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/JNHummel_2.jpg/250px-JNHummel_2.jpg
 birth: '1778'
@@ -8,74 +9,51 @@ death: '1837'
 death_source: infobox
 nationality: Pressburg, Kingdom of Hungary
 nationality_source: infobox
-era: Classical-Romantic transition
-era_source: llm
+era: null
+era_source: null
 teachers:
 - name: Johann Georg Albrechtsberger
   source: wiki
-- name: Joseph Haydn
-  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 - name: Wolfgang Amadeus Mozart
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 - name: Antonio Salieri
   source: wiki
-- name: Muzio Clementi
-  source: llm_confirmed
-  quote: he received lessons from Muzio Clementi
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
-- name: Franz Liszt
+- name: Julius Benedict
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Carl Czerny
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Adolf von Henselt
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 - name: Ferdinand Hiller
   source: wiki
-- name: Alexander Müller (composer)
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: August Gottfried Ritter
   source: wiki
-- name: Carl Czerny
-  source: llm_confirmed
-  quote: Later nineteenth-century pianistic technique was influenced by Hummel, through
-    his instruction of Carl Czerny
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: August Röckel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 - name: Friedrich Silcher
-  source: llm
-  quote: Czerny, Friedrich Silcher, Ferdinand Hiller, Sigismond Thalberg, and Adolf
-    von Henselt were among Hummel's most prominent students
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 - name: Sigismond Thalberg
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Louise Farrenc
   source: llm
-  quote: Czerny, Friedrich Silcher, Ferdinand Hiller, Sigismond Thalberg, and Adolf
-    von Henselt were among Hummel's most prominent students
-- name: Adolf von Henselt
-  source: llm
-  quote: Czerny, Friedrich Silcher, Ferdinand Hiller, Sigismond Thalberg, and Adolf
-    von Henselt were among Hummel's most prominent students
-- name: Felix Mendelssohn
-  source: llm
-  quote: He also briefly gave some lessons to Felix Mendelssohn
-- name: Alexander Müller
-  source: llm
-  quote: Notable students include Ferdinand Hiller and Alexander Müller
-influenced_by:
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: He was a pupil of Wolfgang Amadeus Mozart, Antonio Salieri, and Joseph Haydn
-influenced:
-- name: Frédéric Chopin
-  source: llm
-  quote: Hummel significantly influenced later piano music of the nineteenth century,
-    particularly in the works of Frédéric Chopin, Franz Liszt, and Felix Mendelssohn
-- name: Franz Liszt
-  source: llm
-  quote: Hummel significantly influenced later piano music of the nineteenth century,
-    particularly in the works of Frédéric Chopin, Franz Liszt, and Felix Mendelssohn
-- name: Felix Mendelssohn
-  source: llm
-  quote: Hummel significantly influenced later piano music of the nineteenth century,
-    particularly in the works of Frédéric Chopin, Franz Liszt, and Felix Mendelssohn
-- name: Franz Schubert
-  source: llm
-  quote: his Fantasy, Op. 18, which would have a major influence for Schubert's Wanderer
-    Fantasy, for piano
-- name: Robert Schumann
-  source: llm
-  quote: his Piano Sonata in F-sharp minor, Op. 81, cherished by Robert Schumann
+  quote: given lessons by such masters as Ignaz Moscheles and Johann Nepomuk Hummel
+mentors: []
 ---
+
+
+
 
 # Johann Nepomuk Hummel
 

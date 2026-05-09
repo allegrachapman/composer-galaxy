@@ -1,24 +1,51 @@
 ---
-name: John Adams
-wikipedia: https://en.wikipedia.org/wiki/John_Adams
-thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/John_Adams_Portrait.jpg/250px-John_Adams_Portrait.jpg
-birth: '1735'
+name: John Adams (composer)
+wikidata: Q84114
+wikipedia: https://en.wikipedia.org/wiki/John_Adams_(composer)
+thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/JA-portrait-1-LW.jpg/250px-JA-portrait-1-LW.jpg
+birth: '1947'
 birth_source: infobox
-death: '1826'
-death_source: infobox
-nationality: Braintree, Province of Massachusetts Bay, British America (n
+death: null
+death_source: null
+nationality: Worcester, Massachusetts, U.S.
 nationality_source: infobox
-era: null
-era_source: null
-teachers: []
-students: []
-influenced_by: []
-influenced: []
+era: Contemporary
+era_source: llm
+teachers:
+- name: Leon Kirchner
+  source: llm
+  quote: studying composition with Leon Kirchner, Roger Sessions, Earl Kim, Harold
+    Shapero, and David Del Tredici
+- name: Roger Sessions
+  source: llm
+  quote: studying composition with Leon Kirchner, Roger Sessions, Earl Kim, Harold
+    Shapero, and David Del Tredici
+- name: David Del Tredici
+  source: llm
+  quote: studying composition with Leon Kirchner, Roger Sessions, Earl Kim, Harold
+    Shapero, and David Del Tredici
+- name: Earl Kim
+  source: llm
+  quote: studying composition with Leon Kirchner, Roger Sessions, Earl Kim, Harold
+    Shapero, and David Del Tredici
+- name: Harold Shapero
+  source: llm
+  quote: studying composition with Leon Kirchner, Roger Sessions, Earl Kim, Harold
+    Shapero, and David Del Tredici
+students:
+- name: Kim Jin-hi
+  source: llm
+  quote: studied composition with John Adams for one year
+mentors: []
 ---
 
-# John Adams
 
-[Wikipedia](https://en.wikipedia.org/wiki/John_Adams)
+
+
+
+# John Adams (composer)
+
+[Wikipedia](https://en.wikipedia.org/wiki/John_Adams_(composer))
 
 ## Notes
 

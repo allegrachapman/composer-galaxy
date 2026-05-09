@@ -1,5 +1,6 @@
 ---
 name: Karl Weigl
+wikidata: Q1733318
 wikipedia: https://en.wikipedia.org/wiki/Karl_Weigl
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Karl_Weigl_%281881%E2%80%931949%29_1927_%C2%A9_Georg_Fayer_%281892%E2%80%931950%29.jpg/250px-Karl_Weigl_%281881%E2%80%931949%29_1927_%C2%A9_Georg_Fayer_%281892%E2%80%931950%29.jpg
 birth: '1881'
@@ -22,6 +23,9 @@ teachers:
 - name: Guido Adler
   source: llm
   quote: studying musicology under Guido Adler
+- name: Alexander von Zemlinsky
+  source: llm
+  quote: Hans Krása and Karl Weigl.
 students:
 - name: Mimi Wagensonner
   source: llm
@@ -32,27 +36,12 @@ students:
 - name: Hanns Eisler
   source: llm
   quote: Hanns Eisler
-influenced_by:
-- name: Johannes Brahms
-  source: llm
-  quote: shows the influence of Brahms, with an emphasis on polyphony
-- name: Hugo Wolf
-  source: llm
-  quote: lieder in the tradition of Wolf and Mahler
-- name: Gustav Mahler
-  source: llm
-  quote: lieder in the tradition of Wolf and Mahler
-influenced:
-- name: Gustav Mahler
-  source: llm
-  quote: Weigl's music, which was admired by Mahler, Schoenberg and Strauss
-- name: Arnold Schoenberg
-  source: llm
-  quote: admired by Mahler, Schoenberg and Strauss
-- name: Richard Strauss
-  source: llm
-  quote: admired by Mahler, Schoenberg and Strauss
+mentors: []
 ---
+
+
+
+
 
 # Karl Weigl
 

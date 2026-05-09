@@ -1,5 +1,6 @@
 ---
 name: Anton Bruckner
+wikidata: Q81752
 wikipedia: https://en.wikipedia.org/wiki/Anton_Bruckner
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Anton_Bruckner.jpg/250px-Anton_Bruckner.jpg
 birth: '1824'
@@ -8,92 +9,51 @@ death: '1896'
 death_source: infobox
 nationality: Ansfelden, Austrian Empire
 nationality_source: infobox
-era: Romantic
-era_source: llm
+era: null
+era_source: null
 teachers:
-- name: Otto Kitzler
-  source: wiki
-- name: Psalm 146 (Bruckner)
-  source: wiki
-- name: Leopold von Zenetti
-  source: wiki
-- name: Anton Bruckner Sr.
-  source: llm
-  quote: Bruckner's father was his first music teacher
-- name: Johann Baptist Weiß
-  source: llm
-  quote: The schoolmaster, Johann Baptist Weiß, was a music enthusiast and respected
-    organist
-- name: August Durrnberger
-  source: llm
-  quote: His teacher of harmony and choral singing was August Durrnberger
 - name: Simon Sechter
-  source: llm
-  quote: In 1855, Bruckner, aspiring to become a student of the famous Vienna music
-    theorist Simon Sechter
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
+- name: Guido Adler
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Jan Drozdowski
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Camillo (Kamillo) Horn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 - name: Friedrich Klose
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Joseph Pembaur
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Richard Robert
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 - name: Hans Rott
   source: wiki
-- name: Franz Schmidt (composer)
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Franz Schmidt
   source: wiki
-- name: Richard Robert
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Friedrich Spigl
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Josef Vockner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Alexander von Zemlinsky
   source: llm
-  quote: His students at the Conservatory included Richard Robert, Hans Rott, Felix
-    Mottl
-- name: Felix Mottl
-  source: llm
-  quote: His students at the Conservatory included Richard Robert, Hans Rott, Felix
-    Mottl
-- name: Heinrich Schenker
-  source: llm
-  quote: His students at the Conservatory included Richard Robert, Hans Rott, Felix
-    Mottl, Heinrich Schenker
-- name: Mathilde Kralik
-  source: llm
-  quote: His students at the Conservatory included Richard Robert, Hans Rott, Felix
-    Mottl, Heinrich Schenker, Mathilde Kralik
-- name: Franz Schalk
-  source: llm
-  quote: His students at the Conservatory included Richard Robert, Hans Rott, Felix
-    Mottl, Heinrich Schenker, Mathilde Kralik, Franz Schalk
-- name: Joseph Schalk
-  source: llm
-  quote: His students at the Conservatory included Richard Robert, Hans Rott, Felix
-    Mottl, Heinrich Schenker, Mathilde Kralik, Franz Schalk, Joseph Schalk
-- name: Ferdinand Löwe
-  source: llm
-  quote: His students at the Conservatory included Richard Robert, Hans Rott, Felix
-    Mottl, Heinrich Schenker, Mathilde Kralik, Franz Schalk, Joseph Schalk, and Ferdinand
-    Löwe
-influenced_by:
-- name: Michael Haydn
-  source: llm
-  quote: most of the repertoire consisted of the music of Michael Haydn, Johann Georg
-    Albrechtsberger
-- name: Johann Georg Albrechtsberger
-  source: llm
-  quote: most of the repertoire consisted of the music of Michael Haydn, Johann Georg
-    Albrechtsberger
-- name: Richard Wagner
-  source: llm
-  quote: Otto Kitzler, who was nine years younger than he and who introduced him to
-    the music of Richard Wagner
-- name: Franz Liszt
-  source: llm
-  quote: In 1861, he had already made the acquaintance of Franz Liszt, whom Bruckner
-    idolised
-- name: Ludwig van Beethoven
-  source: llm
-  quote: The structure of Bruckner's symphonies is in a way an extension of that of
-    Ludwig van Beethoven's symphonies
-influenced:
-- name: Gustav Mahler
-  source: llm
-  quote: Bruckner was greatly admired by subsequent composers, including his friend
-    Gustav Mahler
+  quote: and Anton Bruckner.
+mentors: []
 ---
+
+
+
 
 # Anton Bruckner
 

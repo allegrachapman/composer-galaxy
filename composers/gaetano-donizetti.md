@@ -1,5 +1,6 @@
 ---
 name: Gaetano Donizetti
+wikidata: Q101698
 wikipedia: https://en.wikipedia.org/wiki/Gaetano_Donizetti
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Francesco_Coghetti%2C_Ritratto_di_Gaetano_Donizetti.JPG/250px-Francesco_Coghetti%2C_Ritratto_di_Gaetano_Donizetti.JPG
 birth: '1797'
@@ -20,15 +21,11 @@ teachers:
   source: llm
   quote: study musical structure under the Padre Stanislao Mattei
 students: []
-influenced_by:
-- name: Gioachino Rossini
-  source: llm
-  quote: emulate the preferred musical style of the day, that of Rossini
-influenced:
-- name: Giuseppe Verdi
-  source: llm
-  quote: a probable influence on other composers such as Giuseppe Verdi
+mentors: []
 ---
+
+
+
 
 # Gaetano Donizetti
 

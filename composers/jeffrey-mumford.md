@@ -1,5 +1,6 @@
 ---
 name: Jeffrey Mumford
+wikidata: Q15505140
 wikipedia: https://en.wikipedia.org/wiki/Jeffrey_Mumford
 thumbnail: null
 birth: '1955'
@@ -18,9 +19,11 @@ teachers:
   source: llm
   quote: He was a student of Elliott Carter and Lawrence Moss.
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Jeffrey Mumford
 

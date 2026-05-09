@@ -1,5 +1,6 @@
 ---
 name: György Kurtág
+wikidata: Q48184
 wikipedia: https://en.wikipedia.org/wiki/György_Kurtág
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Kurt%C3%A1g_Gy%C3%B6rgy-001_%28cropped%29.jpg/250px-Kurt%C3%A1g_Gy%C3%B6rgy-001_%28cropped%29.jpg
 birth: '1926'
@@ -33,13 +34,13 @@ teachers:
   source: llm
   quote: and theory with Lajos Bárdos
 - name: Max Deutsch
-  source: llm_confirmed
+  source: llm
   quote: studying with Max Deutsch, Olivier Messiaen, and Darius Milhaud
 - name: Olivier Messiaen
   source: llm
   quote: studying with Max Deutsch, Olivier Messiaen, and Darius Milhaud
 - name: Darius Milhaud
-  source: llm_confirmed
+  source: llm
   quote: studying with Max Deutsch, Olivier Messiaen, and Darius Milhaud
 students:
 - name: Zoltán Kocsis
@@ -47,36 +48,12 @@ students:
 - name: András Schiff
   source: llm
   quote: During this time his students included Zoltán Kocsis and András Schiff
-influenced_by:
-- name: Bartók
-  source: llm
-  quote: his style draws on "Bartók, Webern and, to a lesser extent, Stravinsky"
-- name: Webern
-  source: llm
-  quote: his style draws on "Bartók, Webern and, to a lesser extent, Stravinsky"
-- name: Stravinsky
-  source: llm
-  quote: his style draws on "Bartók, Webern and, to a lesser extent, Stravinsky"
-- name: Anton Webern
-  source: llm
-  quote: discovering the plays by Samuel Beckett and scores by Anton Webern
-- name: György Ligeti
-  source: llm
-  quote: composer György Ligeti, who became a close friend
-influenced:
-- name: Bach
-  source: llm
-  quote: dialogue with poets such as Beckett, Kafka, and Anna Akhmatova and composers
-    such as Bach, Beethoven, and Berg
-- name: Beethoven
-  source: llm
-  quote: dialogue with poets such as Beckett, Kafka, and Anna Akhmatova and composers
-    such as Bach, Beethoven, and Berg
-- name: Berg
-  source: llm
-  quote: dialogue with poets such as Beckett, Kafka, and Anna Akhmatova and composers
-    such as Bach, Beethoven, and Berg
+mentors: []
 ---
+
+
+
+
 
 # György Kurtág
 

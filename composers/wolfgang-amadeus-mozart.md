@@ -1,36 +1,55 @@
 ---
 name: Wolfgang Amadeus Mozart
+wikidata: Q254
 wikipedia: https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg/250px-The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg
 birth: '1756'
 birth_source: infobox
 death: '1791'
 death_source: infobox
-nationality: Getreidegasse 9, Salzburg, Prince-Archbishopric of Salzburg,
+nationality: Getreidegasse 9, Salzburg
 nationality_source: infobox
-era: Classical
-era_source: llm
+era: null
+era_source: null
 teachers:
+- name: Giovanni Battista Martini
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 - name: Leopold Mozart
-  source: llm
-  quote: Leopold was their only teacher. Along with music, he taught his children
-    languages and academic subjects.
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Josef Mysliveček
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Giusto Fernando Tenducci
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students:
-- name: Franz Xaver Süssmayr
+- name: Thomas Attwood
   source: wiki
-- name: Thomas Attwood (composer)
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Josepha Barbara von Auernhammer
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 - name: Johann Nepomuk Hummel
   source: wiki
-- name: Ludwig van Beethoven
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Ignaz von Seyfried
   source: wiki
-influenced_by:
-- name: Johann Christian Bach
-  source: llm
-  quote: A particularly significant influence was Johann Christian Bach, whom he visited
-    in London in 1764 and 1765.
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Franz Xaver Süssmayr
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Therese von Trattner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Anton Wranitzky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
 
 # Wolfgang Amadeus Mozart
 

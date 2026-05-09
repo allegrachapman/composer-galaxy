@@ -1,5 +1,6 @@
 ---
 name: Henriëtte Bosmans
+wikidata: Q468248
 wikipedia: https://en.wikipedia.org/wiki/Henriëtte_Bosmans
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Photograph_of_Henri%C3%ABtte_Bosmans_by_Jacob_Merkelbach_%281917%29.jpg/250px-Photograph_of_Henri%C3%ABtte_Bosmans_by_Jacob_Merkelbach_%281917%29.jpg
 birth: '1895'
@@ -19,9 +20,11 @@ teachers:
   source: llm
   quote: composition with Jan Willem Kersbergen
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Henriëtte Bosmans
 

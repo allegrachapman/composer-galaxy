@@ -1,5 +1,6 @@
 ---
 name: Enrique Granados
+wikidata: Q294225
 wikipedia: https://en.wikipedia.org/wiki/Enrique_Granados
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/c/cd/Granados.jpg
 birth: '1867'
@@ -27,23 +28,30 @@ students:
 - name: Frank Marshall
   source: llm
   quote: such notable figures as Frank Marshall and Alicia de Larrocha
-- name: Alicia de Larrocha
-  source: llm
-  quote: such notable figures as Frank Marshall and Alicia de Larrocha
 - name: Rosa García Ascot
   source: llm
   quote: He was also the teacher of composer Rosa García Ascot
-influenced_by: []
-influenced:
-- name: Manuel de Falla
-  source: llm
-  quote: Granados was a significant influence on at least two other famous Spanish
-    composers and musicians, Manuel de Falla and Pablo Casals
-- name: Pablo Casals
-  source: llm
-  quote: Granados was a significant influence on at least two other famous Spanish
-    composers and musicians, Manuel de Falla and Pablo Casals
+- name: Narcisa Freixas
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Roberto Gerhard
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Francesca Madriguera i Rodon
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Concepció Badia i Millàs
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Mercedes Moner Raguer
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+mentors: []
 ---
+
+
+
+
 
 # Enrique Granados
 

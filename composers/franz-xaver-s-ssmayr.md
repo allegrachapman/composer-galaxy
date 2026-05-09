@@ -1,5 +1,6 @@
 ---
 name: Franz Xaver Süssmayr
+wikidata: Q310518
 wikipedia: https://en.wikipedia.org/wiki/Franz_Xaver_Süssmayr
 thumbnail: null
 birth: '1766'
@@ -12,21 +13,21 @@ era: Classical
 era_source: llm
 teachers:
 - name: Wolfgang Amadeus Mozart
-  source: llm_confirmed
+  source: llm
   quote: he became a student and friend of Mozart
 - name: Georg von Pasterwitz
   source: llm
   quote: Georg von Pasterwitz was a teacher
+- name: Antonio Salieri
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students: []
-influenced_by:
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: he became a student and friend of Mozart
-influenced:
-- name: Ludwig van Beethoven
-  source: llm
-  quote: Beethoven used a theme from this opera for his Variations
+mentors: []
 ---
+
+
+
+
 
 # Franz Xaver Süssmayr
 

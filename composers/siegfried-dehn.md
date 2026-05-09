@@ -1,5 +1,6 @@
 ---
 name: Siegfried Dehn
+wikidata: Q66043
 wikipedia: https://en.wikipedia.org/wiki/Siegfried_Dehn
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Siegfried_Wilhelm_Dehn.jpg/250px-Siegfried_Wilhelm_Dehn.jpg
 birth: '1799'
@@ -29,7 +30,7 @@ students:
   source: llm
   quote: His students included Peter Cornelius
 - name: Mikhail Glinka
-  source: llm_confirmed
+  source: llm
   quote: His students included Mikhail Glinka
 - name: Heinrich Hofmann
   source: llm
@@ -40,9 +41,36 @@ students:
 - name: Anton Rubinstein
   source: llm
   quote: His students included Anton Rubinstein
-influenced_by: []
-influenced: []
+- name: Julius Alsleben
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Friedrich Kiel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Ferdinand Schulz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Friedrich Hieronymus Truhn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Franz Wüllner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Robert Zimmer (composer)
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Nikolai Rimsky-Korsakov
+  source: wiki
+- name: Nikolai Rubinstein
+  source: llm
+  quote: harmony and counterpoint with Siegfried Dehn
+mentors: []
 ---
+
+
+
+
+
 
 # Siegfried Dehn
 

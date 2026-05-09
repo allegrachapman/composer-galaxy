@@ -1,5 +1,6 @@
 ---
 name: Einojuhani Rautavaara
+wikidata: Q433592
 wikipedia: https://en.wikipedia.org/wiki/Einojuhani_Rautavaara
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Einojuhani_Rautavaara.jpg/250px-Einojuhani_Rautavaara.jpg
 birth: '1928'
@@ -24,7 +25,7 @@ teachers:
   source: llm
   quote: he also took lessons from Roger Sessions and Aaron Copland at Tanglewood
 - name: Wladimir Vogel
-  source: llm_confirmed
+  source: llm
   quote: under the tutelage of Swiss composer Wladimir Vogel
 - name: Rudolf Petzold
   source: llm
@@ -36,26 +37,18 @@ students:
   source: llm
   quote: Some of his more famous pupils during this era were Finnish composer Kalevi
     Aho
-influenced_by:
-- name: Jean Sibelius
-  source: llm
-  quote: caught the attention of then-famous Finnish composer Jean Sibelius
-- name: Alban Berg
-  source: llm
-  quote: stylistically closer to Alban Berg and Anton Bruckner than more straightforward
-    serialists
-- name: Anton Bruckner
-  source: llm
-  quote: stylistically closer to Alban Berg and Anton Bruckner than more straightforward
-    serialists
-- name: Johann Sebastian Bach
-  source: llm
-  quote: The Bach-influenced Cello Concerto No.1 (1968)
-- name: Claude Debussy
-  source: llm
-  quote: Debussy-influenced Anadyomene (1968)
-influenced: []
+- name: Magnus Lindberg
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Esa-Pekka Salonen
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
+
+
 
 # Einojuhani Rautavaara
 

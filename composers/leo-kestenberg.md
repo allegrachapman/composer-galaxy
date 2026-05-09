@@ -1,5 +1,6 @@
 ---
 name: Leo Kestenberg
+wikidata: Q78037
 wikipedia: https://en.wikipedia.org/wiki/Leo_Kestenberg
 thumbnail: null
 birth: '1882'
@@ -25,7 +26,7 @@ teachers:
   quote: After piano studies with José Vianna da Motta, Hermann Scholtz and Felix
     Draeseke
 - name: Ferruccio Busoni
-  source: llm_confirmed
+  source: llm
   quote: attended a master class by Busoni in Weimar in 1900
 students:
 - name: Menahem Pressler
@@ -43,12 +44,12 @@ students:
 - name: Ricci Horenstein
   source: llm
   quote: Rina Braverman and Ricci Horenstein
-influenced_by:
-- name: Ferruccio Busoni
-  source: llm
-  quote: regarded as a turning point in his artistic life
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Leo Kestenberg
 

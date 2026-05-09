@@ -1,5 +1,6 @@
 ---
 name: Paul Fetler
+wikidata: Q3898052
 wikipedia: https://en.wikipedia.org/wiki/Paul_Fetler
 thumbnail: http://www.bruceduffie.com/fetler3.jpg
 birth: '1920'
@@ -39,16 +40,25 @@ students:
   quote: taught many composers at Minnesota including Eric Stokes, Donald Keats, Marjorie
     Rusche, Michael Schelle, Stephen Paulus
 - name: Libby Larsen
-  source: llm_confirmed
+  source: llm
   quote: taught many composers at Minnesota including Eric Stokes, Donald Keats, Marjorie
     Rusche, Michael Schelle, Stephen Paulus, Libby Larsen
 - name: Carol Barnett
   source: llm
   quote: taught many composers at Minnesota including Eric Stokes, Donald Keats, Marjorie
     Rusche, Michael Schelle, Stephen Paulus, Libby Larsen, and Carol Barnett
-influenced_by: []
-influenced: []
+- name: Carol E. Barnett
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Richard Marriott
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Paul Fetler
 

@@ -1,5 +1,6 @@
 ---
 name: Charles Koechlin
+wikidata: Q72543
 wikipedia: https://en.wikipedia.org/wiki/Charles_Koechlin
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/4/4d/Charles_Koechlin_1.jpg
 birth: '1867'
@@ -11,10 +12,6 @@ nationality_source: infobox
 era: 20th-century
 era_source: llm
 teachers:
-- name: Germaine Tailleferre
-  source: wiki
-- name: Roger Désormière
-  source: wiki
 - name: Antoine Taudou
   source: llm
   quote: studying first with Antoine Taudou for harmony
@@ -28,7 +25,7 @@ teachers:
   source: llm
   quote: music history with Louis Bourgault-Ducoudray
 - name: Gabriel Fauré
-  source: llm_confirmed
+  source: llm
   quote: From 1896 he was a student of Gabriel Fauré
 students:
 - name: George Enescu
@@ -51,22 +48,16 @@ students:
 - name: Henri Sauguet
   source: llm
   quote: Composers who studied with him included Henri Sauguet
-influenced_by:
-- name: Cinema of the United States
+- name: Claude Champagne
   source: wiki
-- name: Douglas Fairbanks
-  source: wiki
-- name: Gabriel Fauré
-  source: llm
-  quote: Fauré had a great influence on Koechlin
-- name: Berlioz
-  source: llm
-  quote: impressionism deriving less from Debussy than from Berlioz and Fauré
-influenced:
-- name: Darius Milhaud
-  source: llm
-  quote: considered he learned more from Koechlin than any other pedagogue
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
+
 
 # Charles Koechlin
 

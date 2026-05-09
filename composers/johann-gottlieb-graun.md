@@ -1,5 +1,6 @@
 ---
 name: Johann Gottlieb Graun
+wikidata: Q502321
 wikipedia: https://en.wikipedia.org/wiki/Johann_Gottlieb_Graun
 thumbnail: null
 birth: '1702'
@@ -24,15 +25,17 @@ students:
 - name: Franz Benda
   source: wiki
 - name: Wilhelm Friedemann Bach
-  source: llm_confirmed
-  quote: he taught the violin to J.S. Bach's son Wilhelm Friedemann
-influenced_by: []
-influenced:
-- name: subsequent composers
   source: llm
-  quote: Graun developed a stylistic model for the violin concerto that proved influential
-    and normative for subsequent composers
+  quote: he taught the violin to J.S. Bach's son Wilhelm Friedemann
+- name: Balthasar Christian Bertram
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+mentors: []
 ---
+
+
+
+
 
 # Johann Gottlieb Graun
 

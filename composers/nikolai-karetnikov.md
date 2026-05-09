@@ -1,5 +1,6 @@
 ---
 name: Nikolai Karetnikov
+wikidata: Q2062832
 wikipedia: https://en.wikipedia.org/wiki/Nikolai_Karetnikov
 thumbnail: null
 birth: '1930'
@@ -32,17 +33,11 @@ teachers:
 students:
 - name: Philip Herschkowitz
   source: wiki
-- name: Anton Webern
-  source: wiki
-influenced_by:
-- name: Alban Berg
-  source: llm
-  quote: a pupil of Berg and Webern
-- name: Anton Webern
-  source: llm
-  quote: a pupil of Berg and Webern
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Nikolai Karetnikov
 

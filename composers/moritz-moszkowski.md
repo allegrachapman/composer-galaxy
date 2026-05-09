@@ -1,5 +1,6 @@
 ---
 name: Moritz Moszkowski
+wikidata: Q322427
 wikipedia: https://en.wikipedia.org/wiki/Moritz_Moszkowski
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/2/2a/Moritz_Moszkowski%2C_c._1880.jpg
 birth: '1854'
@@ -8,8 +9,8 @@ death: '1925'
 death_source: infobox
 nationality: Breslau, Kingdom of Prussia
 nationality_source: infobox
-era: Classical, Romantic era
-era_source: infobox
+era: Romantic
+era_source: manual
 teachers:
 - name: Eduard Franck
   source: wiki
@@ -21,6 +22,9 @@ teachers:
 - name: Heinrich Dorn
   source: llm
   quote: orchestration with Heinrich Dorn
+- name: Theodor Kullak
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 students:
 - name: Frank Damrosch
   source: wiki
@@ -46,12 +50,15 @@ students:
   source: llm
   quote: Among his Parisian students were Vlado Perlemuter, Thomas Beecham, Josef
     Hofmann, Wanda Landowska
-influenced_by: []
-influenced:
-- name: Philipp Scharwenka
-  source: llm
-  quote: for orchestra by Philipp Scharwenka
+- name: Kathleen Lockhart Manning
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # Moritz Moszkowski
 

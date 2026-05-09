@@ -1,5 +1,6 @@
 ---
 name: Gustav Mahler
+wikidata: Q7304
 wikipedia: https://en.wikipedia.org/wiki/Gustav_Mahler
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Photo_of_Gustav_Mahler_by_Moritz_N%C3%A4hr_01.jpg/250px-Photo_of_Gustav_Mahler_by_Moritz_N%C3%A4hr_01.jpg
 birth: '1860'
@@ -25,34 +26,33 @@ students:
   source: wiki
 - name: Anton Webern
   source: wiki
-influenced_by:
-- name: Richard Wagner
+- name: Walter Henry Rothwell
   source: wiki
-- name: Anton Bruckner
-  source: llm
-  quote: though never formally his pupil, was influenced by him
-influenced:
-- name: Arnold Schoenberg
-  source: llm
-  quote: Some of Mahler's immediate musical successors included the composers of the
-    Second Viennese School, notably Arnold Schoenberg
-- name: Alban Berg
-  source: llm
-  quote: the composers of the Second Viennese School, notably Arnold Schoenberg, Alban
-    Berg and Anton Webern
-- name: Anton Webern
-  source: llm
-  quote: the composers of the Second Viennese School, notably Arnold Schoenberg, Alban
-    Berg and Anton Webern
-- name: Dmitri Shostakovich
-  source: llm
-  quote: Dmitri Shostakovich and Benjamin Britten are among later 20th-century composers
-    who admired and were influenced by Mahler
-- name: Benjamin Britten
-  source: llm
-  quote: Dmitri Shostakovich and Benjamin Britten are among later 20th-century composers
-    who admired and were influenced by Mahler
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Max Steiner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Robert Winterberg
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: August de Boeck
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Charles M. Courboin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Charles Kennedy Scott
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Alfred Wotquenne
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # Gustav Mahler
 

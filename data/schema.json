@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Composer Galaxy Schema",
+  "description": "Canonical data model for composer nodes and relationship edges with provenance and confidence scoring.",
+
+  "definitions": {
+    "provenance": {
+      "type": "object",
+      "description": "Tracks where data came from and how it was extracted.",
+      "properties": {
+        "value": {
+          "type": ["string", "null"],
+          "description": "The actual data value."
+        },
+        "origin": {
+          "type": "string",
+          "enum": ["wikipedia", "grove", "wikidata", "manual"],
+          "description": "Where the information came from."
+        },
+        "method": {
+          "type": "string",
+          "enum": ["human", "api", "parser", "regex", "llm"],
+          "description": "How the information was extracted."
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence score. Base: human=0.95, api=0.90, parser=0.85, regex=0.85, llm=0.70. Modifiers: +0.10 verified quote, +0.10 corroborated, +0.05 reciprocal exists, +0.05 haiku-verified. Capped at 1.0."
+        }
+      },
+      "required": ["value", "origin", "method", "confidence"]
+    },
+
+    "edge": {
+      "type": "object",
+      "description": "A directional relationship between two composers.",
+      "properties": {
+        "from": {
+          "type": "string",
+          "description": "Stable ID of the source composer (Wikidata QID or slug:name)."
+        },
+        "from_name": {
+          "type": "string",
+          "description": "Display name of the source composer."
+        },
+        "to": {
+          "type": ["string", "null"],
+          "description": "Stable ID of the target composer, or null if not in the graph."
+        },
+        "to_name": {
+          "type": "string",
+          "description": "Display name of the target composer."
+        },
+        "type": {
+          "type": "string",
+          "enum": ["teacher", "student", "mentor"],
+          "description": "Relationship type from the perspective of the 'from' composer."
+        },
+        "origin": {
+          "type": "string",
+          "enum": ["wikipedia", "grove", "wikidata", "manual"],
+          "description": "Where this relationship was found."
+        },
+        "method": {
+          "type": "string",
+          "enum": ["human", "api", "parser", "regex", "llm"],
+          "description": "How this relationship was extracted."
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence score with modifiers applied."
+        },
+        "quote": {
+          "type": ["string", "null"],
+          "description": "Verbatim quote from source text supporting this relationship."
+        },
+        "source_url": {
+          "type": ["string", "null"],
+          "description": "URL of the specific source page (e.g., wiki list page)."
+        },
+        "haiku_verified": {
+          "type": "boolean",
+          "description": "Whether this edge was verified by Claude Haiku (Tier 3).",
+          "default": false
+        },
+        "corroborated": {
+          "type": "boolean",
+          "description": "Whether this edge was independently found by multiple sources.",
+          "default": false
+        },
+        "has_reciprocal": {
+          "type": "boolean",
+          "description": "Whether the reverse edge exists in the target composer's file.",
+          "default": false
+        }
+      },
+      "required": ["from", "from_name", "to_name", "type", "origin", "method", "confidence"]
+    },
+
+    "composer": {
+      "type": "object",
+      "description": "A composer node in the graph.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable ID: Wikidata QID (e.g., 'Q132232') or 'slug:name' for unmatched composers."
+        },
+        "name": {
+          "type": "string",
+          "description": "Canonical display name."
+        },
+        "slug": {
+          "type": "string",
+          "description": "URL-safe slug derived from the name."
+        },
+        "file": {
+          "type": "string",
+          "description": "Filename of the source markdown file."
+        },
+        "wikidata": {
+          "type": ["string", "null"],
+          "pattern": "^Q[0-9]+$",
+          "description": "Wikidata QID."
+        },
+        "wikipedia": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Wikipedia article URL."
+        },
+        "thumbnail": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Thumbnail image URL."
+        },
+        "birth": { "$ref": "#/definitions/provenance" },
+        "death": { "$ref": "#/definitions/provenance" },
+        "nationality": { "$ref": "#/definitions/provenance" },
+        "era": { "$ref": "#/definitions/provenance" }
+      },
+      "required": ["id", "name", "slug", "file"]
+    }
+  },
+
+  "type": "object",
+  "properties": {
+    "composers": {
+      "type": "object",
+      "description": "Composer nodes keyed by stable ID.",
+      "additionalProperties": { "$ref": "#/definitions/composer" }
+    },
+    "edges": {
+      "type": "array",
+      "description": "All relationship edges with full provenance.",
+      "items": { "$ref": "#/definitions/edge" }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Schema version."
+        },
+        "compiled_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When this data was last compiled."
+        },
+        "composer_count": { "type": "integer" },
+        "edge_count": { "type": "integer" },
+        "confidence_model": {
+          "type": "object",
+          "description": "Documents the confidence scoring model.",
+          "properties": {
+            "base_scores": {
+              "type": "object",
+              "properties": {
+                "human":  { "type": "number", "const": 0.95 },
+                "api":    { "type": "number", "const": 0.90 },
+                "parser": { "type": "number", "const": 0.85 },
+                "regex":  { "type": "number", "const": 0.85 },
+                "llm":    { "type": "number", "const": 0.70 }
+              }
+            },
+            "modifiers": {
+              "type": "object",
+              "properties": {
+                "has_verified_quote": { "type": "number", "const": 0.10 },
+                "corroborated":      { "type": "number", "const": 0.10 },
+                "has_reciprocal":    { "type": "number", "const": 0.05 },
+                "haiku_verified":    { "type": "number", "const": 0.05 }
+              }
+            },
+            "max": { "type": "number", "const": 1.0 }
+          }
+        }
+      }
+    }
+  },
+  "required": ["composers", "edges", "metadata"]
+}

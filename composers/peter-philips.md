@@ -1,5 +1,6 @@
 ---
 name: Peter Philips
+wikidata: Q1930460
 wikipedia: https://en.wikipedia.org/wiki/Peter_Philips
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Philips_-_Cantiones_Sacrae_Octonis_Vocibus_-Primus_Chorus%2C_Cantus.png/250px-Philips_-_Cantiones_Sacrae_Octonis_Vocibus_-Primus_Chorus%2C_Cantus.png
 birth: '1560'
@@ -15,36 +16,18 @@ era_source: infobox
 teachers:
 - name: Sebastian Westcott
   source: llm
-  quote: boy chorister at Old St Paul's Cathedral in London, under the aegis of the
-    Catholic master of choristers, Sebastian Westcott
+  quote: under the aegis of the Catholic master of choristers, Sebastian Westcott
+- name: William Byrd
+  source: wiki
 students: []
-influenced_by:
-- name: Lassus
+mentors:
+- name: Francis Tregian the Younger
   source: llm
-  quote: transcribed or arranged several Italian motets and madrigals by such composers
-    as Lassus, Palestrina
-- name: Palestrina
-  source: llm
-  quote: transcribed or arranged several Italian motets and madrigals by such composers
-    as Lassus, Palestrina
-- name: Giulio Caccini
-  source: llm
-  quote: transcribed or arranged several Italian motets and madrigals by such composers
-    as Lassus, Palestrina, and Giulio Caccini
-- name: Giovanni Croce
-  source: llm
-  quote: largely in the style of more conservative Italian contemporary composers
-    such as Giovanni Croce
-influenced:
-- name: Jan Pieterszoon Sweelinck
-  source: llm
-  quote: It was the subject of a magnificent set of variations by Jan Pieterszoon
-    Sweelinck entitled Pavana Philippi
-- name: Thomas Morley
-  source: llm
-  quote: a version by Thomas Morley, and survives in arrangements for consort and
-    lute
+  quote: Tregian may well have been responsible for importing Philips' works to England.
 ---
+
+
+
 
 # Peter Philips
 

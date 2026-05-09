@@ -1,5 +1,6 @@
 ---
 name: Heinrich Schütz
+wikidata: Q153643
 wikipedia: https://en.wikipedia.org/wiki/Heinrich_Schütz
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Schutz.jpg/250px-Schutz.jpg
 birth: '1585'
@@ -8,58 +9,89 @@ death: '1672'
 death_source: infobox
 nationality: Köstritz, Holy Roman Empire
 nationality_source: infobox
-era: Baroque
-era_source: llm
+era: null
+era_source: null
 teachers:
 - name: Giovanni Gabrieli
   source: wiki
-students:
-- name: Venice
-  source: wiki
-- name: Heinrich Albert
-  source: llm
-  quote: His pupils included Heinrich Albert, Christoph Bernhard, Anton Colander
-- name: Christoph Bernhard
-  source: llm
-  quote: His pupils included Heinrich Albert, Christoph Bernhard, Anton Colander
-- name: Matthias Weckmann
-  source: llm
-  quote: His pupils included Heinrich Albert, Christoph Bernhard, Anton Colander,
-    Constantin Christian Dedekind, Carlo Farina, Johann Wilhelm Furchheim, Johann
-    Kaspar Horn, Caspar Kittel, Christoph Kittel, Johann Klemm, Adam Krieger, Johann
-    Jakob Loewe (or Löwe), Johann Nauwach, David Pohle, Philipp Stolle, Johann Theile,
-    Clemens Thieme, Johann Vierdanck, Matthias Weckmann, Friedrich Werner, and Friedrich
-    von Westhoff
-- name: Friedrich von Westhoff
-  source: llm
-  quote: His pupils included Heinrich Albert, Christoph Bernhard, Anton Colander,
-    Constantin Christian Dedekind, Carlo Farina, Johann Wilhelm Furchheim, Johann
-    Kaspar Horn, Caspar Kittel, Christoph Kittel, Johann Klemm, Adam Krieger, Johann
-    Jakob Loewe (or Löwe), Johann Nauwach, David Pohle, Philipp Stolle, Johann Theile,
-    Clemens Thieme, Johann Vierdanck, Matthias Weckmann, Friedrich Werner, and Friedrich
-    von Westhoff
-influenced_by:
-- name: Giovanni Gabrieli
-  source: llm
-  quote: Schütz's compositions show the influence of Gabrieli (most notably in Schütz's
-    use of polychoral and concertato styles)
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 - name: Claudio Monteverdi
-  source: llm
-  quote: Schütz's compositions show the influence of Gabrieli (most notably in Schütz's
-    use of polychoral and concertato styles) and Monteverdi
-influenced:
-- name: Johann Sebastian Bach
-  source: llm
-  quote: the greatest Passionmusic before Bach
-- name: Anton Webern
-  source: llm
-  quote: After Bach, the most important composers Schütz influenced were Anton Webern
-    and Brahms
-- name: Brahms
-  source: llm
-  quote: After Bach, the most important composers Schütz influenced were Anton Webern
-    and Brahms, who studied his work
+  source: wiki
+students:
+- name: Heinrich Albert
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Christoph Bernhard
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Giovanni Andrea Bontempi
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Anton Colander
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Carlo Farina
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Johann Wilhelm Furchheim
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Johann Kaspar Horn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Caspar Kittel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Christoph Kittel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Johann Klemm
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Adam Krieger
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Johann Jacob Löwe
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Gabriel Möhlich
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Johann Nauwach
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: David Pohle
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Johann Schelle
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Johann Theile
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Clemens Thieme
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Johann Vierdanck
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Matthias Weckmann
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Friedrich Werner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Friedrich von Westhoff
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Johann Paul von Westhoff
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
+
 
 # Heinrich Schütz
 

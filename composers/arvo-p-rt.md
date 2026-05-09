@@ -1,5 +1,6 @@
 ---
 name: Arvo Pärt
+wikidata: Q189534
 wikipedia: https://en.wikipedia.org/wiki/Arvo_Pärt
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Arvo_P%C3%A4rt.jpg/250px-Arvo_P%C3%A4rt.jpg
 birth: '1935'
@@ -8,30 +9,21 @@ death: null
 death_source: null
 nationality: Paide, Järva County, Estonia
 nationality_source: infobox
-era: 20th-century, 21st-century
+era: 20th-century
 era_source: llm
 teachers:
 - name: Heino Eller
   source: wiki
+  quote: he studied composition with Heino Eller
 students: []
-influenced_by:
-- name: Dmitri Shostakovich
-  source: wiki
-- name: Sergei Prokofiev
-  source: wiki
-- name: Gregorian chant
-  source: wiki
-- name: Béla Bartók
+mentors:
+- name: Manfred Eicher
   source: llm
-  quote: influenced by Shostakovich, Prokofiev, and Bartók
-- name: Arnold Schoenberg
-  source: llm
-  quote: began to compose using Schoenberg's twelve-tone technique and serialism
-influenced:
-- name: Steve Reich
-  source: llm
-  quote: I love his music, and I love the fact that he is such a brave, talented man
+  quote: Pärt's music came to public attention in the West largely thanks to Manfred
+    Eicher who recorded several of Pärt's compositions
 ---
+
+
 
 # Arvo Pärt
 

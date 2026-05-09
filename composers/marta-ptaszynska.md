@@ -1,5 +1,6 @@
 ---
 name: Marta Ptaszynska
+wikidata: Q519363
 wikipedia: https://en.wikipedia.org/wiki/Marta_Ptaszynska
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Foto_Marta_Ptaszy%C5%84ska.jpg/250px-Foto_Marta_Ptaszy%C5%84ska.jpg
 birth: '1943'
@@ -10,11 +11,20 @@ nationality: Polish
 nationality_source: llm
 era: 20th-century
 era_source: llm
-teachers: []
+teachers:
+- name: Nadia Boulanger
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Olivier Messiaen
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Marta Ptaszynska
 

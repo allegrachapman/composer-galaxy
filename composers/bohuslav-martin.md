@@ -1,5 +1,6 @@
 ---
 name: Bohuslav Martinů
+wikidata: Q223258
 wikipedia: https://en.wikipedia.org/wiki/Bohuslav_Martinů
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Martinu_1945.jpg/250px-Martinu_1945.jpg
 birth: '1890'
@@ -31,7 +32,7 @@ students:
 - name: Czech Philharmonic Orchestra
   source: wiki
 - name: Vítězslava Kaprálová
-  source: llm_confirmed
+  source: llm
   quote: composition with Martinů
 - name: Louis Lane
   source: llm
@@ -53,23 +54,12 @@ students:
   source: llm
   quote: Martinů's notable students include Burt Bacharach, Alan Hovhaness, Vítězslava
     Kaprálová, Louis Lane, Jan Novák, H. Owen Reed, Howard Shanet and Chou Wen-chung
-influenced_by:
-- name: Charles Lindbergh
-  source: wiki
-- name: Igor Stravinsky
-  source: llm
-  quote: He was particularly attracted to Stravinsky, whose novel, angular, propulsive
-    rhythms
-influenced:
-- name: Prokofiev
-  source: llm
-  quote: He has been compared to Prokofiev and Bartók in his innovative incorporation
-    of Czech folk elements
-- name: Bartók
-  source: llm
-  quote: He has been compared to Prokofiev and Bartók in his innovative incorporation
-    of Czech folk elements
+mentors: []
 ---
+
+
+
+
 
 # Bohuslav Martinů
 

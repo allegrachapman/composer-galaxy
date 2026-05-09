@@ -1,5 +1,6 @@
 ---
 name: George Enescu
+wikidata: Q77177
 wikipedia: https://en.wikipedia.org/wiki/George_Enescu
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Georges_Enesco_1930.jpg/250px-Georges_Enesco_1930.jpg
 birth: '1881'
@@ -32,6 +33,17 @@ teachers:
 - name: Eduard Caudella
   source: llm
   quote: his father presented him to the professor and composer Eduard Caudella
+- name: Joseph Hellmesberger, Jr.
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Eugène Ysaÿe
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+- name: Ambroise Thomas
+  source: llm
+  quote: and, late in Thomas' career, George Enescu
+- name: Charles Koechlin
+  source: wiki
 students:
 - name: Yehudi Menuhin
   source: wiki
@@ -56,16 +68,28 @@ students:
 - name: Joan Field
   source: llm
   quote: Uto Ughi, and Joan Field
-influenced_by:
-- name: Johannes Brahms
+- name: Marius Constant
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Michel Schwalbé
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Ljerko Spiller
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Eugenia Umińska
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Walter Piston
   source: llm
-  quote: the child prodigy met his idol, Johannes Brahms
-influenced:
-- name: Eugène Ysaÿe
-  source: llm
-  quote: Eugène Ysaÿe's Violin Sonata No. 3 in D minor, subtitled "Ballade" (composed
-    in 1923), was dedicated as an act of homage to fellow-violinist Enescu
+  quote: violin with George Enescu
+mentors: []
 ---
+
+
+
+
+
 
 # George Enescu
 

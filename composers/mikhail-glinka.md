@@ -1,55 +1,34 @@
 ---
 name: Mikhail Glinka
+wikidata: Q181885
 wikipedia: https://en.wikipedia.org/wiki/Mikhail_Glinka
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Michail_Glinka_by_Brullov.jpg/250px-Michail_Glinka_by_Brullov.jpg
 birth: '1804'
-birth_source: llm
+birth_source: wikidata
 death: '1857'
-death_source: llm
-nationality: Russian
-nationality_source: llm
-era: Romantic
-era_source: llm
+death_source: wikidata
+nationality: null
+nationality_source: null
+era: null
+era_source: null
 teachers:
 - name: Siegfried Dehn
   source: wiki
-- name: Catterino Cavos
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: John Field (composer)
   source: wiki
-- name: John Field
-  source: llm
-  quote: He had three piano lessons from John Field, the Irish composer of nocturnes
-- name: Charles Mayer
-  source: llm
-  quote: He then continued his piano lessons with Charles Mayer
-- name: Francesco Basili
-  source: llm_confirmed
-  quote: Glinka took lessons at the conservatory with Francesco Basili
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Charles Mayer (composer)
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 students:
-- name: Berlin
+- name: Alexander Dargomyzhsky
   source: wiki
-influenced_by:
-- name: Bernhard Henrik Crusell
-  source: llm
-  quote: he heard them play a clarinet quartet by the Finnish composer Bernhard Henrik
-    Crusell, which had a profound effect upon him
-- name: Donizetti
-  source: llm
-  quote: do for Russian music what Donizetti and Bellini had done for Italian music
-- name: Bellini
-  source: llm
-  quote: do for Russian music what Donizetti and Bellini had done for Italian music
-influenced:
-- name: The Five
-  source: llm
-  quote: notably the members of The Five, who produced a distinctive Russian style
-    of music
-- name: Pyotr Ilyich Tchaikovsky
-  source: llm
-  quote: was said by Pyotr Ilyich Tchaikovsky to be "the acorn from which the oak"
-- name: Alexander Serov
-  source: llm
-  quote: The first to note this new direction was Alexander Serov
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+mentors: []
 ---
+
+
 
 # Mikhail Glinka
 

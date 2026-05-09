@@ -1,5 +1,6 @@
 ---
 name: Eleanor Alberga
+wikidata: Q1325702
 wikipedia: https://en.wikipedia.org/wiki/Eleanor_Alberga
 thumbnail: https://images.squarespace-cdn.com/content/v1/65b29d2707ea1228e7687c5f/c21758bf-5fea-473d-bdb8-550321f69e28/Eleanor+Alberga+hi+res.jpg
 birth: '1949'
@@ -8,16 +9,18 @@ death: null
 death_source: null
 nationality: Kingston, Jamaica
 nationality_source: infobox
-era: 20th-century, 21st-century
+era: Contemporary
 era_source: llm
 teachers:
 - name: Richard Stoker
-  source: llm
-  quote: one of her teachers was Richard Stoker
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  quote: one of her teachers was Richard Stoker.
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Eleanor Alberga
 

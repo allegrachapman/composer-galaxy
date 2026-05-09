@@ -1,5 +1,6 @@
 ---
 name: Luigi Nono
+wikidata: Q160451
 wikipedia: https://en.wikipedia.org/wiki/Luigi_Nono
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Luigi_Nono_%281979%29.jpg/250px-Luigi_Nono_%281979%29.jpg
 birth: '1924'
@@ -12,7 +13,7 @@ era: 20th-century
 era_source: llm
 teachers:
 - name: Gian Francesco Malipiero
-  source: llm_confirmed
+  source: llm
   quote: began music lessons with Gian Francesco Malipiero at the Venice Conservatory
     in 1941
 - name: Bruno Maderna
@@ -24,21 +25,27 @@ teachers:
 students:
 - name: Helmut Lachenmann
   source: wiki
-influenced_by:
-- name: Arnold Schoenberg
-  source: llm
-  quote: based on the twelve-tone series of Arnold Schoenberg's Op. 41
-- name: Anton Webern
-  source: llm
-  quote: acknowledgment as a successor to Webern
-influenced:
-- name: Alfred Schnittke
-  source: llm
-  quote: awakened the interest of Alfred Schnittke and Arvo Pärt
-- name: Arvo Pärt
-  source: llm
-  quote: awakened the interest of Alfred Schnittke and Arvo Pärt
+- name: Don Banks
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Jacqueline Nova
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Eric Salzman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Serge Tcherepnin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Olga Neuwirth
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+mentors: []
 ---
+
+
+
+
 
 # Luigi Nono
 

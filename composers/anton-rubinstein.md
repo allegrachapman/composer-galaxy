@@ -1,5 +1,6 @@
 ---
 name: Anton Rubinstein
+wikidata: Q87567
 wikipedia: https://en.wikipedia.org/wiki/Anton_Rubinstein
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Rubinstein_repin.jpg/250px-Rubinstein_repin.jpg
 birth: '1829'
@@ -13,41 +14,72 @@ era_source: llm
 teachers:
 - name: Adolf Bernhard Marx
   source: wiki
-- name: Ludwig Deppe
-  source: wiki
+- name: his mother
+  source: llm
+  quote: His mother, a competent musician, began giving him piano lessons at five
 - name: Alexander Villoing
   source: llm
-  quote: teacher Alexander Villoing heard and accepted Rubinstein as a non-paying
+  quote: the teacher Alexander Villoing heard and accepted Rubinstein as a non-paying
     student
 - name: Siegfried Dehn
   source: llm
   quote: Meyerbeer directed both boys to Siegfried Dehn for work in composition and
-    theory
+    theory.
 students:
-- name: Leopold Winkler
-  source: wiki
-- name: Mikhail Glinka
-  source: wiki
-- name: Felix Mendelssohn
-  source: wiki
 - name: Pyotr Ilyich Tchaikovsky
   source: llm
-  quote: composition teacher of Tchaikovsky
+  quote: most notably as the composition teacher of Tchaikovsky
 - name: Josef Hofmann
   source: llm
   quote: taught his only private piano student, Josef Hofmann
-influenced_by:
+- name: Ella Adayevskaya
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Esmeralda Athanasiu-Gardeev
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Felix Blumenfeld
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Teresa Carreño
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Sandra Drouker
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Cornelius Rübner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: William Charles Ernest Seeboeck
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Eugen von Volborth
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Alexander Siloti
+  source: llm
+  quote: He received some lessons from Anton Rubinstein
+- name: Leokadiya Kashperova
+  source: llm
+  quote: graduated first in 1893 from the St Petersburg Conservatoire at the culmination
+    of her studies in Anton Rubinstein's piano class
+mentors:
 - name: Franz Liszt
   source: llm
-  quote: From watching Liszt, Rubinstein had learned about freedom of arm movement
-- name: Ludwig van Beethoven
+  quote: Liszt advised Villoing to take him to Germany to study composition
+- name: Felix Mendelssohn
   source: llm
-  quote: Many contemporaries felt he bore a striking resemblance to Ludwig van Beethoven
-influenced:
-- name: Pyotr Ilyich Tchaikovsky
+  quote: Here he met with, and was supported by, Felix Mendelssohn
+- name: Giacomo Meyerbeer
   source: llm
-  quote: Don Quixote, which Tchaikovsky found "interesting and well done"
+  quote: Meyerbeer directed both boys to Siegfried Dehn for work in composition and
+    theory.
 ---
+
+
+
+
+
 
 # Anton Rubinstein
 

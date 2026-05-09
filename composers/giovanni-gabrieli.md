@@ -1,5 +1,6 @@
 ---
 name: Giovanni Gabrieli
+wikidata: Q34624
 wikipedia: https://en.wikipedia.org/wiki/Giovanni_Gabrieli
 thumbnail: null
 birth: '1554'
@@ -13,34 +14,30 @@ era_source: llm
 teachers:
 - name: Andrea Gabrieli
   source: wiki
-- name: Orlando de Lassus
+- name: Orlando di Lasso
   source: wiki
+- name: Orlande de Lassus
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 students:
-- name: Munich
-  source: wiki
 - name: Hans Leo Hassler
   source: llm
   quote: his students, who included Hans Leo Hassler and Heinrich Schütz
 - name: Heinrich Schütz
-  source: llm_confirmed
+  source: llm
   quote: his students, who included Hans Leo Hassler and Heinrich Schütz
-influenced_by:
-- name: Andrea Gabrieli
-  source: llm
-  quote: These pieces show much influence of his uncle's style
-- name: Orlando de Lassus
-  source: llm
-  quote: Lassus was to be one of the principal influences on the development of his
-    musical style
-influenced:
-- name: J.S. Bach
-  source: llm
-  quote: The productions of the German Baroque, culminating in the music of J.S. Bach
-- name: Heinrich Schütz
-  source: llm
-  quote: Heinrich Schütz and others helped transport the transitional early Baroque
-    music north to Germany
+- name: Alessandro Grandi
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Claudio Monteverdi
+  source: wiki
+mentors: []
 ---
+
+
+
+
+
 
 # Giovanni Gabrieli
 

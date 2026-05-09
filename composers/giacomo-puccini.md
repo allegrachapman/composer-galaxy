@@ -1,5 +1,6 @@
 ---
 name: Giacomo Puccini
+wikidata: Q7311
 wikipedia: https://en.wikipedia.org/wiki/Giacomo_Puccini
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/GiacomoPuccini.jpg/250px-GiacomoPuccini.jpg
 birth: '1858'
@@ -33,18 +34,16 @@ teachers:
   source: llm
   quote: he studied composition with Stefano Ronchetti-Monteviti, Amilcare Ponchielli,
     Amintore Galli, and Antonio Bazzini
-students: []
-influenced_by:
-- name: Richard Wagner
+students:
+- name: Erwin Lendvai
   source: wiki
-- name: Giuseppe Verdi
-  source: llm
-  quote: greatest and most successful proponent of Italian opera after Verdi
-influenced:
-- name: Franco Alfano
-  source: llm
-  quote: unfinished Turandot (1926, posthumously completed by Franco Alfano)
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+mentors: []
 ---
+
+
+
+
 
 # Giacomo Puccini
 

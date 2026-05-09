@@ -1,5 +1,6 @@
 ---
 name: Sergei Rachmaninoff
+wikidata: Q131861
 wikipedia: https://en.wikipedia.org/wiki/Sergei_Rachmaninoff
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Sergei_Rachmaninoff_cph.3a40575.jpg/250px-Sergei_Rachmaninoff_cph.3a40575.jpg
 birth: '1873'
@@ -17,34 +18,29 @@ teachers:
   source: wiki
 - name: Anna Ornatskaya
   source: llm
-  quote: piano teacher and recent graduate of the Saint Petersburg Conservatory
+  quote: give the young Sergei formal piano lessons.
 - name: Alexander Siloti
   source: llm
-  quote: He then became a pupil of Siloti for advanced piano
+  quote: became a pupil of Siloti for advanced piano
 - name: Sergei Taneyev
-  source: llm_confirmed
+  source: llm
   quote: studied counterpoint under Sergei Taneyev
 - name: Anton Arensky
   source: llm
-  quote: learned free composition from Anton Arensky
+  quote: learned free composition from Anton Arensky.
 students:
-- name: Alexander Scriabin
+- name: Gina Bachauer
   source: wiki
-- name: Alexander Siloti
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Ruth Slenczynska
   source: wiki
-influenced_by:
-- name: Richard Wagner
-  source: wiki
-- name: Pyotr Ilyich Tchaikovsky
-  source: wiki
-- name: Nikolai Rimsky-Korsakov
-  source: llm
-  quote: Early influences of Tchaikovsky, Rimsky-Korsakov, and other Russian composers
-- name: John Field
-  source: llm
-  quote: was a musician who had taken lessons from Irish composer John Field
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
+
+
 
 # Sergei Rachmaninoff
 

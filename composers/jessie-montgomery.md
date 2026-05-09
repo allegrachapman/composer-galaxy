@@ -1,23 +1,22 @@
 ---
 name: Jessie Montgomery
+wikidata: Q62113600
 wikipedia: https://en.wikipedia.org/wiki/Jessie_Montgomery
 thumbnail: null
-birth: '1981'
-birth_source: llm
+birth: null
+birth_source: null
 death: null
 death_source: null
-nationality: American
-nationality_source: llm
-era: 21st-century
-era_source: llm
-teachers:
-- name: Ed Montgomery
-  source: llm
-  quote: composer Ed Montgomery
+nationality: null
+nationality_source: null
+era: null
+era_source: null
+teachers: []
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
 
 # Jessie Montgomery
 

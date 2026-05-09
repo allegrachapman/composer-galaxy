@@ -1,5 +1,6 @@
 ---
 name: Heitor Villa-Lobos
+wikidata: Q203514
 wikipedia: https://en.wikipedia.org/wiki/Heitor_Villa-Lobos
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/4/4b/Heitor_Vila-Lobos_%28c._1922%29part.jpg
 birth: '1887'
@@ -10,39 +11,31 @@ nationality: Rio de Janeiro, Empire of Brazil
 nationality_source: infobox
 era: 20th-century
 era_source: llm
-teachers: []
-students: []
-influenced_by:
-- name: Ernesto Nazareth
+teachers:
+- name: Hans-Joachim Koellreutter
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Raúl Villa-Lobos
+  source: llm
+  quote: the regular musical evenings at his house arranged by his father
+- name: Lucília Guimarães
+  source: llm
+  quote: his wife taught him the rudiments of the instrument
+students:
 - name: Darius Milhaud
   source: llm
-  quote: Milhaud brought the music of Claude Debussy, Erik Satie, and possibly Igor
-    Stravinsky
-- name: Claude Debussy
+  quote: Villa-Lobos introduced Milhaud to Brazilian street music
+mentors:
+- name: Arthur Napoleão
   source: llm
-  quote: Milhaud brought the music of Claude Debussy, Erik Satie, and possibly Igor
-    Stravinsky
-- name: Erik Satie
-  source: llm
-  quote: Milhaud brought the music of Claude Debussy, Erik Satie, and possibly Igor
-    Stravinsky
-- name: Igor Stravinsky
-  source: llm
-  quote: Milhaud brought the music of Claude Debussy, Erik Satie, and possibly Igor
-    Stravinsky
+  quote: Encouraged by Arthur Napoleão, a pianist and music publisher, he decided
+    to compose seriously
 - name: Arthur Rubinstein
   source: llm
-  quote: His meeting with Arthur Rubinstein in 1918 prompted Villa-Lobos to compose
-    piano music
-- name: Enrique Granados
-  source: llm
-  quote: orchestral transcriptions of some of Enrique Granados' piano Goyescas
-influenced:
-- name: Andrés Segovia
-  source: llm
-  quote: His Etudes for classical guitar (1929), dedicated to Andrés Segovia
+  quote: met the pianist Arthur Rubinstein, who became a lifelong friend and champion
 ---
+
+
 
 # Heitor Villa-Lobos
 

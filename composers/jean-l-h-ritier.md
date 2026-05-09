@@ -1,5 +1,6 @@
 ---
 name: Jean l'Héritier
+wikidata: Q11866280
 wikipedia: https://en.wikipedia.org/wiki/Jean_l'Héritier
 thumbnail: null
 birth: '1480'
@@ -17,15 +18,11 @@ students:
 - name: Pietro Gaetano
   source: llm
   quote: a singer at Saint Mark's, claimed to have studied with him
-influenced_by:
-- name: Josquin des Prez
-  source: llm
-  quote: transitional between the styles of Josquin and Palestrina
-influenced:
-- name: Giovanni Pierluigi da Palestrina
-  source: llm
-  quote: Palestrina, who used it as source material for his Missa nigra sum
+mentors: []
 ---
+
+
+
 
 # Jean l'Héritier
 

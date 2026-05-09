@@ -1,5 +1,6 @@
 ---
 name: Leokadiya Kashperova
+wikidata: Q47657383
 wikipedia: https://en.wikipedia.org/wiki/Leokadiya_Kashperova
 thumbnail: https://donne-uk.org/wp-content/uploads/2020/10/KASHPEROVA_Leokadya.jpg
 birth: '1872'
@@ -18,13 +19,23 @@ teachers:
 - name: Nicolai Soloviev
   source: llm
   quote: after studying composition with Nicolai Soloviev
+- name: Arthur Rubinstein
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
 - name: Igor Stravinsky
   source: llm
   quote: She was the piano teacher of composer Igor Stravinsky
-influenced_by: []
-influenced: []
+- name: Alexander Tcherepnin
+  source: llm
+  quote: Among his teachers in Russia were... Leokadiya Kashperova
+mentors: []
 ---
+
+
+
+
+
 
 # Leokadiya Kashperova
 

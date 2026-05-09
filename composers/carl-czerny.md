@@ -1,5 +1,6 @@
 ---
 name: Carl Czerny
+wikidata: Q215333
 wikipedia: https://en.wikipedia.org/wiki/Carl_Czerny
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Czerny_2_part.jpg/250px-Czerny_2_part.jpg
 birth: '1791'
@@ -11,26 +12,15 @@ nationality_source: infobox
 era: late Classical and early Romantic
 era_source: llm
 teachers:
-- name: Moritz Moszkowski
-  source: wiki
-- name: Anna Yesipova
-  source: wiki
-- name: Martin Krause
-  source: wiki
-- name: István Thomán
-  source: wiki
-- name: Edwin Fischer
-  source: wiki
-- name: Alexander Siloti
-  source: wiki
-- name: Artur Schnabel
-  source: wiki
 - name: Ludwig van Beethoven
-  source: llm_confirmed
+  source: llm
   quote: Beethoven was impressed with the 10-year-old and accepted him as a pupil.
 - name: Johann Nepomuk Hummel
-  source: llm_confirmed
+  source: llm
   quote: he transferred to be Johann Nepomuk Hummel's star pupil.
+- name: Antonio Salieri
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
 - name: Theodor Döhler
   source: wiki
@@ -47,19 +37,33 @@ students:
   source: llm
   quote: many of his students, such as Theodor Leschetizky, Franz Liszt and Theodor
     Kullak, also became teachers
-influenced_by:
-- name: Muzio Clementi
-  source: llm
-  quote: Basing his method on the teaching of Beethoven, Muzio Clementi and Johann
-    Nepomuk Hummel
-influenced:
-- name: Frédéric Chopin
-  source: llm
-  quote: Chopin met Czerny in Vienna in 1828 and may have been influenced by his nocturnes.
-- name: Johannes Brahms
-  source: llm
-  quote: I certainly think Czerny's large pianoforte course Op. 500 is worthy of study
+- name: Karl van Beethoven
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Anton Door
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Alfred Jaëll
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Alfrēds Kalniņš
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Leopold von Meyer
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Anna Caroline Oury
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Sigismond Thalberg
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Carl Czerny
 

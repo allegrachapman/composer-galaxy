@@ -1,5 +1,6 @@
 ---
 name: Louis Niedermeyer
+wikidata: Q304620
 wikipedia: https://en.wikipedia.org/wiki/Louis_Niedermeyer
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Louis_Niedermeyer.jpg/250px-Louis_Niedermeyer.jpg
 birth: '1802'
@@ -35,15 +36,15 @@ students:
 - name: Albert Périlhou
   source: llm
   quote: Eugène Gigout, Albert Périlhou and André Messager
-influenced_by:
-- name: Gioachino Rossini
-  source: llm
-  quote: Gioachino Rossini, who befriended him and encouraged him to write operas
-influenced:
-- name: Charles Gounod
-  source: llm
-  quote: paved the way for Charles Gounod and all those who followed his lead
+- name: Georges Sporck
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+mentors: []
 ---
+
+
+
+
 
 # Louis Niedermeyer
 

@@ -1,7 +1,8 @@
 ---
 name: Ellen Taaffe Zwilich
+wikidata: Q457425
 wikipedia: https://en.wikipedia.org/wiki/Ellen_Taaffe_Zwilich
-thumbnail: null
+thumbnail: https://images.squarespace-cdn.com/content/v1/5612c763e4b0671bb4205bd1/1444072206521-DS0BDP61MDO3DGOCIIIO/image-asset.jpeg
 birth: '1939'
 birth_source: infobox
 death: '1939'
@@ -20,13 +21,16 @@ teachers:
 - name: Roger Sessions
   source: llm
   quote: Her teachers included John Boda, Elliott Carter, and Roger Sessions.
+- name: Ivan Galamian
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 students: []
-influenced_by:
-- name: Pierre Boulez
-  source: llm
-  quote: Her music was conducted by Pierre Boulez at Juilliard in 1975.
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Ellen Taaffe Zwilich
 

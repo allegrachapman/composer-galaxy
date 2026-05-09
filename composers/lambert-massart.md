@@ -1,5 +1,6 @@
 ---
 name: Lambert Massart
+wikidata: Q1358737
 wikipedia: https://en.wikipedia.org/wiki/Lambert_Massart
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Lambert_Joseph_Massart_1889.jpg/250px-Lambert_Joseph_Massart_1889.jpg
 birth: '1811'
@@ -37,14 +38,44 @@ students:
   source: llm
   quote: František Ondříček, Léon Reynier, Henryk Wieniawski
 - name: Henryk Wieniawski
-  source: llm_confirmed
+  source: llm
   quote: František Ondříček, Léon Reynier, Henryk Wieniawski
 - name: Charles Martin Loeffler
   source: llm
   quote: and Charles Martin Loeffler
-influenced_by: []
-influenced: []
+- name: Alfred De Sève
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: José White Lafitte
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Martin Pierre Marsick
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Léon Reynier
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Pablo de Sarasate
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: César Thomson
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Teresina Tua
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Camilla Urso
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Eugène Ysaÿe
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # Lambert Massart
 

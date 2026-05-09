@@ -1,5 +1,6 @@
 ---
 name: Caroline Shaw
+wikidata: Q15430653
 wikipedia: https://en.wikipedia.org/wiki/Caroline_Shaw
 thumbnail: null
 birth: '1982'
@@ -8,22 +9,14 @@ death: null
 death_source: null
 nationality: Greenville, North Carolina, U.S.
 nationality_source: infobox
-era: 20th-century, 21st-century
+era: Contemporary
 era_source: llm
 teachers: []
 students: []
-influenced_by:
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: mostly in imitation of the chamber music of Mozart and Brahms
-- name: Johannes Brahms
-  source: llm
-  quote: mostly in imitation of the chamber music of Mozart and Brahms
-- name: Johann Sebastian Bach
-  source: llm
-  quote: the organist there who frequently played Bach
-influenced: []
+mentors: []
 ---
+
+
 
 # Caroline Shaw
 

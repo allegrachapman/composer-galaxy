@@ -1,5 +1,6 @@
 ---
 name: Leonid Nikolayev (pianist)
+wikidata: Q2023778
 wikipedia: https://en.wikipedia.org/wiki/Leonid_Nikolayev_(pianist)
 thumbnail: null
 birth: '1878'
@@ -25,7 +26,7 @@ students:
   source: llm
   quote: His students at the Conservatory included Vladimir Sofronitsky, Maria Yudina
 - name: Dmitri Shostakovich
-  source: llm_confirmed
+  source: llm
   quote: His students at the Conservatory included Vladimir Sofronitsky, Maria Yudina,
     Dmitri Shostakovich
 - name: Vera Razumovskaya
@@ -60,12 +61,12 @@ students:
   quote: His students at the Conservatory included Vladimir Sofronitsky, Maria Yudina,
     Dmitri Shostakovich, Vera Razumovskaya, Nathan Perelman, Wiktor Łabuński, Vera
     Vinogradova, Samary Savshinsky, Nadia Reisenberg, and Alexander Zakin
-influenced_by: []
-influenced:
-- name: Dmitri Shostakovich
-  source: llm
-  quote: He trained not simply pianists, but in the first place thinking musicians
+mentors: []
 ---
+
+
+
+
 
 # Leonid Nikolayev (pianist)
 

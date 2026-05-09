@@ -1,5 +1,6 @@
 ---
 name: Felix Greissle
+wikidata: Q29415127
 wikipedia: https://en.wikipedia.org/wiki/Felix_Greissle
 thumbnail: null
 birth: '1894'
@@ -13,16 +14,15 @@ era_source: llm
 teachers:
 - name: Guido Adler
   source: wiki
-- name: Arnold Schoenberg
-  source: llm_confirmed
-  quote: In 1919 Greissle began private lessons with composer Arnold Schoenberg
-students: []
-influenced_by:
+  quote: he was a pupil of Guido Adler
 - name: Arnold Schoenberg
   source: llm
-  quote: He was the son-in-law of composer Arnold Schoenberg with whom he had studied
-influenced: []
+  quote: Arnold Schoenberg with whom he had studied
+students: []
+mentors: []
 ---
+
+
 
 # Felix Greissle
 

@@ -1,5 +1,6 @@
 ---
 name: Ferdinand Ries
+wikidata: Q213558
 wikipedia: https://en.wikipedia.org/wiki/Ferdinand_Ries
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ferdinand_Ries_by_Mayer.jpg/250px-Ferdinand_Ries_by_Mayer.jpg
 birth: '1784'
@@ -12,7 +13,7 @@ era: Romantic
 era_source: llm
 teachers:
 - name: Ludwig van Beethoven
-  source: llm_confirmed
+  source: llm
   quote: Ries was then the pupil of Ludwig van Beethoven
 - name: Bernhard Romberg
   source: llm
@@ -21,16 +22,19 @@ teachers:
 - name: Johann Georg Albrechtsberger
   source: llm
   quote: sending him to Albrechtsberger for harmony and composition
-students:
-- name: Ludwig van Beethoven
+- name: Andrea Luchesi
   source: wiki
-influenced_by:
-- name: Ludwig van Beethoven
-  source: llm
-  quote: his connection to Beethoven, lies between the Classical and early Romantic
-    styles
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+students:
+- name: Hélène Liebmann
+  source: wiki
+mentors: []
 ---
+
+
+
+
+
 
 # Ferdinand Ries
 

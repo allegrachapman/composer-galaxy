@@ -1,5 +1,6 @@
 ---
 name: Lou Harrison
+wikidata: Q590911
 wikipedia: https://en.wikipedia.org/wiki/Lou_Harrison
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Lou_Harrison_1940s.jpg/250px-Lou_Harrison_1940s.jpg
 birth: '1917'
@@ -11,42 +12,39 @@ nationality_source: infobox
 era: 20th-century
 era_source: llm
 teachers:
-- name: Guzheng
-  source: wiki
 - name: Henry Cowell
-  source: llm_confirmed
-  quote: Harrison quickly became one of Cowell's most enthusiastic students
+  source: llm
+  quote: his former teacher and contemporary, Henry Cowell
 - name: Arnold Schoenberg
-  source: llm_confirmed
+  source: llm
   quote: he took theory lessons from Arnold Schoenberg
 - name: Virgil Thomson
   source: llm
-  quote: worked as a music critic for the Herald Tribune at the behest of fellow composer
-    and tutor Virgil Thomson
-- name: Liang Tsai-Ping
-  source: llm
-  quote: a 1962 trip to Taiwan (where he studied with the zheng master Liang Tsai-Ping)
-students:
-- name: Laban movement analysis
+  quote: at the behest of fellow composer and tutor Virgil Thomson
+- name: K. P. H. Notoprojo
   source: wiki
-- name: Jin Hi Kim
-  source: wiki
-- name: Richard Dee
-  source: llm
-  quote: with Colvig, his student Richard Dee, and the singer Lily Chin
-influenced_by:
-- name: Harry Partch
-  source: llm
-  quote: In the early 1950s, Harrison was given a first edition copy of Harry Partch's
-    book
-- name: Colin McPhee
-  source: llm
-  quote: Following in the path of Canadian-American composer and friend Colin McPhee
-influenced:
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
 - name: John Cage
-  source: llm
-  quote: This ultramodern and avant-garde music captured the attention of John Cage
+  source: wiki
+students:
+- name: Barbara Golden
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: David Lang
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Gino Robair
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Kim Jin-hi
+  source: wiki
+mentors: []
 ---
+
+
+
+
+
 
 # Lou Harrison
 

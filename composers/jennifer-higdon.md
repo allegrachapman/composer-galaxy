@@ -1,5 +1,6 @@
 ---
 name: Jennifer Higdon
+wikidata: Q289468
 wikipedia: https://en.wikipedia.org/wiki/Jennifer_Higdon
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Jennifer_Higdon_at_2014_Cabrillo_Festival_of_Contemporary_Music.jpg/250px-Jennifer_Higdon_at_2014_Cabrillo_Festival_of_Contemporary_Music.jpg
 birth: '1962'
@@ -19,16 +20,19 @@ teachers:
 - name: George Crumb
   source: llm
   quote: under the tutelage of George Crumb
+- name: Ned Rorem
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
 students:
 - name: Hilary Hahn
   source: llm
   quote: taught the future virtuoso Hilary Hahn
-influenced_by:
-- name: George Crumb
-  source: llm
-  quote: George Crumb, who encouraged her to use nature as a muse
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Jennifer Higdon
 

@@ -1,5 +1,6 @@
 ---
 name: Leo Sirota
+wikidata: Q1037441
 wikipedia: https://en.wikipedia.org/wiki/Leo_Sirota
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Leo_Sirota_1940.jpg/250px-Leo_Sirota_1940.jpg
 birth: '1885'
@@ -12,7 +13,7 @@ era: 20th-century
 era_source: llm
 teachers:
 - name: Ferruccio Busoni
-  source: llm_confirmed
+  source: llm
   quote: What need is there for this? I have heard you play!
 - name: Michael Wexler
   source: llm
@@ -27,16 +28,12 @@ students:
   source: llm
   quote: Horenstein began to study with Sirota, whom he invited to play with the pickup
     orchestra
-influenced_by:
-- name: Ignacy Jan Paderewski
-  source: llm
-  quote: Impressed by his talent, he invited Sirota to study with him in Paris
-- name: Alexander Glazunov
-  source: llm
-  quote: The school's dean, Alexander Glazunov, wrote a recommendation letter for
-    him to Ferruccio Busoni
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Leo Sirota
 

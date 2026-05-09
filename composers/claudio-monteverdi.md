@@ -1,5 +1,6 @@
 ---
 name: Claudio Monteverdi
+wikidata: Q53068
 wikipedia: https://en.wikipedia.org/wiki/Claudio_Monteverdi
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bernardo_Strozzi_-_Claudio_Monteverdi_%28c.1630%29.jpg/250px-Bernardo_Strozzi_-_Claudio_Monteverdi_%28c.1630%29.jpg
 birth: '1567'
@@ -22,15 +23,15 @@ students:
   source: llm
   quote: joined in 1616 at the age of 14; he remained connected with San Marco throughout
     his life, and developed a close association with Monteverdi
-influenced_by:
-- name: Giaches de Wert
-  source: llm
-  quote: maestro di capella at the court was the Flemish musician Giaches de Wert
-influenced:
-- name: Adriano Banchieri
-  source: llm
-  quote: his expressive qualities are truly deserving of the highest commendation
+- name: Giovanni Rovetta
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+mentors: []
 ---
+
+
+
+
 
 # Claudio Monteverdi
 

@@ -1,5 +1,6 @@
 ---
 name: Maurice Delage
+wikidata: Q973541
 wikipedia: https://en.wikipedia.org/wiki/Maurice_Delage
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Maurice_Delage_1912.JPG/250px-Maurice_Delage_1912.JPG
 birth: '1879'
@@ -12,19 +13,17 @@ era: 20th-century
 era_source: llm
 teachers:
 - name: Maurice Ravel
-  source: llm_confirmed
-  quote: A student of Ravel, who proclaimed him one of the supreme French composers
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+  quote: A student of Ravel
 students: []
-influenced_by:
-- name: India
-  source: wiki
-- name: Japan
-  source: wiki
-- name: Maurice Ravel
+mentors:
+- name: Jane Bathori
   source: llm
-  quote: Ravel's "La vallée des cloches" from Miroirs was dedicated to Delage
-influenced: []
+  quote: dedicated to Jane Bathori (première performer of the work)
 ---
+
+
 
 # Maurice Delage
 

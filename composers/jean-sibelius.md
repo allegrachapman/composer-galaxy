@@ -1,5 +1,6 @@
 ---
 name: Jean Sibelius
+wikidata: Q45682
 wikipedia: https://en.wikipedia.org/wiki/Jean_Sibelius
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Jean_Sibelius_circa_1898-1900_%283x4_cropped%29.jpg/250px-Jean_Sibelius_circa_1898-1900_%283x4_cropped%29.jpg
 birth: '1865'
@@ -31,28 +32,18 @@ teachers:
 students:
 - name: Leevi Madetoja
   source: wiki
-influenced_by:
-- name: Franz Liszt
+- name: Bengt de Törne
   source: wiki
-- name: Tapio (spirit)
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Toivo Kuula
   source: wiki
-- name: Anton Bruckner
-  source: llm
-  quote: he became particularly interested in the music of Anton Bruckner whom he
-    regarded as "the greatest living composer"
-- name: Richard Wagner
-  source: llm
-  quote: To some extent, he had come under the influence of Wagner, but subsequently
-    turned to Liszt's tone poems
-- name: Edvard Grieg
-  source: llm
-  quote: The most remarkable of his works during this period was the Violin Sonata
-    in F, rather reminiscent of Grieg
-- name: Ludwig van Beethoven
-  source: llm
-  quote: showing interest in the established works of Beethoven and Wagner
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+mentors: []
 ---
+
+
+
+
 
 # Jean Sibelius
 

@@ -1,5 +1,6 @@
 ---
 name: Henry Purcell
+wikidata: Q9695
 wikipedia: https://en.wikipedia.org/wiki/Henry_Purcell
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Henry_Purcell_Closterman.jpg/250px-Henry_Purcell_Closterman.jpg
 birth: '1659'
@@ -25,25 +26,22 @@ teachers:
 - name: Pelham Humfrey
   source: llm
   quote: afterwards under Cooke's successor Pelham Humfrey, who was a pupil of Lully
-students: []
-influenced_by:
-- name: Matthew Locke
-  source: llm
-  quote: The composer Matthew Locke was a family friend and, particularly with his
-    semi-operas, probably also had a musical influence on the young Purcell
-- name: Pelham Humfrey
-  source: llm
-  quote: Pelham Humfrey, who was a pupil of Lully
-influenced:
-- name: Benjamin Britten
-  source: llm
-  quote: Purcell also had a strong influence on the composers of the English musical
-    renaissance of the early 20th century, most notably Benjamin Britten
-- name: William Croft
-  source: llm
-  quote: William Croft's 1724 setting for the Burial Service was written in the style
-    of "the great Master"
+- name: Christopher Gibbons
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+students:
+- name: Daniel Roseingrave
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: John Weldon
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+mentors: []
 ---
+
+
+
+
 
 # Henry Purcell
 

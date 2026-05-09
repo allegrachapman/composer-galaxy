@@ -1,5 +1,6 @@
 ---
 name: Florence Price
+wikidata: Q520522
 wikipedia: https://en.wikipedia.org/wiki/Florence_Price
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Composer_Florence_Price_%28cropped%29.jpg/250px-Composer_Florence_Price_%28cropped%29.jpg
 birth: '1887'
@@ -38,23 +39,11 @@ students:
   source: llm
   quote: She eventually moved in with her student and friend, Margaret Bonds, also
     a Black pianist and composer
-influenced_by:
-- name: African-American spirituals
-  source: wiki
-- name: Antonín Dvořák
-  source: llm
-  quote: The strong influence of the composition style of Antonín Dvořák is often
-    noticeable, as in her first violin concerto
-influenced:
-- name: Jessie Montgomery
-  source: llm
-  quote: Contemporary composers, including Jessie Montgomery and Valerie Coleman,
-    have cited Price as an influence
-- name: Valerie Coleman
-  source: llm
-  quote: Contemporary composers, including Jessie Montgomery and Valerie Coleman,
-    have cited Price as an influence
+mentors: []
 ---
+
+
+
 
 # Florence Price
 

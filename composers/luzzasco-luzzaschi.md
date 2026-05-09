@@ -1,5 +1,6 @@
 ---
 name: Luzzasco Luzzaschi
+wikidata: Q445581
 wikipedia: https://en.wikipedia.org/wiki/Luzzasco_Luzzaschi
 thumbnail: null
 birth: '1545'
@@ -12,40 +13,32 @@ era: Renaissance
 era_source: llm
 teachers:
 - name: Cipriano de Rore
-  source: wiki
+  source: manual
+  quote: According to his own testimony he was a pupil of Cipriano de Rore
+- name: Jacques Brunel
+  source: manual
+  quote: He probably studied the organ with Jacques Brunel
+- name: Alfonso dalla Viola
+  source: manual
+  quote: may also have studied composition with Alfonso dalla Viola after Rore left
+    Ferrara
 students:
-- name: Ercole Pasquini
-  source: llm_confirmed
-  quote: The members of the Roman school, beginning with Ercole Pasquini
 - name: Girolamo Frescobaldi
-  source: llm_confirmed
-  quote: succeeded by Frescobaldi himself, were entirely trained by Luzzaschi
-- name: Carlo Gesualdo
+  source: manual
+  quote: The most renowned of them was Frescobaldi, who praised him as a musician
+    and teacher
+- name: Girolamo Belli
+  source: manual
+  quote: Others were Girolamo Belli
+- name: Ercole Pasquini
   source: llm
-  quote: The neapolitians around Gesualdo and Macque admired and closely followed
-    Luzzaschi's work
-- name: Giovanni Macque
-  source: llm
-  quote: The neapolitians around Gesualdo and Macque admired and closely followed
-    Luzzaschi's work
-influenced_by: []
-influenced:
-- name: Giovanni Gabrieli
-  source: llm
-  quote: Three Italians, Giovanni Gabrieli, Marenzio, and Monteverdi, may be seen
-    as strongly affecting his style
-- name: Luca Marenzio
-  source: llm
-  quote: Three Italians, Giovanni Gabrieli, Marenzio, and Monteverdi, may be seen
-    as strongly affecting his style
-- name: Claudio Monteverdi
-  source: llm
-  quote: Claudo Monteverdi was also influenced by Luzzaschi, particularly in his early
-    madrigals
-- name: Carlo Gesualdo
-  source: llm
-  quote: Carlo Gesualdo's madrigals reflect Luzzaschi's hallmark features
+  quote: The members of the Roman school, beginning with Ercole Pasquini
+mentors: []
 ---
+
+
+
+
 
 # Luzzasco Luzzaschi
 

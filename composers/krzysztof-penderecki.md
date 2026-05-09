@@ -1,5 +1,6 @@
 ---
 name: Krzysztof Penderecki
+wikidata: Q153469
 wikipedia: https://en.wikipedia.org/wiki/Krzysztof_Penderecki
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Krzysztof_Penderecki_20080706.jpg/250px-Krzysztof_Penderecki_20080706.jpg
 birth: '1933'
@@ -25,21 +26,24 @@ students:
 - name: Walter Mays
   source: llm
   quote: His notable students include Chester Biscardi and Walter Mays
-influenced_by:
-- name: Igor Stravinsky
+- name: David Feldman
   source: wiki
-- name: Anton Webern
-  source: llm
-  quote: His early works show the influence of Anton Webern and Pierre Boulez
-- name: Pierre Boulez
-  source: llm
-  quote: His early works show the influence of Anton Webern and Pierre Boulez
-influenced:
-- name: Jonny Greenwood
-  source: llm
-  quote: The composer and Radiohead guitarist Jonny Greenwood cited Penderecki as
-    a major influence
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Eduardo Frigatti
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Sean Hickey
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+- name: Cindy McTee
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
+mentors: []
 ---
+
+
+
+
 
 # Krzysztof Penderecki
 

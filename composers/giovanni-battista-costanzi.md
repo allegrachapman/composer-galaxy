@@ -1,5 +1,6 @@
 ---
 name: Giovanni Battista Costanzi
+wikidata: Q1525849
 wikipedia: https://en.wikipedia.org/wiki/Giovanni_Battista_Costanzi
 thumbnail: null
 birth: '1704'
@@ -10,14 +11,18 @@ nationality: Italian
 nationality_source: llm
 era: null
 era_source: null
-teachers: []
+teachers:
+- name: Giovanni Lorenzo Lulier
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 students:
 - name: Luigi Boccherini
-  source: llm_confirmed
-  quote: Also known as a teacher of Luigi Boccherini
-influenced_by: []
-influenced: []
+  source: llm
+  quote: a teacher of Luigi Boccherini
+mentors: []
 ---
+
+
 
 # Giovanni Battista Costanzi
 

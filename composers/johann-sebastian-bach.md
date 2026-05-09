@@ -1,5 +1,6 @@
 ---
 name: Johann Sebastian Bach
+wikidata: Q1339
 wikipedia: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Johann_Sebastian_Bach.jpg/250px-Johann_Sebastian_Bach.jpg
 birth: '1685'
@@ -8,75 +9,110 @@ death: '1750'
 death_source: infobox
 nationality: Eisenach
 nationality_source: infobox
-era: Baroque
-era_source: llm
+era: null
+era_source: null
 teachers:
-- name: Johann Christoph Bach
-  source: llm
-  quote: He also received instruction on the clavichord from his brother.
-- name: Johann Adam Reincken
-  source: llm
-  quote: taking lessons from the organist and composer Johann Adam Reincken
-- name: Dieterich Buxtehude
-  source: llm
-  quote: wanting to hear Reincken and Dieterich Buxtehude play in Lübeck
-students:
-- name: Carl Gotthelf Gerlach
+- name: Georg Böhm
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+students:
+- name: Carl Friedrich Abel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Friedrich Agricola
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 - name: Johann Christoph Altnickol
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Anna Magdalena Bach
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Carl Philipp Emanuel Bach
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Gottfried Heinrich Bach
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Bernhard Bach
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Christian Bach
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Christoph Friedrich Bach
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Ernst Bach II
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Gottfried Bernhard Bach
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Wilhelm Friedemann Bach
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
 - name: Johann Friedrich Doles
   source: wiki
-- name: P. D. Kräuter
-  source: llm
-  quote: one of Bach's pupils, P. D. Kräuter, requested a leave of absence
-influenced_by:
-- name: Johann Caspar Kerll
-  source: llm
-  quote: including South Germans such as Johann Caspar Kerll
-- name: Johann Jakob Froberger
-  source: llm
-  quote: such as Johann Caspar Kerll, Johann Jakob Froberger, and Johann Pachelbel
-- name: Johann Pachelbel
-  source: llm
-  quote: and Johann Pachelbel (under whom Johann Christoph had studied)
-- name: Georg Böhm
-  source: llm
-  quote: North Germans such as Georg Böhm, Johann Reincken and Friedrich Nicolaus
-    Bruhns
-- name: Johann Reincken
-  source: llm
-  quote: Bach knew Reincken's music very well
-- name: Friedrich Nicolaus Bruhns
-  source: llm
-  quote: such as Georg Böhm, Johann Reincken and Friedrich Nicolaus Bruhns from Hamburg
-- name: Jean-Baptiste Lully
-  source: llm
-  quote: Frenchmen such as Jean-Baptiste Lully, Louis Marchand, and Marin Marais
-- name: Louis Marchand
-  source: llm
-  quote: Frenchmen such as Jean-Baptiste Lully, Louis Marchand, and Marin Marais
-- name: Marin Marais
-  source: llm
-  quote: Frenchmen such as Jean-Baptiste Lully, Louis Marchand, and Marin Marais
-- name: Girolamo Frescobaldi
-  source: llm
-  quote: and the Italian Girolamo Frescobaldi
-- name: Antonio Vivaldi
-  source: llm
-  quote: include influences from abroad such as Vivaldi, Corelli, and Torelli
-- name: Arcangelo Corelli
-  source: llm
-  quote: include influences from abroad such as Vivaldi, Corelli, and Torelli
-- name: Giuseppe Torelli
-  source: llm
-  quote: include influences from abroad such as Vivaldi, Corelli, and Torelli
-influenced:
-- name: Felix Mendelssohn
-  source: llm
-  quote: Felix Mendelssohn precipitated the Bach Revival with a performance of the
-    St. Matthew Passion in 1829.
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Heinrich Nikolaus Gerber
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Gottlieb Goldberg
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Gottfried August Homilius
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Peter Kellner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Kirnberger
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Christian Kittel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Ludwig Krebs
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Tobias Krebs
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Andreas Kuhnau
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Lorenz Christoph Mizler
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Gottfried Müthel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Christoph Nichelmann
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Martin Schubart
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Friedrich Schweinitz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Caspar Vogler
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Gottfried Walther
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Wilhelm
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Heinrich Zang
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+mentors: []
 ---
+
+
 
 # Johann Sebastian Bach
 

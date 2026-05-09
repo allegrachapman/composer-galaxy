@@ -1,5 +1,6 @@
 ---
 name: Kim Jin-hi
+wikidata: Q6408893
 wikipedia: https://en.wikipedia.org/wiki/Kim_Jin-hi
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Jin_Hi_Kim_plays_electirc_komungo.jpg/250px-Jin_Hi_Kim_plays_electirc_komungo.jpg
 birth: '1957'
@@ -11,13 +12,11 @@ nationality_source: llm
 era: 20th-century, 21st-century
 era_source: llm
 teachers:
-- name: John Adams (composer)
-  source: wiki
 - name: Lou Harrison
   source: wiki
 - name: Terry Riley
   source: wiki
-- name: John Adams
+- name: John Adams (composer)
   source: llm
   quote: studied composition with John Adams for one year
 - name: David Rosenboom
@@ -29,26 +28,12 @@ teachers:
 - name: G. S. Sachdev
   source: llm
   quote: studied the Chinese guqin and Indian bansuri from G. S. Sachdev
-students:
-- name: Oakland, California
-  source: wiki
-- name: Terry Riley
-  source: wiki
-influenced_by:
-- name: John Cage
-  source: llm
-  quote: met many noted contemporary composers including John Cage
-- name: La Monte Young
-  source: llm
-  quote: met many noted contemporary composers including La Monte Young
-- name: Steve Reich
-  source: llm
-  quote: met many noted contemporary composers including Steve Reich
-- name: Philip Glass
-  source: llm
-  quote: met many noted contemporary composers including Philip Glass
-influenced: []
+students: []
+mentors: []
 ---
+
+
+
 
 # Kim Jin-hi
 

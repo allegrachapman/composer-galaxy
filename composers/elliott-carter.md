@@ -1,5 +1,6 @@
 ---
 name: Elliott Carter
+wikidata: Q318835
 wikipedia: https://en.wikipedia.org/wiki/Elliott_Carter
 thumbnail: https://upload.wikimedia.org/wikipedia/en/f/f6/Elliott_Carter.jpg
 birth: '1908'
@@ -25,42 +26,51 @@ teachers:
   quote: After studying at Harvard University with Edward Burlingame Hill, Gustav
     Holst and Walter Piston
 students:
-- name: Walter Piston
+- name: Ronald Caltabiano
   source: wiki
-influenced_by:
-- name: Igor Stravinsky
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Joel Chadabe
   source: wiki
-- name: Aaron Copland
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Alvin Curran
   source: wiki
-- name: Howard Hanson
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Joel Hoffman
   source: wiki
-- name: Charles Ives
-  source: llm
-  quote: He was later introduced to Charles Ives, and he soon came to appreciate
-- name: Paul Hindemith
-  source: llm
-  quote: Carter's earlier works were influenced by Igor Stravinsky, Aaron Copland,
-    and Paul Hindemith
-- name: Henry Cowell
-  source: llm
-  quote: 'Carter later came to appreciate the American ultra-modernists: Henry Cowell,
-    Edgard Varèse'
-- name: Edgard Varèse
-  source: llm
-  quote: 'Carter later came to appreciate the American ultra-modernists: Henry Cowell,
-    Edgard Varèse, Ruth Crawford'
-- name: Ruth Crawford
-  source: llm
-  quote: 'Carter later came to appreciate the American ultra-modernists: Henry Cowell,
-    Edgard Varèse, Ruth Crawford'
-- name: Conlon Nancarrow
-  source: llm
-  quote: later, Conlon Nancarrow
-- name: Samuel Barber
-  source: llm
-  quote: includes a melodic lyricism reminiscent of Samuel Barber
-influenced: []
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Tod Machover
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Jeffrey Mumford
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Oliver Nelson
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Tobias Picker
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Ronald Roseman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: David Schiff
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: William Schimmel
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Gitta Steiner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+- name: Ellen Taaffe Zwilich
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
+mentors: []
 ---
+
+
+
+
 
 # Elliott Carter
 

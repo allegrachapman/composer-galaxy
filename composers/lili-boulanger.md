@@ -1,5 +1,6 @@
 ---
 name: Lili Boulanger
+wikidata: Q230412
 wikipedia: https://en.wikipedia.org/wiki/Lili_Boulanger
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lili_Boulanger_par_Henri_Manuel.jpg/250px-Lili_Boulanger_par_Henri_Manuel.jpg
 birth: '1893'
@@ -38,18 +39,11 @@ teachers:
   source: llm
   quote: composition with Paul Vidal
 students: []
-influenced_by:
-- name: Gabriel Fauré
-  source: llm
-  quote: Aspects of Fauré and Claude Debussy can be heard in her compositions
-- name: Claude Debussy
-  source: llm
-  quote: Aspects of Fauré and Claude Debussy can be heard in her compositions
-influenced:
-- name: Arthur Honegger
-  source: llm
-  quote: later composers, such Arthur Honegger, were influenced by her innovations
+mentors: []
 ---
+
+
+
 
 # Lili Boulanger
 

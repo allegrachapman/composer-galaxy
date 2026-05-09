@@ -1,5 +1,6 @@
 ---
 name: Sofia Gubaidulina
+wikidata: Q165668
 wikipedia: https://en.wikipedia.org/wiki/Sofia_Gubaidulina
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sofia_Gubaidulina_%282016-11-03%29.jpg/250px-Sofia_Gubaidulina_%282016-11-03%29.jpg
 birth: '1931'
@@ -20,43 +21,16 @@ teachers:
 - name: Vissarion Shebalin
   source: llm
   quote: and then with Vissarion Shebalin until 1963
+- name: Philip Herschkowitz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 students: []
-influenced_by:
-- name: Johann Sebastian Bach
-  source: llm
-  quote: discovered spiritual ideas in the works of composers such as Bach, Mozart,
-    and Beethoven
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: discovered spiritual ideas in the works of composers such as Bach, Mozart,
-    and Beethoven
-- name: Ludwig van Beethoven
-  source: llm
-  quote: discovered spiritual ideas in the works of composers such as Bach, Mozart,
-    and Beethoven
-- name: Béla Bartók
-  source: llm
-  quote: an exception being the Hungarian composer Béla Bartók
-- name: Richard Wagner
-  source: llm
-  quote: composers she most admired were J. S. Bach, Wagner and Anton Webern
-- name: Anton Webern
-  source: llm
-  quote: composers she most admired were J. S. Bach, Wagner and Anton Webern
-- name: Gesualdo da Venosa
-  source: llm
-  quote: 16th century music, most notably Gesualdo da Venosa and Josquin des Prez
-- name: Josquin des Prez
-  source: llm
-  quote: 16th century music, most notably Gesualdo da Venosa and Josquin des Prez
-- name: John Cage
-  source: llm
-  quote: we knew Ives, Cage, we actually knew everything on the sly
-influenced:
-- name: Dmitri Shostakovich
-  source: llm
-  quote: She was supported by Dmitri Shostakovich, who in evaluating one of her exams
+mentors: []
 ---
+
+
+
+
 
 # Sofia Gubaidulina
 

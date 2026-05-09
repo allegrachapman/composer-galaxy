@@ -1,43 +1,31 @@
 ---
 name: Franz Reizenstein
+wikidata: Q214416
 wikipedia: https://en.wikipedia.org/wiki/Franz_Reizenstein
 thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Franz_Reizenstein.jpg/250px-Franz_Reizenstein.jpg
 birth: '1911'
-birth_source: llm
+birth_source: wikidata
 death: '1968'
-death_source: llm
-nationality: German-British
-nationality_source: llm
-era: 20th-century
-era_source: llm
+death_source: wikidata
+nationality: null
+nationality_source: null
+era: null
+era_source: null
 teachers:
-- name: Paul Hindemith
-  source: wiki
-- name: Ralph Vaughan Williams
-  source: wiki
 - name: Solomon Cutner
   source: wiki
-- name: Constant Lambert
-  source: llm
-  quote: Constant Lambert for conducting at the Royal College of Music
-- name: Felix Weingartner
-  source: llm
-  quote: took a course of conducting under Felix Weingartner in Basel
-students:
-- name: Philip Martin
-  source: llm
-  quote: Amongst his pupils at the academy was Philip Martin whom he taught piano
-    and also composition
-influenced_by:
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 - name: Paul Hindemith
-  source: llm
-  quote: influenced by Vaughan Williams and the English lyrical tradition, tempered
-    with the objectivity and contrapuntal complexity of Hindemith
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 - name: Ralph Vaughan Williams
-  source: llm
-  quote: influenced by Vaughan Williams and the English lyrical tradition
-influenced: []
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
+students: []
+mentors: []
 ---
+
+
 
 # Franz Reizenstein
 

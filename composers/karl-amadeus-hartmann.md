@@ -1,5 +1,6 @@
 ---
 name: Karl Amadeus Hartmann
+wikidata: Q366100
 wikipedia: https://en.wikipedia.org/wiki/Karl_Amadeus_Hartmann
 thumbnail: null
 birth: '1905'
@@ -21,56 +22,18 @@ teachers:
   source: llm
   quote: submitted to a course of private tuition in Vienna by Schoenberg's pupil
     Anton Webern
-students:
-- name: Anton Webern
+- name: Hermann Scherchen
   source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+students:
 - name: Joseph Haas
   source: wiki
-influenced_by:
-- name: Johann Sebastian Bach
-  source: llm
-  quote: he admired the polyphonic mastery of J.S. Bach
-- name: Gustav Mahler
-  source: llm
-  quote: the profound expressive irony of Mahler
-- name: Igor Stravinsky
-  source: llm
-  quote: the neoclassicism of Igor Stravinsky and Paul Hindemith
-- name: Paul Hindemith
-  source: llm
-  quote: the neoclassicism of Igor Stravinsky and Paul Hindemith
-- name: Béla Bartók
-  source: llm
-  quote: developed close ties with Béla Bartók and Zoltán Kodály in Hungary
-- name: Zoltán Kodály
-  source: llm
-  quote: developed close ties with Béla Bartók and Zoltán Kodály in Hungary
-- name: Arnold Schoenberg
-  source: llm
-  quote: began to take an interest in Schoenbergian twelve-tone technique
-- name: Alban Berg
-  source: llm
-  quote: his own idiom was closer to Alban Berg
-- name: Boris Blacher
-  source: llm
-  quote: metrical techniques pioneered by Boris Blacher and Elliott Carter
-- name: Elliott Carter
-  source: llm
-  quote: metrical techniques pioneered by Boris Blacher and Elliott Carter
-influenced:
-- name: Hans Werner Henze
-  source: llm
-  quote: helping to establish such figures as Hans Werner Henze
-- name: Luigi Nono
-  source: llm
-  quote: helping to establish such figures as Luigi Nono
-- name: Luigi Dallapiccola
-  source: llm
-  quote: helping to establish such figures as Luigi Dallapiccola
-- name: John McCabe
-  source: llm
-  quote: John McCabe wrote his Variations on a Theme of Karl Amadeus Hartmann
+mentors: []
 ---
+
+
+
+
 
 # Karl Amadeus Hartmann
 

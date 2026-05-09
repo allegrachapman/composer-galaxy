@@ -1,5 +1,6 @@
 ---
 name: Adolphus Hailstork
+wikidata: Q365999
 wikipedia: https://en.wikipedia.org/wiki/Adolphus_Hailstork
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/a/ab/Adolphus_Hailstork.jpg
 birth: '1941'
@@ -19,18 +20,15 @@ teachers:
   source: wiki
 - name: David Diamond (composer)
   source: wiki
-- name: David Diamond
-  source: llm
-  quote: studied under Vittorio Giannini and David Diamond
 - name: H. Owen Reed
   source: llm
   quote: studying under H. Owen Reed
-students:
-- name: David Diamond (composer)
-  source: wiki
-influenced_by: []
-influenced: []
+students: []
+mentors: []
 ---
+
+
+
 
 # Adolphus Hailstork
 

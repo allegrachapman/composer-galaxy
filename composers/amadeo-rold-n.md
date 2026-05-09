@@ -1,5 +1,6 @@
 ---
 name: Amadeo Roldán
+wikidata: Q451761
 wikipedia: https://en.wikipedia.org/wiki/Amadeo_Roldán
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Amadeo_Roldan.JPG/250px-Amadeo_Roldan.JPG
 birth: '1900'
@@ -10,11 +11,22 @@ nationality: Cuban
 nationality_source: llm
 era: 20th-century
 era_source: llm
-teachers: []
+teachers:
+- name: Pedro Sanjuan
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Albertina Gardes
+  source: llm
+  quote: his mother, the pianist Albertina Gardes, who initiated her children to music
 students: []
-influenced_by: []
-influenced: []
+mentors:
+- name: Henry Cowell
+  source: llm
+  quote: concerts sponsored by the Pan-American Association of Composers, founded
+    by Henry Cowell
 ---
+
+
 
 # Amadeo Roldán
 

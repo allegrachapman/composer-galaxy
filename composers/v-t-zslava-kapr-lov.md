@@ -1,5 +1,6 @@
 ---
 name: Vítězslava Kaprálová
+wikidata: Q271624
 wikipedia: https://en.wikipedia.org/wiki/Vítězslava_Kaprálová
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Kapralova1935.jpg/250px-Kapralova1935.jpg
 birth: '1915'
@@ -23,7 +24,7 @@ teachers:
   source: llm
   quote: and Václav Talich (1935–36) in Prague
 - name: Bohuslav Martinů
-  source: llm_confirmed
+  source: llm
   quote: with Bohuslav Martinů, Charles Munch (1937–39)
 - name: Charles Munch
   source: llm
@@ -32,9 +33,12 @@ teachers:
   source: llm
   quote: according to some unverified accounts, with Nadia Boulanger (1940) in Paris
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Vítězslava Kaprálová
 

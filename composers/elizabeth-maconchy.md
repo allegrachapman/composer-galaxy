@@ -1,5 +1,6 @@
 ---
 name: Elizabeth Maconchy
+wikidata: Q457711
 wikipedia: https://en.wikipedia.org/wiki/Elizabeth_Maconchy
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Elizabeth_Maconchy.png/250px-Elizabeth_Maconchy.png
 birth: '1907'
@@ -21,18 +22,22 @@ teachers:
   source: llm
   quote: Her first public recognition came in 19 March 1930 with a performance of
     her Piano Concerto, conducted by her teacher there, Karel Jirak.
+- name: Arthur Alexander (pianist)
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Gustav Holst
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Karel Boleslav Jirák
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 students: []
-influenced_by:
-- name: Béla Bartók
-  source: llm
-  quote: Early compositions such as the violin sonata and Piano Concertino of 1927
-    already show the influence of European composers, especially Béla Bartók.
-influenced:
-- name: Nicola LeFanu
-  source: llm
-  quote: 'she had two daughters: Elizabeth Anna LeFanu (born 1939) and Nicola LeFanu
-    (born 1947).'
+mentors: []
 ---
+
+
+
+
 
 # Elizabeth Maconchy
 

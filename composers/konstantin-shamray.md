@@ -1,5 +1,6 @@
 ---
 name: Konstantin Shamray
+wikidata: Q1564495
 wikipedia: https://en.wikipedia.org/wiki/Konstantin_Shamray
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Konstantin_Shamray.jpg/250px-Konstantin_Shamray.jpg
 birth: '1985'
@@ -27,9 +28,11 @@ teachers:
   source: llm
   quote: at Musikhochschule Freiburg with Tibor Szasz
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Konstantin Shamray
 

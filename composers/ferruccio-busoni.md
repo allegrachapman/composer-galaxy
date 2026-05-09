@@ -1,5 +1,6 @@
 ---
 name: Ferruccio Busoni
+wikidata: Q219551
 wikipedia: https://en.wikipedia.org/wiki/Ferruccio_Busoni
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/FerruccioBusoni1913.jpg/250px-FerruccioBusoni1913.jpg
 birth: '1866'
@@ -17,6 +18,9 @@ teachers:
 - name: Carl Reinecke
   source: llm
   quote: recommended he undertake study in Leipzig with Carl Reinecke
+- name: Salomon Jadassohn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
 students:
 - name: Egon Petri
   source: wiki
@@ -39,7 +43,7 @@ students:
 - name: child prodigy
   source: wiki
 - name: Jean Sibelius
-  source: llm_confirmed
+  source: llm
   quote: the composer Jean Sibelius, with whom he struck up a continuing friendship
 - name: Louis Gruenberg
   source: llm
@@ -53,25 +57,109 @@ students:
   source: llm
   quote: amongst his more rewarding pupils were Ignaz Friedman, Leo Sirota, Louis
     Gruenberg, Józef Turczyński and Louis Closson
-influenced_by:
-- name: Franz Liszt
+- name: Guido Agosti
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Gregor Beklemischeff
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Alexander Brailowsky
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Winifred Burston
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Augusta Cottlow
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Natalie Curtis
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Theophil Demetriescu
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Woldemar Freeman
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Herbert Fryer
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Gottfried Galston
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Rudolph Ganz
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Stanley Gardner
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Aurelio Giorni
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Percy Grainger
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Guido Guerrini
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Frederick Loewe
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Otto Luening
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Dimitri Mitropoulos
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Selim Palmgren
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Lloyd Powell
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Beryl Rubinstein
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Gisella Selden-Goth
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Eduard Steuermann
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Theodor Szántó
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Gino Tagliapietra
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Dimitri Tiomkin
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Edgard Varèse
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Edward Weiss
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Stefan Wolpe
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Michael von Zadora
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Leonard Stein
+  source: wiki
+- name: William Walton
   source: llm
-  quote: In 1877, Busoni heard the playing of Franz Liszt, and was introduced to the
-    composer
-- name: Johannes Brahms
-  source: llm
-  quote: He also met Johannes Brahms, to whom he dedicated two sets of piano Études
-- name: Giuseppe Verdi
-  source: llm
-  quote: Falstaff provoked in me such a revolution of spirit that I can ... date the
-    beginning of a new epoch in my artistic life
-influenced:
-- name: Arnold Schoenberg
-  source: llm
-  quote: Arnold Schoenberg, with whom Busoni had been in correspondence since 1903,
-    settled in Berlin in 1911 partially as a consequence of Busoni lobbying on his
-    behalf
+  quote: He took music lessons with Ernest Ansermet, Ferruccio Busoni and Edward J.
+    Dent.
+mentors: []
 ---
+
+
+
+
+
 
 # Ferruccio Busoni
 

@@ -1,5 +1,6 @@
 ---
 name: Noah Creshevsky
+wikidata: Q544683
 wikipedia: https://en.wikipedia.org/wiki/Noah_Creshevsky
 thumbnail: null
 birth: '1945'
@@ -15,15 +16,18 @@ teachers:
   source: llm
   quote: studying with Lukas Foss
 - name: Nadia Boulanger
-  source: llm_confirmed
+  source: llm
   quote: Trained in composition by Nadia Boulanger in Paris
 - name: Luciano Berio
-  source: llm_confirmed
+  source: llm
   quote: and Luciano Berio at the Juilliard School
 students: []
-influenced_by: []
-influenced: []
+mentors: []
 ---
+
+
+
+
 
 # Noah Creshevsky
 

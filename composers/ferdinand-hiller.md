@@ -1,5 +1,6 @@
 ---
 name: Ferdinand Hiller
+wikidata: Q213530
 wikipedia: https://en.wikipedia.org/wiki/Ferdinand_Hiller
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ferdinand_Hiller2.jpg/250px-Ferdinand_Hiller2.jpg
 birth: '1811'
@@ -22,24 +23,37 @@ teachers:
 - name: Georg Jacob Vollweiler
   source: llm
   quote: harmony and counterpoint by Georg Jacob Vollweiler
+- name: Aloys Schmitt
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_R_to_S
+- name: Ludwig van Beethoven
+  source: wiki
 students:
 - name: Max Bruch
   source: wiki
-influenced_by:
-- name: Felix Mendelssohn
+- name: Frederick Corder
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Charles Donald Maclean
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Friedrich Wilhelm Riem
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Franz Wilke
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Josephine Lang
   source: llm
-  quote: immensely impressed by the playing of Felix
-- name: Johann Nepomuk Hummel
-  source: llm
-  quote: a pupil of Johann Nepomuk Hummel in Weimar
-influenced:
-- name: Robert Schumann
-  source: llm
-  quote: In 1845 Robert Schumann dedicated his piano concerto to Hiller
-- name: Frédéric Chopin
-  source: llm
-  quote: He is also the dedicatee of the three Nocturnes, Op. 15, by Chopin
+  quote: Both Felix Mendelssohn and Ferdinand Hiller went to great lengths to ensure
+    that Lang learned the proper theory for song-writing
+mentors: []
 ---
+
+
+
+
+
 
 # Ferdinand Hiller
 

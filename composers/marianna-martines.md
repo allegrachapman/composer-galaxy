@@ -1,40 +1,37 @@
 ---
 name: Marianna Martines
+wikidata: Q274175
 wikipedia: https://en.wikipedia.org/wiki/Marianna_Martines
 thumbnail: null
-birth: '1744'
-birth_source: llm
-death: '1812'
-death_source: llm
-nationality: Austrian
-nationality_source: llm
-era: Classical
-era_source: llm
+birth: null
+birth_source: null
+death: null
+death_source: null
+nationality: null
+nationality_source: null
+era: null
+era_source: null
 teachers:
-- name: Joseph Haydn
-  source: llm_confirmed
-  quote: take keyboard lessons from Haydn
-- name: Nicola Porpora
-  source: llm_confirmed
-  quote: began singing lessons with Porpora
-- name: Johann Adolph Hasse
-  source: llm
-  quote: lessons with Johann Adolph Hasse
 - name: Giuseppe Bonno
-  source: llm_confirmed
-  quote: lessons with Johann Adolph Hasse and the Imperial court composer Giuseppe
-    Bonno
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
+- name: Johann Adolph Hasse
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Joseph Haydn
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J
+- name: Metastasio
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
+- name: Nicola Porpora
+  source: wiki
+  source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_N_to_Q
 students: []
-influenced_by:
-- name: Pietro Metastasio
-  source: llm
-  quote: he noticed her precocious talents early, and thus came to oversee her education
-influenced:
-- name: Wolfgang Amadeus Mozart
-  source: llm
-  quote: Mozart modeled his 1768 Mass, V. 139, after the "Christe" of Martines's Mass
-    No. 1
+mentors: []
 ---
+
+
 
 # Marianna Martines
 

@@ -1,5 +1,6 @@
 ---
 name: Coleridge-Taylor Perkinson
+wikidata: Q1108138
 wikipedia: https://en.wikipedia.org/wiki/Coleridge-Taylor_Perkinson
 thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Perkinson_canvas-980x520.jpg/250px-Perkinson_canvas-980x520.jpg
 birth: '1932'
@@ -19,12 +20,11 @@ teachers:
   source: llm
   quote: studied composition with Vittorio Giannini and Charles Mills
 students: []
-influenced_by:
-- name: Samuel Coleridge-Taylor
-  source: llm
-  quote: named after the Black British composer Samuel Coleridge-Taylor
-influenced: []
+mentors: []
 ---
+
+
+
 
 # Coleridge-Taylor Perkinson
 
