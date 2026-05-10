@@ -2,7 +2,7 @@
 name: Ellen Taaffe Zwilich
 wikidata: Q457425
 wikipedia: https://en.wikipedia.org/wiki/Ellen_Taaffe_Zwilich
-thumbnail: https://images.squarespace-cdn.com/content/v1/5612c763e4b0671bb4205bd1/1444072206521-DS0BDP61MDO3DGOCIIIO/image-asset.jpeg
+thumbnail: web/img/23b2fefae533.jpeg
 birth: '1939'
 birth_source: infobox
 death: '1939'

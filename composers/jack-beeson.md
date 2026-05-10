@@ -2,7 +2,7 @@
 name: Jack Beeson
 wikidata: Q323757
 wikipedia: https://en.wikipedia.org/wiki/Jack_Beeson
-thumbnail: https://www.boosey.com/images/composer/Snap_Beeson_x2.jpg
+thumbnail: web/img/016c341cd9a3.jpg
 birth: '1921'
 birth_source: llm
 death: '2010'

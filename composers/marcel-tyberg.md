@@ -2,7 +2,7 @@
 name: Marcel Tyberg
 wikidata: Q512563
 wikipedia: https://en.wikipedia.org/wiki/Marcel_Tyberg
-thumbnail: http://orelfoundation.org/images/common/facebook_30.png
+thumbnail: web/img/dac22ed8491e.png
 birth: '1893'
 birth_source: llm
 death: '1944'

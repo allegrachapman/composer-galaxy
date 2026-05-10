@@ -308,6 +308,7 @@ silhouetteImg.src = SILHOUETTE_URI;
 const imageCache = {};
 function _thumbUrl(url) {
   if (!url) return url;
+  if (url.startsWith("web/img/")) return url.replace("web/", "");
   if (url.includes("wikimedia.org") || url.includes("wikipedia.org")) return url;
   return "/img-proxy?url=" + encodeURIComponent(url);
 }
@@ -1397,7 +1398,7 @@ function showDetail(node) {
   };
 
   el.innerHTML = `
-    ${node.thumbnail ? `<img src="${node.thumbnail}" alt="${node.label}" style="width:100%;border-radius:8px;margin-bottom:12px;">` : ""}
+    ${node.thumbnail ? `<img src="${_thumbUrl(node.thumbnail)}" alt="${node.label}" style="width:100%;border-radius:8px;margin-bottom:12px;">` : ""}
     <h1 style="font-size:15px">${node.label}</h1>
     <div class="detail-row"><span class="k">Life</span>${node.birth || "?"} – ${node.death || ""}</div>
     <div class="detail-row"><span class="k">Nationality</span>${node.nationality || "—"}</div>

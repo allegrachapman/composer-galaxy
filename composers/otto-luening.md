@@ -2,7 +2,7 @@
 name: Otto Luening
 wikidata: Q2039834
 wikipedia: https://en.wikipedia.org/wiki/Otto_Luening
-thumbnail: http://www.kcstudio.com/luening4.jpg
+thumbnail: web/img/014c5dac3e4b.jpg
 birth: '1900'
 birth_source: infobox
 death: '1996'

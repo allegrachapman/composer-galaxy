@@ -2,7 +2,7 @@
 name: Elena Ruehr
 wikidata: Q16195301
 wikipedia: https://en.wikipedia.org/wiki/Elena_Ruehr
-thumbnail: https://elenaruehr.org/wp-content/uploads/2023/07/Elena-Ruehr-7432-photo-Christian-Steiner-e1691083725151-1900x2383.jpg
+thumbnail: web/img/3a5e1b683eae.jpg
 birth: '1963'
 birth_source: llm
 death: null

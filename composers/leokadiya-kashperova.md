@@ -2,7 +2,7 @@
 name: Leokadiya Kashperova
 wikidata: Q47657383
 wikipedia: https://en.wikipedia.org/wiki/Leokadiya_Kashperova
-thumbnail: https://donne-uk.org/wp-content/uploads/2020/10/KASHPEROVA_Leokadya.jpg
+thumbnail: web/img/a02af4381b9a.jpg
 birth: '1872'
 birth_source: llm
 death: '1940'

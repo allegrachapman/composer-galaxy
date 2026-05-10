@@ -2,7 +2,7 @@
 name: Osvaldo Golijov
 wikidata: Q701257
 wikipedia: https://en.wikipedia.org/wiki/Osvaldo_Golijov
-thumbnail: https://images.squarespace-cdn.com/content/v1/5ce440c9b8c98b0001e6b1a6/f5a148e9-2861-483b-a992-763cbfe17d05/Photo_2023-02-26_092101.JPG
+thumbnail: web/img/14b272848a30.JPG
 birth: '1960'
 birth_source: infobox
 death: null

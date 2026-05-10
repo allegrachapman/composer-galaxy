@@ -2,7 +2,7 @@
 name: Bright Sheng
 wikidata: Q2203451
 wikipedia: https://en.wikipedia.org/wiki/Bright_Sheng
-thumbnail: http://www.brightsheng.com/images/facebook.jpg
+thumbnail: web/img/ec77246b7994.jpg
 birth: null
 birth_source: null
 death: null

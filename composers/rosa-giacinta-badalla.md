@@ -2,7 +2,7 @@
 name: Rosa Giacinta Badalla
 wikidata: Q7367050
 wikipedia: https://en.wikipedia.org/wiki/Rosa_Giacinta_Badalla
-thumbnail: https://images.squarespace-cdn.com/content/v1/5a933b779d5abbfa670125af/1534189515700-FA3MNUN1EY3EU1ZOP81P/Badalla.jpg
+thumbnail: web/img/886619c68df8.jpg
 birth: '1660'
 birth_source: wikidata
 death: '1710'

@@ -2,7 +2,7 @@
 name: T. J. Anderson
 wikidata: Q7668318
 wikipedia: https://en.wikipedia.org/wiki/T._J._Anderson
-thumbnail: https://www.tjandersonmusic.com/images/tj_home.jpg
+thumbnail: web/img/7e3709964ff2.jpg
 birth: '1928'
 birth_source: infobox
 death: null

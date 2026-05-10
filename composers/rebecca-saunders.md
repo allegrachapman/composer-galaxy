@@ -2,7 +2,7 @@
 name: Rebecca Saunders
 wikidata: Q448111
 wikipedia: https://en.wikipedia.org/wiki/Rebecca_Saunders
-thumbnail: https://images.squarespace-cdn.com/content/v1/5c0e5bb4d274cbc2011b50bb/1544456089122-N1VJ0ZYTMTF4T2CCOBXW/IMG_4270.jpg
+thumbnail: web/img/be19f8245e96.jpg
 birth: '1967'
 birth_source: wikidata
 death: null

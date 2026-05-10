@@ -2,7 +2,7 @@
 name: Gabriela Lena Frank
 wikidata: Q1489991
 wikipedia: https://en.wikipedia.org/wiki/Gabriela_Lena_Frank
-thumbnail: https://www.sfcv.org/sites/default/files/u19/frank_gabriela.jpg
+thumbnail: web/img/9c085bf2c6a7.jpg
 birth: '1972'
 birth_source: llm
 death: null

@@ -2,7 +2,7 @@
 name: Eleanor Alberga
 wikidata: Q1325702
 wikipedia: https://en.wikipedia.org/wiki/Eleanor_Alberga
-thumbnail: https://images.squarespace-cdn.com/content/v1/65b29d2707ea1228e7687c5f/c21758bf-5fea-473d-bdb8-550321f69e28/Eleanor+Alberga+hi+res.jpg
+thumbnail: web/img/599030863bd2.jpg
 birth: '1949'
 birth_source: infobox
 death: null

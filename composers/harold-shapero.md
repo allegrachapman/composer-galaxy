@@ -2,7 +2,7 @@
 name: Harold Shapero
 wikidata: Q553560
 wikipedia: https://en.wikipedia.org/wiki/Harold_Shapero
-thumbnail: https://www.sequenza21.com/wp-content/uploads/2013/05/Harold-Shapero.jpg
+thumbnail: web/img/68c5bebc7a22.jpg
 birth: '1920'
 birth_source: llm
 death: '2013'

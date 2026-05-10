@@ -2,7 +2,7 @@
 name: Paul Fetler
 wikidata: Q3898052
 wikipedia: https://en.wikipedia.org/wiki/Paul_Fetler
-thumbnail: http://www.bruceduffie.com/fetler3.jpg
+thumbnail: web/img/f7a258ee81d5.jpg
 birth: '1920'
 birth_source: llm
 death: '2018'
