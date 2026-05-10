@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Composer Galaxy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,9 @@
   #app.hide-left { grid-template-columns: 0px 1fr 300px; }
   #app.hide-right { grid-template-columns: 240px 1fr 0px; }
   #app.hide-left.hide-right { grid-template-columns: 0px 1fr 0px; }
-  #app.hide-left #sidebar, #app.hide-right #detail { padding: 0; overflow: hidden; border: none; }
+  @media (min-width: 769px) {
+    #app.hide-left #sidebar, #app.hide-right #detail { padding: 0; overflow: hidden; border: none; }
+  }
   .panel-toggle { position: absolute; top: 12px; z-index: 20; width: 32px; height: 32px;
     background: var(--panel); border: 1px solid var(--border); color: var(--muted);
     border-radius: 6px; cursor: pointer; font-size: 14px; display: flex;
@@ -94,10 +97,48 @@
     flex-direction: column; gap: 4px; z-index: 10; }
   #zoomControls button { width: 36px; height: 36px; padding: 0; font-size: 18px;
     line-height: 36px; text-align: center; border-radius: 6px; }
+
+  /* --- Mobile --- */
+  #mobileMenuBtn { display: none; }
+  #mobileDetailClose { display: none; }
+
+  @media (max-width: 768px) {
+    #app { grid-template-columns: 1fr !important; grid-template-rows: 1fr; }
+    #sidebar { position: fixed; top: 0; left: 0; width: 280px; height: 100vh; z-index: 100;
+      transform: translateX(-100%); transition: transform 0.25s ease;
+      border-right: 1px solid var(--border); overflow-y: auto; }
+    #sidebar.mobile-open { transform: translateX(0); }
+    #detail { position: fixed; bottom: 0; left: 0; right: 0; height: 50vh; z-index: 90;
+      transform: translateY(100%); transition: transform 0.25s ease;
+      border-top: 1px solid var(--border); border-left: none;
+      border-radius: 16px 16px 0 0; overflow-y: auto; padding-top: 8px; }
+    #detail.mobile-open { transform: translateY(0); }
+    #mobileMenuBtn { display: flex; position: fixed; top: 12px; left: 12px; z-index: 80;
+      width: 40px; height: 40px; background: var(--panel); border: 1px solid var(--border);
+      color: var(--text); border-radius: 8px; cursor: pointer; font-size: 20px;
+      align-items: center; justify-content: center; padding: 0; }
+    #mobileDetailClose { display: block; position: absolute; top: 8px; right: 12px;
+      background: none; border: none; color: var(--muted); font-size: 22px; cursor: pointer;
+      width: auto; padding: 4px 8px; margin: 0; }
+    .mobile-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.3); z-index: 89; }
+    .mobile-overlay.active { display: block; }
+    .panel-toggle { display: none !important; }
+    #tooltip { display: none !important; }
+    #zoomControls { bottom: 12px; right: 12px; }
+    #zoomControls button { width: 44px; height: 44px; font-size: 22px; line-height: 44px; }
+    #detail .drag-handle { display: block; width: 36px; height: 4px; background: var(--border);
+      border-radius: 2px; margin: 4px auto 8px; }
+  }
+  @media (min-width: 769px) {
+    #detail .drag-handle { display: none; }
+  }
 </style>
 </head>
 <body>
 <div id="expandStatus">Expanding…</div>
+<button id="mobileMenuBtn" aria-label="Menu">☰</button>
+<div class="mobile-overlay" id="mobileOverlay"></div>
 <div id="app">
   <aside id="sidebar">
     <h1>Composer Galaxy</h1>
@@ -178,6 +219,8 @@
   </div>
 
   <aside id="detail">
+    <div class="drag-handle"></div>
+    <button id="mobileDetailClose">&times;</button>
     <h1>Details</h1>
     <div id="detailBody" class="empty">Click a composer to see details.</div>
   </aside>
@@ -1087,12 +1130,13 @@ function selectNode(node) {
     });
     const w = canvas.width / devicePixelRatio;
     const h = canvas.height / devicePixelRatio;
-    const pad = 100;
+    const visibleH = _isMobile() ? h * 0.45 : h;
+    const pad = _isMobile() ? 60 : 100;
     const dx = (x1 - x0) || 1, dy = (y1 - y0) || 1;
-    const targetScale = Math.min((w - pad * 2) / dx, (h - pad * 2) / dy, 2.5);
+    const targetScale = Math.min((w - pad * 2) / dx, (visibleH - pad * 2) / dy, 2.5);
     const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
     const tx = w / 2 - cx * targetScale;
-    const ty = h / 2 - cy * targetScale;
+    const ty = visibleH / 2 - cy * targetScale;
     d3.select(canvas).transition().duration(600)
       .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(targetScale));
   } else {
@@ -1934,6 +1978,90 @@ async function askQuestion() {
 
 askBtn.addEventListener("click", askQuestion);
 askInput.addEventListener("keydown", e => { if (e.key === "Enter") askQuestion(); });
+
+// --- Mobile support ---
+const _isMobile = () => window.innerWidth <= 768;
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileOverlay = document.getElementById("mobileOverlay");
+const sidebar = document.getElementById("sidebar");
+const detail = document.getElementById("detail");
+const mobileDetailClose = document.getElementById("mobileDetailClose");
+
+function openMobileSidebar() {
+  sidebar.classList.add("mobile-open");
+  mobileOverlay.classList.add("active");
+}
+function closeMobileSidebar() {
+  sidebar.classList.remove("mobile-open");
+  mobileOverlay.classList.remove("active");
+}
+function openMobileDetail() {
+  detail.classList.add("mobile-open");
+}
+function closeMobileDetail() {
+  detail.classList.remove("mobile-open");
+}
+
+mobileMenuBtn.addEventListener("click", () => {
+  if (sidebar.classList.contains("mobile-open")) closeMobileSidebar();
+  else openMobileSidebar();
+});
+mobileOverlay.addEventListener("click", closeMobileSidebar);
+mobileDetailClose.addEventListener("click", closeMobileDetail);
+
+// Open detail panel on mobile when a node is selected
+const _origShowDetail = showDetail;
+showDetail = function(node) {
+  _origShowDetail(node);
+  if (_isMobile()) openMobileDetail();
+};
+
+// Close sidebar when a search result is selected on mobile
+const searchResultsList = document.getElementById("searchResults");
+searchResultsList.addEventListener("click", () => {
+  if (_isMobile()) closeMobileSidebar();
+});
+
+// Touch tap on canvas — treat single-finger tap as click
+let _touchStart = null;
+canvas.addEventListener("touchstart", e => {
+  if (e.touches.length === 1) {
+    _touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY, time: Date.now() };
+  } else {
+    _touchStart = null;
+  }
+}, { passive: true });
+
+canvas.addEventListener("touchend", e => {
+  if (!_touchStart) return;
+  const dt = Date.now() - _touchStart.time;
+  if (dt > 300) return;
+  const ch = e.changedTouches[0];
+  const dx = ch.clientX - _touchStart.x, dy = ch.clientY - _touchStart.y;
+  if (dx * dx + dy * dy > 400) return;
+
+  const rect = canvas.getBoundingClientRect();
+  const mx = ch.clientX - rect.left, my = ch.clientY - rect.top;
+  const node = nodeAt(mx, my);
+
+  if (familyTreeMode) {
+    if (node && _familyTreeNodes.has(node)) { showDetail(node); draw(); }
+    else clearFamilyTree();
+    return;
+  }
+  if (_pathLinks.size > 0) {
+    if (node && _pathNodes.has(node)) { showDetail(node); draw(); }
+    else clearLineage();
+    return;
+  }
+  if (node) {
+    selectNode(node);
+  } else {
+    selectNode(null);
+    if (_isMobile()) closeMobileDetail();
+  }
+  _touchStart = null;
+}, { passive: true });
 </script>
 </body>
 </html>
