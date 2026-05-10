@@ -243,6 +243,7 @@ let viewMode = "teachers"; // "teachers" or "mentors"
 let familyTreeMode = false, _familyTreeNodes = new Set(), _familyTreeLinks = new Set(), _familyTreeRoot = null;
 
 let minConfidence = 0;
+const _isLocalhost = location.hostname === "localhost" || location.hostname === "127.0.0.1";
 
 function activeLinks() {
   const kind = viewMode === "teachers" ? "teacher" : "mentor";
@@ -1201,7 +1202,7 @@ function buildGraph(data) {
   const _edgeMeta = {};
   links = data.edges.map(e => {
     const id = e.data.id;
-    _edgeMeta[id] = { url: e.data.source_url, quote: e.data.quote || "", fileOwner: e.data.file_owner, field: e.data.field, edgeName: e.data.edge_name, corroboratedBy: e.data.corroborated_by || null };
+    _edgeMeta[id] = { url: e.data.source_url, quote: e.data.quote || "", fileOwner: e.data.file_owner, field: e.data.field, edgeName: e.data.edge_name, corroboratedBy: e.data.corroborated_by || null, verified: e.data.verified || false };
     return {
       id: id,
       source: e.data.source,
@@ -1211,6 +1212,7 @@ function buildGraph(data) {
       origin: e.data.origin || "unknown",
       method: e.data.method || "unknown",
       confidence: e.data.confidence || 0.5,
+      verified: e.data.verified || false,
       visible: false,
     };
   });
@@ -1281,7 +1283,7 @@ function showDetail(node) {
 
   const edgeMapper = l => {
     const meta = _edgeMeta[l.id] || {};
-    return { linkObj: l, tag: l.source_tag, url: meta.url, quote: meta.quote, fileOwner: meta.fileOwner, field: meta.field, edgeName: meta.edgeName };
+    return { linkObj: l, tag: l.source_tag, url: meta.url, quote: meta.quote, fileOwner: meta.fileOwner, field: meta.field, edgeName: meta.edgeName, verified: meta.verified || false };
   };
 
   const teachersIn = links.filter(l => {
@@ -1321,7 +1323,19 @@ function showDetail(node) {
       const wikiLink = e.url ? `<div style="margin-top:4px"><a class="src-verify" data-url="${_escHtml(e.url)}" data-quote="${_escHtml(e.quote || highlightText)}" style="color:var(--wiki);font-size:10px;cursor:pointer">see on Wikipedia \u2197</a></div>` : "";
       const meta = window._edgeMeta && window._edgeMeta[e.linkObj ? e.linkObj.id : ""];
       const corrobLine = meta && meta.corroboratedBy ? `<div class="edge-prov" style="color:#4ade80">corroborated by: ${meta.corroboratedBy.join(", ")}</div>` : "";
-      const detailContent = `<div class="edge-prov">${origin} \u00b7 ${method}</div>${corrobLine}${quoteBlock}${wikiLink}`;
+      const isVerified = e.verified || (meta && meta.verified);
+      const verifiedLine = isVerified ? `<div class="edge-prov" style="color:#4ade80;font-weight:600">\u2713 manually verified</div>` : "";
+      let actionBtns = "";
+      if (!isVerified && e.fileOwner && e.field) {
+        if (_isLocalhost) {
+          actionBtns = `<div style="margin-top:4px;display:flex;gap:4px"><button class="verify-edge" data-owner="${_escHtml(e.fileOwner)}" data-target="${_escHtml(e.node.id)}" data-field="${_escHtml(e.field)}" data-link-id="${_escHtml(e.linkObj ? e.linkObj.id : "")}" style="background:#2a6;color:white;border:none;padding:3px 8px;font-size:10px;border-radius:3px;cursor:pointer">verify \u2713</button><button class="flag-edge" data-owner="${_escHtml(e.fileOwner)}" data-target="${_escHtml(e.node.id)}" data-field="${_escHtml(e.field)}" data-link-id="${_escHtml(e.linkObj ? e.linkObj.id : "")}" style="background:#c44;color:white;border:none;padding:3px 8px;font-size:10px;border-radius:3px;cursor:pointer">flag: incorrect \u2717</button></div>`;
+        } else {
+          const issueTitle = encodeURIComponent(`Edge correction: ${node.label} \u2194 ${e.node.label}`);
+          const issueBody = encodeURIComponent(`**Composer:** ${node.label}\n**${e.field === "teachers" ? "Teacher" : "Student"}:** ${e.node.label}\n**Source:** ${origin} \u00b7 ${method}\n**Confidence:** ${Math.round(conf * 100)}%\n${e.quote ? `**Quote:** \u201c${e.quote}\u201d\n` : ""}\n**What\u2019s wrong?**\n_Please describe the issue:_\n`);
+          actionBtns = `<div style="margin-top:4px"><a href="https://github.com/allegrachapman/composer-galaxy/issues/new?title=${issueTitle}&body=${issueBody}&labels=correction" target="_blank" rel="noopener" style="background:#555;color:white;border:none;padding:3px 8px;font-size:10px;border-radius:3px;cursor:pointer;text-decoration:none;display:inline-block">suggest correction</a></div>`;
+        }
+      }
+      const detailContent = `<div class="edge-prov">${origin} \u00b7 ${method}</div>${verifiedLine}${corrobLine}${quoteBlock}${wikiLink}${actionBtns}`;
       const details = `<span class="src-toggle" data-qid="${qid}" style="color:var(--muted);font-size:10px;margin-left:4px;cursor:pointer">details \u25be</span><div id="${qid}" class="llm-quote">${badge}${detailContent}</div>`;
       return `<li data-node-id="${_escHtml(e.node.id)}">${e.node.label || e.node.id}${dates}${details}</li>`;
     }).join("") + '</ul>';
@@ -1690,27 +1704,50 @@ document.getElementById("detailBody").addEventListener("click", ev => {
     window.open(`${url}#:~:text=${encodeURIComponent(quote)}`, "_blank", "noopener");
     return;
   }
-  const confirmBtn = ev.target.closest(".confirm-edge");
-  if (confirmBtn) {
+  const verifyBtn = ev.target.closest(".verify-edge");
+  if (verifyBtn) {
     ev.stopPropagation();
-    const { owner, target, field, linkId } = confirmBtn.dataset;
-    confirmBtn.textContent = "Confirming…";
-    confirmBtn.style.pointerEvents = "none";
-    fetch("/confirm-edge", {
+    const { owner, target, field, linkId } = verifyBtn.dataset;
+    verifyBtn.textContent = "Verifying…";
+    verifyBtn.style.pointerEvents = "none";
+    fetch("/verify-edge", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ composer: owner, target: target, field: field }),
     }).then(r => {
       if (!r.ok) throw new Error("Failed");
       const link = links.find(l => l.id === linkId);
-      if (link) link.source_tag = "llm_confirmed";
-      const meta = _edgeMeta[linkId];
-      if (meta) meta.source_tag = "llm_confirmed";
-      if (selectedNode) selectNode(selectedNode);
+      if (link) { link.verified = true; link.confidence = 0.95; }
+      const meta = window._edgeMeta[linkId];
+      if (meta) meta.verified = true;
+      if (selectedNode) showDetail(selectedNode);
       draw();
     }).catch(() => {
-      confirmBtn.textContent = "Failed — retry";
-      confirmBtn.style.pointerEvents = "";
+      verifyBtn.textContent = "Failed — retry";
+      verifyBtn.style.pointerEvents = "";
+    });
+    return;
+  }
+  const flagBtn = ev.target.closest(".flag-edge");
+  if (flagBtn) {
+    ev.stopPropagation();
+    const { owner, target, field, linkId } = flagBtn.dataset;
+    if (!confirm("Flag this edge as incorrect? It will be removed from the graph.")) return;
+    flagBtn.textContent = "Flagging…";
+    flagBtn.style.pointerEvents = "none";
+    fetch("/flag-edge", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ composer: owner, target: target, field: field }),
+    }).then(r => {
+      if (!r.ok) throw new Error("Failed");
+      const idx = links.findIndex(l => l.id === linkId);
+      if (idx !== -1) links.splice(idx, 1);
+      if (selectedNode) showDetail(selectedNode);
+      draw();
+    }).catch(() => {
+      flagBtn.textContent = "Failed — retry";
+      flagBtn.style.pointerEvents = "";
     });
     return;
   }

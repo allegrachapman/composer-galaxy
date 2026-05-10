@@ -24,7 +24,7 @@ SOURCE_MAP = {
 BASE_CONFIDENCE = {
     "human": 0.95, "api": 0.90, "parser": 0.85, "regex": 0.85, "llm": 0.70,
 }
-MOD_QUOTE = 0.10
+MOD_QUOTE = 0.0
 
 WOMEN_COMPOSERS = {
     "Adelina de Lara", "Agathe Backer Grøndahl", "Alma Mahler",
@@ -118,15 +118,16 @@ def load_graph() -> dict[str, Any]:
                 }
             }
 
-    def edge(src: str, tgt: str, kind: str, source: str, source_url: str | None = None, quote: str | None = None, file_owner: str | None = None, field: str | None = None, edge_name: str | None = None, corroborated_by: list | None = None):
+    def edge(src: str, tgt: str, kind: str, source: str, source_url: str | None = None, quote: str | None = None, file_owner: str | None = None, field: str | None = None, edge_name: str | None = None, corroborated_by: list | None = None, verified: bool = False):
         ensure_node(src)
         ensure_node(tgt)
         origin, method = SOURCE_MAP.get(source, ("unknown", "unknown"))
-        conf = BASE_CONFIDENCE.get(method, 0.50)
-        if quote:
-            conf = min(conf + MOD_QUOTE, 1.0)
-        if corroborated_by and len(corroborated_by) > 1:
-            conf = min(conf + 0.10, 1.0)
+        if verified:
+            conf = 0.95
+        else:
+            conf = BASE_CONFIDENCE.get(method, 0.50)
+            if corroborated_by and len(corroborated_by) > 1:
+                conf = min(conf + 0.10, 1.0)
         d = {
             "id": f"{_node_id(src)}__{kind}__{_node_id(tgt)}",
             "source": _node_id(src),
@@ -137,6 +138,7 @@ def load_graph() -> dict[str, Any]:
             "origin": origin,
             "method": method,
             "confidence": round(conf, 2),
+            "verified": verified,
         }
         if quote:
             d["quote"] = quote
@@ -155,14 +157,20 @@ def load_graph() -> dict[str, Any]:
         wiki_url = rec.get("wikipedia")
         owner_id = _node_id(name)
         for t in rec.get("teachers") or []:
+            if t.get("flagged"):
+                continue
             url = t.get("source_url") or wiki_urls.get(_node_id(t["name"])) or wiki_url
-            edge(t["name"], name, "teacher", t["source"], url, t.get("quote"), owner_id, "teachers", t["name"], t.get("corroborated_by"))
+            edge(t["name"], name, "teacher", t["source"], url, t.get("quote"), owner_id, "teachers", t["name"], t.get("corroborated_by"), t.get("verified", False))
         for s in rec.get("students") or []:
+            if s.get("flagged"):
+                continue
             url = s.get("source_url") or wiki_urls.get(_node_id(s["name"])) or wiki_url
-            edge(name, s["name"], "teacher", s["source"], url, s.get("quote"), owner_id, "students", s["name"], s.get("corroborated_by"))
+            edge(name, s["name"], "teacher", s["source"], url, s.get("quote"), owner_id, "students", s["name"], s.get("corroborated_by"), s.get("verified", False))
         for m in rec.get("mentors") or []:
+            if m.get("flagged"):
+                continue
             url = m.get("source_url") or wiki_urls.get(_node_id(m["name"])) or wiki_url
-            edge(m["name"], name, "mentor", m["source"], url, m.get("quote"), owner_id, "mentors", m["name"], m.get("corroborated_by"))
+            edge(m["name"], name, "mentor", m["source"], url, m.get("quote"), owner_id, "mentors", m["name"], m.get("corroborated_by"), m.get("verified", False))
 
     # Dedupe edges (same src/tgt/kind): prefer version with a quote, then by source priority
     priority = {"infobox": 0, "wiki": 1, "manual": 2, "llm": 3}

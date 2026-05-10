@@ -42,17 +42,17 @@ async def expand_composer(name: str):
         raise HTTPException(status_code=502, detail=str(e))
 
 
-class ConfirmEdge(BaseModel):
+class VerifyEdge(BaseModel):
     composer: str  # node id of the composer whose file we edit
     target: str    # name of the teacher/student
     field: str     # "teachers" or "students"
 
 
-@app.post("/confirm-edge")
-def confirm_edge(body: ConfirmEdge):
-    """Promote an LLM edge to llm_confirmed in the composer's YAML."""
+@app.post("/verify-edge")
+def verify_edge(body: VerifyEdge):
+    """Add verified: true to an edge using targeted text insertion (no YAML round-trip)."""
+    import re as _re
     composers_dir = ROOT / "composers"
-    # Find the composer file by matching node id
     from .graph import _node_id
     for path in composers_dir.glob("*.md"):
         text = path.read_text()
@@ -64,19 +64,71 @@ def confirm_edge(body: ConfirmEdge):
         meta = yaml.safe_load(parts[1])
         if not meta or _node_id(meta.get("name", "")) != body.composer:
             continue
-        entries = meta.get(body.field) or []
-        changed = False
-        for entry in entries:
-            if _node_id(entry.get("name", "")) == body.target and entry.get("source") == "llm":
-                entry["source"] = "llm_confirmed"
-                changed = True
-                break
-        if not changed:
-            raise HTTPException(status_code=404, detail="Edge not found or already confirmed")
-        meta[body.field] = entries
-        new_yaml = yaml.dump(meta, default_flow_style=False, allow_unicode=True, sort_keys=False)
-        path.write_text(f"---\n{new_yaml}---\n{parts[2]}")
-        return {"ok": True}
+        for entry in meta.get(body.field) or []:
+            if _node_id(entry.get("name", "")) != body.target:
+                continue
+            if entry.get("verified"):
+                return {"ok": True, "already": True}
+            escaped = _re.escape(entry["name"])
+            pattern = _re.compile(
+                rf"(- name: (?:'{escaped}'|{escaped})\n(?:  [^\n]+\n)*)",
+                _re.MULTILINE,
+            )
+            fm = parts[1]
+            match = pattern.search(fm)
+            if not match:
+                raise HTTPException(status_code=404, detail="Edge not found in raw text")
+            block = match.group(1)
+            new_block = block.rstrip("\n") + "\n  verified: true\n"
+            fm = fm.replace(block, new_block, 1)
+            path.write_text(f"---{fm}---{parts[2]}")
+            return {"ok": True}
+        raise HTTPException(status_code=404, detail="Edge not found")
+    raise HTTPException(status_code=404, detail="Composer file not found")
+
+
+class FlagEdge(BaseModel):
+    composer: str
+    target: str
+    field: str
+
+
+@app.post("/flag-edge")
+def flag_edge(body: FlagEdge):
+    """Add flagged: true to an edge using targeted text insertion (no YAML round-trip)."""
+    import re as _re
+    composers_dir = ROOT / "composers"
+    from .graph import _node_id
+    for path in composers_dir.glob("*.md"):
+        text = path.read_text()
+        if not text.startswith("---"):
+            continue
+        parts = text.split("---", 2)
+        if len(parts) < 3:
+            continue
+        meta = yaml.safe_load(parts[1])
+        if not meta or _node_id(meta.get("name", "")) != body.composer:
+            continue
+        for entry in meta.get(body.field) or []:
+            if _node_id(entry.get("name", "")) != body.target:
+                continue
+            if entry.get("flagged"):
+                return {"ok": True, "already": True}
+            escaped = _re.escape(entry["name"])
+            pattern = _re.compile(
+                rf"(- name: (?:'{escaped}'|{escaped})\n(?:  [^\n]+\n)*)",
+                _re.MULTILINE,
+            )
+            fm = parts[1]
+            match = pattern.search(fm)
+            if not match:
+                raise HTTPException(status_code=404, detail="Edge not found in raw text")
+            block = match.group(1)
+            new_block = block.rstrip("\n") + "\n  flagged: true\n"
+            fm = fm.replace(block, new_block, 1)
+            path.write_text(f"---{fm}---{parts[2]}")
+            return {"ok": True}
+        raise HTTPException(status_code=404, detail="Edge not found")
     raise HTTPException(status_code=404, detail="Composer file not found")
 
 
