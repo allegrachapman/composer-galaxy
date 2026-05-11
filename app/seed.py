@@ -6,6 +6,8 @@ Usage:
     python -m app.seed --names "Bach,Beethoven"   # skip sampling, use explicit names
     python -m app.seed --no-llm --count 100       # LLM-free pass (zero tokens)
     python -m app.seed --no-llm --before 1850 --count 100  # pre-1850 composers, no LLM
+    python -m app.seed --llm-only --count 50      # re-run LLM on existing files
+    python -m app.seed --llm-only --names "Bach"  # re-run LLM on specific composers
     python -m app.seed --report         # show composers with thin data
 """
 
@@ -771,6 +773,193 @@ def report_thin():
     print(f"{thin} with only 1-2 teachers/students.")
 
 
+def _load_existing_non_llm(name: str) -> dict:
+    """Load all non-LLM edges and metadata from an existing composer file."""
+    slug = _slug(name)
+    path = COMPOSERS_DIR / f"{slug}.md"
+    result = {"teachers": [], "students": [], "mentors": [],
+              "verified": [], "flagged": []}
+    if not path.exists():
+        return result
+    text = path.read_text()
+    if not text.startswith("---"):
+        return result
+    parts = text.split("---", 2)
+    if len(parts) < 3:
+        return result
+    try:
+        rec = yaml.safe_load(parts[1])
+    except Exception:
+        return result
+    if not rec:
+        return result
+    for field in ("teachers", "students", "mentors"):
+        for entry in rec.get(field) or []:
+            if entry.get("source") != "llm":
+                result[field].append(entry)
+            elif entry.get("verified"):
+                result[field].append(entry)
+            elif entry.get("flagged"):
+                result["flagged"].append(entry)
+    return result
+
+
+async def reseed_llm(count: int, names: list[str] | None = None, hybrid: bool = False):
+    """Re-run only LLM extraction on existing composer files.
+
+    Keeps all non-LLM edges (manual, infobox, wiki, grove, wikidata) intact.
+    Replaces LLM-sourced edges with fresh extraction. Preserves verified edges.
+    """
+    from . import wiki_list
+    print("Fetching Wikipedia students-by-teacher lists...")
+    wiki_list_data = wiki_list.fetch_all()
+
+    # Build list of existing composers to re-process
+    if names:
+        targets = names
+    else:
+        targets = []
+        for path in sorted(COMPOSERS_DIR.glob("*.md")):
+            text = path.read_text()
+            if not text.startswith("---"):
+                continue
+            parts = text.split("---", 2)
+            if len(parts) < 3:
+                continue
+            try:
+                rec = yaml.safe_load(parts[1])
+            except Exception:
+                continue
+            if rec and rec.get("name"):
+                targets.append(rec["name"])
+
+    if count and not names:
+        targets = targets[:count]
+
+    print(f"\nRe-running LLM extraction on {len(targets)} composers...")
+    if hybrid:
+        print("  🔀 Hybrid mode: Flash for extraction, Haiku for verification")
+
+    updated = 0
+    for i, composer_name in enumerate(targets):
+        try:
+            slug = _slug(composer_name)
+            path = COMPOSERS_DIR / f"{slug}.md"
+            if not path.exists():
+                print(f"  ✗ {composer_name}: no existing file")
+                continue
+
+            print(f"\n  → {composer_name}...")
+
+            # Fetch Wikipedia article
+            article = await wikipedia.fetch_article(composer_name)
+            canonical = article["title"]
+
+            # Load existing non-LLM edges
+            existing = _load_existing_non_llm(composer_name)
+            if canonical != composer_name:
+                existing2 = _load_existing_non_llm(canonical)
+                for field in ("teachers", "students", "mentors"):
+                    if not existing[field]:
+                        existing[field] = existing2[field]
+
+            # Load extra sources
+            extra_sources = _load_existing_sources(composer_name) or _load_existing_sources(canonical)
+            extra_text = ""
+            if extra_sources:
+                print(f"    fetching {len(extra_sources)} extra source(s)...")
+                for url in extra_sources:
+                    try:
+                        src_text = await _fetch_source_text(url)
+                        extra_text += f"\n\n--- Source: {url} ---\n\n{src_text}"
+                    except Exception:
+                        pass
+
+            combined_prose = extra_text + "\n\n--- Main Wikipedia article ---\n\n" + article["extract"] if extra_text else article["extract"]
+
+            # Run LLM extraction
+            if hybrid:
+                print(f"    Flash extraction...")
+                llm = await asyncio.to_thread(
+                    extract.extract_relationships_flash, canonical, combined_prose
+                )
+            else:
+                print(f"    LLM extraction...")
+                llm = await asyncio.to_thread(
+                    extract.extract_relationships, canonical, combined_prose
+                )
+
+            # Grove extraction
+            grove_extract = {"teachers": [], "students": [], "mentors": []}
+            grove_text = grove.lookup(canonical) or grove.lookup(composer_name)
+            if grove_text:
+                print(f"    Grove extraction...")
+                grove_extract = await asyncio.to_thread(
+                    extract.extract_grove, canonical, grove_text
+                )
+
+            # Merge: existing non-LLM edges (grouped by source) + fresh LLM + Grove
+            # Group existing edges by their source tag
+            def _group_by_source(edges):
+                groups = {}
+                for e in edges:
+                    tag = e.get("source", "manual")
+                    groups.setdefault(tag, []).append(e)
+                return [(v, k) for k, v in groups.items()]
+
+            teachers = _merge_edges(
+                *_group_by_source(existing["teachers"]),
+                (grove_extract["teachers"], "grove"),
+                (llm["teachers"], "llm"),
+            )
+            students = _merge_edges(
+                *_group_by_source(existing["students"]),
+                (grove_extract["students"], "grove"),
+                (llm["students"], "llm"),
+            )
+            mentors = _merge_edges(
+                *_group_by_source(existing["mentors"]),
+                (grove_extract["mentors"], "grove"),
+                (llm["mentors"], "llm"),
+            )
+
+            # Find quotes for quoteless edges
+            quoteless = [e["name"] for e in teachers + students + mentors if not e.get("quote")]
+            if quoteless:
+                quote_fn = extract.find_quotes_flash if hybrid else extract.find_quotes
+                print(f"    finding quotes for {len(quoteless)} edges...")
+                quotes = await asyncio.to_thread(
+                    quote_fn, canonical, article["extract"], quoteless
+                )
+                for e in teachers + students + mentors:
+                    if not e.get("quote") and quotes.get(e["name"]):
+                        e["quote"] = quotes[e["name"]]
+
+            # Read existing file to preserve metadata
+            text = path.read_text()
+            parts = text.split("---", 2)
+            rec = yaml.safe_load(parts[1])
+
+            rec["teachers"] = teachers
+            rec["students"] = students
+            rec["mentors"] = mentors
+
+            record = _qa_filter(rec)
+            write_markdown(record)
+            updated += 1
+            print(f"  ✓ {canonical}")
+
+        except Exception as e:
+            print(f"  ✗ {composer_name}: {e!r}")
+
+        if i < len(targets) - 1:
+            await asyncio.sleep(1.5)
+
+    print(f"\nDone. Re-extracted LLM edges for {updated}/{len(targets)} composers.")
+    print("\nRunning post-seed QA pass...")
+    qa_all()
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--count", type=int, default=10)
@@ -788,6 +977,8 @@ if __name__ == "__main__":
                     help="Hybrid pipeline: Gemini Flash for extraction, Haiku for verification")
     ap.add_argument("--report", action="store_true",
                     help="Show composers with thin teacher/student data")
+    ap.add_argument("--llm-only", action="store_true",
+                    help="Re-run only LLM extraction on existing files, keeping all other edges")
     args = ap.parse_args()
     if args.report:
         report_thin()
@@ -796,6 +987,9 @@ if __name__ == "__main__":
         qa_all()
     elif args.qa_only:
         qa_all()
+    elif args.llm_only:
+        names = [n.strip() for n in args.names.split(",")] if args.names else None
+        asyncio.run(reseed_llm(args.count, names, hybrid=args.hybrid))
     else:
         names = [n.strip() for n in args.names.split(",")] if args.names else None
         asyncio.run(main(args.count, names, no_llm=args.no_llm, before=args.before, hybrid=args.hybrid))
