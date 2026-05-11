@@ -721,17 +721,30 @@ async def main(count: int, names: list[str] | None, no_llm: bool = False, before
         print("Pausing before fetching (rate-limit cooldown)...")
         await asyncio.sleep(10)
 
+    thin = []
     for i, c in enumerate(chosen):
         try:
             record = await process_composer(c, wiki_list_data, no_llm=no_llm, hybrid=hybrid)
             path = write_markdown(record)
+            n_edges = len(record.get("teachers") or []) + len(record.get("students") or [])
+            has_era = bool(record.get("era"))
             print(f"  ✓ wrote {path.name}")
+            if n_edges <= 2 or not has_era:
+                thin.append((record["name"], n_edges, has_era))
         except Exception as e:
             print(f"  ✗ {c}: {e!r}")
         if i < len(chosen) - 1:
             await asyncio.sleep(1.5)
 
     print(f"\nDone. {len(list(COMPOSERS_DIR.glob('*.md')))} composer files in {COMPOSERS_DIR}/")
+
+    if thin:
+        print(f"\n⚠  {len(thin)} composer(s) have thin data — consider re-running with LLM:")
+        for name, n, has_era in thin:
+            era_note = "" if has_era else ", no era"
+            print(f"   {name}: {n} edge(s){era_note}")
+        if no_llm:
+            print("   (These were seeded with --no-llm. Run without that flag to get LLM extraction.)")
 
     print("\nRunning post-seed QA pass...")
     qa_all()
@@ -841,6 +854,7 @@ async def reseed_llm(count: int, names: list[str] | None = None, hybrid: bool = 
         print("  🔀 Hybrid mode: Flash for extraction, Haiku for verification")
 
     updated = 0
+    thin = []
     for i, composer_name in enumerate(targets):
         try:
             slug = _slug(composer_name)
@@ -947,7 +961,11 @@ async def reseed_llm(count: int, names: list[str] | None = None, hybrid: bool = 
             record = _qa_filter(rec)
             write_markdown(record)
             updated += 1
+            n_edges = len(record.get("teachers") or []) + len(record.get("students") or [])
+            has_era = bool(record.get("era"))
             print(f"  ✓ {canonical}")
+            if n_edges <= 2 or not has_era:
+                thin.append((canonical, n_edges, has_era))
 
         except Exception as e:
             print(f"  ✗ {composer_name}: {e!r}")
@@ -956,6 +974,13 @@ async def reseed_llm(count: int, names: list[str] | None = None, hybrid: bool = 
             await asyncio.sleep(1.5)
 
     print(f"\nDone. Re-extracted LLM edges for {updated}/{len(targets)} composers.")
+
+    if thin:
+        print(f"\n⚠  {len(thin)} composer(s) still have thin data after LLM re-extraction:")
+        for name, n, has_era in thin:
+            era_note = "" if has_era else ", no era"
+            print(f"   {name}: {n} edge(s){era_note}")
+
     print("\nRunning post-seed QA pass...")
     qa_all()
 
