@@ -19,6 +19,9 @@ teachers:
 - name: Carl Reinecke
   source: llm
   quote: she studied Brahmsian musical composition with Carl Reinecke
+  corroborated_by:
+  - llm
+  - wiki
 - name: George Henschel
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_G_to_J

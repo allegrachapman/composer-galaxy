@@ -177,7 +177,7 @@ students:
 - name: Michael von Zadora
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_A_to_B
-- name: Leonard Stein
+- name: Leonard Stein (musicologist)
   source: wiki
 - name: William Walton
   source: llm

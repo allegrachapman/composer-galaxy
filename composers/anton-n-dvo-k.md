@@ -81,8 +81,6 @@ students:
 - name: John Stepan Zamecnik
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
-- name: Karl Goldmark
-  source: wiki
 mentors:
 - name: Johannes Brahms
   source: llm
@@ -98,6 +96,7 @@ mentors:
   source: llm
   quote: Hans Richter asked Dvořák to compose his Symphony No. 6 for the Vienna Philharmonic
 ---
+
 
 
 

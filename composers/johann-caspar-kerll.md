@@ -12,7 +12,7 @@ nationality_source: manual
 era: Baroque
 era_source: manual
 teachers:
-- name: Caspar Kerll
+- name: Johann Caspar Kerll
   source: manual
   quote: Kerll's first teacher was his father, Caspar, organist at Adorf
 - name: Giovanni Valentini

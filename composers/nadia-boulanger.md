@@ -88,7 +88,7 @@ students:
 - name: Julia Perry
   source: llm
   quote: students were... Astor Piazzolla, Julia Perry, George Walker
-- name: George Walker
+- name: George Walker (composer)
   source: llm
   quote: students were... Julia Perry, George Walker, and over 250 others.
 - name: Douglas Allanbrook

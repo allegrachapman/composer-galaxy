@@ -41,7 +41,7 @@ students:
 - name: Julian Anderson
   source: llm
   quote: His students included... such as Thomas Adès, Julian Anderson
-- name: George Benjamin
+- name: George Benjamin (composer)
   source: llm
   quote: His students included... such as Thomas Adès, Julian Anderson, George Benjamin
 - name: Robin Holloway

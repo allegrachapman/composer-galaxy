@@ -19,7 +19,7 @@ students:
 - name: Therese Jansen Bartolozzi
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
-- name: Ludwig Berger
+- name: Ludwig Berger (composer)
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
   corroborated_by:

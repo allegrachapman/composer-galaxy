@@ -12,7 +12,7 @@ nationality_source: llm
 era: Contemporary
 era_source: llm
 teachers:
-- name: Chou Wen-Chung
+- name: Chou Wen-chung
   source: llm
   quote: once again studying with Chou Wen-Chung
   corroborated_by:

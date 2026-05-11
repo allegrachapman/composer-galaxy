@@ -27,11 +27,10 @@ teachers:
   corroborated_by:
   - llm
   - wiki
-students:
-- name: Franz Krenn
-  source: wiki
+students: []
 mentors: []
 ---
+
 
 
 

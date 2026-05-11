@@ -12,7 +12,7 @@ nationality_source: infobox
 era: 20th-century
 era_source: llm
 teachers:
-- name: Leonid Nikolayev (pianist)
+- name: Leonid Nikolayev (pianist) (pianist)
   source: wiki
   corroborated_by:
   - llm

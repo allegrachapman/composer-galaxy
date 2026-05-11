@@ -14,7 +14,7 @@ era_source: llm
 teachers:
 - name: Alexander von Zemlinsky
   source: wiki
-- name: Robert Fuchs (composer)
+- name: Robert Fuchs
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_C_to_F
 - name: Alexander Zemlinsky

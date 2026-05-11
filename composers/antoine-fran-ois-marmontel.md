@@ -18,9 +18,12 @@ teachers:
 - name: Victor Dourlen
   source: llm
   quote: His teachers were... Victor Dourlen in harmony
-- name: Jacques Fromental Halévy
+- name: Fromental Halévy
   source: llm
   quote: His teachers were... Jacques Fromental Halévy in fugue
+  corroborated_by:
+  - llm
+  - wiki
 - name: Jean-François Le Sueur
   source: llm
   quote: His teachers were... Jean-François Le Sueur in composition.

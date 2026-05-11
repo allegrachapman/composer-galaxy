@@ -54,7 +54,7 @@ students:
   source: llm
   quote: His many distinguished pupils included Iannis Xenakis, Mikis Theodorakis,
     George Benjamin, Alexander Goehr, Pierre Boulez
-- name: George Benjamin
+- name: George Benjamin (composer)
   source: llm
   quote: His many distinguished pupils included Iannis Xenakis, Mikis Theodorakis,
     George Benjamin, Alexander Goehr, Pierre Boulez

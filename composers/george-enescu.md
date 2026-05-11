@@ -14,7 +14,7 @@ era_source: llm
 teachers:
 - name: Joseph Hellmesberger Jr.
   source: wiki
-- name: Robert Fuchs (composer)
+- name: Robert Fuchs
   source: wiki
 - name: Martin Pierre Marsick
   source: wiki

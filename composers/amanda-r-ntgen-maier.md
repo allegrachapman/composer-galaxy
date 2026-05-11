@@ -19,7 +19,7 @@ teachers:
   corroborated_by:
   - llm
   - wiki
-- name: Richter
+- name: Hans Richter
   source: llm
   quote: study composition with the conservatory teachers Reinecke and Richter in
     Leipzig

@@ -31,7 +31,7 @@ teachers:
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 students:
-- name: Thomas Attwood
+- name: Thomas Attwood (composer)
   source: wiki
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_K_to_M
 - name: Josepha Barbara von Auernhammer

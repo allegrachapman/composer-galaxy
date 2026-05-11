@@ -31,10 +31,9 @@ teachers:
 students:
 - name: Buenos Aires
   source: wiki
-- name: Bartók
-  source: wiki
 mentors: []
 ---
+
 
 
 

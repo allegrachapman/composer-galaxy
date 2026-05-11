@@ -38,7 +38,7 @@ teachers:
 students:
 - name: Zhou Long
   source: infobox
-- name: Chen Yi (composer)
+- name: Chen Yi
   source: infobox
   corroborated_by:
   - infobox

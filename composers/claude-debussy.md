@@ -12,8 +12,6 @@ nationality_source: llm
 era: late 19th and early 20th centuries
 era_source: llm
 teachers:
-- name: Chopin
-  source: wiki
 - name: Louis-Albert Bourgault-Ducoudray
   source: wiki
 - name: Camille Chevillard
@@ -50,6 +48,7 @@ students:
   - wiki
 mentors: []
 ---
+
 
 
 

@@ -12,7 +12,7 @@ nationality_source: llm
 era: 20th-century
 era_source: llm
 teachers:
-- name: Robert Fuchs (composer)
+- name: Robert Fuchs
   source: wiki
   corroborated_by:
   - llm

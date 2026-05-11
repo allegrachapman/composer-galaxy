@@ -12,7 +12,7 @@ nationality_source: llm
 era: Georgian
 era_source: llm
 teachers:
-- name: Mozart
+- name: Wolfgang Amadeus Mozart
   source: wiki
 - name: Wolfgang Amadeus Mozart
   source: wiki

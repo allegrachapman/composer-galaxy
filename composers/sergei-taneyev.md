@@ -87,7 +87,7 @@ students:
   source_url: https://en.wikipedia.org/wiki/List_of_music_students_by_teacher:_T_to_Z
 - name: Alexander Siloti
   source: wiki
-- name: Leonid Nikolayev
+- name: Leonid Nikolayev (pianist)
   source: llm
   quote: He studied at the Moscow Conservatory with Sergei Taneyev
 mentors: []

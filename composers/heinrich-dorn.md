@@ -12,7 +12,7 @@ nationality_source: infobox
 era: Romantic
 era_source: llm
 teachers:
-- name: Ludwig Berger
+- name: Ludwig Berger (composer)
   source: llm
   quote: studied in Berlin with Ludwig Berger
   corroborated_by:

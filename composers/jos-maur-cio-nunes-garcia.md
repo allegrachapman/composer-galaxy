@@ -12,7 +12,7 @@ nationality_source: infobox
 era: Classical
 era_source: llm
 teachers:
-- name: Haydn
+- name: Joseph Haydn
   source: wiki
 - name: Michael Haydn
   source: wiki

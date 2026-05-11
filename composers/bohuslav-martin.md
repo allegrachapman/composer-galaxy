@@ -12,7 +12,7 @@ nationality_source: infobox
 era: 20th-century
 era_source: llm
 teachers:
-- name: Josef Suk (composer)
+- name: Josef Suk
   source: wiki
   corroborated_by:
   - llm

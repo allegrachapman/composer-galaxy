@@ -28,7 +28,7 @@ students:
   source: wiki
 - name: Peter Seabourne
   source: wiki
-- name: George Benjamin
+- name: George Benjamin (composer)
   source: llm
   quote: Among his many pupils were Thomas Adès, Huw Watkins, Peter Seabourne, George
     Benjamin, Judith Weir and Jonathan Dove

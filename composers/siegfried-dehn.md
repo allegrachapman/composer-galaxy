@@ -19,7 +19,7 @@ teachers:
   source: llm
   quote: studying with Bernhard Klein
 students:
-- name: Albert Becker (composer)
+- name: Albert Becker
   source: wiki
   corroborated_by:
   - llm

@@ -17,7 +17,7 @@ teachers:
 - name: Edwin Roxburgh
   source: llm
   quote: a Masters with Edwin Roxburgh at the Royal College of Music
-- name: George Benjamin
+- name: George Benjamin (composer)
   source: llm
   quote: continued at King's College London under George Benjamin
 students: []
