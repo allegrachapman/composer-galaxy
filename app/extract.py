@@ -14,7 +14,7 @@ from typing import Any
 ANTHROPIC_MODEL = "claude-haiku-4-5"
 GEMINI_MODEL = "gemini-2.5-pro"
 GEMINI_FLASH_MODEL = "gemini-2.5-flash"
-MAX_PROSE_CHARS = 30000
+MAX_PROSE_CHARS = 200000
 
 SYSTEM_PROMPT = """You extract structured relationships about classical composers from biographical prose.
 
@@ -60,15 +60,36 @@ def _call_anthropic(user_msg: str) -> str:
     return msg.content[0].text if msg.content else ""
 
 
+EXTRACT_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "birth": {"type": "string", "nullable": True},
+        "death": {"type": "string", "nullable": True},
+        "nationality": {"type": "string", "nullable": True},
+        "era": {"type": "string", "nullable": True},
+        "teachers": {"type": "array", "items": {"type": "object", "properties": {"name": {"type": "string"}, "quote": {"type": "string"}}, "required": ["name", "quote"]}},
+        "students": {"type": "array", "items": {"type": "object", "properties": {"name": {"type": "string"}, "quote": {"type": "string"}}, "required": ["name", "quote"]}},
+        "mentors": {"type": "array", "items": {"type": "object", "properties": {"name": {"type": "string"}, "quote": {"type": "string"}}, "required": ["name", "quote"]}},
+    },
+    "required": ["birth", "death", "nationality", "era", "teachers", "students", "mentors"],
+}
+
+
 def _call_gemini(user_msg: str) -> str:
     import time
     from google import genai
+    from google.genai import types
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    config = types.GenerateContentConfig(
+        response_mime_type="application/json",
+        response_json_schema=EXTRACT_SCHEMA,
+    )
     for attempt in range(6):
         try:
             response = client.models.generate_content(
                 model=GEMINI_MODEL,
                 contents=f"{SYSTEM_PROMPT}\n\n{user_msg}",
+                config=config,
             )
             return response.text or ""
         except Exception as e:
@@ -90,7 +111,7 @@ def extract_relationships(composer_name: str, prose: str) -> dict[str, Any]:
     user_msg = f"Composer: {composer_name}\n\nIMPORTANT: Extract relationships from ALL text sections below, including any supplementary sources. Do not skip any section.\n\nArticle text:\n\n{prose}"
 
     if _use_gemini():
-        text = _call_gemini(user_msg)
+        text = _call_gemini_flash(SYSTEM_PROMPT, user_msg, schema=EXTRACT_SCHEMA)
     else:
         text = _call_anthropic(user_msg)
     return _parse_json(text)
@@ -105,7 +126,7 @@ def extract_relationships_flash(composer_name: str, prose: str) -> dict[str, Any
         f"including any supplementary sources. Do not skip any section.\n\n"
         f"Article text:\n\n{prose}"
     )
-    text = _call_gemini_flash(SYSTEM_PROMPT, user_msg)
+    text = _call_gemini_flash(SYSTEM_PROMPT, user_msg, schema=EXTRACT_SCHEMA)
     return _parse_json(text)
 
 
@@ -119,6 +140,29 @@ Return ONLY a JSON object like:
 The quote must appear character-for-character in the input article text. Do not paraphrase. Return the JSON and nothing else."""
 
 
+QUOTE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "quotes": {
+            "type": "object",
+            "additionalProperties": {"type": "string", "nullable": True},
+        },
+    },
+    "required": ["quotes"],
+}
+
+VERIFY_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "results": {
+            "type": "object",
+            "additionalProperties": {"type": "boolean"},
+        },
+    },
+    "required": ["results"],
+}
+
+
 def find_quotes(composer_name: str, prose: str, names: list[str]) -> dict[str, str | None]:
     if not names:
         return {}
@@ -127,7 +171,7 @@ def find_quotes(composer_name: str, prose: str, names: list[str]) -> dict[str, s
     user_msg = f"Composer: {composer_name}\n\nKnown relationships (find supporting quotes):\n{names_str}\n\nArticle text:\n\n{prose}"
 
     if _use_gemini():
-        text = _call_gemini_with_prompt(QUOTE_PROMPT, user_msg)
+        text = _call_gemini_flash(QUOTE_PROMPT, user_msg, schema=QUOTE_SCHEMA)
     else:
         text = _call_anthropic_with_prompt(QUOTE_PROMPT, user_msg)
 
@@ -148,7 +192,7 @@ def find_quotes_flash(composer_name: str, prose: str, names: list[str]) -> dict[
     prose = prose[:MAX_PROSE_CHARS]
     names_str = "\n".join(f"- {n}" for n in names)
     user_msg = f"Composer: {composer_name}\n\nKnown relationships (find supporting quotes):\n{names_str}\n\nArticle text:\n\n{prose}"
-    text = _call_gemini_flash(QUOTE_PROMPT, user_msg)
+    text = _call_gemini_flash(QUOTE_PROMPT, user_msg, schema=QUOTE_SCHEMA)
     m = re.search(r"\{.*\}", text, re.DOTALL)
     if not m:
         return {}
@@ -171,15 +215,23 @@ def _call_anthropic_with_prompt(system: str, user_msg: str) -> str:
     return msg.content[0].text if msg.content else ""
 
 
-def _call_gemini_with_prompt(system: str, user_msg: str) -> str:
+def _call_gemini_with_prompt(system: str, user_msg: str, schema: dict | None = None) -> str:
     import time
     from google import genai
+    from google.genai import types
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    config = None
+    if schema:
+        config = types.GenerateContentConfig(
+            response_mime_type="application/json",
+            response_json_schema=schema,
+        )
     for attempt in range(4):
         try:
             response = client.models.generate_content(
                 model=GEMINI_MODEL,
                 contents=f"{system}\n\n{user_msg}",
+                config=config,
             )
             return response.text or ""
         except Exception as e:
@@ -222,15 +274,23 @@ def _parse_json(text: str) -> dict[str, Any]:
     return data
 
 
-def _call_gemini_flash(system: str, user_msg: str) -> str:
+def _call_gemini_flash(system: str, user_msg: str, schema: dict | None = None) -> str:
     import time
     from google import genai
+    from google.genai import types
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    config = None
+    if schema:
+        config = types.GenerateContentConfig(
+            response_mime_type="application/json",
+            response_json_schema=schema,
+        )
     for attempt in range(6):
         try:
             response = client.models.generate_content(
                 model=GEMINI_FLASH_MODEL,
                 contents=f"{system}\n\n{user_msg}",
+                config=config,
             )
             return response.text or ""
         except Exception as e:
@@ -255,7 +315,7 @@ def extract_grove(composer_name: str, grove_text: str) -> dict[str, Any]:
         f"Extract all relationships carefully.\n\n"
         f"Article text:\n\n{grove_text}"
     )
-    text = _call_gemini_flash(SYSTEM_PROMPT, user_msg)
+    text = _call_gemini_flash(SYSTEM_PROMPT, user_msg, schema=EXTRACT_SCHEMA)
     return _parse_json(text)
 
 
